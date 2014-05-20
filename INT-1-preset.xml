@@ -3102,7 +3102,7 @@
 	</combo>
 	<text key="generator:output:electricity" text="Electricity Output" default="yes"/>
    </item>
-   <item name="Submarine cable (L31)" icon="/Users/skippern/Documents/OpenStreetMap/INT-1/SVG/L/L32.svg" type="way">
+   <item name="Submarine cable (L31)" icon="/Users/skippern/Documents/OpenStreetMap/INT-1/SVG/L/L31.svg" type="way">
 	<label text="L31.x: Submarine Cable"/>
 	<key key="man_made" value="submarine_cable"/>
 	<key key="seamark:type" value="cable_submarine"/>
@@ -3117,7 +3117,7 @@
 	</combo>
 	<text key="seamark:cable_submarine:depth_buried" text="Buried Depth"/>
    </item>
-   <item name="Submarine cable Area (L32)" icon="/Users/skippern/Documents/OpenStreetMap/INT-1/SVG/L/L32.svg" type="closedway">
+   <item name="Submarine cable Area (L32)" icon="/Users/skippern/Documents/OpenStreetMap/INT-1/SVG/L/L31.svg" type="closedway">
 	<label text="L32: Submarine Cable Area"/>
 	<key key="man_made" value="submarine_cable"/>
 	<key key="seamark:type" value="cable_area"/>
@@ -3636,16 +3636,10 @@
 	 <list_entry value="directional"/>
 	 <list_entry value="horizontal"/>
 	 <list_entry value="leading"/>
-	 <list_entry value="fog_detector"/>
-	 <list_entry value="floodlight"/>
-	 <list_entry value="strip_light"/>
 	 <list_entry value="subsidiary"/>
-	 <list_entry value="spotlight"/>
-	 <list_entry value="moire"/>
 	 <list_entry value="emergency"/>
 	 <list_entry value="bearing"/>
 	 <list_entry value="vertical"/>
-	 <list_entry value="air_obstruction"/>
 	 <list_entry value="aero"/>
 	</combo>
 	<combo key="seamark:light:visibility" text="Visibility">
@@ -3681,6 +3675,14 @@
     <key key="seamark:type" value="navigation_line"/>
 	<key key="seamark:navigation_line:category" value="leading"/>
 	<text key="seamark:navigation_line:orientation" text="Orientation"/>
+   </item>
+   <item name="Floodlit (P63)" icon="/Users/skippern/Documents/OpenStreetMap/INT-1/SVG/P/P63.svg" type="node,way,closedway">
+    <label text="P63: Floodlit"/>
+	<key key="seamark:light:category" value="floodlight"/>
+   </item>
+   <item name="Strip light (P64)" icon="/Users/skippern/Documents/OpenStreetMap/INT-1/SVG/P/P64.svg" type="node,way">
+    <label text="P64: Strip light"/>
+	<key key="seamark:light:category" value="striplight"/>
    </item>
   </group>
   <group name="Q: Buoys, Beacons" icon="/Users/skippern/Documents/OpenStreetMap/INT-1/SVG/Q/Q23/H_yellow_black_yellow.svg">
@@ -5527,16 +5529,54 @@
 	  <list_entry value="cable"/>
 	  <list_entry value="outfall"/>
 	  <list_entry value="odas"/>
-	  <list_entry value="recreational"/>
+	  <list_entry value="recreational_zone"/>
 	  <list_entry value="mooring"/>
 	  <list_entry value="lanby"/>
 	  <list_entry value="leading"/>
 	  <list_entry value="notice"/>
 	  <list_entry value="tss"/>
-	  <list_entry value="foul"/>
+	  <list_entry value="foul_ground"/>
 	  <list_entry value="diving"/>
-	  <list_entry value="ferry"/>
+	  <list_entry value="ferry_crossing"/>
 	  <list_entry value="anchorage"/>
+	  <list_entry value="firing_danger_area"/>
+	  <list_entry value="target"/>
+	  <list_entry value="marker_ship"/>
+	  <list_entry value="degausing_range"/>
+	  <list_entry value="barge"/>
+	  <list_entry value="spoil_ground"/>
+	  <list_entry value="recording"/>
+	  <list_entry value="seaplane_anchorage"/>
+	  <list_entry value="private"/>
+	  <list_entry value="measured_distance"/>
+	  <list_entry value="no_anchoring"/>
+	  <list_entry value="no_berthing"/>
+	  <list_entry value="no_overtaking"/>
+	  <list_entry value="no_two-way_traffic"/>
+	  <list_entry value="reduce_wake"/>
+	  <list_entry value="speed_limit"/>
+	  <list_entry value="stop"/>
+	  <list_entry value="sound_ship_siren"/>
+	  <list_entry value="restricted vertical clearance"/>
+	  <list_entry value="maximum_vessel_draught"/>
+	  <list_entry value="restricted horizontal clearance"/>
+	  <list_entry value="strong_current"/>
+	  <list_entry value="berthing"/>
+	  <list_entry value="overhead_power_cable"/>
+	  <list_entry value="channel_edge_gradient"/>
+	  <list_entry value="telephone"/>
+	  <list_entry value="pipeline"/>
+	  <list_entry value="clearing"/>
+	  <list_entry value="control"/>
+	  <list_entry value="refuge_beacon"/>
+	  <list_entry value="heliport"/>
+	  <list_entry value="gps"/>
+	  <list_entry value="seaplane_landing"/>
+	  <list_entry value="no_entry"/>
+	  <list_entry value="work_in_progress"/>
+	  <list_entry value="wellhead"/>
+	  <list_entry value="marine_farm"/>
+	  <list_entry value="artificial_reef"/>
 	 </combo>
 	 <combo key="seamark:topmark:colour" text="Topmark">
 	  <list_entry value="yellow" icon="/Users/skippern/Documents/OpenStreetMap/INT-1/SVG/Q/Q9/cylinder_yellow.svg" icon_size="16"/>
@@ -5581,16 +5621,55 @@
 	  <list_entry value="yachting"/>
 	  <list_entry value="cable"/>
 	  <list_entry value="outfall"/>
-	  <list_entry value="recreational"/>
+	  <list_entry value="odas"/>
+	  <list_entry value="recreational_zone"/>
 	  <list_entry value="mooring"/>
 	  <list_entry value="lanby"/>
 	  <list_entry value="leading"/>
 	  <list_entry value="notice"/>
 	  <list_entry value="tss"/>
-	  <list_entry value="foul"/>
+	  <list_entry value="foul_ground"/>
 	  <list_entry value="diving"/>
-	  <list_entry value="ferry"/>
+	  <list_entry value="ferry_crossing"/>
 	  <list_entry value="anchorage"/>
+	  <list_entry value="firing_danger_area"/>
+	  <list_entry value="target"/>
+	  <list_entry value="marker_ship"/>
+	  <list_entry value="degausing_range"/>
+	  <list_entry value="barge"/>
+	  <list_entry value="spoil_ground"/>
+	  <list_entry value="recording"/>
+	  <list_entry value="seaplane_anchorage"/>
+	  <list_entry value="private"/>
+	  <list_entry value="measured_distance"/>
+	  <list_entry value="no_anchoring"/>
+	  <list_entry value="no_berthing"/>
+	  <list_entry value="no_overtaking"/>
+	  <list_entry value="no_two-way_traffic"/>
+	  <list_entry value="reduce_wake"/>
+	  <list_entry value="speed_limit"/>
+	  <list_entry value="stop"/>
+	  <list_entry value="sound_ship_siren"/>
+	  <list_entry value="restricted vertical clearance"/>
+	  <list_entry value="maximum_vessel_draught"/>
+	  <list_entry value="restricted horizontal clearance"/>
+	  <list_entry value="strong_current"/>
+	  <list_entry value="berthing"/>
+	  <list_entry value="overhead_power_cable"/>
+	  <list_entry value="channel_edge_gradient"/>
+	  <list_entry value="telephone"/>
+	  <list_entry value="pipeline"/>
+	  <list_entry value="clearing"/>
+	  <list_entry value="control"/>
+	  <list_entry value="refuge_beacon"/>
+	  <list_entry value="heliport"/>
+	  <list_entry value="gps"/>
+	  <list_entry value="seaplane_landing"/>
+	  <list_entry value="no_entry"/>
+	  <list_entry value="work_in_progress"/>
+	  <list_entry value="wellhead"/>
+	  <list_entry value="marine_farm"/>
+	  <list_entry value="artificial_reef"/>
 	 </combo>
 	 <check key="seamark:beacon_cardinal:shape" text="Tower Beacon" value_on="tower" value_off="" default="off"/>
 	 <combo key="seamark:topmark:colour" text="Topmark">
