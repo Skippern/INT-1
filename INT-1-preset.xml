@@ -3680,6 +3680,19 @@
 	<key key="seamark:navigation_line:category" value="leading"/>
 	<text key="seamark:navigation_line:orientation" text="Orientation"/>
    </item>
+   <item name="Moiré light (P31)" icon="/Users/skippern/Documents/OpenStreetMap/INT-1/SVG/P/P31.svg" type="node">
+    <label text="P31: Moiré light"/>
+<!--	<key key="seamark:type" value="light"/> -->
+	<key key="seamark:light:category" value="moire"/>
+   </item>
+   <item name="Air obstruction lights (P61)" icon="/Users/skippern/Documents/OpenStreetMap/INT-1/SVG/P/P61.svg" type="node">
+    <label text="P61: Air obstruction lights"/>
+	<key key="seamark:light:category" value="air_obstruction"/>
+	<combo key="seamark:light:visibility" default="" delete_if_empty="true">
+	 <list_entry value="intensified"/>
+	 <list_entry value="unintensified"/>
+	</combo>
+   </item>
    <item name="Floodlit (P63)" icon="/Users/skippern/Documents/OpenStreetMap/INT-1/SVG/P/P63.svg" type="node,way,closedway">
     <label text="P63: Floodlit"/>
 	<key key="seamark:light:category" value="floodlight"/>
