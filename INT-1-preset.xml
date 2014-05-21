@@ -62,7 +62,7 @@
 	 <list_entry value="not_installed"/>
 	</combo>
 	<text key="seamark:distance_mark:distance" text="Distance (without units for OpenSeaMap"/>
-	<combo key="seamark:distance_mark:height_units" text="Units for OpenSeaMap">
+	<combo key="seamark:distance_mark:units" text="Units for OpenSeaMap">
 	 <list_entry value="kilometer"/>
 	 <list_entry value="hectometer"/>
 	 <list_entry value="nautical_miles"/>
@@ -3338,7 +3338,7 @@
 	<label text="N10-N12: Anchorage"/>
 	<key key="seamark" value="anchorage"/>
 	<key key="seamark:type" value="anchorage"/>
-	<text key="seamark:anchorage:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
 	<combo key="seamark:anchorage:category" text="Category">
 	 <list_entry value="small_craft"/>
 	 <list_entry value="small_craft_mooring"/>
@@ -3354,6 +3354,7 @@
 	 <list_entry value="non_pushing"/>
 	 <list_entry value="dry_cargo"/>
 	 <list_entry value="raft"/>
+	 <list_entry value="seaplane"/>
 	</combo>
     <text key="maxlength" text="Max. length (m)"/>
     <text key="seamark:anchorage:ship:maxdraft" text="Max. draft (m)"/>
@@ -3364,8 +3365,9 @@
 	<label text="N10-N12: Anchorage"/>
 	<key key="seamark" value="anchorage"/>
 	<key key="seamark:type" value="anchor_berth"/>
-	<text key="seamark:anchorage:name" text="Name"/>
-	<combo key="seamark:anchorage:category" text="Category">
+	<text key="seamark:name" text="Name"/>
+	<text key="seamark:anchor_berth:radius" text="Radius"/>
+	<combo key="seamark:anchor_berth:category" text="Category">
 	 <list_entry value="small_craft"/>
 	 <list_entry value="small_craft_mooring"/>
 	 <list_entry value="unrestricted"/>
@@ -3380,11 +3382,12 @@
 	 <list_entry value="non_pushing"/>
 	 <list_entry value="dry_cargo"/>
 	 <list_entry value="raft"/>
+	 <list_entry value="seaplane"/>
 	</combo>
     <text key="maxlength" text="Max. length (m)"/>
-    <text key="seamark:anchorage:ship:maxdraft" text="Max. draft (m)"/>
+    <text key="seamark:anchor_berth:ship:maxdraft" text="Max. draft (m)"/>
     <text key="maxspeed" text="Max. speed (kt)"/>
-	<text key="seamark:anchorage:note" text="Note"/>
+	<text key="seamark:anchor_berth:note" text="Note"/>
    </item>
    <item name="Seaplane operation area (N13)" icon="/Users/skippern/Documents/OpenStreetMap/INT-1/SVG/N/N13.svg" type="node,closedway">
     <label text="N13: Seaplane operation area"/>
@@ -3609,6 +3612,7 @@
 	<combo key="seamark:light:character" text="Light Character" required="true" match="key!">
      <list_entry value="F" short_description="Fixed"/>
 	 <list_entry value="Fl" short_description="Flashing"/>
+	 <list_entry value="FFl" short_description="Fixed and flashing"/>
 	 <list_entry value="Lfl" short_description="Longflash"/>
 	 <list_entry value="Q" short_description="Quick"/>
 	 <list_entry value="VQ" short_description="Very Quick"/>
@@ -5739,7 +5743,10 @@
 	 <list_entry value="reed"/>
 	 <list_entry value="tyfon"/>
 	</combo>
-	<text key="seamark:fog_signal:character" text="Character"/>
+	<combo key="seamark:fog_signal:character" text="Character">
+	 <list_entry value="Mo" short_description="Morse"/>
+	 <list_entry value="" short_description="Other"/>
+	</combo>
     <text key="seamark:fog_signal:group" text="Group"/>
     <text key="seamark:fog_signal:period" text="Period"/>
 	<text key="seamark:fog_signal:sequence" text="Sequence"/>
