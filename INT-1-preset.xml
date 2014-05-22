@@ -98,7 +98,7 @@
    </item>
   </group>
   <group name="C: Natural Features" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C31.1.s.svg">
-   <item name="Coastline (C1-C2)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C1.svg" type="way,closedway">
+   <item name="Coastline (C1-C2)" icon="presets/empty.png" type="way,closedway">
     <label text="C1-C2: Coastline"/>
     <key key="natural" value="coastline"/>
 	<text key="name" text="Name"/>
@@ -108,14 +108,14 @@
 	 <list_entry value="inadequate" display_value="Inadequate or Inaccurate" short_description="Inadequate or Inaccurate data or unreliable source" />
 	</combo>
    </item>
-   <item name="Cliffy Coast (C3)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C3.svg" type="way">
+   <item name="Cliffy Coast (C3)" icon="presets/empty.png" type="way">
     <label text="C3: Cliffy Coast"/>
 	<key key="natural" value="cliff"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:natural=cliff"/>
 	<text key="name" text="Name"/>
 	<label text="Left side of way is top of Cliff, right side bottom."/>
    </item>
-   <item name="Beachy coastline (C6-C7)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C6.svg" type="way,closedway">
+   <item name="Beachy coastline (C6-C7)" icon="presets/empty.png" type="way,closedway">
     <label text="C6-C7: Beachy Coast"/>
     <key key="natural" value="beach"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:natural=beach"/>
@@ -143,7 +143,7 @@
 	</optional>
 	<check key="tidal" text="Tidal" default="off"/>
    </item>
-   <item name="Sand Dunes (C8)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C8.svg" type="closedway,relation">
+   <item name="Sand Dunes (C8)" icon="presets/empty.png" type="closedway,relation">
     <label text="C8: Sand Dunes"/>
     <key key="natural" value="dune"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:natural=dune"/>
@@ -159,13 +159,13 @@
 	 <list_entry value="gray"/>
 	</combo>
    </item>
-   <item name="Spot Heights, Peaks (C10-C11)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C11.svg" type="node">
+   <item name="Spot Heights, Peaks (C10-C11)" icon="presets/empty.png" type="node">
     <label text="C10: Heights (Peaks, Spot Heights)"/>
 	<key key="natural" value="peak"/>
 	<text key="ele" text="Elevation (height over sea level)"/>
 	<text key="name" text="Name"/>
    </item>
-   <item name="Rivers (C20-C21)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C20.svg" type="way">
+   <item name="Rivers (C20-C21)" icon="presets/empty.png" type="way">
     <label text="C20-C21: Rivers"/>
     <key key="waterway" value="river"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=river"/>
@@ -176,7 +176,7 @@
 	 <check key="seasonal" text="Seasonal" default="off"/>
 	</optional>
    </item>
-   <item name="Streams (C20-C21)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C20.svg" type="way">
+   <item name="Streams (C20-C21)" icon="presets/empty.png" type="way">
     <label text="C20-C21: Streams"/>
     <key key="waterway" value="stream"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=streams"/>
@@ -187,7 +187,7 @@
 	 <check key="seasonal" text="Seasonal" default="off"/>
 	</optional>
    </item>
-   <item name="Large Rivers (C20)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C22.svg" type="way,closedway,relation">
+   <item name="Large Rivers (C20)" icon="presets/empty.png" type="way,closedway,relation">
     <label text="C20: Large River"/>
     <key key="waterway" value="riverbank"/>
 	<key key="water" value="river"/>
@@ -195,7 +195,7 @@
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=riverbank"/>
     <text key="name" text="Name"/>
    </item>
-   <item name="Waterfalls (C22)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C22.svg" type="node">
+   <item name="Waterfalls (C22)" icon="presets/empty.png" type="node">
     <label text="C22: Waterfall"/>
     <key key="waterway" value="waterfall"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=waterfall"/>
@@ -203,7 +203,7 @@
     <text key="height" text="Height of Fall"/>
     <text key="width" text="Width"/>
    </item>
-   <item name="Rapid (C22)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C22.svg" type="node,way">
+   <item name="Rapid (C22)" icon="presets/empty.png" type="node,way">
     <label text="C22: Rapids"/>
 	<link href="http://wiki.openstreetmap.org/wiki/WikiProject_Whitewater_Maps"/>
     <text key="whitewater:rapid_name" text="Rapid Name"/>
@@ -214,13 +214,13 @@
 	<text key="whitewater:grade" text="River Grade (whitewater)"/>
 	<text key="whitewater:description" text="Description (whitewater)"/>
    </item>
-   <item name="Weir (C22)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C22.svg" type="node">
+   <item name="Weir (C22)" icon="presets/empty.png" type="node">
     <label text="C22: Weir"/>
     <key key="waterway" value="weir"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=weir"/>
     <text key="name" text="Name"/>
    </item>
-   <item name="Lakes (C23)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C23.svg" type="closedway,relation">
+   <item name="Lakes (C23)" icon="presets/empty.png" type="closedway,relation">
     <label text="C23: Lakes"/>
     <key key="natural" value="water"/>
 	<key key="water" value="lake"/>
@@ -256,7 +256,7 @@
 	<combo key="operator" text="Operator" readonly="false">
 	</combo>
    </item>
-   <item name="Glacier (C25)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C25.svg" type="way,closedway,relation">
+   <item name="Glacier (C25)" icon="presets/empty.png" type="way,closedway,relation">
     <label text="C25: Glacier"/>
     <key key="natural" value="glacier"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:natural=glacier"/>
@@ -288,7 +288,7 @@
 	 <text key="glacier:status" text="Status (NSIDC)"/>
 	</optional>
    </item>
-   <item name="Lava flow (C26)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C26.svg" type="way,closedway">
+   <item name="Lava flow (C26)" icon="presets/empty.png" type="way,closedway">
      <label text="C26: Lava flow"/>
 	 <key key="natural" value="lava"/>
 	 <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=lava"/>
@@ -354,7 +354,7 @@
 	</combo>
     <text key="name" text="Name"/>
    </item>
-   <item name="Mangroves (C32)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C32.svg" type="closedway,relation">
+   <item name="Mangroves (C32)" icon="presets/empty.png" type="closedway,relation">
     <label text="C32: Mangroves"/>
     <key key="natural" value="wetland"/>
     <key key="wetland" value="mangrove"/>
@@ -363,7 +363,7 @@
     <check key="tidal" text="Tidal" default="off"/>
     <check key="managed" text="Managed" default="off"/>
    </item>
-   <item name="Marsh, Swamp, Salt marsh (C33)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C33.svg" type="closedway,relation">
+   <item name="Marsh, Swamp, Salt marsh (C33)" icon="presets/empty.png" type="closedway,relation">
     <label text="C33: Marsh, Swamp, Salt Marsh"/>
     <key key="natural" value="wetland"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:natural=wetland"/>
@@ -378,7 +378,7 @@
 	<check key="seasonal" text="Seasonal" default="off"/>
     <check key="managed" text="Managed" default="off"/>
    </item>
-   <item name="Park, Garden (Ca Norway, Ck France)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/Ca_no.svg" type="node,closedway,relation">
+   <item name="Park, Garden (Ca Norway, Ck France)" icon="presets/empty.png" type="node,closedway,relation">
 	<key key="leisure" value="garden"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=garden"/>
 	<text key="name" text="Name"/>
@@ -386,14 +386,14 @@
 	 <list_entry value="yes"/>
 	</combo>
    </item>
-   <item name="Spring (Cb Brazil)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/Cb_br.svg" type="node,closedway,relation">
+   <item name="Spring (Cb Brazil)" icon="presets/empty.png" type="node,closedway,relation">
 	<label text="Cb: Spring"/>
 	<key key="natural" value="spring"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:natural=spring"/>
 	<text key="name" text="Text"/>
 	<check key="drinkable" text="Drinkable" default="off"/>
    </item>
-   <item name="Grassland (Cc Brazil, Cd France)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/Cc_br.svg" type="closedway,relation">
+   <item name="Grassland (Cc Brazil, Cd France)" icon="presets/empty.png" type="closedway,relation">
 	<label text="Cc: Grassland"/>
 	<key key="natural" value="grassland"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:natural=grassland"/>
@@ -420,7 +420,7 @@
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:natural=scrub"/>
 	<text key="name" text="Name"/>
    </item>
-   <item name="Cultivated fields (Cj France) Farmland" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/Cj_fr.svg" type="closedway,relation">
+   <item name="Cultivated fields (Cj France) Farmland" icon="presets/empty.png" type="closedway,relation">
     <label text="Cj: Cultivated fields (Farmland)"/>
 	<key key="landuse" value="farm"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=farm"/>
@@ -452,7 +452,7 @@
 	 <list_entry value="wall"/>
 	</combo>
    </item>
-   <item name="Cultivated fields (Cj France) Orchard" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/Cj_fr.svg" type="closedway,relation">
+   <item name="Cultivated fields (Cj France) Orchard" icon="presets/empty.png" type="closedway,relation">
     <label text="Cj: Cultivated fields (Orchard)"/>
 	<key key="landuse" value="orchard"/>
 	<text key="name" text="Name"/>
@@ -534,7 +534,7 @@
 	 <list_entry value="wall"/>
 	</combo>
    </item>
-   <item name="Cultivated fields (Cj France) Meadow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/Cf_fr.svg" type="closedway,relation">
+   <item name="Cultivated fields (Cj France) Meadow" icon="presets/empty.png" type="closedway,relation">
     <label text="Cj: Cultivated fields (Meadow)"/>
 	<key key="landuse" value="meadow"/>
 	<text key="name" text="Name"/>
@@ -546,7 +546,7 @@
    </item>
   </group>
   <group name="D: Cultural Features" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/Db_uk.svg">
-   <item name="Places (D1, D3, D4)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D3.svg" type="node,closedway,relation">
+   <item name="Places (D1, D3, D4)" icon="presets/empty.png" type="node,closedway,relation">
 	<label text="D1: Places"/>
 	<combo key="place" text="Place" use_last_as_default="force" required="true">
 	 <list_entry value="city"/>
@@ -576,7 +576,7 @@
 	 <list_entry value="BR" display_value="Brazil"/>
 	</combo>
    </item>
-   <item name="Scattered Buildings (D2, D5, D6)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D5.svg" type="closedway,relation">
+   <item name="Scattered Buildings (D2, D5, D6)" icon="presets/empty.png" type="closedway,relation">
 	<label text="D2: Scattered Buildings"/>
 	<key key="seamark:type" value="building"/>
 	<combo key="building" text="Building" default="yes" required="true">
@@ -706,7 +706,7 @@
 	 </combo>
 	</optional>
    </item>
-   <item name="Named streets and roads (D7)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D7.svg" type="way">
+   <item name="Named streets and roads (D7)" icon="presets/empty.png" type="way">
     <label text="D7: Named Streets and Roads"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:highway"/>
 	<combo key="highway" text="Road type" required="true">
@@ -1019,7 +1019,7 @@
 	 <list_entry value="yard"/>
 	</combo>
    </item>
-   <item name="Railway Station (D13)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D13.svg" type="node">
+   <item name="Railway Station (D13)" icon="presets/empty.png" type="node">
     <label text="D13: Railway Station"/>
 	<key key="public_transport" value="station"/>
 	<key key="seamark:type" value="building"/>
@@ -1038,7 +1038,7 @@
 	<combo key="network" text="Network" readonly="false">
 	</combo>
    </item>
-   <item name="Cutting (D14)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D14.svg" type="way,relation">
+   <item name="Cutting (D14)" icon="presets/empty.png" type="way,relation">
     <label text="D14: Cutting"/>
     <combo key="cutting" text="Cutting" default="yes">
 	 <list_entry value="yes"/>
@@ -1047,12 +1047,12 @@
 	</combo>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:cutting"/>
    </item>
-   <item name="Embankment (D15)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D15.svg" type="way,relation">
+   <item name="Embankment (D15)" icon="presets/empty.png" type="way,relation">
     <label text="D15: Embankment"/>
     <key key="embankment" value="yes"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:embankment"/>
    </item>
-   <item name="Tunnel (D16)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D16.svg" type="way,relation">
+   <item name="Tunnel (D16)" icon="presets/empty.png" type="way,relation">
     <label text="D16: Tunnel"/>
     <key key="tunnel" value="yes"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:tunnel"/>
@@ -1082,7 +1082,7 @@
 	<combo key="access" text="Access" readonly="false">
 	</combo>
    </item>
-   <item name="Airfields (D17)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D17.svg" type="node,closedway">
+   <item name="Airfields (D17)" icon="presets/empty.png" type="node,closedway">
     <label text="D17: Airfields"/>
 	<key key="aeroway" value="aerodrome"/>
 	<text key="name" text="Name"/>
@@ -1095,7 +1095,7 @@
 	<check key="landuse" text="On Military ground" value_on="military" value_off="" delete_if_empty="true"/>
 	<check key="type" text="Military use only" value_on="military" value_off="" delete_if_empty="true"/>
    </item>
-   <item name="Vertical Clearance (D20)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D20.svg" type="node,way,closedway,relation">
+   <item name="Vertical Clearance (D20)" icon="presets/empty.png" type="node,way,closedway,relation">
     <label text="D20: Vertical Clearance"/>
     <text key="maxheight:marine" text="Max free Sailing Height under object" match="key"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:maxheight:marine"/>
@@ -1104,11 +1104,11 @@
 	<text key="seamark:bridge:clearance_height_closed" text="Bridge Clearance Closed" match="key"/>
 	<text key="seamark:cable_overhead:vertical:clearance_safe" text="Safe Clearance of Cable" match="key"/>
    </item>
-   <item name="Horizontal Clearance (D21)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D21.svg" type="node,way,closedway,relation">
+   <item name="Horizontal Clearance (D21)" icon="presets/empty.png" type="node,way,closedway,relation">
     <label text="D21: Horizontal Clearance"/>
 	<text key="seamark:bridge:clearance_width" text="Horizontal Clearance" match="key"/>
    </item>
-   <item name="Bridge (D22-D24) (On Bridge)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D22.svg" type="way,relation">
+   <item name="Bridge (D22-D24) (On Bridge)" icon="presets/empty.png" type="way,relation">
     <label text="D22, D23.x, D24: Bridge, to be tagged on the bridge itself"/>
 	<key key="seamark:type" value="bridge"/>
     <combo key="bridge" text="Bridge" required="true" match="key">
@@ -1147,7 +1147,7 @@
 	<text key="seamark:bridge:clearance_width" text="Horizontal Clearance"/>
 	<text key="seamark:bridge:clearance_length" text="Longitudal clearance"/>
    </item>
-   <item name="Bridge (D22-D24) (Under Bridge)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D22.svg" type="node">
+   <item name="Bridge (D22-D24) (Under Bridge)" icon="presets/empty.png" type="node">
     <label text="D22, D23.x, D24: Bridge"/>
 	<key key="seamark:type" value="bridge"/>
 	<combo key="seamark:bridge:category" text="Bridge Type" match="key">
@@ -1175,7 +1175,7 @@
 	<text key="seamark:bridge:clearance_width" text="Horizontal Clearance"/>
 	<text key="seamark:bridge:clearance_length" text="Longitudal clearance"/>
    </item>
-   <item name="Overhead transporter or Telepheric (D25)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D25.svg" type="way">
+   <item name="Overhead transporter or Telepheric (D25)" icon="presets/empty.png" type="way">
     <label text="D25: Overhead transporter or Telepheric"/>
 	<combo key="aerialway" text="Type" required="true" match="key">
 	 <list_entry value="gondola"/>
@@ -1232,7 +1232,7 @@
 	<text key="height" text="Height"/>
 	<text key="colour" text="Colour"/>
    </item>
-   <item name="Telephone Line (D27)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D27.svg" type="way">
+   <item name="Telephone Line (D27)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D26.svg" type="way">
     <label text="D27: Thelephone Line"/>
 	<key key="seamark:type" value="cable_overhead"/>
 	<key key="seamark:cable_overhead:category" value="telephone"/>
@@ -1244,7 +1244,7 @@
 	<text key="seamark:cable_overhead:vertical:clearance_safe" text="Safe Clearance of Cable"/>
 	<label text="Mark waterway under with appropriate Vertical Clearance (D20)"/>
    </item>
-   <item name="Pipeline (Overhead) (D28)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D28.svg" type="way">
+   <item name="Pipeline (Overhead) (D28)" icon="presets/empty.png" type="way">
     <label text="D28: Pipeline (Overhead)"/>
 	<key key="man_made" value="pipeline"/>
 	<key key="seamark:type" value="pipeline_overhead"/>
@@ -1270,7 +1270,7 @@
 	<text key="seamark:pipeline_overhead:vertical:clearance_safe" text="Safe Clearance of Cable"/>
 	<label text="Mark waterway under with appropriate Vertical Clearance (D20)"/>
    </item>
-   <item name="Pipeline (On Land) (D29)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D28.svg" type="way">
+   <item name="Pipeline (On Land) (D29)" icon="presets/empty.png" type="way">
     <label text="D29: Pipeline (On Land)"/>
 	<key key="man_made" value="pipeline"/>
 	<text key="name" text="Name"/>
@@ -1304,13 +1304,13 @@
     <text key="iata" text="IATA (3 letter) code"/>
     <text key="icao" text="ICAO (4 letter) code"/>
    </item>
-   <item name="Telegraph Office (Dc Norway)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/Dc_no.svg" type="node,closedway">
+   <item name="Telegraph Office (Dc Norway)" icon="presets/empty.png" type="node,closedway">
     <label text="Dc: Telegraph Office"/>
 	<key key="signal_station" value="telegraph"/>
    </item>
   </group>
   <group name="E: Landmarks" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.svg">
-   <item name="Landmarks in General" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E.svg" type="node,closedway">
+   <item name="Landmarks in General" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E23_colour.svg" type="node,closedway">
     <label text="Landmarks in General, use appropriate categories to specify"/>
 	<key key="seamark" value="landmark" match="none"/>
 	<key key="seamark:type" value="landmark"/>
@@ -1936,7 +1936,7 @@
     <combo key="contents" text="Contents">
 	</combo>
    </item>
-   <item name="Fortification (E34)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E34.svg" type="node,closedway">
+   <item name="Fortification (E34)" icon="presets/empty.png" type="node,closedway">
     <label text="E34: Fortification"/>
 	<key key="historic" value="castle"/>
 	<text key="name" text="Name"/>
@@ -1954,7 +1954,7 @@
 	</combo>
 	<check key="ruins" text="Ruined" default="off"/>
    </item>
-   <item name="Quarry (E35-E36)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E35.svg" type="node,closedway">
+   <item name="Quarry (E35-E36)" icon="presets/empty.png" type="node,closedway">
     <label text="E35-36: Quarry (Surface Mine)"/>
 	<key key="landuse" value="quarry"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=quarry"/>
@@ -2048,7 +2048,7 @@
 	 <list_entry value="zeolite"/>
 	</combo>
    </item>
-   <item name="Mineshaft (E35-E36)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E35.svg" type="node,closedway">
+   <item name="Mineshaft (E35-E36)" icon="presets/empty.png" type="node,closedway">
     <label text="E35-36: Mineshaft (Vertical)"/>
 	<key key="man_made" value="mineshaft"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=mineshaft"/>
@@ -2150,7 +2150,7 @@
 	<check key="headframe" text="Headframe" default="off"/>
 	<check key="disused" text="Disused" default="off"/>
    </item>
-   <item name="Adit (E35-E36)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E35.svg" type="node,closedway">
+   <item name="Adit (E35-E36)" icon="presets/empty.png" type="node,closedway">
     <label text="E35-36: Adit (Horizontal Mine Access)"/>
 	<key key="man_made" value="adit"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=adit"/>
@@ -2248,7 +2248,7 @@
 	<check key="disused" text="Disused" default="off"/>
 	<check key="collapsed" text="Collapsed" default="off"/>
    </item>
-   <item name="Stadium (Eb BR)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/Eb_br.svg" type="node,closedway">
+   <item name="Stadium (Eb BR)" icon="presets/empty.png" type="node,closedway">
     <label text="Eb: Stadium"/>
 	<key key="leisure" value="stadium"/>
 	<key key="seamark:type" value="building"/>
@@ -2361,20 +2361,20 @@
 	<text key="access:time" text="Access opening times"/>
    </item>
    <group name="Harbour Infrastructure" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg">
-    <item name="Dyke (F1)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F1.svg" type="way,closedway">
+    <item name="Dyke (F1)" icon="presets/empty.png" type="way,closedway">
      <label text="F1: Dyke"/>
      <key key="man_made" value="dyke"/>
 	 <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=dyke"/>
      <text key="name" text="Name"/>
     </item>
-    <item name="Seawall (F2)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F2.svg" type="way,closedway">
+    <item name="Seawall (F2)" icon="presets/empty.png" type="way,closedway">
      <label text="F2: Seawall"/>
      <key key="barrier" value="wall"/>
 	 <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=wall"/>
      <key key="wall" value="seawall"/>
      <text key="name" text="Name"/>
     </item>
-    <item name="Causeway (F3)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F3.svg" type="way">
+    <item name="Causeway (F3)" icon="presets/empty.png" type="way">
      <label text="F3: Causeway"/>
      <key key="causeway" value="yes"/>
      <key key="embankment" value="yes"/>
@@ -2398,14 +2398,14 @@
      <text key="name" text="Name"/>
      <text key="ref" text="Reference"/>
     </item>
-    <item name="Breakwater (F4)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F4.svg" type="way,closedway">
+    <item name="Breakwater (F4)" icon="presets/empty.png" type="way,closedway">
      <label text="F4: Breakwater"/>
      <key key="man_made" value="breakwater"/>
 	 <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=breakwater"/>
      <text key="name" text="Name"/>
      <text key="ref" text="Reference"/>
     </item>
-    <item name="Training Wall (F5)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F5.svg" type="way,closedway">
+    <item name="Training Wall (F5)" icon="presets/empty.png" type="way,closedway">
      <label text="F5: Training Wall"/>
      <key key="barrier" value="wall"/>
      <key key="wall" value="training_wall"/>
@@ -2415,7 +2415,7 @@
      <check key="tidal" text="Portion of wall is submerged only on high tide" default="off"/>
      <check key="submerged" text="Portion of wall is submerged on low tide" default="off"/>
     </item>
-    <item name="Groyne (F6)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F6.svg" type="way,closedway">
+    <item name="Groyne (F6)" icon="presets/empty.png" type="way,closedway">
      <label text="F6: Groyne"/>
      <key key="man_made" value="groyne"/>
 	 <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=groyne"/>
@@ -2424,7 +2424,7 @@
      <check key="tidal" text="Portion is submerged only on high tide" default="off"/>
      <check key="submerged" text="Portion is submerged on low tide" default="off"/>
     </item>
-    <item name="Drydocks and Floating docks (F25-F26)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F25.svg" type="node,closedway">
+    <item name="Drydocks and Floating docks (F25-F26)" icon="presets/empty.png" type="node,closedway">
      <label text="F25-F26: Docks, drydocks and floating"/>
 	 <key key="waterway" value="dock"/>
 	 <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=dock"/>
@@ -2440,14 +2440,14 @@
 	 <text key="name" text="Name"/>
 	 <text key="ref" text="Reference"/>
     </item>
-    <item name="Floating Oil Barrier (F29.*)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F29.svg" type="node,way,closedway">
+    <item name="Floating Oil Barrier (F29.*)" icon="presets/empty.png" type="node,way,closedway">
      <label text="F29: Floating Oil Barrier"/>
  	 <key key="emergency" value="oilbarrier"/>
 	 <key key="seamark:type" value="obstruction"/>
 	 <key key="seamark:obstruction:category" value="boom"/>
 	 <text key="ref" text="Reference"/>
     </item>
-    <item name="Hulk (F34)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F34.svg" type="closedway">
+    <item name="Hulk (F34)" icon="presets/empty.png" type="closedway">
      <label text="F34: Hulk"/>
 	 <key key="seamark:type" value="hulk"/>
 	 <text key="name" text="Name"/>
@@ -2460,7 +2460,7 @@
 	  <list_entry value="storage"/>
 	 </combo>
     </item>
-    <item name="Canal (F40)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F40.svg" type="way,closedway">
+    <item name="Canal (F40)" icon="presets/empty.png" type="way,closedway">
      <label text="F40: Canal"/>
 	 <key key="waterway" value="canal"/>
 	 <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=canal"/>
@@ -2469,7 +2469,7 @@
 	 <check key="cutting" text="Cutting" default="off"/>
 	 <text key="width" text="Width"/>
     </item>
-    <item name="Lock Gate, Caisson (F41-F42)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F41.svg" type="node,way,closedway">
+    <item name="Lock Gate, Caisson (F41-F42)" icon="presets/empty.png" type="node,way,closedway">
      <label text="F41-F42: Lock Gate, Caisson"/>
 	 <key key="waterway" value="lock_gate"/>
 	 <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=lock_gate"/>
@@ -2477,7 +2477,7 @@
     </item>
    </group>
    <group name="Harbour Vessel Facilities" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg">
-    <item name="Quay, Wharf, Pier, Jetty (F13-F15)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F13.svg" type="way,closedway">
+    <item name="Quay, Wharf, Pier, Jetty (F13-F15)" icon="presets/empty.png" type="way,closedway">
      <label text="F13-F15: Quay, Wharf, Pier, Jetty"/>
 	 <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=pier"/>
 	 <key key="man_made" value="pier"/>
@@ -2498,18 +2498,18 @@
 	 <text key="seamark:basin:name" text="Name"/>
 	 <check key="tidal" text="Tidal" default="off"/>
     </item>
-    <item name="Pontoon (F16)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F16.svg" type="node,way,closedway">
+    <item name="Pontoon (F16)" icon="presets/empty.png" type="node,way,closedway">
      <label text="F16: Pontoon"/>
 	 <key key="man_made" value="pontoon"/>
 	 <key key="waterway" value="pontoon"/>
 	 <text key="name" text="Name"/>
     </item>
-    <item name="Landing for boats (F17)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F17.svg" type="node">
+    <item name="Landing for boats (F17)" icon="presets/empty.png" type="node">
      <label text="F17: Landing for boats"/>
 	 <key key="amenity" value="boat_ramp"/>
 	 <key key="pier" value="landing_stage"/>
     </item>
-    <item name="Number or letter of Berth (ref) (F19)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F19.svg" type="node,way,closedway">
+    <item name="Number or letter of Berth (ref) (F19)" icon="presets/empty.png" type="node,way,closedway">
      <label text="F19: Number or letter of Berth (reference)"/>
 	 <key key="seamark:type" value="berth"/>
      <text key="seamark:berth:name" text="Name"/>
@@ -2575,14 +2575,14 @@
 	  <list_entry value="grey"/>
 	 </combo>
     </item>
-    <item name="Slipway, Patent Slip or Ramp (F23)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F23.svg" type="node,way">
+    <item name="Slipway, Patent Slip or Ramp (F23)" icon="presets/empty.png" type="node,way">
      <label text="F23: Slipway, Patent Slip or Ramp"/>
 	 <key key="harbour" value="slipway"/>
 	 <key key="leisure" value="slipway"/>
 	 <text key="name" text="Name"/>
 	 <text key="ref" text="Reference"/>
     </item>
-    <item name="Ro-Ro Terminal (F50)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F50.svg" type="node,closedway">
+    <item name="Ro-Ro Terminal (F50)" icon="presets/empty.png" type="node,closedway">
      <label text="F50: Ro-Ro Terminal"/>
 	 <key key="amenity" value="roro_terminal"/>
 	 <key key="seamark:type" value="harbour"/>
@@ -2596,13 +2596,13 @@
 	 <key key="seamark:harbour:category" value="passenger"/>
 	 <text key="name" text="Name"/>
     </item>
-    <item name="Bollard (Fa UK)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/Fa_uk.svg" type="node">
+    <item name="Bollard (Fa UK)" icon="presets/empty.png" type="node">
      <label text="Fa: Bollard"/>
 	 <key key="seamark:type" value="mooring"/>
 	 <key key="seamark:mooring:category" value="bollard"/>
 	 <text key="mooring:name" text="Name"/>
     </item>
-    <item name="Mooring Ring (Fb Norway)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/Fb_no.svg" type="node">
+    <item name="Mooring Ring (Fb Norway)" icon="presets/empty.png" type="node">
      <label text="Fb: Mooring Ring"/>
 	 <key key="seamark:type" value="mooring"/>
 	 <key key="mooring" value="ring"/>
@@ -2709,7 +2709,7 @@
     <text key="harbour:MMSI" text="MMSI"/>
     <text key="harbour:phone" text="Phone"/>
    </item>
-   <item name="Steps, landing stairs (F18)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F18.svg" type="node,way,closedway">
+   <item name="Steps, landing stairs (F18)" icon="presets/empty.png" type="node,way,closedway">
     <label text="F18: Steps, landing stairs"/>
 	<key key="highway" value="steps"/>
    </item>
@@ -2720,7 +2720,7 @@
 	<text key="name" text="Name"/>
 	<text key="note" text="Note"/>
    </item>
-   <item name="Works at sea (F31)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F31.svg" type="closedway">
+   <item name="Works at sea (F31)" icon="presets/empty.png" type="closedway">
     <label text="F31: Works at sea"/>
 	<key key="seamark:type" value="shoreline_construction"/>
 	<text key="name" text="Name"/>
@@ -2737,13 +2737,13 @@
 	<text key="note" text="Note"/>
    </item>
    <!-- F43 Flood barrage -->
-   <item name="Dam (F44)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F44.svg" type="node,way,closedway">
+   <item name="Dam (F44)" icon="presets/empty.png" type="node,way,closedway">
     <label text="F44: Dam"/>
 	<key key="waterway" value="dam"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=dam"/>
 	<text key="name" text="Text"/>
    </item>
-   <item name="Transit sheds, warehouses (F51)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F51.svg" type="closedway">
+   <item name="Transit sheds, warehouses (F51)" icon="presets/empty.png" type="closedway">
 	<key key="building" value="warehouse"/>
 	<key key="seamark:type" value="buidling"/>
 	<key key="seamark:building:function" value="transit_shed"/>
@@ -2752,12 +2752,12 @@
 	<text key="name" text="Name"/>
 	<text key="ref" text="Reference"/>
    </item>
-   <item name="Timber Yard (F52)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F52.svg" type="closedway">
+   <item name="Timber Yard (F52)" icon="presets/empty.png" type="closedway">
     <label text="F52: Timber Yard"/>
 	<key key="storage_area" value="timber"/>
 	<key key="landuse" value="utility"/>
    </item>
-   <item name="Crane (F53)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F53.svg" type="node,closedway">
+   <item name="Crane (F53)" icon="presets/empty.png" type="node,closedway">
     <label text="F53: Crane"/>
 	<key key="man_made" value="crane"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=crane"/>
@@ -2779,7 +2779,7 @@
 	<text key="crane:maxlength" text="Max length of cargo (m)"/>
 	<text key="crane:maxwidth" text="Max width of cargo (m)"/>
 	</item>
-   <item name="Culvert (Fa France)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/Fa_fr.svg" type="way">
+   <item name="Culvert (Fa France)" icon="presets/empty.png" type="way">
     <label text="Fa: Culvert"/>
 	<key key="tunnel" value="culvert"/>
 	<combo key="waterway" text="Waterway">
@@ -2790,7 +2790,7 @@
 	 <list_entry value="drain"/>
 	</combo>
    </item>
-   <item name="Ditch (Fa Brazil)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/Fa_br.svg" type="way">
+   <item name="Ditch (Fa Brazil)" icon="presets/empty.png" type="way">
     <label text="Fa: Ditch"/>
 	<key key="waterway" value="ditch"/>
 	<text key="name" text="Name"/>
@@ -2965,7 +2965,7 @@
    </item>
   </group>
   <group name="L: Offshore Installations" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L17.svg">
-   <item name="Offshore Oil and Gas Field (L1)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L1.svg" type="closedway,node">
+   <item name="Offshore Oil and Gas Field (L1)" icon="presets/empty.png" type="closedway,node">
 	<label text="L1: Offshore Oil and Gas Field"/>
 	<key key="waterway" value="offshore_field"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=offshore_field"/>
@@ -3009,7 +3009,7 @@
 	<check key="aeroway" text="Helicopter Landing Deck" value_on="helipad" default="on"/>
     <check key="disused" text="Disused" default="off"/>
    </item>
-   <item name="Safety Zone (L3)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L3.svg" type="closedway">
+   <item name="Safety Zone (L3)" icon="presets/empty.png" type="closedway">
 	<label text="L3: Safety Zone established around this feature"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="safety_zone"/>
@@ -3043,7 +3043,7 @@
 	<text key="seamark:name" text="Name"/>
 	<text key="ref" text="Reference"/>
    </item>
-   <item name="Single Point Mooring (L12)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L12.svg" type="node">
+   <item name="Single Point Mooring (L12)" icon="presets/empty.png" type="node">
 	<label text="L12: Single Point Mooring"/>
 	<key key="mooring" value="spm"/>
 	<key key="seamark:type" value="buoy_installation"/>
@@ -3051,7 +3051,7 @@
 	<link href="http://wiki.openstreetmap.org/wiki/Key:mooring"/>
 	<text key="seamark:name" text="Name"/>
    </item>
-   <item name="Artificial Island(L15)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L15.svg" type="node,closedway">
+   <item name="Artificial Island(L15)" icon="presets/empty.png" type="node,closedway">
     <label text="L15:Artificial Island"/>
 	<key key="seamark:type" value="platform"/>
 	<key key="seamark:platform:category" value="island"/>
@@ -3082,7 +3082,7 @@
     <check key="disused" text="Disused" default="off"/>
 	</item>
    <!-- L18 Mooring ground tackle -->
-   <item name="Production Well (L20, L21.x, L23)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L20.svg" type="node">
+   <item name="Production Well (L20, L21.x, L23)" icon="presets/empty.png" type="node">
 	<label text="L20, L21.x, L23: Production Well"/>
 	<key key="man_made" value="petroleum_well"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=petroleum_well"/>
@@ -3093,7 +3093,7 @@
 	<text key="ele" text="Well Head height over sea surface"/>
    </item>
    <!-- L22 Cleared platform -->
-   <item name="Underwater Turbine (L24)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L24.svg" type="node">
+   <item name="Underwater Turbine (L24)" icon="presets/empty.png" type="node">
     <label text="L24: Underwater Turbine"/>
 	<key key="generator:source" value="tidal"/>
 	<key key="generator:method" value="run-of-the-river"/>
@@ -3158,7 +3158,7 @@
    </item>
   </group>
   <group name="M: Tracks, Routes" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M10.svg">
-   <item name="Leading Line (M1)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M1.svg" type="way,relation">
+   <item name="Leading Line (M1)" icon="presets/empty.png" type="way,relation">
     <label text="M1: Leading Line"/>
 	<key key="seamark:type" value="navigation_line"/>
 	<text key="seamark:navigation_line:orientation" text="Orientation"/>
@@ -3167,7 +3167,7 @@
 	 <list_entry value="clearing"/>
 	</combo>
    </item>
-   <item name="Recommended Track (M3, M4)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M3.svg" type="way">
+   <item name="Recommended Track (M3, M4)" icon="presets/empty.png" type="way">
     <label text="M3: Recommended Track"/>
 	<key key="seamark:type" value="recommended_track"/>
 	<text key="seamark:recommended_track:orientation" text="Orientation"/>
@@ -3175,11 +3175,11 @@
 	 <list_entry value="leading"/>
 	</combo>
    </item>
-   <item name="Deepwater Routes (M5.*)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M5.svg" type="way,closedway">
+   <item name="Deepwater Routes (M5.*)" icon="presets/empty.png" type="way,closedway">
     <label text="M5: Deepwater Routes"/>
 	<key key="seamark:type" value="deepwater_route"/>
    </item>
-   <item name="Max Draught (M6)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M6.svg" type="way,closedway">
+   <item name="Max Draught (M6)" icon="presets/empty.png" type="way,closedway">
     <label text="M6: Max Draught"/>
     <text key="maxdraught" text="Max Draught" match="key"/>
 	<text key="draft" text="Draft" match="key"/>
@@ -3190,15 +3190,15 @@
     <label text="M10: Arrof for directions in TSS"/>
 	<key key="seamark:type" value="separation_lane"/>
    </item>
-   <item name="Separation Line (M12)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M12.svg" type="way,closedway">
+   <item name="Separation Line (M12)" icon="presets/empty.png" type="way,closedway">
     <label text="M12: Separation Line"/>
 	<key key="seamark:type" value="separation_line"/>
    </item>
-   <item name="Separation Zone (M13)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M13.svg" type="closedway">
+   <item name="Separation Zone (M13)" icon="presets/empty.png" type="closedway">
     <label text="M13: Separation Zone"/>
 	<key key="seamark:type" value="separation_zone"/>
    </item>
-   <item name="Limit of Restricted Area (M14)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M14.svg" type="closedway">
+   <item name="Limit of Restricted Area (M14)" icon="presets/empty.png" type="closedway">
     <label text="M14: Limit of Restricted Area"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
@@ -3226,34 +3226,34 @@
 	 <list_entry value="turning_prohibited"/>
 	</combo>
    </item>
-   <item name="Limit of Routing Measures (M15)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M15.svg" type="closedway">
+   <item name="Limit of Routing Measures (M15)" icon="presets/empty.png" type="closedway">
     <label text="M15: Limit of Routing Measures"/>
 	<key key="seamark:type" value="separation_boundary"/>
    </item>
    <!-- M16 Danger Symbol -->
    <!-- M17 Archipelagic Sea Line (ASL) -->
-   <item name="Fairway (M18)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M18.svg" type="closedway">
+   <item name="Fairway (M18)" icon="presets/empty.png" type="closedway">
     <label text="M18: Fairway"/>
 	<key key="seamark:type" value="fairway"/>
    </item>
    <!-- M21, M22, M23 Roundabout, Junction, Crossing in TSS -->
-   <item name="Separation Roundabout (M21)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M21.svg" type="node,closedway">
+   <item name="Separation Roundabout (M21)" icon="presets/empty.png" type="node,closedway">
     <label text="M21:Separation Roundabout"/>
 	<key key="seamark:type" value="separation_roundabout"/>
    </item>
    <!-- M24 Precaution area -->
-   <item name="Radar Surveillance Station (M30)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M30.svg" type="node">
+   <item name="Radar Surveillance Station (M30)" icon="presets/empty.png" type="node">
     <label text="M30: Radar Surveillance Station"/>
 	<key key="seamark:type" value="radar_station"/>
 	<key key="seamark:radar_station:category" value="surveillance"/>
 	<text key="seamark:name" text="Name"/>
    </item>
-   <item name="Radar Range (M31)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M31.svg" type="way">
+   <item name="Radar Range (M31)" icon="presets/empty.png" type="way">
     <label text="M31: Radar Range" />
 	<key key="seamark:type" value="radar_line"/>
    </item>
    <!-- M32.x Radar Reference Line -->
-   <item name="Radio Reporting Point, Line (M40)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M40.svg" type="node,way,closedway">
+   <item name="Radio Reporting Point, Line (M40)" icon="presets/empty.png" type="node,way,closedway">
     <label text="M40: Radio Reporting Points and Lines"/>
 	<key key="seamark:type" value="calling-in_point"/>
 	<text key="seamark:calling-in_point:channel" text="VHF Channel"/>
@@ -3265,7 +3265,7 @@
 	 <list_entry value="two-way"/>
 	</combo>
    </item>
-   <item name="Ferry Route (M50-M51)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M50.svg" type="way,relation">
+   <item name="Ferry Route (M50-M51)" icon="presets/empty.png" type="way,relation">
     <label text="M50-M51: Ferry Route"/>
 	<key key="type" value="route"/>
 	<key key="route" value="ferry"/>
@@ -3293,14 +3293,14 @@
    </item>
   </group>
   <group name="N: Areas, Limites" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N21.svg">
-   <item name="Non-resitricted areas (N1)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N1.svg" type="closedway">
+   <item name="Non-resitricted areas (N1)" icon="presets/empty.png" type="closedway">
     <label text="N1: Non-restricted areas"/>
 	<key key="seamark:type" value="non-restricted_area"/>
 	<text key="seamark:non-restricted_area:name" text="Name"/>
 	<combo key="seamark:non-restricted_area:category" text="Category">
 	</combo>
    </item>
-   <item name="Restriction Area (N2.1)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N2.1.svg" type="closedway">
+   <item name="Restriction Area (N2.1)" icon="presets/empty.png" type="closedway">
     <label text="N2.1: Limit of Restricted Area"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
@@ -3389,12 +3389,12 @@
     <text key="maxspeed" text="Max. speed (kt)"/>
 	<text key="seamark:anchor_berth:note" text="Note"/>
    </item>
-   <item name="Seaplane operation area (N13)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N13.svg" type="node,closedway">
+   <item name="Seaplane operation area (N13)" icon="presets/empty.png" type="node,closedway">
     <label text="N13: Seaplane operation area"/>
 	<key key="seamark:type" value="seaplane_landing_area"/>
 	<text key="seamark:name" text="Name"/>
    </item>
-   <item name="Seaplane Anchorage (N14)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N14.svg" type="node,closedway">
+   <item name="Seaplane Anchorage (N14)" icon="presets/empty.png" type="node,closedway">
     <label text="N14: Seaplane Anchorage"/>
 	<key key="seamark" value="anchorage"/>
 	<key key="seamark:type" value="anchorage"/>
@@ -3413,7 +3413,7 @@
 	<key key="seamark:restricted_area:restriction" value="no_fishing"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
    </item>
-   <item name="Bird/Seal/Marine Sanctuary, Nature/Marine Reserve, National Park, PSSA (N22)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N22.svg" type="closedway">
+   <item name="Bird/Seal/Marine Sanctuary, Nature/Marine Reserve, National Park, PSSA (N22)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N22_seal_green.svg" type="closedway">
     <label text="N22: Bird/Seal/Marine Sanctuary, Nature/Marine Reserve, National Park, PSSA"/>
 	<key key="boundary" value="protected_area"/>
 	<text key="name" text="Name"/>
@@ -3434,66 +3434,66 @@
 	</combo>
 	<text key="related_law" text="Law Protecting site"/>
    </item>
-   <item name="Explosives Dumping Ground (N23)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N23.svg" type="closedway">
+   <item name="Explosives Dumping Ground (N23)" icon="presets/empty.png" type="closedway">
     <label text="N23: Explosives Dumping Ground"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="explosives_dumping"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
    </item>
-   <item name="Dumping Ground for Harmful Substances (N24)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N24.svg" type="closedway">
+   <item name="Dumping Ground for Harmful Substances (N24)" icon="presets/empty.png" type="closedway">
     <label text="N24: Dumping Ground for Harmful Substances"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="harmful_substance_dumping"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
    </item>
-   <item name="Degaussing Range (N25)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N25.svg" type="closedway">
+   <item name="Degaussing Range (N25)" icon="presets/empty.png" type="closedway">
     <label text="N25: Degaussing Range"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="degausing_range"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
    </item>
-   <item name="Historic Wreck (N26)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N26.svg" type="closedway">
+   <item name="Historic Wreck (N26)" icon="presets/empty.png" type="closedway">
     <label text="N26: Historic Wreck"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="historic_wreck"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
    </item>
-   <item name="Maximum Speed (N27)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N27.svg" type="closedway">
+   <item name="Maximum Speed (N27)" icon="presets/empty.png" type="closedway">
     <label text="N27: Maximum Speed"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="restricted_speed"/>
 	<text key="maxspeed" text="Maximum Speed" required="true"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:maxspeed"/>
    </item>
-   <item name="Limit of Firing Danger (N30)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N30.svg" type="closedway">
+   <item name="Limit of Firing Danger (N30)" icon="presets/empty.png" type="closedway">
     <label text="N30: Limit of Firing Danger"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:category" value="military"/>
 	<key key="seamark:restricted_area:restriction" value="firing_danger"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
    </item>
-   <item name="Other Naval Practice Area (N31)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N31.svg" type="closedway">
+   <item name="Other Naval Practice Area (N31)" icon="presets/empty.png" type="closedway">
     <label text="N31: Naval Practice Area"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:category" value="military"/>
 	<key key="seamark:restricted_area:restriction" value="naval_practice_area"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
    </item>
-   <item name="Limit of Mine Laying or Countermeasures/Clearance Practice (N32)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N32.svg" type="closedway">
+   <item name="Limit of Mine Laying or Countermeasures/Clearance Practice (N32)" icon="presets/empty.png" type="closedway">
     <label text="N32: Limit of Mine Laying or Countermeasures/Clearance Practice"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:category" value="military"/>
 	<key key="seamark:restricted_area:restriction" value="mine_clearance_practice"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
    </item>
-   <item name="Submarine Practice Area (N33)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N33.svg" type="closedway">
+   <item name="Submarine Practice Area (N33)" icon="presets/empty.png" type="closedway">
     <label text="N33: Submarine Practice Area"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:category" value="military"/>
 	<key key="seamark:restricted_area:restriction" value="submarine_practice_area"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
    </item>
-   <item name="Mine field (N34)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N34.svg" type="closedway">
+   <item name="Mine field (N34)" icon="presets/empty.png" type="closedway">
     <label text="N34: Mine Field"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:category" value="military"/>
@@ -3519,14 +3519,14 @@
     <text key="name" text="Name"/>
     <label text="This border should be part of the border relation surrounding the country"/>
    </item>
-   <item name="Baseline (N42)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N42.svg" type="way,relation">
+   <item name="Baseline (N42)" icon="presets/empty.png" type="way,relation">
     <label text="N42: Baseline"/>
     <key key="boundary" value="maritime"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:boundary=maritime"/>
     <key key="border_type" value="baseline"/>
    </item>
    <!-- N43 Territorial Sea -->
-   <item name="Contiguous Zone (N44)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N44.svg" type="way,relation">
+   <item name="Contiguous Zone (N44)" icon="presets/empty.png" type="way,relation">
     <label text="N44: Contiguous Zone"/>
     <key key="boundary" value="maritime"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:boundary=maritime"/>
@@ -3539,7 +3539,7 @@
     <key key="border_type" value="fishing"/>
    </item>
    <!-- N46 Continental Shelf -->
-   <item name="Exclusive Economic Zone (N47)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N47.svg" type="way,relation">
+   <item name="Exclusive Economic Zone (N47)" icon="presets/empty.png" type="way,relation">
     <label text="N47: Exclusive Economic Zone"/>
     <key key="boundary" value="maritime"/>
 	<key key="seamark:type" value="exclusive_economic_zone"/>
@@ -3550,13 +3550,13 @@
    <!-- N49 Defined Harbour Limits -->
    <!-- N60.x Limit of Ice -->
    <!-- N61 Log pond -->
-   <item name="Spoil Ground (N62.*)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N62.svg" type="closedway">
+   <item name="Spoil Ground (N62.*)" icon="presets/empty.png" type="closedway">
     <label text="N62: Spoil Ground"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:category" value="foul_ground"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
    </item>
-   <item name="Dredged area (N63)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N63.svg" type="closedway">
+   <item name="Dredged area (N63)" icon="presets/empty.png" type="closedway">
     <label text="N63: Dredging Area"/>
 	<key key="waterway" value="dredged_area"/>
 	<key key="seamark:type" value="dredged_area"/>
@@ -3685,7 +3685,7 @@
 <!--	<key key="seamark:type" value="light"/> -->
 	<key key="seamark:light:category" value="moire"/>
    </item>
-   <item name="Air obstruction lights (P61)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/P/P61.svg" type="node">
+   <item name="Air obstruction lights (P61)" icon="presets/empty.png" type="node">
     <label text="P61: Air obstruction lights"/>
 	<key key="seamark:light:category" value="air_obstruction"/>
 	<combo key="seamark:light:visibility" default="" delete_if_empty="true">
