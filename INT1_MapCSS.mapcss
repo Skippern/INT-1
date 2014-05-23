@@ -161,13 +161,18 @@ way[leisure=garden]:closed {
 
 way[landuse=industrial]:closed ,
 way[landuse=railway]:closed ,
-way[landuse=airport]:closed ,
-way[landuse=harbour]:closed  {
+way[landuse=airport]:closed  {
 	fill-color:			lightgray;
 	fill-opacity:		0.2;
 }
 
+way[landuse=harbour]:closed {
+	fill-color:			gray;
+	fill-opacity:		0.3;
+}
+
 way[military]:closed {
+	fill-color:			red;
 	fill-opacity:  		0.2;
 }
 
@@ -999,7 +1004,7 @@ way["seamark:type"=restricted_area]::restricted_area {
 node["seamark:type"=anchor_berth],
 node["seamark:type"=anchorage],
 way["seamark:type"=anchorage]:closed {
-	text:		"seamark:anchorage:name";
+	text:		"seamark:name";
 	text-color:	darkmagenta;
 	font-size: 15;
 	text-offset: 8;
@@ -1012,12 +1017,12 @@ node["seamark:type"=anchorage]::anchor {
 	icon-width:		16;
 }
 node["seamark:type"=anchor_berth]::anchor,
-node["seamark:type"=anchorage]["seamark:anchorage:name"]::anchor,
+node["seamark:type"=anchorage]["seamark:name"]::anchor,
 node["seamark:type"=anchorage]["seamark:anchorage:category"]::anchor,
 node["seamark:type"=anchorage]["seamark:anchorage:note"]::anchor {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N12.svg";
 	icon-width:		16;
-	text:			"seamark:anchorage:name";
+	text:			"seamark:name";
 	text-color:		darkmagenta;
 	font-size:		15;
 }
@@ -1101,7 +1106,7 @@ node["seamark:light:colour"=yellow]::light {
     icon-image:    "https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/P/P10.1_yellow.svg";
 	icon-width:		16;
 }
- 
+
 node[man_made=lighthouse]::lighthouse {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/P/P1.major.disused.svg";
 	icon-width:		16;
@@ -1111,7 +1116,7 @@ node[man_made=lighthouse]::lighthouse {
 }
 node["seamark:type"=light_minor]::lighthouse {
     icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/P/P1.minor.svg";
-	icon-width:		16;
+	icon-width:		14;
 	text:           "seamark:name";
 	text-color:		black;
 	font-size:		8;
@@ -1119,7 +1124,7 @@ node["seamark:type"=light_minor]::lighthouse {
 node["seamark:type"=light_major]::lighthouse {
 	icon-image: 	"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/P/P1.major.svg";
 	icon-width:		16;
-	text:        	"seanarj:name";
+	text:        	"seamark:name";
 	text-color:		black;
 	font-size:		10;
 }
@@ -2417,89 +2422,91 @@ node["seamark:notice:system"=ppwbc]["seamark:notice:function"=information]["seam
 	icon-width:		16;
 }
 /* Double Board */
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=cross_river_to_starboard]["seamark:notice:bank"=right]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=cross_river_to_starboard]["seamark:notice:bank"=right]::sign1 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/R_change_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=cross_river_to_port]["seamark:notice:bank"=right]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=cross_river_to_port]["seamark:notice:bank"=right]::sign1 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/R_change_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=cross_river_to_starboard]["seamark:notice:bank"=left]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=cross_river_to_starboard]["seamark:notice:bank"=left]::sign1 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/L_change_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=cross_river_to_port]["seamark:notice:bank"=left]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=cross_river_to_port]["seamark:notice:bank"=left]::sign1 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/L_change_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=keep_to_port_margin]["seamark:notice:bank"=right]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=keep_to_port_margin]["seamark:notice:bank"=right]::sign1 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/R_navigate_along_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=keep_to_starboard_margin]["seamark:notice:bank"=right]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=keep_to_starboard_margin]["seamark:notice:bank"=right]::sign1 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/R_navigate_along_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=keep_to_port_margin]["seamark:notice:bank"=left]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=keep_to_port_margin]["seamark:notice:bank"=left]::sign1 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/L_navigate_along_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=keep_to_starboard_margin]["seamark:notice:bank"=left]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=keep_to_starboard_margin]["seamark:notice:bank"=left]::sign1 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/L_navigate_along_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=keep_to_mid-river]["seamark:notice:bank"=right]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=keep_to_mid-river]["seamark:notice:bank"=right]::sign1 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/R_navigate_mid_river.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=keep_to_mid-river]["seamark:notice:bank"=left]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:1:category"=keep_to_mid-river]["seamark:notice:bank"=left]::sign1 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/L_navigate_mid_river.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=cross_river_to_starboard]["seamark:notice:bank"=right]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=cross_river_to_starboard]["seamark:notice:bank"=right]::sign2 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/R_change_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=cross_river_to_port]["seamark:notice:bank"=right]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=cross_river_to_port]["seamark:notice:bank"=right]::sign2 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/R_change_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=cross_river_to_starboard]["seamark:notice:bank"=left]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=cross_river_to_starboard]["seamark:notice:bank"=left]::sign2 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/L_change_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=cross_river_to_port]["seamark:notice:bank"=left]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=cross_river_to_port]["seamark:notice:bank"=left]::sign2 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/L_change_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=keep_to_port_margin]["seamark:notice:bank"=right]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=keep_to_port_margin]["seamark:notice:bank"=right]::sign2 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/R_navigate_along_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=keep_to_starboard_margin]["seamark:notice:bank"=right]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=keep_to_starboard_margin]["seamark:notice:bank"=right]::sign2 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/R_navigate_along_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=keep_to_port_margin]["seamark:notice:bank"=left]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=keep_to_port_margin]["seamark:notice:bank"=left]::sign2 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/L_navigate_along_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=keep_to_starboard_margin]["seamark:notice:bank"=left]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=keep_to_starboard_margin]["seamark:notice:bank"=left]::sign2 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/L_navigate_along_bank.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=keep_to_mid-river]["seamark:notice:bank"=right]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=keep_to_mid-river]["seamark:notice:bank"=right]::sign2 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/R_navigate_mid_river.svg";
 	icon-width:		16;
 }
-node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=keep_to_mid-river]["seamark:notice:bank"=left]::sign {
+node["seamark:notice:system"=ppwbc]["seamark:notice:function"=regulation]["seamark:notice:2:category"=keep_to_mid-river]["seamark:notice:bank"=left]::sign2 {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/L_navigate_mid_river.svg";
 	icon-width:		16;
 }
 
 /* R */
-node[fog_signal]::fog {
+node[fog_signal]::fog,
+node["seamark:fog_signal"=yes]::fog,
+node["seamark:fog_signal:category"=*]::fog {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/R/R1_.svg";
 	icon-width:		16;
 }
