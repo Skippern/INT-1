@@ -1954,7 +1954,7 @@
 	</combo>
 	<check key="ruins" text="Ruined" default="off"/>
    </item>
-   <item name="Quarry (E35-E36)" icon="presets/empty.png" type="node,closedway">
+   <item name="Quarry (E35-E36)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E36.svg" type="node,closedway">
     <label text="E35-36: Quarry (Surface Mine)"/>
 	<key key="landuse" value="quarry"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=quarry"/>
@@ -2048,7 +2048,7 @@
 	 <list_entry value="zeolite"/>
 	</combo>
    </item>
-   <item name="Mineshaft (E35-E36)" icon="presets/empty.png" type="node,closedway">
+   <item name="Mineshaft (E35-E36)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E36.svg" type="node,closedway">
     <label text="E35-36: Mineshaft (Vertical)"/>
 	<key key="man_made" value="mineshaft"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=mineshaft"/>
@@ -2150,7 +2150,7 @@
 	<check key="headframe" text="Headframe" default="off"/>
 	<check key="disused" text="Disused" default="off"/>
    </item>
-   <item name="Adit (E35-E36)" icon="presets/empty.png" type="node,closedway">
+   <item name="Adit (E35-E36)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E36.svg" type="node,closedway">
     <label text="E35-36: Adit (Horizontal Mine Access)"/>
 	<key key="man_made" value="adit"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=adit"/>
