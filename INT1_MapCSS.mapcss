@@ -936,16 +936,17 @@ node["seamark:type"=platform] {
 }
 
 way["seamark:type"=cable_submarine]::cable {
-	color:				darkmagenta;
-	width:				2;
-	left-casing-width:	3;
-	left-casing-color:	darkmagenta;
-	left-casing-dashes:	5,5;
-	left-casing-linecap: round;
-	right-casing-width: 3;
-	right-casing-color:	darkmagenta;
-	right-casing-dashes: 4,4;
-	right-casing-linecap: round;
+//	color:				darkmagenta;
+//	width:				2;
+//	left-casing-width:	3;
+//	left-casing-color:	darkmagenta;
+//	left-casing-dashes:	5,5;
+//	left-casing-linecap: round;
+//	right-casing-width: 3;
+//	right-casing-color:	darkmagenta;
+//	right-casing-dashes: 4,4;
+//	right-casing-linecap: round;
+	image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L31.svg"
 }
 area["seamark:type"=cable_area]::cable {
 	color:				darkmagenta;
@@ -960,13 +961,14 @@ area["seamark:type"=cable_area]::cable {
 	right-casing-linecap: round;
 }
 way["seamark:type"=pipeline_submarine]::pipeline {
-	color:				darkmagenta;
-	width:				2;
-	dashes:				20,8;
-	casing-width:  		2;
-	casing-color:		darkmagenta;
-	casing-dashes:		2,26;
-	casing-linecap: 	round;
+//	color:				darkmagenta;
+//	width:				2;
+//	dashes:				20,8;
+//	casing-width:  		2;
+//	casing-color:		darkmagenta;
+//	casing-dashes:		2,26;
+//	casing-linecap: 	round;
+	image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L40.svg"
 }
 
 /* M */

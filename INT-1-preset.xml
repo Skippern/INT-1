@@ -3300,7 +3300,7 @@
 	<combo key="seamark:non-restricted_area:category" text="Category">
 	</combo>
    </item>
-   <item name="Restriction Area (N2.1)" icon="presets/empty.png" type="closedway">
+   <item name="Restriction Area (N2.1)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N2.1.svg" type="closedway">
     <label text="N2.1: Limit of Restricted Area"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
@@ -3389,12 +3389,12 @@
     <text key="maxspeed" text="Max. speed (kt)"/>
 	<text key="seamark:anchor_berth:note" text="Note"/>
    </item>
-   <item name="Seaplane operation area (N13)" icon="presets/empty.png" type="node,closedway">
+   <item name="Seaplane operation area (N13)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N13.svg" type="node,closedway">
     <label text="N13: Seaplane operation area"/>
 	<key key="seamark:type" value="seaplane_landing_area"/>
 	<text key="seamark:name" text="Name"/>
    </item>
-   <item name="Seaplane Anchorage (N14)" icon="presets/empty.png" type="node,closedway">
+   <item name="Seaplane Anchorage (N14)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N13.svg" type="node,closedway">
     <label text="N14: Seaplane Anchorage"/>
 	<key key="seamark" value="anchorage"/>
 	<key key="seamark:type" value="anchorage"/>
