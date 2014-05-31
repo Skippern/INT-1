@@ -6417,5 +6417,23 @@
 	<text key="rooms" text="Rooms"/>
    </item>
   </group>
+ <item name="FIXME" icon="presets/empty.png">
+  <label text="Seamark Fixme's"/>
+  <combo key="seamark:fixme" required="true" text="FIXME" use_last_as_default="true" match="key">
+   <list_entry value="beacon_guess"/>
+   <list_entry value="e_lateral"/>
+   <list_entry value="height"/>
+   <list_entry value="intdup"/>
+   <list_entry value="intset"/>
+   <list_entry value="lateral_unknown"/>
+   <list_entry value="name_incomplete"/>
+   <list_entry value="noindex"/>
+   <list_entry value="please_fix_position"/>
+   <list_entry value="racon_char"/>
+   <list_entry value="rem_imcomplete"/>
+   <list_entry value="usldup"/>
+  </combo>
+  <text key="seamark:note" text="Additional note" delete_if_empty="true"/>
+ </item>
  </group>
 </annotations>
