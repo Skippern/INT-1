@@ -1312,43 +1312,9 @@
   <group name="E: Landmarks" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.svg">
    <item name="Landmarks in General" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E23_colour.svg" type="node,closedway">
     <label text="Landmarks in General, use appropriate categories to specify"/>
-	<key key="seamark" value="landmark" match="none"/>
 	<key key="seamark:type" value="landmark"/>
 	<text key="seamark:landmark:name" text="Name"/>
 	<text key="seamark:landmark:height" text="Height of Landmark"/>
-	<combo key="landmark" text="Landmark">
-	 <list_entry value="statue"/>
-	 <list_entry value="tower"/>
-	 <list_entry value="memorial_plaque"/>
-	 <list_entry value="flagpole"/>
-	 <list_entry value="windmotor"/>
-	 <list_entry value="chimney"/>
-	 <list_entry value="cairn"/>
-	 <list_entry value="monument"/>
-	 <list_entry value="cross"/>
-	 <list_entry value="dome"/>
-	 <list_entry value="mast"/>
-	 <list_entry value="obelisk"/>
-	 <list_entry value="spire"/>
-	 <list_entry value="beacon"/>
-	 <list_entry value="windmill"/>
-	 <list_entry value="cemetery"/>
-	 <list_entry value="windsock"/>
-	 <list_entry value="flare_stack"/>
-	 <list_entry value="aerial_dish"/>
-	 <list_entry value="large_rock"/>
-	 <list_entry value="pillar"/>
-	 <list_entry value="dish_aerial"/>
-	 <list_entry value="farmyard"/>
-	 <list_entry value="border_stone"/>
-	 <list_entry value="radar_scanner"/>
-	 <list_entry value="memorial"/>
-	 <list_entry value="lighthouse"/>
-	 <list_entry value="bridge"/>
-	 <list_entry value="tree"/>
-	 <list_entry value="rock_pinnacle"/>
-	 <list_entry value="sign"/>
-	</combo>
 	<combo key="seamark:landmark:category" text="Category" match="key">
 	 <list_entry value="tower"/>
 	 <list_entry value="windmotor"/>
@@ -1502,11 +1468,9 @@
     <label text="E12: Cross or Calvary"/>
     <key key="historic" value="wayside_cross"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:historic=wayside_cross"/>
-    <key key="landmark" value="cross"/>
 	<key key="seamark:type" value="landmark"/>
 	<key key="seamark:landmark:category" value="cross"/>
-	<key key="seamark" value="landmark" />
-    <text key="name" text="Name"/>
+   <text key="name" text="Name"/>
 	<text key="height" text="Height"/>
    </item>
    <item name="Temple (E13)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E13.svg" type="node,closedway">
@@ -1678,8 +1642,6 @@
     <label text="E19: Cemetery"/>
     <key key="landuse" value="cemetery"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=cemetery"/>
-    <key key="seamark" value="landmark"/>
-	<key key="landmark" value="cemetery"/>
 	<key key="seamark:type" value="landmark"/>
 	<key key="seamark:landmark:category" value="cemetery"/>
     <text key="name" text="Name"/>
@@ -1694,8 +1656,6 @@
    <item name="Tower (E20)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E20.svg" type="node,closedway">
     <label text="E20: Tower"/>
     <key key="man_made" value="tower"/>
-	<key key="seamark" value="landmark"/>
-	<key key="landmark" value="tower"/>
 	<key key="seamark:type" value="landmark"/>
 	<key key="seamark:landmark:category" value="tower"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=tower"/>
@@ -1741,8 +1701,6 @@
    <item name="Water Tower (E21)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E21.svg" type="node,closedway">
     <label text="E21: Water Tower"/>
     <key key="man_made" value="water_tower"/>
-	<key key="seamark" value="landmark"/>
-	<key key="landmark" value="water_tower"/>
 	<key key="seamark:type" value="landmark"/>
 	<key key="seamark:landmark:category" value="water_tower"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=water_tower"/>
@@ -1756,11 +1714,9 @@
    <item name="Chimney (E22)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E22.svg" type="node">
     <label text="E22: Chimney"/>
     <key key="man_made" value="chimney"/>
-	<key key="seamark" value="landmark"/>
 	<key key="seamark:type" value="landmark"/>
 	<key key="seamark:landmark:category" value="chimney"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=chimney"/>
-    <key key="landmark" value="chimney"/>
     <text key="name" text="Name (if known)"/>
     <text key="ref" text="Reference"/>
     <text key="height" text="Height over ground"/>
@@ -1772,9 +1728,7 @@
     <label text="E23: Flare"/>
     <key key="man_made" value="flare"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=flare"/>
-    <key key="landmark" value="flare_stack"/>
 	<key key="seamark:type" value="landmark"/>
-	<key key="seamark" value="landmark"/>
 	<key key="seamark:landmark:category" value="flare_stack"/>
     <text key="name" text="Name"/>
     <text key="ref" text="Reference"/>
@@ -1785,7 +1739,6 @@
     <label text="E24: Monument"/>
     <key key="historic" value="monument"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:historic=monument"/>
-    <key key="landmark" value="monument"/>
 	<key key="seamark:type" value="landmark"/>
 	<combo key="seamark:landmark:category" text="Type Monyment" required="true">
 	 <list_entry value="monument"/>
@@ -1816,7 +1769,6 @@
 	<key key="seamark:landmark:category" value="windmotor"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:power=generator"/>
     <key key="generator:source" value="wind"/>
-    <key key="landmark" value="windmotor"/>
 	<key key="seamark:type" value="landmark"/>
     <text key="name" text="Name"/>
     <combo key="operator" text="Operator" readonly="false">
@@ -1829,7 +1781,6 @@
    </item>
    <item name="Flag pole (E27)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E27.svg" type="node">
     <label text="E27: Flag Pole"/>
-    <key key="landmark" value="flagpole"/>
 	<key key="seamark:type" value="landmark"/>
 	<key key="seamark:landmark:category" value="flagstaff"/>
     <key key="man_made" value="flagpole"/>
@@ -1850,7 +1801,6 @@
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=mast"/>
     <key key="tower:type" value="communication"/>
     <key key="tower:construction" value="freestanding"/>
-    <key key="landmark" value="mast"/>
 	<key key="seamark:landmark:category" value="mast"/>
 	<key key="seamark:type" value="landmark"/>
     <text key="name" text="Name"/>
@@ -1865,7 +1815,6 @@
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=tower"/>
     <key key="tower:type" value="communication"/>
     <key key="tower:construction" value="lettice"/>
-    <key key="landmark" value="tower"/>
 	<key key="seamark:landmark:category" value="tower"/>
 	<key key="seamark:type" value="landmark"/>
     <text key="name" text="Name"/>
@@ -1876,7 +1825,6 @@
    </item>
    <item name="Radar mast (E30)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E29.svg" type="node">
     <label text="E30: Radar Mast"/>
-    <key key="landmark" value="radar_scanner"/>
 	<key key="seamark:type" value="landmark"/>
 	<key key="seamark:landmark:category" value="radar_scanner"/>
     <key key="man_made" value="tower"/>
@@ -1901,7 +1849,6 @@
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=tower"/>
     <key key="tower:type" value="communication"/>
     <key key="tower:construction" value="dish"/>
-    <key key="landmark" value="dish_aerial"/>
 	<key key="seamark:landmark:category" value="dish_aerial"/>
 	<key key="seamark:type" value="landmark"/>
     <text key="name" text="Name"/>
@@ -2614,6 +2561,7 @@
     <item name="Harbour Master's Office (F60)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F60.svg" type="node,closedway">
      <label text="F60: Harbour Master's Office"/>
 	 <key key="office" value="government"/>
+	 <key key="amenity" value="harbourmaster"/>
 	 <key key="seamark:type" value="building"/>
 	 <key key="seamark:building:function" value="harbour_master"/>
 	 <link href="http://wiki.openstreetmap.org/wiki/Tag:officer=government"/>
@@ -2935,12 +2883,10 @@
    </item>
    <item name="Obstruction (K40-K42)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K40.svg" type="node">
     <label text="K40-K42: Obstruction"/>
-	<key key="seamark" value="obstruction"/>
 	<key key="seamark:type" value="obstruction"/>
    </item>
    <item name="Stump, Pillar (K43.*)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K43.1.svg" type="node">
     <label text="K43.*: Stumps of Posts, Pillars"/>
-	<key key="seamark" value="pillar"/>
 	<key key="seamark:type" value="pillar"/>
    </item>
    <!-- K44.x, K45 - Fish Stakes, Fish traps, Fish lines, tunny nets -->
@@ -3336,7 +3282,6 @@
    </item>
    <item name="Anchorage (N10-N12)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N12.svg" type="node,closedway">
 	<label text="N10-N12: Anchorage"/>
-	<key key="seamark" value="anchorage"/>
 	<key key="seamark:type" value="anchorage"/>
 	<text key="seamark:name" text="Name"/>
 	<combo key="seamark:anchorage:category" text="Category">
@@ -3363,7 +3308,6 @@
    </item>
    <item name="Anchor berth (N10-N12)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N12.svg" type="node">
 	<label text="N10-N12: Anchorage"/>
-	<key key="seamark" value="anchorage"/>
 	<key key="seamark:type" value="anchor_berth"/>
 	<text key="seamark:name" text="Name"/>
 	<text key="seamark:anchor_berth:radius" text="Radius"/>
@@ -3396,7 +3340,6 @@
    </item>
    <item name="Seaplane Anchorage (N14)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N13.svg" type="node,closedway">
     <label text="N14: Seaplane Anchorage"/>
-	<key key="seamark" value="anchorage"/>
 	<key key="seamark:type" value="anchorage"/>
 	<key key="seamark:anchorage:type" value="seaplane"/>
 	<text key="seamark:name" text="Name"/>
@@ -3598,7 +3541,7 @@
 	 <list_entry value="notice"/>
 	</combo>
 	<text key="seamark:name" text="Name"/>
-	<text key="seamark:light:ref" text="List of Lights Reference"/>
+	<text key="seamark:light:reference" text="List of Lights Reference"/>
     <combo key="seamark:light:colour" text="Light Colour" required="true" match="key!">
 	 <list_entry value="white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/P/P11_white.svg" icon_size="16"/>
 	 <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/P/P11_red.svg" icon_size="16"/>
@@ -3664,7 +3607,7 @@
 	 <list_entry value="warning"/>
 	 <list_entry value="storm"/>
 	</combo>
-	<combo key="seamark:status" text="Status">
+	<combo key="seamark:light:status" text="Status">
 	 <list_entry value="occasional"/>
 	 <list_entry value="private"/>
 	 <list_entry value="permanent"/>
@@ -3752,7 +3695,6 @@
 	<label text="For IALA buoys, see Q130.1 - Q130.6"/>
 	<label text="For non-IALA lateral buoys, seeQ130.1"/>
 	<key key="seamark:type" value="buoy_special_purpose"/>
-    <key key="seamark" value="buoy"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:buoy"/>
     <combo key="seamark:buoy_special_purpose:shape" text="Buoy Shape" use_last_as_default="force" required="true">
 	 <list_entry value="conical" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q20/general.svg" icon_size="16"/>
@@ -3931,7 +3873,6 @@
    </item>
    <item name="ODAS Buoy (Q58)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q26/yellow.svg" type="node">
     <label text="Q58: ODAS Buoy"/>
-    <key key="seamark" value="buoy"/>
 	<key key="seamark:type" value="buoy_special_purpose"/>
 	<key key="seamark:buoy_special_purpose:category" value="odas"/>
 	<key key="seamark:buoy_special_purpose:colour" value="yellow"/>
@@ -3945,7 +3886,6 @@
    <item name="Beacon (Q80-83)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/black.svg" type="node">
     <label text="Q80-83: Beacon"/>
 	<key key="man_made" value="beacon"/>
-	<key key="seamark" value="beacon"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=beacon"/>
 	<text key="name" text="Name"/>
 	<text key="ref" text="Reference"/>
@@ -4026,8 +3966,6 @@
 	<key key="seamark:type" value="cairn"/>
 	<key key="seamark:landmark:category" value="cairn"/>
 	<key key="man_made" value="cairn"/>
-	<key key="landmark" value="cairn"/>
-	<key key="seamark" value="landmark"/>
 	<text key="seamark:name" text="Name"/>
 	<combo key="seamark:landmark:colour" text="Cairn Colour">
 	 <list_entry value="white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q100/white.svg" icon_size="16"/>
@@ -5777,7 +5715,6 @@
    <item name="Ramark (S2)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/S/S1.svg" type="node">
     <label text="S2: Ramark"/>
 	<label text="A radar beacon transmitting continously"/>
-	<key key="radar_transponder" value="ramark"/>
 	<key key="seamark:radar_transponder:category" value="ramark"/>
 	<text key="seamark:name" text="Name" delete_if_empty="tre"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:radar_transponder"/>
@@ -5791,16 +5728,11 @@
 	 <list_entry value="3cm" display_value="3cm (X)"/>
 	 <list_entry value="10cm" display_value="10cm (S)"/>
 	</combo>
-	<combo key="radar_transponder:band" text="Band">
-	 <list_entry value="X" display_value="3cm (X)"/>
-	 <list_entry value="S" display_value="10cm (S)"/>
-	</combo>
    </item>
    <item name="Racon (S3.1-S3.4, S3.6)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/S/S1.svg" type="node">
     <label text="S3.1-S3.4, S3.6: Racon"/>
 	<label text="A radar beacon transmitting only when activated"/>
 	<key key="seamark:radar_transponder:category" value="racon"/>
-	<key key="radar_transponder" value="racon"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:radar_transponder"/>
 	<text key="seamark:radar_transponder:group" text="Group"/>
 	<text key="seamark:radar_transponder:period" text="Period"/>
@@ -5811,10 +5743,6 @@
 	<combo key="seamark:radar_transponder:wavelength" text="Band">
 	 <list_entry value="3cm" display_value="3cm (X)"/>
 	 <list_entry value="10cm" display_value="10cm (S)"/>
-	</combo>
-	<combo key="radar_transponder:band" text="Band">
-	 <list_entry value="X" display_value="3cm (X)"/>
-	 <list_entry value="S" display_value="10cm (S)"/>
 	</combo>
    </item>
    <item name="Radar Reflector (S4)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/S/S4.svg" type="node">
@@ -5852,7 +5780,8 @@
 	 <list_entry value="facsimile"/>
 	 <list_entry value="time_signal"/>
 	</combo>
-	<text key="radio_transponder:signal_frequency" text="Frequency"/>
+	<text key="seamark:radio_station:signal_group" text="Group"/>
+	<text key="seamark:radio_station:signal_frequency" text="Frequency"/>
 	<text key="seamark:radio_station:channel" text="VHF Channel"/>
    </item>
    <item name="AIS transmitter (S17.1-S17.2)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/S/S1.svg" type="node">
@@ -5874,9 +5803,9 @@
     <check key="monitoring:gps" text="GPS" default="on"/>
     <check key="monitoring:glonass" text="GLONASS" default="off"/>
     <check key="monitoring:galileo" text="Galileo" default="off"/>
-    <text key="radio_transponder:dgps_id" text="Station ID"/>
-    <text key="radio_transponder:dgps_name" text="Station Name"/>
-	<text key="radio_transponder:signal_frequency" text="Frequency"/>
+    <text key="seamark:radio_station:dgps_id" text="Station ID"/>
+    <text key="seamark:radio_station:dgps_name" text="Station Name"/>
+	<text key="seamark:radio_station:signal_frequency" text="Frequency"/>
    </item>
   </group>
   <group name="T: Services" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/T/T1.1.svg">
@@ -6163,7 +6092,7 @@
    </item>
    <item name="Chandler (U12)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U12.svg" type="node,closedway">
     <label text="U12: Chandler, Ship Chandler"/>
-	<key key="shop" value="chandler"/>
+	<key key="shop" value="ship_chandler"/>
 	<key key="seamark:type" value="small_craft_facility"/>
 	<key key="seamark:small_craft_facility:category" value="chandler"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:shop=chandler"/>

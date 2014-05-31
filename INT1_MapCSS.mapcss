@@ -176,8 +176,12 @@ way[military]:closed {
 	fill-opacity:  		0.2;
 }
 
-
-
+/* For debugging or help */
+node["seamark:fixme"]::FIXME {
+	text:			"seamark:fixme";
+	font-size:		16;
+	text-color:		yellow;
+}
 
 /* B */
 node[man_made=survey_point]::survey {
