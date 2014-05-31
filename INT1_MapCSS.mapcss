@@ -58,10 +58,10 @@ canvas {
 }
 
 /* Base color */
-way[landuse]:closed ,
-way[natural]:closed ,
-way[leisure]:closed ,
-way[man_made]:closed {
+area[landuse] ,
+area[natural] ,
+area[leisure] ,
+area[man_made] {
 	fill-color:			navajowhite;
 	fill-opacity:		0.2;
 }
@@ -75,25 +75,25 @@ way[hires=yes]::hires {
 /* Start making background colors */
 /* add color from buttom up? */
 /* Tidal background */
-relation[tidal=yes],way[tidal=yes]:closed ,
-relation[water=tidal],way[water=tidal]:closed ,
-relation[natural=wetland][wetland=mangrove], way[natural=wetland][wetland=mangrove]:closed ,
-relation[natural=wetland][wetland=saltmarsh], way[natural=wetland][wetland=saltmarsh]:closed ,
-relation[natural=beach][tidal=yes], way[natural=beach][tidal=yes]:closed {
+relation[tidal=yes],area[tidal=yes] ,
+relation[water=tidal],area[water=tidal] ,
+relation[natural=wetland][wetland=mangrove], area[natural=wetland][wetland=mangrove] ,
+relation[natural=wetland][wetland=saltmarsh], area[natural=wetland][wetland=saltmarsh] ,
+relation[natural=beach][tidal=yes], area[natural=beach][tidal=yes] {
 	fill-color:			darkseagreen;
 	fill-opacity:		0.2;
 }
 
 /* Land background */
-way[natural=coastline]:closed ,
-way[natural=beach][!tidal]:closed ,
-way[natural=island]:closed ,
-way[natural=land]:closed ,
-relation[natural=wetland][wetland=reedbed], way[natural=wetland][wetland=reedbed]:closed ,
-relation[natural=wetland][wetland=swamp], way[natural=wetland][wetland=swamp],
-relation[natural=wetland][wetland=marsh], way[natural=wetland][wetland=marsh]:closed ,
-relation[natural=wood], way[natural=wood]:closed ,
-relation[landuse=forest], way[landuse=forest]:closed ,
+area[natural=coastline] ,
+area[natural=beach][!tidal] ,
+area[natural=island] ,
+area[natural=land] ,
+relation[natural=wetland][wetland=reedbed], area[natural=wetland][wetland=reedbed] ,
+relation[natural=wetland][wetland=swamp], area[natural=wetland][wetland=swamp],
+relation[natural=wetland][wetland=marsh], area[natural=wetland][wetland=marsh] ,
+relation[natural=wood], area[natural=wood] ,
+relation[landuse=forest], area[landuse=forest] ,
 way[man_made=pier]:closed ,
 way[man_made=groyne]:closed ,
 way[man_made=jetty]:closed ,
@@ -103,75 +103,75 @@ way[man_made=breakwater]:closed {
 }
 
 /* Urban Background */
-way[landuse=residential]:closed ,
-way[landuse=brownfield]:closed ,
-way[landuse=commercial]:closed ,
-way[landuse=construction]:closed ,
-way[landuse=garages]:closed ,
-way[landuse=greenfield]:closed ,
-way[landuse=retail]:closed ,
-way[landuse=allotments]:closed {
+area[landuse=residential] ,
+area[landuse=brownfield] ,
+area[landuse=commercial] ,
+area[landuse=construction] ,
+area[landuse=garages] ,
+area[landuse=greenfield] ,
+area[landuse=retail] ,
+area[landuse=allotments] {
    fill-color: 			darkgoldenrod;
    fill-opacity: 		0.2;
 }
-way[shop]:closed {
+area[shop] {
 	fill-color:			darkgoldenrod;
 	fill-opacity:		0.2;
 }
-way[amenity]:closed {
+area[amenity] {
 	fill-color:			darkgoldenrod;
 	fill-opacity:		0.2;
 }
-way[building]:closed {
+area[building] {
 	fill-color:			darkgoldenrod;
 	fill-opacity:		0.2;
 }
-way[tourism]:closed {
+area[tourism] {
 	fill-color:			darkgoldenrod;
 	fill-opacity:		0.2;
 }
-way[office]:closed {
+area[office] {
 	fill-color:			darkgoldenrod;
 	fill-opacity:		0.2;
 }
-way[historic]:closed {
+area[historic] {
 	fill-color:			darkgoldenrod;
 	fill-opacity:		0.2;
 }
-way[craft]:closed {
+area[craft] {
 	fill-color:			darkgoldenrod;
 	fill-opacity:		0.2;
 }
 /* Other background */
 relation[natural=glacier],
-way[natural=glacier]:closed {
+area[natural=glacier] {
     fill-color: 		white;
 	fill-opacity: 		0.2;
 }
 
 relation[natural=lava],
-way[natural=lava]:closed  {
+area[natural=lava]  {
 	fill-opacity:  		0.2;
 }
 
-way[leisure=garden]:closed {
+area[leisure=garden] {
 	fill-color:			navajowhite;
 	fill-opacity:		0.2;
 }
 
-way[landuse=industrial]:closed ,
-way[landuse=railway]:closed ,
-way[landuse=airport]:closed  {
+area[landuse=industrial] ,
+area[landuse=railway] ,
+area[landuse=airport]  {
 	fill-color:			lightgray;
 	fill-opacity:		0.2;
 }
 
-way[landuse=harbour]:closed {
+area[landuse=harbour] {
 	fill-color:			gray;
 	fill-opacity:		0.3;
 }
 
-way[military]:closed {
+area[military] {
 	fill-color:			red;
 	fill-opacity:  		0.2;
 }
@@ -280,7 +280,8 @@ way[natural=coastline][coastline:survey_quality=inadequate]::coast {
    casing-opacity:		0.05;
 }
 
-way[natural=cliff]:closed {
+way[natural:cliff]::cliff,
+area[natural=cliff]::cliff {
 	width:				3;
 	color:				black;
 	dashes:				16,8;
@@ -312,13 +313,13 @@ way[waterway=canal]::canal {
 	fill-color:			lightblue;
 	fill-opacity:		0.2;
 }
-way[natural=water]:closed {
+area[natural=water]::water {
   fill-color:     		skyblue;
   fill-opacity:   		0.2;
   color:          		black;
   width:          		1;
 }
-relation[waterway=riverbank],way[waterway=riverbank]:closed {
+relation[waterway=riverbank],area[waterway=riverbank]::river {
 	fill-color:    		lightblue;
 	fill-opacity:  		0.2;
 }
@@ -327,9 +328,6 @@ node[natural=peak]::peak,
 node[natural=volcano]::peak {
 	width:				3;
 	color:				black;
-}
-node[natural=peak]::peak,
-node[natural=volcano]::peak {
 	font-size:			7;
 	text-color:			black;
 	text:				ele;
@@ -343,6 +341,10 @@ node["whitewater:rapid_grade"]::rapid,
 node["whitewater:rapid_name"]::rapid {
 	icon:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C22.svg";
 	icon-width:			16;	
+}
+way["whitewater:rapid_grade"]::rapid,
+way["whitewater:rapid_name"]::rapid {
+	repeat-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C22.svg";
 }
 node[waterway=weir]::weir {
 	icon:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/C/C22.svg";
@@ -550,11 +552,15 @@ way["seamark:type"=cable_overhead]::power {
 	dashes:				8,2;
 }
 
-node[railway=station]::railway_station {
+node[railway=station]::railway_station,
+node[public_transport=station][railway]::railway_station {
 	width:				6;
 	linecap:			square;
 }
 
+area[military=airfield]::airport,
+node[military=airfield]::airport,
+area[aeroway=aerodrome]::airport,
 node[aeroway=aerodrome]::airport {
 	icon:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D17.svg";
 	icon-width:			16;
@@ -564,7 +570,7 @@ node[aeroway=helipad]::helipad {
    icon-image:    		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/Db_uk.svg";
    icon-width:    		16;
 }
-way[aeroway=helipad]:closed {
+area[aeroway=helipad]::helipad {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/Db_uk.svg";
 	icon-width:			16;
 }
@@ -577,14 +583,14 @@ node[highway=mini_roundabout]::highwayturn {
 }
 /* E */
 node[amenity=place_of_worship][religion=christian]::church,
-way[amenity=place_of_worship][religion=christian]:closed {
+area[amenity=place_of_worship][religion=christian]::church {
 	text:				name;
 	font-size:			5;
 	text-color:			black;
 }
 
-way[amenity=place_of_worship][religion=christian]["seamark:landmark:function"=church]:closed,
-node[amenity=place_of_worship][religion=christian]["seamark:landmark:function"=church] {
+area[amenity=place_of_worship][religion=christian]["seamark:landmark:function"=church]::church,
+node[amenity=place_of_worship][religion=christian]["seamark:landmark:function"=church]::church {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.svg";
 	icon-width:			16;
 }
@@ -596,31 +602,31 @@ node["seamark:landmark:category"=cross] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E12.svg";
 	icon-height:		16;
 }
-way[amenity=place_of_worship][religion=hindu]:closed ,
+area[amenity=place_of_worship][religion=hindu] ,
 node[amenity=place_of_worship][religion=hindu],
-way[amenity=place_of_worship][religion=sikh]:closed ,
+area[amenity=place_of_worship][religion=sikh] ,
 node[amenity=place_of_worship][religion=sikh] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E13.svg";
 	icon-width:			16;
 }
-way[amenity=place_of_worship][religion=taoist]:closed ,
+area[amenity=place_of_worship][religion=taoist] ,
 node[amenity=place_of_worship][religion=taoist] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E15.svg";
 	icon-width:			16;
 	text:				"Pag";
 	text-color:			black;
 }
-way[amenity=place_of_worship][religion=shinto]:closed ,
+area[amenity=place_of_worship][religion=shinto] ,
 node[amenity=place_of_worship][religion=shinto] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E15.svg";
 	icon-width:			16;
 }
-way[amenity=place_of_worship][religion=buddhist]:closed ,
+area[amenity=place_of_worship][religion=buddhist] ,
 node[amenity=place_of_worship][religion=buddhist] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E16.svg";
 	icon-width:			16;
 }
-way[amenity=place_of_worship][religion=muslim]:closed ,
+area[amenity=place_of_worship][religion=muslim] ,
 node[amenity=place_of_worship][religion=muslim] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E17.svg";
 	icon-width:			16;
@@ -714,7 +720,7 @@ node[man_made=tower]["tower:construction"=dish]["seamark:landmark:category"=dish
 	icon-width:			16;
 }
 
-way[man_made=storage_tank] {
+area[man_made=storage_tank]::tank {
 	color:				black;
 	width:				2;
 }
@@ -791,11 +797,11 @@ node[man_made=crane]::crane {
 	icon-width:			16;
 }
 
-way[amenity=hospital]:closed {
+area[amenity=hospital]::hospital {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F62.1.svg";
 	icon-width:			16;
 }
-way[amenity=post_office]:closed {
+area[amenity=post_office]::post {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F63.svg";
 	icon-width:			16;
 }
@@ -807,8 +813,8 @@ node[depth]::depth {
 	font-size:			6;
 }
 
-way[waterway=dredged_area]:closed,
-way["seamark:type"=dredged_area]:closed {
+area[waterway=dredged_area]::dredged,
+area["seamark:type"=dredged_area]::dredged {
 	color:				black;
 	opacity:			0.7;
 	dashes:				10,2;
@@ -934,20 +940,20 @@ node[mooring=monobuoy]::offshore {
 	font-size:			7;
 	text-color:			black;
 }
-node[waterway=offshore_field],
-way[waterway=offshore_field]:closed {
+node[waterway=offshore_field]::offshore,
+area[waterway=offshore_field]::offshore {
    text:     			name;
    text-color: 			black;
    font-size:  			10;
 }
-node["seamark:type"=platform] {
+node["seamark:type"=platform]::offshore {
 	text:				"seamark:name";
 	text-color:			black;
 	font-size:			9;
 }
 
 way["seamark:type"=cable_submarine]::cable {
-	image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L31.svg"
+	repeat-image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L31.svg"
 }
 area["seamark:type"=cable_area]::cable {
 	color:				darkmagenta;
@@ -962,7 +968,7 @@ area["seamark:type"=cable_area]::cable {
 	right-casing-linecap: round;
 }
 way["seamark:type"=pipeline_submarine]::pipeline {
-	image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L40.svg"
+	repeat-image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L40.svg"
 }
 
 /* M */
@@ -999,7 +1005,7 @@ way["seamark:type"=restricted_area]::restricted_area {
 }
 node["seamark:type"=anchor_berth],
 node["seamark:type"=anchorage],
-way["seamark:type"=anchorage]:closed {
+area["seamark:type"=anchorage] {
 	text:		"seamark:name";
 	text-color:	darkmagenta;
 	font-size: 15;
@@ -1022,14 +1028,14 @@ node["seamark:type"=anchorage]["seamark:anchorage:note"]::anchor {
 	text-color:		darkmagenta;
 	font-size:		15;
 }
-way["seamark:type"=anchor_berth]:closed ,
-way["seamark:type"=anchorage]:closed {
+area["seamark:type"=anchor_berth]::anchor ,
+area["seamark:type"=anchorage]::anchor {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N12.svg";
 	icon-width:		48;
 }
 
-way["seamark:type"=anchor_berth]::anchorage,
-way["seamark:type"=anchorage]::anchorage  {
+area["seamark:type"=anchor_berth]::anchorage,
+area["seamark:type"=anchorage]::anchorage  {
 	width:					3;
 	color:					darkmagenta;
 	dashes:					20,5;
@@ -1038,21 +1044,22 @@ way["seamark:type"=anchorage]::anchorage  {
 	right-casing-color:		darkmagenta;
 }
 
-way[boundary=national_park]::nature_reserve,
+area[boundary=national_park]::nature_reserve,
 relation[boundary=national_park]::nature_reserve,
-way[leisure=nature_reserve]::nature_reserve,
+area[leisure=nature_reserve]::nature_reserve,
 relation[leisure=nature_reserve]::nature_reserve,
-way[boundary=protected_area]::nature_reserve,
+area[boundary=protected_area]::nature_reserve,
 relation[boundary=protected_area]::nature_reserve {
 	width:					3;
 	color:					forestgreen;
 	dashes:					20,5;
 }
 
-relation[boundary=administrative]::border,
-way[boundary=administrative]::border {
+relation[boundary=administrative][!maritime]::border,
+way[boundary=administrative][!maritime]::border {
 	image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N40.svg"
 }
+relation[boundary=administrative][maritime=yes]::border,
 way[boundary=administrative][maritime=yes]::border {
 	image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N41.svg"
 }
@@ -2536,11 +2543,8 @@ node[harbour=marina]::marina {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U1.1.svg";
 	icon-width:		16;
 }
-node[amenity=restaurant]::restaurant {
-	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U11.svg";
-	icon-width:		16;
-}
-way[amenity=restaurant]:closed {
+node[amenity=restaurant]::restaurant,
+area[amenity=restaurant]::restaurant {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U11.svg";
 	icon-width:		16;
 }
@@ -2599,6 +2603,7 @@ node[amenity=parking]::parking {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U27.svg";
 	icon-height:	16;
 }
+area[tourism=camp_site]::camping,
 node[tourism=camp_site]::camping {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U30_br.svg";
 	icon-height:	16;
@@ -2615,6 +2620,7 @@ node[tourism=picnic_site]::picnic_site {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/Ua_ca.svg";
 	icon-width:		16;
 }
+area[tourism=hotel]::hotel,
 node[tourism=hotel]::hotel {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/Uc_no.svg";
 	icon-width:		16;
