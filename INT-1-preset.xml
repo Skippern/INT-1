@@ -3696,6 +3696,7 @@
 	<label text="For non-IALA lateral buoys, seeQ130.1"/>
 	<key key="seamark:type" value="buoy_special_purpose"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:buoy"/>
+	<text key="seamark:name" text="Name" delete_if_empty="true"/>
     <combo key="seamark:buoy_special_purpose:shape" text="Buoy Shape" use_last_as_default="force" required="true">
 	 <list_entry value="conical" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q20/general.svg" icon_size="16"/>
 	 <list_entry value="can" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q21/general.svg" icon_size="16"/>
