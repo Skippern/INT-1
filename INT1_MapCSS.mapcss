@@ -898,7 +898,7 @@ node["seamark:type"=restricted_area]["seamark:restricted_area:category"=foul_gro
  	icon-width:			16;
 }
 
-node[seamark=obstruction]::obstruction {
+node["seamark:type"=obstruction]::obstruction {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K40.svg";
  	icon-width:			16;
 }
@@ -1055,13 +1055,12 @@ relation[boundary=protected_area]::nature_reserve {
 	dashes:					20,5;
 }
 
-relation[boundary=administrative][!maritime]::border,
-way[boundary=administrative][!maritime]::border {
-	image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N40.svg"
+relation[boundary=administrative][admin_level=2] > way::border {
+	repeat-image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N40.svg"
+/*	repeat-image-alignment:		center; */
 }
-relation[boundary=administrative][maritime=yes]::border,
-way[boundary=administrative][maritime=yes]::border {
-	image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N41.svg"
+relation[boundary=administrative][admin_level=2] > way[maritime=yes]::border {
+	repeat-image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N41.svg"
 }
 
 relation[boundary=maritime]::border,
@@ -1125,6 +1124,8 @@ node["seamark:type"=light_major]::lighthouse {
 /* Q */
 
 node["seamark:type"=mooring]["seamark:mooring:category"=buoy]::mooring {
+	text:			"seamark:name";
+	text-color:		black;
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q40.svg";
 	icon-width:			16;
 }
@@ -1137,6 +1138,8 @@ node["seamark:type"=beacon_safe_water]::beacon,
 node["seamark:type"=beacon_special_purpose]::beacon,
 node[seamark=beacon]::beacon {
 	/* Default beacon */
+	text:			"seamark:name";
+	text-color:		black;
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/general.svg";
 	icon-width:		16;
 }
@@ -1381,6 +1384,8 @@ node["seamark:type"=buoy_safe_water]::buoy,
 node["seamark:type"=buoy_special_purpose]::buoy,
 node[seamark=buoy]::buoy {
 	/* Buoy not further marked, default to red pilar buoy without topmark */
+	text:			"seamark:name";
+	text-color:		black;
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/general.svg";
 	icon-width:		16;
 }
@@ -1749,6 +1754,27 @@ node["seamark:buoy_special_purpose:colour"="yellow;red;yellow"]["seamark:buoy_sp
 }
 node["seamark:buoy_special_purpose:colour"="yellow;red;yellow"]["seamark:buoy_special_purpose:colour_pattern"=horizontal]["seamark:buoy_special_purpose:shape"=spar]::buoy {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q24/H_yellow_red_yellow.svg";
+	icon-width:		16;
+}
+node["seamark:buoy_special_purpose:colour"="yellow;brown;yellow"]["seamark:buoy_special_purpose:colour_pattern"=horizontal]["seamark:buoy_special_purpose:shape"=conical]::buoy {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q20/H_yellow_brown_yellow.svg";
+	icon-width:		16;
+}
+node["seamark:buoy_special_purpose:colour"="yellow;brown;yellow"]["seamark:buoy_special_purpose:colour_pattern"=horizontal]["seamark:buoy_special_purpose:shape"=can]::buoy {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q21/H_yellow_brown_yellow.svg";
+	icon-width:		16;
+}
+node["seamark:buoy_special_purpose:colour"="yellow;brown;yellow"]["seamark:buoy_special_purpose:colour_pattern"=horizontal]["seamark:buoy_special_purpose:shape"=spherical]::buoy {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q22/H_yellow_brown_yellow.svg";
+	icon-width:		16;
+}
+node["seamark:buoy_special_purpose:colour"="yellow;brown;yellow"]["seamark:buoy_special_purpose:colour_pattern"=horizontal]["seamark:buoy_special_purpose:shape"=pillar]::buoy {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_yellow_brown_yellow.svg";
+	icon-width:		16;
+}
+
+node["seamark:buoy_special_purpose:colour"="yellow;brown;yellow"]["seamark:buoy_special_purpose:colour_pattern"=horizontal]["seamark:buoy_special_purpose:shape"=spar]::buoy {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q24/H_yellow_brown_yellow.svg";
 	icon-width:		16;
 }
 
