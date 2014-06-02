@@ -723,6 +723,11 @@ node[man_made=adit]::mine {
 }
 
 /* F */
+node["seamark:type"=harbour]::harbour,
+area["seamark:type"=harbour]::harbour {
+	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg";
+	icon-width:			16;
+}
 node[harbour=dolphin]::dolphin,
 node["seamark:mooring:category"=dolphin]::dolphin {
 	width:				6;
