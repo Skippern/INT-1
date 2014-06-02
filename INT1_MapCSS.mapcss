@@ -5,111 +5,75 @@
  * database corresponds with reality, seeing it rendered in a standardized and familiar
  * way is the best option.
  *
- * Color Scheme:
- * Land:
- *  - light yellow: fee4aa navajowhite
- *  - dark yellow: c3994d darkgoldenrod
- * Tidal zone:
- *  - green: 9ec8a5 darkseagreen
- * Water:
- *  - blue: 9bd8f4 skyblue
- *  - white: dbf2fe aliceblue
- * Text / Symbols:
- *  - black: 000000 (black) / 000407 black
- *  - magenta: a30075 darkmagenta
- * Limits:
- *  - light magenta: eccae1 thistle
- *  - dark magenta: a30075 darkmagenta
- *  - light green: c1e8cd forestgreen? ???????????????
- *  - dark green: 2d9845 forestgreen
- *  - black: 000000 black
- *  - grey: d3d3d3 lightgrey
- * Lights:
- *  - magenta: b5006f daskmagenta
- *  - yellow: ffff00 yellow
- *  - red: ff0000 red
- *  - green: 00ff00 green (lime)
- * IALA Sailing direction arrow:
- *  - red: d90029 red
- *  - green: 009845 green (lime)
- *
- * Icon sizes
- *  - default: 16
- *  - bottom position marker: 32
  */
 
 /* Meta data */
 meta {
-	title:			"INT 1 Rendering (IHO standarized symbols) PD";
-	icon:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/IHO_c.svg";
-	author:			"Aun (Skippern) Johnsen";
-	version:		"0.1";
-	description:	"JOSM rendering of nautical symbols according to IHO standard INT-1";
+	title:				"INT 1 Rendering (IHO standarized symbols) PD";
+	icon:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/IHO_c.svg";
+	author:				"Aun (Skippern) Johnsen";
+	version:			"0.1";
+	description:		"JOSM rendering of nautical symbols according to IHO standard INT-1";
+	min-josm-version:	7166;
 }
 
 /* For JOSM, creating a light background color */
 canvas {
-	background-color:	aliceblue;
-	fill-color:			aliceblue; /* same as background in case only one of these are supported */
+	fill-color:			aliceblue;
 	antialiasing:		'full';
-	default-points: 	false; /* hides points */
-	default-lines: 		false; /* hides lines */
+	default-points: 	true; /* hides points */
+	default-lines: 		true; /* hides lines */
 	fill-opacity:		1; /* should underlaying layers shine through? */
 }
 
 /* Base color */
-area[landuse] ,
-area[natural] ,
-area[leisure] ,
+area[landuse],
+area[natural],
+area[leisure],
 area[man_made] {
 	fill-color:			navajowhite;
 	fill-opacity:		0.2;
 }
 
-way[hires=yes]::hires {
-	opacity:			0.1;
-	color:				yellow;
-	width:				3;
-}
 
 /* Start making background colors */
 /* add color from buttom up? */
 /* Tidal background */
-relation[tidal=yes],area[tidal=yes] ,
-relation[water=tidal],area[water=tidal] ,
-relation[natural=wetland][wetland=mangrove], area[natural=wetland][wetland=mangrove] ,
-relation[natural=wetland][wetland=saltmarsh], area[natural=wetland][wetland=saltmarsh] ,
+relation[tidal=yes],area[tidal=yes],
+relation[water=tidal],area[water=tidal],
+relation[natural=wetland][wetland=mangrove], area[natural=wetland][wetland=mangrove],
+relation[natural=wetland][wetland=saltmarsh], area[natural=wetland][wetland=saltmarsh],
 relation[natural=beach][tidal=yes], area[natural=beach][tidal=yes] {
 	fill-color:			darkseagreen;
 	fill-opacity:		0.2;
 }
 
 /* Land background */
-area[natural=coastline] ,
-area[natural=beach][!tidal] ,
-area[natural=island] ,
-area[natural=land] ,
-relation[natural=wetland][wetland=reedbed], area[natural=wetland][wetland=reedbed] ,
+area[natural=coastline],
+area[natural=beach][!tidal],
+area[natural=island],
+area[natural=land],
+relation[natural=wetland][wetland=reedbed], area[natural=wetland][wetland=reedbed],
 relation[natural=wetland][wetland=swamp], area[natural=wetland][wetland=swamp],
-relation[natural=wetland][wetland=marsh], area[natural=wetland][wetland=marsh] ,
-relation[natural=wood], area[natural=wood] ,
-relation[landuse=forest], area[landuse=forest] ,
-way[man_made=pier]:closed ,
-way[man_made=groyne]:closed ,
-way[man_made=jetty]:closed ,
+relation[natural=wetland][wetland=marsh], area[natural=wetland][wetland=marsh],
+relation[natural=wood], area[natural=wood],
+relation[landuse=forest], area[landuse=forest],
+way[man_made=pier]:closed,
+way[man_made=groyne]:closed,
+way[man_made=jetty]:closed,
 way[man_made=breakwater]:closed {
 	fill-color:			navajowhite;
 	fill-opacity:		0.2;
 }
 
 /* Urban Background */
-area[landuse=residential] ,
-area[landuse=brownfield] ,
-area[landuse=commercial] ,
-area[landuse=construction] ,
-area[landuse=garages] ,
-area[landuse=greenfield] ,
-area[landuse=retail] ,
+area[landuse=residential],
+area[landuse=brownfield],
+area[landuse=commercial],
+area[landuse=construction],
+area[landuse=garages],
+area[landuse=greenfield],
+area[landuse=retail],
 area[landuse=allotments] {
    fill-color: 			darkgoldenrod;
    fill-opacity: 		0.2;
@@ -159,8 +123,8 @@ area[leisure=garden] {
 	fill-opacity:		0.2;
 }
 
-area[landuse=industrial] ,
-area[landuse=railway] ,
+area[landuse=industrial],
+area[landuse=railway],
 area[landuse=airport]  {
 	fill-color:			lightgray;
 	fill-opacity:		0.2;
@@ -177,12 +141,28 @@ area[military] {
 }
 
 /* For debugging or help */
-node["seamark:fixme"]::FIXME {
+node:new { /* Identify new nodes (added this session) */
+	points:		true;
+}
+way:new { /* Identify new ways (added this session) */
+	lines:		true;
+}
+node["seamark:type"] { /* Identify seamarks still not supported by this stylesheet */
+	object-z-index:		-1;
+	icon-image:			"http://dev.openseamap.org/josm/icons/OpenSeaMapLogo_16.png";
+	icon-opacity:		0.4;
+}
+node["seamark:fixme"]::FIXME { /* Identifies seamarks marked with a FIXME tag */
 	text:			"seamark:fixme";
 	font-size:		16;
 	text-color:		yellow;
 }
 
+way[hires=yes]::hires { /* To show border of hires images */
+	opacity:			0.05;
+	color:				yellow;
+	width:				3;
+}
 /* B */
 node[man_made=survey_point]::survey {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B22.svg";
@@ -243,17 +223,17 @@ node["seamark:type"=distance_mark]["seamark:distance_mark:category"=board]::mile
 }
 node[waterway=milestone][sign=no]::milestone {
 	text:				distance;
-	font-size:			6;
+	font-size:			8;
 	text-color:			darkmagenta;
 	icon:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B25.1.svg";
 	icon-width:			16;
 }
 node["seamark:type"=distance_mark]["seamark:distance_mark:category"=not_installed]::milestone {
 	text:				"seamark:distance_mark:distance";
-	font-size:			6;
+	font-size:			24;
 	text-color:			darkmagenta;
 	icon:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B25.1.svg";
-	icon-width:			16;
+	icon-width:			32;
 }
 /* C */
 way[natural=coastline][!coastline:survey_quality]::coast {
@@ -581,6 +561,16 @@ node[highway=mini_roundabout]::highwayturn {
 	width:				5;
 	opacity:			0.8;
 }
+node["seamark:type"][ruins]::ruins {
+	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D8.svg";
+	icon-width:			16;	
+	icon-offset: 10;
+}
+node["seamark:type"=bridge]["seamark:bridge:clearance_height"]::bridge {
+	text:				"seamark:bridge:clearance_height";
+	font-size:			12;
+	text-color:			black;
+}
 /* E */
 node[amenity=place_of_worship][religion=christian]::church,
 area[amenity=place_of_worship][religion=christian]::church {
@@ -602,31 +592,31 @@ node["seamark:landmark:category"=cross] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E12.svg";
 	icon-height:		16;
 }
-area[amenity=place_of_worship][religion=hindu] ,
+area[amenity=place_of_worship][religion=hindu],
 node[amenity=place_of_worship][religion=hindu],
-area[amenity=place_of_worship][religion=sikh] ,
+area[amenity=place_of_worship][religion=sikh],
 node[amenity=place_of_worship][religion=sikh] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E13.svg";
 	icon-width:			16;
 }
-area[amenity=place_of_worship][religion=taoist] ,
+area[amenity=place_of_worship][religion=taoist],
 node[amenity=place_of_worship][religion=taoist] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E15.svg";
 	icon-width:			16;
 	text:				"Pag";
 	text-color:			black;
 }
-area[amenity=place_of_worship][religion=shinto] ,
+area[amenity=place_of_worship][religion=shinto],
 node[amenity=place_of_worship][religion=shinto] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E15.svg";
 	icon-width:			16;
 }
-area[amenity=place_of_worship][religion=buddhist] ,
+area[amenity=place_of_worship][religion=buddhist],
 node[amenity=place_of_worship][religion=buddhist] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E16.svg";
 	icon-width:			16;
 }
-area[amenity=place_of_worship][religion=muslim] ,
+area[amenity=place_of_worship][religion=muslim],
 node[amenity=place_of_worship][religion=muslim] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E17.svg";
 	icon-width:			16;
@@ -747,6 +737,9 @@ node["seamark:mooring:category"=dolphin]::deviation_dolphin {
 node["seamark:mooring:category"=post]::pillar,
 node["seamark:mooring:category"=pile]::pillar {
 	width:				6;
+	symbol-shape:		circle;
+	symbol-size:		8;
+	symbol-fill-color:	black;
 	color:				black;
 }
 
@@ -1028,7 +1021,7 @@ node["seamark:type"=anchorage]["seamark:anchorage:note"]::anchor {
 	text-color:		darkmagenta;
 	font-size:		15;
 }
-area["seamark:type"=anchor_berth]::anchor ,
+area["seamark:type"=anchor_berth]::anchor,
 area["seamark:type"=anchorage]::anchor {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N12.svg";
 	icon-width:		48;
@@ -1772,9 +1765,28 @@ node["seamark:buoy_special_purpose:colour"="yellow;brown;yellow"]["seamark:buoy_
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_yellow_brown_yellow.svg";
 	icon-width:		16;
 }
-
 node["seamark:buoy_special_purpose:colour"="yellow;brown;yellow"]["seamark:buoy_special_purpose:colour_pattern"=horizontal]["seamark:buoy_special_purpose:shape"=spar]::buoy {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q24/H_yellow_brown_yellow.svg";
+	icon-width:		16;
+}
+node["seamark:buoy_special_purpose:colour"="black;red"]["seamark:buoy_special_purpose:colour_pattern"=horizontal]["seamark:buoy_special_purpose:shape"=conical]::buoy {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q20/H_black_red.svg";
+	icon-width:		16;
+}
+node["seamark:buoy_special_purpose:colour"="black;red"]["seamark:buoy_special_purpose:colour_pattern"=horizontal]["seamark:buoy_special_purpose:shape"=can]::buoy {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q21/H_black_red.svg";
+	icon-width:		16;
+}
+node["seamark:buoy_special_purpose:colour"="black;red"]["seamark:buoy_special_purpose:colour_pattern"=horizontal]["seamark:buoy_special_purpose:shape"=spherical]::buoy {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q22/H_black_red.svg";
+	icon-width:		16;
+}
+node["seamark:buoy_special_purpose:colour"="black;red"]["seamark:buoy_special_purpose:colour_pattern"=horizontal]["seamark:buoy_special_purpose:shape"=pillar]::buoy {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_black_red.svg";
+	icon-width:		16;
+}
+node["seamark:buoy_special_purpose:colour"="black;red"]["seamark:buoy_special_purpose:colour_pattern"=horizontal]["seamark:buoy_special_purpose:shape"=spar]::buoy {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q24/H_black_red.svg";
 	icon-width:		16;
 }
 
@@ -2560,13 +2572,26 @@ node["seamark:type"=rescue_station]::rescue {
 
 node["seamark:type"=signal_station_traffic]::signal_station,
 node["seamark:type"=signal_staion_warning]::signal_station {
-	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/T/T12.svg";
-	icon-width:		16;
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/T/T20.svg";
+	icon-width:		32;
 }
 
 /* U */
+area["seamark:harbour:category"=marina]::marina,
+node["seamark:harbour:category"=marina]::marina,
+area[harbour=marina]::marina,
 node[harbour=marina]::marina {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U1.1.svg";
+	icon-width:		16;
+}
+area["seamark:small_craft_facility:cateogry"=nautical_club]::nautical_club,
+node["seamark:small_craft_facility:category"=nautical_club]::nautical_club {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U4_br.svg";
+	icon-width:		16;
+}
+node[leisure=slipway]::slipway,
+node["seamark:small_craft_facility:category"=slipway]::slipway {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U5.svg";
 	icon-width:		16;
 }
 node[amenity=restaurant]::restaurant,
@@ -2574,6 +2599,7 @@ area[amenity=restaurant]::restaurant {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U11.svg";
 	icon-width:		16;
 }
+area[amenity=doctors]::doctors,
 node[amenity=doctors]::doctors {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U15.svg";
 	icon-width:		16;
@@ -2582,6 +2608,7 @@ node[amenity=drinking_water]::water {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U17.svg";
 	icon-width:		16;
 }
+area[amenity=fuel]::fuel,
 node[amenity=fuel]::fuel {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U18_no.svg";
 	icon-width:		16;
@@ -2592,10 +2619,13 @@ node["seamark:small_craft_facility:category"=electricity]::electricity {
 	icon-width:		16;
 }
 node["seamark:small_craft_facility:category"=bottled_gas]::gas,
+area[shop=gas]::gas,
 node[shop=gas]::gas {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U20.svg";
 	icon-width:		16;
 }
+area[amenity=shower]::showers,
+area[amenity=public_bath]::showers,
 node[amenity=shower]::showers,
 node[amenity=public_bath]::showers {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U21.svg";
@@ -2606,6 +2636,7 @@ node[shop=dry_cleaning]::laundry {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U22.svg";
 	icon-width:	16;
 }
+area[amenity=toilet]::toilet,
 node[amenity=toilet]::toilet {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U23.svg";
 	icon-width:		16;
@@ -2625,6 +2656,7 @@ node[amenity=waste_transfer_station]::refuse_bin {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U26.svg";
 	icon-width:		16;
 }
+area[amenity=parking]::parking,
 node[amenity=parking]::parking {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U27.svg";
 	icon-height:	16;
@@ -2634,10 +2666,12 @@ node[tourism=camp_site]::camping {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U30_br.svg";
 	icon-height:	16;
 }
+area[amenity=police]::police,
 node[amenity=police]::police {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U31.svg";
 	icon-width:		16;
 }
+area[leisure=bathing_place]::bathing_place,
 node[leisure=bathing_place]::bathing_place {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/Ua_no.svg";
 	icon-width:		16;
@@ -2646,6 +2680,7 @@ node[tourism=picnic_site]::picnic_site {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/Ua_ca.svg";
 	icon-width:		16;
 }
+area[building=hotel]::hotel,
 area[tourism=hotel]::hotel,
 node[tourism=hotel]::hotel {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/Uc_no.svg";

@@ -55,14 +55,14 @@
 	<key key="seamark:type" value="distance_mark"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=milestone"/>
 	<link href="http://wiki.openstreetmap.org/wiki/OpenSeaMap/Distance_Marks"/>
-	<combo key="seamark:distance_mark:category" text="Category">
+	<combo key="seamark:distance_mark:category" text="Category" use_last_as_default="true">
 	 <list_entry value="board"/>
 	 <list_entry value="pole"/>
 	 <list_entry value="unknown_shape"/>
 	 <list_entry value="not_installed"/>
 	</combo>
 	<text key="seamark:distance_mark:distance" text="Distance (without units for OpenSeaMap"/>
-	<combo key="seamark:distance_mark:units" text="Units for OpenSeaMap">
+	<combo key="seamark:distance_mark:units" text="Units for OpenSeaMap" use_last_as_default="true">
 	 <list_entry value="kilometer"/>
 	 <list_entry value="hectometer"/>
 	 <list_entry value="nautical_miles"/>
@@ -70,7 +70,7 @@
 	 <list_entry value="meters"/>
 	 <list_entry value="feet"/>
 	</combo>
-    <check key="sign" text="Signed" default="on"/>
+    <check key="sign" text="Signed" use_last_as_default="true"/>
     <text key="ref" text="Reference"/>
 	<label text="If the distance mark have other uses as well:"/>
     <text key="distance" text="Distance (with units)" required="true"/>
@@ -2514,7 +2514,7 @@
      <label text="F22: Pillars"/>
 	 <key key="seamark:type" value="mooring"/>
 	 <key key="seamark:mooring:category" value="pile"/>
-	 <text key="seamark:pile:name" text="Name"/>
+	 <text key="seamark:name" text="Name"/>
 	 <combo key="seamark:pile:colour" text="Color">
 	  <list_entry value="black"/>
 	  <list_entry value="red"/>
@@ -6003,7 +6003,6 @@
 	<key key="seamark:type" value="small_craft_facility"/>
 	<key key="seamark:small_craft_facility:category" value="slipway"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=slipway"/>
-    <key key="harbour" value="slipway"/>
     <text key="name" text="Name"/>
     <text key="ref" text="Reference"/>
     <combo key="harbour:slipway:type" text="Type">
