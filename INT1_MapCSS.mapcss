@@ -998,6 +998,18 @@ way["seamark:type"=separation_lane]::tss {
 	image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M10.svg";
 }
 
+node["seamark:type"=call-in_point]::radio {
+	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M40.2.svg";
+	icon-width:			32;
+}
+node["seamark:type"=calling-in_point]["seamark:calling-in_point:flow"=one-way]::radio {
+	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M40.1.svg";
+	icon-width:			32;
+}
+node["seamark:type"=calling-in_point]["seamark:calling-in_point:flow"=two-way]::radio {
+	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M40.2.svg";
+	icon-width:			32;
+}
 way[route=ferry]::ferry,
 relation[route=ferry]::ferry {
 	width:					2;

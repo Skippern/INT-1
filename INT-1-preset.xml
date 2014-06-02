@@ -1095,7 +1095,7 @@
 	<check key="landuse" text="On Military ground" value_on="military" value_off="" delete_if_empty="true"/>
 	<check key="type" text="Military use only" value_on="military" value_off="" delete_if_empty="true"/>
    </item>
-   <item name="Vertical Clearance (D20)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D26.svg" type="node,way,closedway,relation">
+   <item name="Vertical Clearance (D20)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D20.svg" type="node,way,closedway,relation">
     <label text="D20: Vertical Clearance"/>
     <text key="maxheight:marine" text="Max free Sailing Height under object" match="key"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:maxheight:marine"/>
@@ -3199,7 +3199,7 @@
 	<key key="seamark:type" value="radar_line"/>
    </item>
    <!-- M32.x Radar Reference Line -->
-   <item name="Radio Reporting Point, Line (M40)" icon="presets/empty.png" type="node,way,closedway">
+   <item name="Radio Reporting Point, Line (M40)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M40.2.svg" type="node,way,closedway">
     <label text="M40: Radio Reporting Points and Lines"/>
 	<key key="seamark:type" value="calling-in_point"/>
 	<text key="seamark:calling-in_point:channel" text="VHF Channel"/>
@@ -3207,8 +3207,8 @@
 	<combo key="seamark:calling-in_point:category" text="Category">
 	</combo>
 	<combo key="seamark:calling-in_point:flow" text="Flow">
-	 <list_entry value="one-way"/>
-	 <list_entry value="two-way"/>
+	 <list_entry value="one-way" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M40.1.svg"/>
+	 <list_entry value="two-way" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M40.2.svg"/>
 	</combo>
    </item>
    <item name="Ferry Route (M50-M51)" icon="presets/empty.png" type="way,relation">
@@ -6433,7 +6433,11 @@
    <list_entry value="rem_imcomplete"/>
    <list_entry value="usldup"/>
   </combo>
-  <text key="seamark:note" text="Additional note" delete_if_empty="true"/>
+  <text key="note" text="Additional note to mappers" delete_if_empty="true"/>
+ </item>
+ <item name="Information" icon="presets/empty.png">
+  <label text="Chart information (to mariners)"/>
+  <text key="seamark:information" text="Information" required="true" match="key"/>
  </item>
  </group>
 </annotations>
