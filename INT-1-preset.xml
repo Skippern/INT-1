@@ -1095,7 +1095,7 @@
 	<check key="landuse" text="On Military ground" value_on="military" value_off="" delete_if_empty="true"/>
 	<check key="type" text="Military use only" value_on="military" value_off="" delete_if_empty="true"/>
    </item>
-   <item name="Vertical Clearance (D20)" icon="presets/empty.png" type="node,way,closedway,relation">
+   <item name="Vertical Clearance (D20)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D26.svg" type="node,way,closedway,relation">
     <label text="D20: Vertical Clearance"/>
     <text key="maxheight:marine" text="Max free Sailing Height under object" match="key"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:maxheight:marine"/>
@@ -1147,7 +1147,7 @@
 	<text key="seamark:bridge:clearance_width" text="Horizontal Clearance"/>
 	<text key="seamark:bridge:clearance_length" text="Longitudal clearance"/>
    </item>
-   <item name="Bridge (D22-D24) (Under Bridge)" icon="presets/empty.png" type="node">
+   <item name="Bridge (D22-D24) (Under Bridge)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D26.svg" type="node">
     <label text="D22, D23.x, D24: Bridge"/>
 	<key key="seamark:type" value="bridge"/>
 	<combo key="seamark:bridge:category" text="Bridge Type" match="key">
@@ -1457,9 +1457,9 @@
 	</combo>
     <label text="If the church have a tower, spire or cupola used as a landmark:"/>
 	<combo key="seamamrk:landmark:category" text="Landmark" readonly="true">
-	 <list_entry value="dome"/>
-	 <list_entry value="spire"/>
-	 <list_entry value="tower"/>
+	 <list_entry value="dome" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.4.svg" />
+	 <list_entry value="spire" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.3.svg" />
+	 <list_entry value="tower" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.2.svg" />
 	 <list_entry value="cross"/>
 	</combo>
 	<label text="If the church is mapped as an area, it might be desirable to mark the landmark separately in a node"/>

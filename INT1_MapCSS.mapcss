@@ -567,6 +567,8 @@ node["seamark:type"][ruins]::ruins {
 	icon-offset: 10;
 }
 node["seamark:type"=bridge]["seamark:bridge:clearance_height"]::bridge {
+	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D20.svg";
+	icon-width:			16;		
 	text:				"seamark:bridge:clearance_height";
 	font-size:			12;
 	text-color:			black;
@@ -581,7 +583,19 @@ area[amenity=place_of_worship][religion=christian]::church {
 
 area[amenity=place_of_worship][religion=christian]["seamark:landmark:function"=church]::church,
 node[amenity=place_of_worship][religion=christian]["seamark:landmark:function"=church]::church {
-	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.svg";
+	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.1.svg";
+	icon-width:			16;
+}
+node[amenity=place_of_worship][religion=christian]["seamark:landmark:category"=tower]::church {
+	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.2.svg";
+	icon-width:			16;
+}
+node[amenity=place_of_worship][religion=christian]["seamark:landmark:category"=spire]::church {
+	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.3.svg";
+	icon-width:			16;
+}
+node[amenity=place_of_worship][religion=christian]["seamark:landmark:category"=dome]::church {
+	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.4.svg";
 	icon-width:			16;
 }
 node[historic=wayside_cross],
