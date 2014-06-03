@@ -1104,7 +1104,7 @@
 	<text key="seamark:bridge:clearance_height_closed" text="Bridge Clearance Closed" match="key"/>
 	<text key="seamark:cable_overhead:vertical:clearance_safe" text="Safe Clearance of Cable" match="key"/>
    </item>
-   <item name="Horizontal Clearance (D21)" icon="presets/empty.png" type="node,way,closedway,relation">
+   <item name="Horizontal Clearance (D21)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D21.svg" type="node,way,closedway,relation">
     <label text="D21: Horizontal Clearance"/>
 	<text key="seamark:bridge:clearance_width" text="Horizontal Clearance" match="key"/>
    </item>
@@ -3401,7 +3401,7 @@
 	<key key="seamark:restricted_area:restriction" value="historic_wreck"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
    </item>
-   <item name="Maximum Speed (N27)" icon="presets/empty.png" type="closedway">
+   <item name="Maximum Speed (N27)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N27.svg" type="closedway">
     <label text="N27: Maximum Speed"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="restricted_speed"/>
@@ -6417,7 +6417,7 @@
 	<text key="rooms" text="Rooms"/>
    </item>
   </group>
- <item name="FIXME" icon="presets/empty.png">
+ <item name="FIXME" icon="presets/empty.png" type="node,way,closedway,relation">
   <label text="Seamark Fixme's"/>
   <combo key="seamark:fixme" required="true" text="FIXME" use_last_as_default="true" match="key">
    <list_entry value="beacon_guess"/>
@@ -6435,7 +6435,7 @@
   </combo>
   <text key="note" text="Additional note to mappers" delete_if_empty="true"/>
  </item>
- <item name="Information" icon="presets/empty.png">
+ <item name="Information" icon="presets/empty.png" type="node,way,closedway,relation">
   <label text="Chart information (to mariners)"/>
   <text key="seamark:information" text="Information" required="true" match="key"/>
  </item>
