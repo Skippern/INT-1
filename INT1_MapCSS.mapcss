@@ -34,7 +34,12 @@ area[man_made] {
 	fill-color:			navajowhite;
 	fill-opacity:		0.2;
 }
-
+/* override with water */
+area[natural=water],
+area[natural=bay] {
+	fill-color:			aliceblue;
+	fill-opacity:		0.2;
+}
 
 /* Start making background colors */
 /* add color from buttom up? */
@@ -1436,6 +1441,7 @@ node["seamark:buoy_lateral:colour"=red]["seamark:buoy_lateral:shape"=spar]::buoy
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q24/red.svg";
 	icon-width:		16;
 }
+/* Green */
 node["seamark:buoy_lateral:colour"=green]["seamark:buoy_lateral:shape"=conical]::buoy {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q20/green.svg";
 	icon-width:		16;
@@ -1456,6 +1462,7 @@ node["seamark:buoy_lateral:colour"=green]["seamark:buoy_lateral:shape"=spar]::bu
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q24/green.svg";
 	icon-width:		16;
 }
+/* Striped */
 node["seamark:buoy_lateral:colour"="green;red;green"]["seamark:buoy_lateral:shape"=conical]::buoy {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q20/H_green_red_green.svg";
 	icon-width:		16;

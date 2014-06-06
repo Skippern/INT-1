@@ -3631,7 +3631,7 @@
    <item name="Air obstruction lights (P61)" icon="presets/empty.png" type="node">
     <label text="P61: Air obstruction lights"/>
 	<key key="seamark:light:category" value="air_obstruction"/>
-	<combo key="seamark:light:visibility" default="" delete_if_empty="true">
+	<combo key="seamark:light:visibility" text="Visibility" default="" delete_if_empty="true">
 	 <list_entry value="intensified"/>
 	 <list_entry value="unintensified"/>
 	</combo>
