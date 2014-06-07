@@ -276,6 +276,11 @@ area[natural=cliff]::cliff {
 
 }
 
+node[natural=peak]::peak {
+	symbol-shape:	triangle;
+	color:			black;
+	symbol-size:	5;
+}
 way[waterway=stream]::stream,
 way[waterway=ditch]::stream,
 way[waterway=drain]::stream {
