@@ -1034,7 +1034,7 @@ way["seamark:type"=restricted_area]::restricted_area {
 }
 node["seamark:type"=anchor_berth],
 node["seamark:type"=anchorage],
-area["seamark:type"=anchorage] {
+way["seamark:type"=anchorage] {
 	text:		"seamark:name";
 	text-color:	darkmagenta;
 	font-size: 15;
@@ -1074,20 +1074,19 @@ area["seamark:type"=anchorage]::anchorage  {
 }
 
 area[boundary=national_park]::nature_reserve,
-relation[boundary=national_park]::nature_reserve,
 area[leisure=nature_reserve]::nature_reserve,
-relation[leisure=nature_reserve]::nature_reserve,
-area[boundary=protected_area]::nature_reserve,
-relation[boundary=protected_area]::nature_reserve {
+area[boundary=protected_area]::nature_reserve {
 	width:					3;
 	color:					forestgreen;
 	dashes:					20,5;
 }
 
+way[boundary=administrative][admin_level=2]::border,
 relation[boundary=administrative][admin_level=2] > way::border {
 	repeat-image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N40.svg"
 /*	repeat-image-alignment:		center; */
 }
+way[boundary=administrative][admin_level=2][maritime=yes]::border,
 relation[boundary=administrative][admin_level=2] > way[maritime=yes]::border {
 	repeat-image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N41.svg"
 }
