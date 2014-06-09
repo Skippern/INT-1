@@ -2238,7 +2238,7 @@
     <label text="F: Harbour"/>
 	<key key="harbour" value="yes"/>
 	<key key="seamark:type" value="harbour"/>
-	<text key="harbour:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
 	<combo key="harbour:operator" text="Operator" readonly="false">
 	</combo>
 	<combo key="harbour:category" text="Category">

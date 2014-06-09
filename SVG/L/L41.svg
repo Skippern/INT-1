@@ -5,7 +5,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
@@ -104,19 +103,10 @@
        sodipodi:rx="10"
        sodipodi:ry="10"
        d="M 25,10 C 25,15.522847 20.522847,20 15,20 9.4771525,20 5,15.522847 5,10 5,4.4771525 9.4771525,0 15,0 20.522847,0 25,4.4771525 25,10 z" />
-    <use
-       x="0"
-       y="0"
-       xlink:href="#path2987"
-       id="use3759"
-       width="30"
-       height="60" />
-    <use
-       x="0"
-       y="0"
-       xlink:href="#circle2989"
-       id="use3761"
-       width="30"
-       height="60" />
+    <path
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+       d="M 54.5 0.5 C 50.392382 0.5 46.85148 2.958556 45.3125 6.5 L 4.5 6.5 L 4.5 14.5 L 45.3125 14.5 C 46.85148 18.041444 50.392382 20.5 54.5 20.5 C 58.607618 20.5 62.14852 18.041444 63.6875 14.5 L 64.5 14.5 L 64.5 10.5 L 64.5 6.5 L 63.6875 6.5 C 62.14852 2.958556 58.607618 0.5 54.5 0.5 z "
+       transform="matrix(0,-1,1,0,4.5,64.5)"
+       id="use3759" />
   </g>
 </svg>

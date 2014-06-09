@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -52,8 +52,8 @@
      inkscape:window-height="494"
      id="namedview6732"
      showgrid="false"
-     inkscape:zoom="4.3"
-     inkscape:cx="-6.4302326"
+     inkscape:zoom="8.6470588"
+     inkscape:cx="34.5"
      inkscape:cy="10"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -93,4 +93,13 @@
      transform="matrix(0,1,-1,0,44.5,-24.5)"
      width="30"
      height="60" />
+  <g
+     id="use2985"
+     transform="matrix(0,1,-1,0,64.5,-5)">
+    <path
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#c480ff;fill-opacity:1;stroke:none;stroke-width:8;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+       d="M 54.5 0 C 50.392382 0 46.85148 2.458556 45.3125 6 L 4.5 6 L 4.5 14 L 45.3125 14 C 46.85148 17.541444 50.392382 20 54.5 20 C 58.607618 20 62.14852 17.541444 63.6875 14 L 64.5 14 L 64.5 10 L 64.5 6 L 63.6875 6 C 62.14852 2.458556 58.607618 0 54.5 0 z "
+       transform="matrix(0,-1,1,0,5,64.5)"
+       id="path2989" />
+  </g>
 </svg>
