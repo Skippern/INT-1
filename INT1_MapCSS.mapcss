@@ -927,6 +927,7 @@ node["seamark:type"=obstruction]::obstruction {
 
 node[landuse=aquaculture]::aquaculture,
 node[landuse=fishfarm]::aquaculture,
+node["seamark:type"=marine_farm]::aquaculture,
 node[aquaculture] {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K48_no.svg";
  	icon-width:			16;

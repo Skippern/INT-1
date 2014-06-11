@@ -4,9 +4,18 @@
   <group name="B: Positions, Distances, Directions, Compass" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B21.svg">
    <item name="Survey Point (B20-B23)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B20.svg" type="node">
     <label text="B20-B23: Survey Point" />
+	<key key="seamark:type" value="control_point"/>
     <key key="man_made" value="survey_point"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=survey_point"/>
     <text key="name" text="Name"/>
+	<combo key="seamark:control_point:category" text="Category">
+	 <list_entry value="triangulation"/>
+	 <list_entry value="observation"/>
+	 <list_entry value="fixed"/>
+	 <list_entry value="benchmark"/>
+	 <list_entry value="horizontal_main"/>
+	 <list_entry value="horizontal_secundary"/>
+	</combo>
     <text key="ref" text="Reference"/>
     <text key="ele" text="Elevation"/>
     <combo key="type" text="Type">
@@ -20,6 +29,8 @@
    <item name="Boundary Stone (B24)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B24_ca.svg" type="node">
     <label text="B24: Boundary Stone"/>
     <key key="historic" value="boundary_stone"/>
+	<key key="seamark:type" value="control_point"/>
+	<key key="seamark:control_point:category" value="boundary"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:historic=boundary_stone"/>
 	<text key="name" text="Name"/>
     <text key="ref" text="Reference"/>
@@ -1177,6 +1188,8 @@
    </item>
    <item name="Overhead transporter or Telepheric (D25)" icon="presets/empty.png" type="way">
     <label text="D25: Overhead transporter or Telepheric"/>
+	<key key="seamark:type" value="conveyor"/>
+	<key key="seamark:conveyor:category" value="aerial"/>
 	<combo key="aerialway" text="Type" required="true" match="key">
 	 <list_entry value="gondola"/>
 	 <list_entry value="cable_car"/>
@@ -1218,7 +1231,12 @@
    <item name="Power Pylon (D26)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D26.svg" type="node">
     <label text="D26: Power Pylon"/>
 	<key key="power" value="tower"/>
+	<key key="seamark:type" value="pylon"/>
 	<text key="ref" text="Pylon reference" />
+	<combo key="seamark:pylon:category">
+	 <list_entry value="power"/>
+	 <list_entry value="telecom"/>
+	</combo>
 	<combo key="structure" text="Structure" readonly="false">
 	 <list_entry value="lattice"/>
 	 <list_entry value="tubular"/>
@@ -1703,6 +1721,7 @@
     <key key="man_made" value="water_tower"/>
 	<key key="seamark:type" value="landmark"/>
 	<key key="seamark:landmark:category" value="water_tower"/>
+	<key key="seamark:tank:category" value="water_tower"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=water_tower"/>
     <text key="name" text="Name"/>
     <text key="ref" text="Reference"/>
@@ -1860,6 +1879,8 @@
    <item name="Tanks (E32)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E32.svg" type="node,closedway">
     <label text="E32: Tanks"/>
     <key key="man_made" value="storage_tank"/>
+	<key key="seamark:type" value="tank"/>
+	<key key="seamark:tank:category" value="tank"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=storage_tank"/>
     <text key="name" text="Name"/>
     <text key="ref" text="Reference"/>
@@ -1873,6 +1894,8 @@
    <item name="Silos (E33)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E33.svg" type="node,closedway">
     <label text="E33: Silos"/>
     <key key="man_made" value="silo"/>
+	<key key="seamark:type" value="tank"/>
+	<key key="seamark:tank:category" value="silo"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=silo"/>
     <text key="name" text="Name"/>
     <text key="ref" text="Reference"/>
@@ -1886,7 +1909,16 @@
    <item name="Fortification (E34)" icon="presets/empty.png" type="node,closedway">
     <label text="E34: Fortification"/>
 	<key key="historic" value="castle"/>
+	<key key="seamark:type" value="fortified_structure"/>
 	<text key="name" text="Name"/>
+	<combo key="seamark:fortified_structure:category" text="Category">
+	 <list_entry value="castle"/>
+	 <list_entry value="fort"/>
+	 <list_entry value="battery"/>
+	 <list_entry value="blockhouse"/>
+	 <list_entry value="martello_tower"/>
+	 <list_entry value="redoubt"/>
+	</combo>
 	<combo key="castle_type" text="Type">
 	 <list_entry value="defensive"/>
 	 <list_entry value="stately"/>
@@ -1904,6 +1936,8 @@
    <item name="Quarry (E35-E36)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E36.svg" type="node,closedway">
     <label text="E35-36: Quarry (Surface Mine)"/>
 	<key key="landuse" value="quarry"/>
+	<key key="seamark:type" value="production_area"/>
+	<key key="seamark:production_area:category" value="quarry"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=quarry"/>
 	<text key="name" text="Name"/>
 	<combo key="operator" text="Operator" readonly="false">
@@ -1998,6 +2032,8 @@
    <item name="Mineshaft (E35-E36)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E36.svg" type="node,closedway">
     <label text="E35-36: Mineshaft (Vertical)"/>
 	<key key="man_made" value="mineshaft"/>
+	<key key="seamark:type" value="production_area"/>
+	<key key="seamark:production_area" value="mine"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=mineshaft"/>
 	<text key="name" text="Name"/>
 	<combo key="operator" text="Operator" readonly="false">
@@ -2710,7 +2746,11 @@
 	<key key="man_made" value="crane"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=crane"/>
 	<text key="name" text="Name"/>
-	<combo key="crane:type" text="Crane type">
+	<combo key="seamark:crane:category" text="Crane type">
+	 <list_entry value="container"/>
+	 <list_entry value="sheerleg"/>
+	 <list_entry value="travelling"/>
+	 <list_entry value="a-frame"/>
 	</combo>
 	<combo key="operator" text="Operator" readonly="false">
 	</combo>
@@ -2889,24 +2929,35 @@
     <label text="K43.*: Stumps of Posts, Pillars"/>
 	<key key="seamark:type" value="pillar"/>
    </item>
-   <!-- K44.x, K45 - Fish Stakes, Fish traps, Fish lines, tunny nets -->
-   <!-- K46.x - Fish havens, fish reefs -->
+   <item name="Fish Stakes, Traps, Net (K44.*, K45)" icon="presets/empty.png" type="node,closedway">
+    <label text="K44.*: Fish Stakes, Traps"/>
+	<label text="K45: Tunny net"/>
+	<key key="seamark:type" value="fishing_facility"/>
+	<combo key="seamark:fishing_facility:category" text="Type" required="true" use_last_as_default="true">
+	 <list_entry value="stake"/>
+	 <list_entry value="trap"/>
+	 <list_entry value="weir"/>
+	 <list_entry value="tunny"/>
+	</combo>
+   </item>
+   <item name="Fish Haven, Fish Reef (K46.*)" icon="presets/empty.png" type="node,closedway">
+    <label text="K46: Fish Haven"/>
+	<key key="seamark:type" value="obstruction"/>
+	<key key="seamark:obstruction:category" value="fish_haven"/>
+	<text key="seamark:name" text="Name" default="" delete_if_empty="true"/>
+   </item>
    <!-- K47 - Shellfish beds with no obstructions -->
    <item name="Marine Farms (K48.*)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K48.1_no.svg" type="node,closedway">
     <label text="K48: Marine farms"/>
 	<key key="landuse" value="aquaculture"/>
+	<key key="seamark:type" value="marine_farm"/>
 	<text key="name" text="Name"/>
-	<combo key="aquaculture" text="Type">
+	<combo key="seamark:marine_farm:category" text="Type">
+	 <list_entry value="crustaceans"/>
+	 <list_entry value="oysters_mussels"/>
 	 <list_entry value="fish"/>
-	 <list_entry value="oyster"/>
-	 <list_entry value="shrimp"/>
-	 <list_entry value="mussels"/>
-	</combo>
-	<combo key="produce" text="Produce">
-	 <list_entry value="fish"/>
-	 <list_entry value="oysters"/>
-	 <list_entry value="shrimp"/>
-	 <list_entry value="mussels"/>
+	 <list_entry value="seaweed"/>
+	 <list_entry value="pearl_culture"/>
 	</combo>
    </item>
   </group>
@@ -2914,8 +2965,14 @@
    <item name="Offshore Oil and Gas Field (L1)" icon="presets/empty.png" type="closedway,node">
 	<label text="L1: Offshore Oil and Gas Field"/>
 	<key key="waterway" value="offshore_field"/>
+	<key key="seamark:type" value="production_area"/>
+	<key key="seamark:production_area:category" value="oil"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=offshore_field"/>
 	<text key="name" text="Name"/>
+	<combo key="seamark:production_area:category" text="Field Type" required="true">
+	 <list_entry value="oil"/>
+	 <list_entry value="gas"/>
+	</combo>
 	<text key="ref" text="Reference"/>
 	<text key="block" text="Block"/>
 	<combo key="status" text="Field Status">
@@ -2974,6 +3031,7 @@
    <item name="Wind Farm (L5.2)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L5.2.svg" type="closedway">
     <label text="L5.2: Offshore Wind Farm"/>
 	<key key="seamark:production_area:category" value="wind_farm"/>
+	<key key="seamark:type" value="production_area"/>
 	<key key="generator:source" value="wind"/>
 	<text key="name" text="Name"/>
 	<combo key="operator" text="Operator" readonly="false">
@@ -3143,6 +3201,10 @@
    <item name="Separation Zone (M13)" icon="presets/empty.png" type="closedway">
     <label text="M13: Separation Zone"/>
 	<key key="seamark:type" value="separation_zone"/>
+	<combo key="seamark:separation_zone:category" text="Implementation">
+	 <list_entry value="imo_adopted"/>
+	 <list_entry value="not_imo_adopted"/>
+	</combo>
    </item>
    <item name="Limit of Restricted Area (M14)" icon="presets/empty.png" type="closedway">
     <label text="M14: Limit of Restricted Area"/>
@@ -3205,6 +3267,14 @@
 	<text key="seamark:calling-in_point:channel" text="VHF Channel"/>
 	<text key="seamark:calling-in_point:orientation" text="Point Orientation"/>
 	<combo key="seamark:calling-in_point:category" text="Category">
+	 <list_entry value="vts_centre"/>
+	 <list_entry value="vts_sector"/>
+	 <list_entry value="ivs_point"/>
+	 <list_entry value="mib"/>
+	 <list_entry value="lock"/>
+	 <list_entry value="bridge"/>
+	 <list_entry value="customs"/>
+	 <list_entry value="harbour"/>
 	</combo>
 	<combo key="seamark:calling-in_point:flow" text="Flow">
 	 <list_entry value="one-way" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M40.1.svg"/>
@@ -3215,8 +3285,15 @@
     <label text="M50-M51: Ferry Route"/>
 	<key key="type" value="route"/>
 	<key key="route" value="ferry"/>
+	<key key="seamark:type" value="ferry_route"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:route=ferry"/>
 	<text key="name" text="Name"/>
+	<combo key="seamark:ferry_route:category" text="Category">
+	 <list_entry value="free"/>
+	 <list_entry value="cable"/>
+	 <list_entry value="ice"/>
+	 <list_entry value="swinging"/>
+	</combo>
 	<text key="ref" text="Reference"/>
 	<text key="symbol" text="Symbol Description"/>
 	<text key="description" text="Description"/>
@@ -3251,12 +3328,25 @@
 	<key key="seamark:type" value="restricted_area"/>
 	<text key="seamark:restricted_area:name" text="Name"/>
 	<combo key="seamark:restricted_area:category" text="Category">
-	 <list_entry value="military"/>
+	 <list_entry value="safety"/>
 	 <list_entry value="nature_reserve"/>
+	 <list_entry value="bird_sanctuary"/>
+	 <list_entry value="game_reserve"/>
+	 <list_entry value="seal_sanctuary"/>
+	 <list_entry value="defaussing_range"/>
+	 <list_entry value="military"/>
+	 <list_entry value="historic_wreck"/>
+	 <list_entry value="navigational_aid_safety"/>
+	 <list_entry value="minefield"/>
+	 <list_entry value="swimming"/>
+	 <list_entry value="waiting"/>
+	 <list_entry value="research"/>
+	 <list_entry value="dredging"/>
+	 <list_entry value="fish_sanctuary"/>
 	 <list_entry value="ecological_reserve"/>
-	 <list_entry value="noise_limit"/>
-	 <list_entry value="foul_ground"/>
 	 <list_entry value="no_wake"/>
+	 <list_entry value="swinging"/>
+	 <list_entry value="water_skiing"/>
 	</combo>
 	<combo key="seamark:restricted_area:restriction" text="Restriction">
 	 <list_entry value="berthing_prohibited"/>
