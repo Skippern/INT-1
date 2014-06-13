@@ -2277,26 +2277,6 @@
 	<text key="seamark:name" text="Name"/>
 	<combo key="harbour:operator" text="Operator" readonly="false">
 	</combo>
-	<combo key="harbour:category" text="Category">
-	 <list_entry value="marina"/>
-	 <list_entry value="general"/>
-	 <list_entry value="fishing"/>
-	 <list_entry value="container"/>
-	 <list_entry value="bulk"/>
-	 <list_entry value="passenger"/>
-	 <list_entry value="RoRo"/>
-	 <list_entry value="tanker"/>
-	 <list_entry value="ferry"/>
-	 <list_entry value="shipyard"/>
-	 <list_entry value="tourism"/>
-	 <list_entry value="seaport"/>
-	 <list_entry value="guest"/>
-	 <list_entry value="military"/>
-	 <list_entry value="yacht"/>
-	 <list_entry value="industrial"/>
-	 <list_entry value="tugs"/>
-	 <list_entry value="naval_base"/>
-	</combo>
 	<multiselect key="seamark:harbour:category" text="Category" delimiter=";" required="true" match="key">
 	 <list_entry value="roro" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg" icon_size="16"/>
 	 <list_entry value="ferry" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg" icon_size="16"/>
@@ -2314,7 +2294,7 @@
 	 <list_entry value="lay_up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg" icon_size="16"/>
 	 <list_entry value="timber" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg" icon_size="16"/>
 	 <list_entry value="service_repair" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg" icon_size="16"/>
-	 <list_entry value="quarantine"/>
+	 <list_entry value="quarantine" icon="https://raw.gitusercontent.com/Skippern/INT-1/master/SVG/F/F62.1.avg" icon_size="16"/>
 	 <list_entry value="seaplane" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg" icon_size="16"/>
 	 <list_entry value="cargo" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg" icon_size="16"/>
 	 <list_entry value="offshore_support" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg" icon_size="16"/>
@@ -2465,7 +2445,7 @@
 	 <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=pier"/>
 	 <key key="man_made" value="pier"/>
 	 <key key="seamark:type" value="berth"/>
-	 <text key="seamark:berth:name" text="Name"/>
+	 <text key="seamark:name" text="Name"/>
 	 <check key="floating" text="Floating Pier" default="off"/>
 	 <combo key="seamark:berth:danger_class" text="Danger Class" readonly="true">
 	  <list_entry value="no_blue" short_description="Unspecified" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/CEVNI/E5_4.svg" icon_size="16"/>
@@ -2495,7 +2475,7 @@
     <item name="Number or letter of Berth (ref) (F19)" icon="presets/empty.png" type="node,way,closedway">
      <label text="F19: Number or letter of Berth (reference)"/>
 	 <key key="seamark:type" value="berth"/>
-     <text key="seamark:berth:name" text="Name"/>
+     <text key="seamark:name" text="Name"/>
 	 <combo key="mooring" text="Moorings for">
 	  <list_entry value="private"/>
 	  <list_entry value="ferry"/>
@@ -2666,7 +2646,6 @@
     <key key="harbour" value="yes"/>
 	<key key="seamark:type" value="harbour"/>
 	<key key="seamark:harbour:category" value="fishing"/>
-    <key key="harbour:category" value="fishing"/>
     <link href="http://wiki.openstreetmap.org/wiki/Harbour"/>
 	<text key="harbour:name" text="Name"/>
     <label text="Special tagging scheme for harbours, if you are unsure of the fields, refer to the corresponding web page."/>
@@ -6059,7 +6038,7 @@
 	<key key="seamark:type" value="berth"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:mooring"/>
     <label text="This tag should be used of appropriate type of berth."/>
-    <text key="seamark:berth:name" text="Name"/>
+    <text key="seamark:name" text="Name"/>
 	<check key="seamark:berth:category" text="Overnight Berth" value_on="overnight_accommodation" value_off="" default="off"/>
    </item>
    <item name="Visitors berth (U2-U3)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U2.svg" type="node,way,closedway">
