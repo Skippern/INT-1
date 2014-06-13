@@ -15,6 +15,8 @@
    version="1.1"
    inkscape:version="0.48.2 r9819"
    sodipodi:docname="C24.svg">
+  <title
+     id="title2984">C24: Salt Pan</title>
   <defs
      id="defs2988" />
   <sodipodi:namedview
@@ -24,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.702479"
-     inkscape:cx="17.585452"
-     inkscape:cy="31.457626"
+     inkscape:zoom="9.4985637"
+     inkscape:cx="13.113186"
+     inkscape:cy="32.05579"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -43,9 +45,10 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>C24: Salt Pan</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:description></dc:description>
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/publicdomain/">

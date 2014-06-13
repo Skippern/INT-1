@@ -13,10 +13,12 @@
    height="12"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.48.1 "
+   inkscape:version="0.48.2 r9819"
    version="1.0"
    sodipodi:docname="B25.2.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <title
+     id="title2984">B25.2: Distance Mark</title>
   <defs
      id="defs4">
     <inkscape:perspective
@@ -38,15 +40,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="33.855072"
-     inkscape:cx="5.904747"
+     inkscape:cx="0.70611679"
      inkscape:cy="6.0890625"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1024"
-     inkscape:window-height="708"
-     inkscape:window-x="-4"
-     inkscape:window-y="-4"
+     inkscape:window-width="1440"
+     inkscape:window-height="808"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -56,9 +58,10 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>B25.2: Distance Mark</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:description>With Visible Marker</dc:description>
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/publicdomain/">

@@ -21,6 +21,8 @@
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
    sodipodi:docname="Db_uk.svg">
+  <title
+     id="title3056">Db: Helipad (British symbol)</title>
   <defs
      id="defs4">
     <inkscape:perspective
@@ -461,7 +463,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="30.6875"
-     inkscape:cx="1.8897658"
+     inkscape:cx="-3.8454684"
      inkscape:cy="7.9374972"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -495,7 +497,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>Db: Helipad (British symbol)</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -538,7 +540,7 @@
        sodipodi:cy="7.84375"
        sodipodi:rx="7.84375"
        sodipodi:ry="7.84375"
-       d="m 15.5625,7.84375 a 7.84375,7.84375 0 1 1 -15.6875,0 7.84375,7.84375 0 1 1 15.6875,0 z"
+       d="m 15.5625,7.84375 c 0,4.331984 -3.511766,7.84375 -7.84375,7.84375 C 3.3867665,15.6875 -0.125,12.175734 -0.125,7.84375 -0.125,3.5117665 3.3867665,0 7.71875,0 12.050734,0 15.5625,3.5117665 15.5625,7.84375 z"
        transform="matrix(0.917603,0,0,0.917603,0.94850187,1037.446)" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:none"

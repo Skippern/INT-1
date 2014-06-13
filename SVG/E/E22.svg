@@ -17,6 +17,8 @@
    sodipodi:version="0.32"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
+  <title
+     id="title2985">E22: Chimney</title>
   <metadata
      id="metadata6850">
     <rdf:RDF>
@@ -25,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>E22: Chimney</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -62,7 +64,7 @@
      id="namedview6846"
      showgrid="false"
      inkscape:zoom="0.645"
-     inkscape:cx="-122.86822"
+     inkscape:cx="-395.73644"
      inkscape:cy="200"
      inkscape:window-x="104"
      inkscape:window-y="104"

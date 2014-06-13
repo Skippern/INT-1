@@ -17,6 +17,8 @@
    version="1.0"
    sodipodi:docname="B25.1.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <title
+     id="title2984">B25.1: Distance Mark</title>
   <defs
      id="defs4">
     <inkscape:perspective
@@ -38,7 +40,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="32"
-     inkscape:cx="3.4375"
+     inkscape:cx="-2.0625"
      inkscape:cy="6.0890625"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -56,9 +58,10 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>B25.1: Distance Mark</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:description>Without visible marker</dc:description>
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/publicdomain/">

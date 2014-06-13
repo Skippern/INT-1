@@ -14,7 +14,9 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="P64_green.svg">
+   sodipodi:docname="P64_red.svg">
+  <title
+     id="title2983">P64: Strip Lights</title>
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,7 +27,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="343.57143"
+     inkscape:cx="-159.28571"
      inkscape:cy="39.999997"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -49,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>P64: Strip Lights</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>

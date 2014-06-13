@@ -17,6 +17,8 @@
    sodipodi:version="0.32"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
+  <title
+     id="title2984">E31: Dish Aerial</title>
   <metadata
      id="metadata6382">
     <rdf:RDF>
@@ -27,7 +29,7 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
-        <dc:title></dc:title>
+        <dc:title>E31: Dish Aerial</dc:title>
       </cc:Work>
       <cc:Work
          rdf:about="">
@@ -62,7 +64,7 @@
      id="namedview6378"
      showgrid="false"
      inkscape:zoom="1.2041547"
-     inkscape:cx="-112.00953"
+     inkscape:cx="-258.17015"
      inkscape:cy="200"
      inkscape:window-x="0"
      inkscape:window-y="0"

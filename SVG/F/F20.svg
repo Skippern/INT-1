@@ -17,6 +17,8 @@
    version="1.0"
    sodipodi:docname="F20.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <title
+     id="title2983">F20: Dolphin</title>
   <metadata
      id="metadata2445">
     <rdf:RDF>
@@ -25,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>F20: Dolphin</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -64,7 +66,7 @@
      id="base"
      showgrid="false"
      inkscape:zoom="10.237217"
-     inkscape:cx="-8.4711477"
+     inkscape:cx="-25.66332"
      inkscape:cy="25.467533"
      inkscape:window-x="0"
      inkscape:window-y="0"

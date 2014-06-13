@@ -12,8 +12,10 @@
    width="250"
    height="250"
    id="svg24684"
-   inkscape:version="0.48.1 "
+   inkscape:version="0.48.2 r9819"
    sodipodi:docname="B20.svg">
+  <title
+     id="title2984">B20 Triangulation Point</title>
   <metadata
      id="metadata24698">
     <rdf:RDF>
@@ -22,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title>B20 Triangulation Point</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -48,15 +50,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="694"
+     inkscape:window-width="719"
      inkscape:window-height="480"
      id="namedview24694"
      showgrid="false"
      inkscape:zoom="0.9687482"
      inkscape:cx="-3.0561083"
      inkscape:cy="125"
-     inkscape:window-x="113"
-     inkscape:window-y="95"
+     inkscape:window-x="508"
+     inkscape:window-y="31"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg24684" />
   <rect

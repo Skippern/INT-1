@@ -17,6 +17,8 @@
    version="1.0"
    sodipodi:docname="E18.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <title
+     id="title2984">E18: Marabout</title>
   <defs
      id="defs4">
     <inkscape:perspective
@@ -38,7 +40,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="15.266667"
-     inkscape:cx="3.471616"
+     inkscape:cx="-8.056768"
      inkscape:cy="15"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -60,7 +62,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>E18: Marabout</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>

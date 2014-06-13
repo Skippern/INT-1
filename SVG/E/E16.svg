@@ -12,8 +12,10 @@
    width="250"
    height="250"
    id="svg24182"
-   inkscape:version="0.48.1 "
+   inkscape:version="0.48.2 r9819"
    sodipodi:docname="E16.svg">
+  <title
+     id="title2983">E16: Buddhist Temple</title>
   <metadata
      id="metadata24194">
     <rdf:RDF>
@@ -22,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title>E16: Buddhist Temple</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -48,15 +50,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="694"
+     inkscape:window-width="719"
      inkscape:window-height="480"
      id="namedview24190"
      showgrid="false"
      inkscape:zoom="0.9687482"
      inkscape:cx="125"
      inkscape:cy="125"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-x="470"
+     inkscape:window-y="54"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg24182" />
   <rect

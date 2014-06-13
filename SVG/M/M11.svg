@@ -11,8 +11,10 @@
    width="500"
    height="200"
    id="svg17711"
-   inkscape:version="0.48.1 "
-   sodipodi:docname="NChart-Symbol_INT_TrafficDirection_Recommended.svg">
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="M11.svg">
+  <title
+     id="title2983">M11: Arrow (recomended direction of transit in TSS)</title>
   <metadata
      id="metadata3139">
     <rdf:RDF>
@@ -23,7 +25,7 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
-        <dc:title></dc:title>
+        <dc:title>M11: Arrow (recomended direction of transit in TSS)</dc:title>
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/publicdomain/">
@@ -45,15 +47,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="646"
+     inkscape:window-width="719"
      inkscape:window-height="480"
      id="namedview3137"
      showgrid="false"
      inkscape:zoom="1.02"
      inkscape:cx="250"
      inkscape:cy="100"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-x="459"
+     inkscape:window-y="13"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg17711" />
   <defs

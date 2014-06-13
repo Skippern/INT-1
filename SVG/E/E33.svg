@@ -18,6 +18,8 @@
    sodipodi:docname="E33.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
+  <title
+     id="title2987">E33: Silo</title>
   <defs
      id="defs4">
     <inkscape:perspective
@@ -39,8 +41,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="17.366667"
-     inkscape:cx="4.8656432"
-     inkscape:cy="15"
+     inkscape:cx="19.433781"
+     inkscape:cy="7.2264877"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -61,7 +63,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>E33: Silo</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -95,7 +97,7 @@
        sodipodi:cy="6"
        sodipodi:rx="5.25"
        sodipodi:ry="5.25"
-       d="M 11.25,6 A 5.25,5.25 0 1 1 0.75,6 5.25,5.25 0 1 1 11.25,6 z"
+       d="M 11.25,6 C 11.25,8.8994949 8.8994949,11.25 6,11.25 3.1005051,11.25 0.75,8.8994949 0.75,6 0.75,3.1005051 3.1005051,0.75 6,0.75 c 2.8994949,0 5.25,2.3505051 5.25,5.25 z"
        transform="translate(8.9336016,-8.6921529)" />
     <path
        sodipodi:type="arc"
@@ -105,7 +107,7 @@
        sodipodi:cy="6"
        sodipodi:rx="1"
        sodipodi:ry="1"
-       d="M 7,6 A 1,1 0 1 1 5,6 1,1 0 1 1 7,6 z"
+       d="M 7,6 C 7,6.5522847 6.5522847,7 6,7 5.4477153,7 5,6.5522847 5,6 5,5.4477153 5.4477153,5 6,5 6.5522847,5 7,5.4477153 7,6 z"
        transform="translate(8.9336016,-8.6921529)" />
     <text
        xml:space="preserve"

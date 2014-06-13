@@ -18,6 +18,8 @@
    sodipodi:version="0.32"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
+  <title
+     id="title2984">B24: Boundary Mark (Canadian Version)</title>
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -28,7 +30,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0198651"
-     inkscape:cx="-20.384343"
+     inkscape:cx="-192.95619"
      inkscape:cy="252.48438"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -50,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>B24: Boundary Mark (Canadian Version)</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -90,6 +92,6 @@
        sodipodi:cy="263.54135"
        sodipodi:rx="10.79872"
        sodipodi:ry="11.312945"
-       d="m 389.78239,263.54135 a 10.79872,11.312945 0 1 1 -21.59744,0 10.79872,11.312945 0 1 1 21.59744,0 z" />
+       d="m 389.78239,263.54135 c 0,6.24797 -4.83475,11.31295 -10.79872,11.31295 -5.96397,0 -10.79872,-5.06498 -10.79872,-11.31295 0,-6.24797 4.83475,-11.31294 10.79872,-11.31294 5.96397,0 10.79872,5.06497 10.79872,11.31294 z" />
   </g>
 </svg>

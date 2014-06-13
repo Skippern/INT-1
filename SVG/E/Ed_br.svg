@@ -13,10 +13,12 @@
    height="173.42857"
    id="svg3477"
    sodipodi:version="0.32"
-   inkscape:version="0.48.1 "
+   inkscape:version="0.48.2 r9819"
    version="1.0"
    sodipodi:docname="Ed_br.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <title
+     id="title2985">Ed: Monastary, Convent (Brazilian Symbol)</title>
   <defs
      id="defs3479">
     <inkscape:perspective
@@ -44,10 +46,10 @@
      inkscape:current-layer="svg3477"
      showgrid="false"
      showguides="false"
-     inkscape:window-width="694"
+     inkscape:window-width="719"
      inkscape:window-height="682"
-     inkscape:window-x="1190"
-     inkscape:window-y="23"
+     inkscape:window-x="740"
+     inkscape:window-y="22"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata3482">
@@ -57,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title>Ed: Monastary, Convent (Brazilian Symbol)</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
