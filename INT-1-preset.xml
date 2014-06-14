@@ -1474,7 +1474,7 @@
 	 <list_entry value="chapel"/>
 	</combo>
     <label text="If the church have a tower, spire or cupola used as a landmark:"/>
-	<combo key="seamamrk:landmark:category" text="Landmark" readonly="true">
+	<combo key="seamark:landmark:category" text="Landmark" readonly="true">
 	 <list_entry value="dome" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.4.svg" />
 	 <list_entry value="spire" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.3.svg" />
 	 <list_entry value="tower" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.2.svg" />
