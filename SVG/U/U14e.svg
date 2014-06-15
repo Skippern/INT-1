@@ -18,6 +18,8 @@
    sodipodi:docname="U14e.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
+  <title
+     id="title3017">U14: Exchange Office (NOT OFFICIAL)</title>
   <metadata
      id="metadata2975">
     <rdf:RDF>
@@ -28,8 +30,8 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
-        <dc:language></dc:language>
-        <dc:title></dc:title>
+        <dc:language />
+        <dc:title>U14: Exchange Office (NOT OFFICIAL)</dc:title>
       </cc:Work>
       <cc:Work
          rdf:about="">
@@ -61,7 +63,7 @@
      pagecolor="#ffffff"
      id="base"
      inkscape:zoom="0.94310345"
-     inkscape:cx="103.38208"
+     inkscape:cx="-83.235836"
      inkscape:cy="290"
      inkscape:window-x="0"
      inkscape:window-y="0"

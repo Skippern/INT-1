@@ -17,6 +17,8 @@
    sodipodi:docname="U11.svg"
    sodipodi:version="0.32"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <title
+     id="title3016">U11: Restaurant</title>
   <metadata
      id="metadata2877">
     <rdf:RDF>
@@ -25,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>U11: Restaurant</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -54,7 +56,7 @@
      id="namedview2875"
      showgrid="false"
      inkscape:zoom="2.435"
-     inkscape:cx="27.720739"
+     inkscape:cx="-44.558522"
      inkscape:cy="100"
      inkscape:window-x="0"
      inkscape:window-y="0"

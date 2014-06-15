@@ -21,6 +21,8 @@
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
    sodipodi:docname="U22.svg">
+  <title
+     id="title3059">U22: Laundrette</title>
   <defs
      id="defs4">
     <inkscape:perspective
@@ -419,7 +421,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="34.375"
-     inkscape:cx="4.5828854"
+     inkscape:cx="-0.5371146"
      inkscape:cy="7.8457"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -451,7 +453,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>U22: Laundrette</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>

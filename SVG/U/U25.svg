@@ -17,6 +17,8 @@
    inkscape:version="0.48.2 r9819"
    sodipodi:docname="U25.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <title
+     id="title2984">U25: Public Telefone</title>
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -25,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>U25: Public Telefone</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -54,7 +56,7 @@
      id="base"
      showgrid="false"
      inkscape:zoom="34.375"
-     inkscape:cx="8"
+     inkscape:cx="2.88"
      inkscape:cy="8"
      inkscape:window-x="0"
      inkscape:window-y="0"

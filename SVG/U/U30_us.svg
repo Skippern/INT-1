@@ -20,6 +20,8 @@
    inkscape:export-filename="/home/jeff/projets/navit/icons/png/cinema.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
+  <title
+     id="title2995">U30: Camping Site (US Version)</title>
   <defs
      id="defs4">
     <linearGradient
@@ -78,7 +80,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="24.49482"
-     inkscape:cx="3.2701824"
+     inkscape:cx="-3.9150102"
      inkscape:cy="9.4616617"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -112,7 +114,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>U30: Camping Site (US Version)</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>

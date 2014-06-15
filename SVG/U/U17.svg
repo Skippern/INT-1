@@ -17,6 +17,8 @@
    sodipodi:modified="true"
    version="1.0"
    sodipodi:docname="U17.svg">
+  <title
+     id="title2990">U17: Water Tap</title>
   <defs
      id="defs5052">
     <inkscape:perspective
@@ -38,7 +40,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="34.375"
-     inkscape:cx="8"
+     inkscape:cx="2.88"
      inkscape:cy="8"
      inkscape:document-units="px"
      inkscape:current-layer="g3434"
@@ -56,7 +58,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>U17: Water Tap</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>

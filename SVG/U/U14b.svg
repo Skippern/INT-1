@@ -18,6 +18,8 @@
    sodipodi:docname="U14b.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
+  <title
+     id="title2999">U14: Bank (NOT OFFICIAL)</title>
   <metadata
      id="metadata2975">
     <rdf:RDF>
@@ -28,8 +30,8 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
-        <dc:language></dc:language>
-        <dc:title></dc:title>
+        <dc:language />
+        <dc:title>U14: Bank (NOT OFFICIAL)</dc:title>
       </cc:Work>
       <cc:Work
          rdf:about="">
@@ -61,7 +63,7 @@
      pagecolor="#ffffff"
      id="base"
      inkscape:zoom="1.3221785"
-     inkscape:cx="156.81285"
+     inkscape:cx="23.699205"
      inkscape:cy="289.56978"
      inkscape:window-x="0"
      inkscape:window-y="0"
