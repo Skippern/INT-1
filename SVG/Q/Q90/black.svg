@@ -16,6 +16,8 @@
    sodipodi:version="0.32"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
+  <title
+     id="title2982">Q90: Black pole</title>
   <metadata
      id="metadata3004">
     <rdf:RDF>
@@ -24,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>Q90: Black pole</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -59,7 +61,7 @@
      id="namedview3002"
      showgrid="false"
      inkscape:zoom="4.1607875"
-     inkscape:cx="10.275"
+     inkscape:cx="-32.024685"
      inkscape:cy="38.09375"
      inkscape:window-x="104"
      inkscape:window-y="104"
