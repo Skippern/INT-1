@@ -16,6 +16,8 @@
    sodipodi:version="0.32"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
+  <title
+     id="title2985">Q9: Topmark, yellow X</title>
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -24,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>Q9: Topmark, yellow X</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -61,7 +63,7 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="24.777539"
-     inkscape:cx="4.0248155"
+     inkscape:cx="-3.078392"
      inkscape:cy="27.90625"
      inkscape:window-x="0"
      inkscape:window-y="0"
