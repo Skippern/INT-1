@@ -16,6 +16,8 @@
    sodipodi:docname="H_red_green_red.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
+  <title
+     id="title2985">Q24: Green and red spar buoy</title>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -24,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>Q24: Green and red spar buoy</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -59,7 +61,7 @@
      id="base"
      showgrid="false"
      inkscape:zoom="4.7709406"
-     inkscape:cx="29.984375"
+     inkscape:cx="-6.9056253"
      inkscape:cy="57.640625"
      inkscape:window-x="0"
      inkscape:window-y="0"
