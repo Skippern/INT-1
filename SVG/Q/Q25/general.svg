@@ -16,6 +16,8 @@
    sodipodi:version="0.32"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
+  <title
+     id="title2982">Q25: Barrel</title>
   <metadata
      id="metadata3066">
     <rdf:RDF>
@@ -26,7 +28,7 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
-        <dc:title></dc:title>
+        <dc:title>Q25: Barrel</dc:title>
       </cc:Work>
       <cc:Work
          rdf:about="">
@@ -59,7 +61,7 @@
      id="namedview3064"
      showgrid="false"
      inkscape:zoom="2.7784431"
-     inkscape:cx="57.40625"
+     inkscape:cx="-5.9385779"
      inkscape:cy="27.25"
      inkscape:window-x="52"
      inkscape:window-y="52"
