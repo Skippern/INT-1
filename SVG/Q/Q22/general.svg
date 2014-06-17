@@ -16,6 +16,8 @@
    sodipodi:version="0.32"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
+  <title
+     id="title2982">Q22: Spherical buoy</title>
   <metadata
      id="metadata3422">
     <rdf:RDF>
@@ -26,7 +28,7 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
-        <dc:title></dc:title>
+        <dc:title>Q22: Spherical buoy</dc:title>
       </cc:Work>
       <cc:Work
          rdf:about="">
@@ -59,7 +61,7 @@
      id="namedview3420"
      showgrid="false"
      inkscape:zoom="4.0734238"
-     inkscape:cx="39.15625"
+     inkscape:cx="-4.0506464"
      inkscape:cy="30.985083"
      inkscape:window-x="104"
      inkscape:window-y="104"
