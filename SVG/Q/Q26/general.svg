@@ -16,6 +16,8 @@
    sodipodi:version="0.32"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
+  <title
+     id="title2982">Q26: Superbuoy</title>
   <metadata
      id="metadata3032">
     <rdf:RDF>
@@ -26,7 +28,7 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
-        <dc:title></dc:title>
+        <dc:title>Q26: Superbuoy</dc:title>
       </cc:Work>
       <cc:Work
          rdf:about="">
@@ -59,7 +61,7 @@
      id="namedview3030"
      showgrid="false"
      inkscape:zoom="6.6530524"
-     inkscape:cx="71.921875"
+     inkscape:cx="45.467852"
      inkscape:cy="21.602776"
      inkscape:window-x="0"
      inkscape:window-y="0"
