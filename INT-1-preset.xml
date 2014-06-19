@@ -3298,14 +3298,21 @@
    <item name="Non-resitricted areas (N1)" icon="presets/empty.png" type="closedway">
     <label text="N1: Non-restricted areas"/>
 	<key key="seamark:type" value="non-restricted_area"/>
-	<text key="seamark:non-restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
 	<combo key="seamark:non-restricted_area:category" text="Category">
+	</combo>
+   </item>
+   <item name="Caution Area (N1)" icon="presets/empty.png" type="closedway">
+    <label text="N1: Caution areas"/>
+	<key key="seamark:type" value="caution_area"/>
+	<text key="seamark:name" text="Name"/>
+	<combo key="seamark:caution_area:category" text="Category">
 	</combo>
    </item>
    <item name="Restriction Area (N2.1)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N2.1.svg" type="closedway">
     <label text="N2.1: Limit of Restricted Area"/>
 	<key key="seamark:type" value="restricted_area"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
 	<combo key="seamark:restricted_area:category" text="Category">
 	 <list_entry value="safety"/>
 	 <list_entry value="nature_reserve"/>
