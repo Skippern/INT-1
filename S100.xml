@@ -287,7 +287,7 @@
 	<list_entry value="seaweed"/>
 	<list_entry value="pearl_culture"/>
  </chunk>
- <chunk id="CAATMOR">
+ <chunk id="CATMOR">
     <list_entry value="dolphin"/>
 	<list_entry value="deviation_dolphin"/>
 	<list_entry value="bollard"/>
@@ -778,7 +778,7 @@
  <chunk id="WATLEV">
 	<list_entry value="part-submerged"/>
 	<list_entry value="dry"/>
-	<list_entry vlaue="submerged"/>
+	<list_entry value="submerged"/>
 	<list_entry value="covers"/>
 	<list_entry value="awash"/>
 	<list_entry value="floods"/>
@@ -988,7 +988,7 @@
   <item name="BUNSTA" icon="presets/empty.png" type="node,closedway">
    <label text="BUNSTA: Bunker Station"/>
    <key key="seamark:type" value="bunker_station"/>
-   <text key="seamark:name" value="Name"/>
+   <text key="seamark:name" text="Name"/>
    <combo key="seamark:bunker_station:category" text="Category" required="true">
     <reference ref="CATBUN"/>
    </combo>
@@ -1155,7 +1155,7 @@
    <key key="seamark:type" value="conveyor"/>
    <text key="seamark:name" text="Name"/>
    <combo key="seamark:coneyor:category" text="Category">
-    <reference id="CATCON"/>
+    <reference ref="CATCON"/>
    </combo>
    <combo key="seamark:conveyor:product" text="Product">
     <reference ref="PRODCT"/>
@@ -1227,7 +1227,7 @@
   <item name="DOCARE" icon="presets/empty.png" type="closedway">
    <label text="DOCARE: Dock area"/>
    <key key="seamark:type" value="dock"/>
-   <text="seamark:name" text="Name"/>
+   <text key="seamark:name" text="Name"/>
    <combo key="seamark:dock:category" text="Category">
     <reference ref="CATDOC"/>
    </combo>
@@ -1263,7 +1263,7 @@
    <key key="seamark:type" value="fairway"/>
    <text key="seamark:name" text="Name"/>
    <combo key="seamark:fairway:restriction" text="Restriction">
-    <reference key="RESTRN"/>
+    <reference ref="RESTRN"/>
    </combo>
   </item>
   <item name="FERYRT" icon="presets/empty.png" type="way">
@@ -1558,8 +1558,8 @@
    <key key="seamark:type" value="mooring"/>
    <text key="seamark:name" text="Name"/>
    <combo key="seamark:mooring:category" text="Category">
-    <reference ref="CARMOR"/>
-	</combo>
+    <reference ref="CATMOR"/>
+   </combo>
    <combo key="seamark:mooring:colour" text="Colour">
     <reference ref="COLOUR"/>
    </combo>
@@ -1633,7 +1633,7 @@
 	<list_entry value="no_berthing_lateral_limit"/>
 	<list_entry value="no_mooring"/>
 	<list_entry value="no_turning"/>
-	<list_entry vlaue="no_wash"/>
+	<list_entry value="no_wash"/>
 	<list_entry value="no_passage_left"/>
 	<list_entry value="no_passage_left"/>
 	<list_entry value="no_motor_craft"/>
@@ -2495,7 +2495,7 @@
   </item>
   <item name="WATTUR" icon="presets/empty.png" type="node,way,closedway">
    <label text="WATTUR: Water turbulence"/>
-   <key key="seamark:type"value="water_turbulence"/>
+   <key key="seamark:type" value="water_turbulence"/>
    <combo key="seamark:water_turbulence:category" text="Category">
     <list_entry value="breakers"/>
 	<list_entry value="eddies"/>
