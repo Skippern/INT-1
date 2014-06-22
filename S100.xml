@@ -1,0 +1,2550 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<annotations author="Aun 'Skippern' Johnsen" version="0.1" descroption="S100 defintions for OpenSeaMap" shortdescription="S100">
+ <!-- Item Chinks -->
+ <chunk id="BCNSHP">
+	<list_entry value="stake"/>
+	<list_entry value="pole"/>
+	<list_entry value="perch"/>
+	<list_entry value="post"/>
+	<list_entry value="withy"/>
+	<list_entry value="tower"/>
+	<list_entry value="pile"/>
+	<list_entry value="cairn"/>
+	<list_entry value="buoyant"/>
+ </chunk>
+ <chunk id="BOYSHP">
+	<list_entry value="conical"/>
+	<list_entry value="can"/>
+	<list_entry value="spherical"/>
+	<list_entry value="pillar"/>
+	<list_entry value="spar"/>
+	<list_entry value="barrel"/>
+	<list_entry value="super-buoy"/>
+	<list_entry value="ice_buoy"/>
+ </chunk>
+ <chunk id="BUISHP">
+    <list_entry value="high-rise"/>
+	<list_entry value="pyramid"/>
+	<list_entry value="cylindrical"/>
+	<list_entry value="spherical"/>
+	<list_entry value="cubic"/>
+ </chunk>
+ <chunk id="CATACH">
+	<list_entry value="unrestricted"/>
+	<list_entry value="deep_water"/>
+	<list_entry value="tanker"/>
+	<list_entry value="explosives"/>
+	<list_entry value="quarantine"/>
+	<list_entry value="seaplane"/>
+	<list_entry value="small_craft"/>
+	<list_entry value="small_craft_mooring"/>
+	<list_entry value="24_hour"/>
+	<list_entry value="pushing"/>
+	<list_entry value="limited_period"/>
+	<list_entry value="non-Pushing"/>
+	<list_entry value="dry_cargo"/>
+	<list_entry value="raft"/>
+ </chunk>
+ <chunk id="CATBRG">
+    <list_entry value="fixed"/>
+	<list_entry value="opening"/>
+	<list_entry value="swing"/>
+	<list_entry value="lifting"/>
+	<list_entry value="bascule"/>
+	<list_entry value="pontoon"/>
+	<list_entry value="drawbridge"/>
+	<list_entry value="transporter"/>
+	<list_entry value="footbridge"/>
+	<list_entry value="viaduct"/>
+	<list_entry value="aqueduct"/>
+	<list_entry value="suspension"/>
+ </chunk>
+ <chunk id="CATBUN">
+    <list_entry value="diesel"/>
+	<list_entry value="water"/>
+	<list_entry value="ballast"/>
+ </chunk>
+ <chunk id="CATCAM">
+	<list_entry value="north"/>
+	<list_entry value="east"/>
+	<list_entry value="south"/>
+	<list_entry value="west"/>
+ </chunk>
+ <chunk id="CATCBL">
+	<list_entry value="power"/>
+	<list_entry value="transmission"/>
+	<list_entry value="telephone"/>
+	<list_entry value="telegraph"/>
+	<list_entry value="mooring"/>
+	<list_entry value="optical"/>
+	<list_entry value="ferry"/>
+ </chunk>
+ <chunk id="CATCHP">
+    <list_entry value="customs"/>
+	<list_entry value="border"/>
+ </chunk>
+ <chunk id="CATCON">
+    <list_entry value="aerial"/>
+	<list_entry value="belt"/>
+ </chunk>
+ <chunk id="CATCRN">
+    <list_entry value="container"/>
+	<list_entry value="sherlegs"/>
+	<list_entry value="travelling"/>
+	<list_entry value="a-frame"/>
+ </chunk>
+ <chunk id="CATCTR">
+    <list_entry value="triangulation"/>
+	<list_entry value="observation"/>
+	<list_entry value="fixed"/>
+	<list_entry value="benchmark"/>
+	<list_entry value="boundary"/>
+	<list_entry value="horizontal_main"/>
+	<list_entry value="horizontal_secondary"/>
+ </chunk>
+ <chunk id="CATDAM">
+    <list_entry value="weir"/>
+	<list_entry value="dam"/>
+	<list_entry value="flood_barrage"/>
+ </chunk>
+ <chunk id="CATDIS">
+    <list_entry value="not_installed"/>
+	<list_entry value="pole"/>
+	<list_entry value="board"/>
+	<list_entry value="unknown_shape"/>
+ </chunk>
+ <chunk id="CATDOC">
+    <list_entry value="tidal"/>
+	<list_entry value="non-tidal"/>
+ </chunk>
+ <chunk id="CATEXS">
+    <list_entry value="lift-lock"/>
+	<list_entry value="aqueduct"/>
+	<list_entry value="sloping_plane_lock"/>
+	<list_entry value="water_slope_lock"/>
+	<list_entry value="other"/>
+ </chunk>
+ <chunk id="CATFIF">
+    <list_entry value="stake"/>
+	<list_entry value="trap"/>
+	<list_entry value="weir"/>
+	<list_entry value="tunny"/>
+ </chunk>
+ <chunk id="CATFNC">
+    <list_entry value="fence"/>
+	<list_entry value="hedge"/>
+	<list_entry value="wall"/>
+ </chunk>
+ <chunk id="CATFOG">
+    <list_entry value="explosive"/>
+	<list_entry value="diaphone"/>
+	<list_entry value="siren"/>
+	<list_entry value="nautophone"/>
+	<list_entry value="reed"/>
+	<list_entry value="tyfon"/>
+	<list_entry value="bell"/>
+	<list_entry value="whistle"/>
+	<list_entry value="gong"/>
+	<list_entry value="horn"/>
+ </chunk>
+ <chunk id="CATFOR">
+    <list_entry value="castle"/>
+	<list_entry value="fort"/>
+	<list_entry value="battery"/>
+	<list_entry value="blockhouse"/>
+	<list_entry value="martello_tower"/>
+	<list_entry value="redoubt"/>
+ </chunk>
+ <chunk id="CATFRY">
+    <list_entry value="free"/>
+	<list_entry value="cable"/>
+	<list_entry value="ice"/>
+	<list_entry value="swinging"/>
+ </chunk>
+ <chunk id="CATGAT">
+    <list_entry value="general"/>
+	<list_entry value="flood_barrage"/>
+	<list_entry value="caison"/>
+	<list_entry value="lock"/>
+	<list_entry value="dyke"/>
+	<list_entry value="sluice"/>
+ </chunk>
+ <chunk id="CATHAF">
+    <list_entry value="roro"/>
+	<list_entry value="ferry"/>
+	<list_entry value="fishing"/>
+	<list_entry value="marina"/>
+	<list_entry value="marina_no_facilities"/>
+	<list_entry value="naval"/>
+	<list_entry value="tanker"/>
+	<list_entry value="passenger"/>
+	<list_entry value="shipyard"/>
+	<list_entry value="container"/>
+	<list_entry value="bulk"/>
+	<list_entry value="syncrolift"/>
+	<list_entry value="straddle_carrier"/>
+	<list_entry value="lay_up"/>
+	<list_entry value="timber"/>
+	<list_entry value="service_repair"/>
+	<list_entry value="quarantine"/>
+	<list_entry value="seaplane"/>
+	<list_entry value="cargo"/>
+	<list_entry value="offshore_support"/>
+	<list_entry value="port_support"/>
+ </chunk>
+ <chunk id="CATHBR">
+    <list_entry value="customs"/>
+	<list_entry value="refuge"/>
+	<list_entry value="marina"/>
+	<list_entry value="fishing"/>
+	<list_entry value="private"/>
+ </chunk>
+ <chunk id="CATHLK">
+    <list_entry value="floating_restaurant"/>
+	<list_entry value="historic"/>
+	<list_entry value="museum"/>
+	<list_entry value="accommodation"/>
+	<list_entry value="floating_breakwater"/>
+	<list_entry value="casino_boat"/>
+ </chunk>
+ <chunk id="CATINB">
+    <list_entry value="calm"/>
+	<list_entry value="sbm"/>
+ </chunk>
+ <chunk id="CATLAM">
+	<list_entry value="port"/>
+	<list_entry value="starboard"/>
+	<list_entry value="preferred_channel_starboard"/>
+	<list_entry value="preferred_channel_port"/>
+	<list_entry value="waterway_right"/>
+	<list_entry value="waterway_left"/>
+	<list_entry value="channel_right"/>
+	<list_entry value="channel_left"/>
+	<list_entry value="waterway_separation"/>
+	<list_entry value="channel_separation"/>
+	<list_entry value="channel_right_bank"/>
+	<list_entry value="channel_left_bank"/>
+	<list_entry value="crossover_right"/>
+	<list_entry value="crossover_left"/>
+	<list_entry value="danger_right"/>
+	<list_entry value="danger_left"/>
+	<list_entry value="turnoff_right"/>
+	<list_entry value="turnoff_left"/>
+	<list_entry value="junction_right"/>
+	<list_entry value="junction_left"/>
+	<list_entry value="harbour_right"/>
+	<list_entry value="harbour_left"/>
+	<list_entry value="bridge_pier"/>
+ </chunk>
+ <chunk id="CATLIT">
+    <list_entry value="directional"/>
+	<list_entry value="leading"/>
+	<list_entry value="aero"/>
+	<list_entry value="air_obstruction"/>
+	<list_entry value="fog_detector"/>
+	<list_entry value="floodlight"/>
+	<list_entry value="strip_light"/>
+	<list_entry value="subsidiary"/>
+	<list_entry value="spotlight"/>
+	<list_entry value="front"/>
+	<list_entry value="rear"/>
+	<list_entry value="upper"/>
+	<list_entry value="lower"/>
+	<list_entry value="moire"/>
+	<list_entry value="emergency"/>
+	<list_entry value="horizontal"/>
+	<list_entry value="vertical"/>
+ </chunk>
+ <chunk id="CATLMK">
+    <list_entry value="cairn"/>
+	<list_entry value="cemetery"/>
+	<list_entry value="chimney"/>
+	<list_entry value="dish_aerial"/>
+	<list_entry value="flagstaff"/>
+	<list_entry value="flare_stack"/>
+	<list_entry value="mast"/>
+	<list_entry value="windsock"/>
+	<list_entry value="monument"/>
+	<list_entry value="column"/>
+	<list_entry value="memorial"/>
+	<list_entry value="obelisk"/>
+	<list_entry value="statue"/>
+	<list_entry value="cross"/>
+	<list_entry value="dome"/>
+	<list_entry value="radar_scanner"/>
+	<list_entry value="tower"/>
+	<list_entry value="windmill"/>
+	<list_entry value="windmotor"/>
+	<list_entry value="spire"/>
+	<list_entry value="boulder"/>
+	<list_entry value="minaret"/>
+	<list_entry value="water_tower"/>
+ </chunk>
+ <chunk id="CATMFA">
+    <list_entry value="crustaceans"/>
+	<list_entry value="oysters_mussels"/>
+	<list_entry value="fish"/>
+	<list_entry value="seaweed"/>
+	<list_entry value="pearl_culture"/>
+ </chunk>
+ <chunk id="CAATMOR">
+    <list_entry value="dolphin"/>
+	<list_entry value="deviation_dolphin"/>
+	<list_entry value="bollard"/>
+	<list_entry value="wall"/>
+	<list_entry value="pile"/>
+	<list_entry value="chain"/>
+	<list_entry value="buoy"/>
+	<list_entry value="shore_ropes"/>
+	<list_entry value="automatic"/>
+ </chunk>
+ <chunk id="CATMPA">
+    <list_entry value="torpedo"/>
+	<list_entry value="submarine"/>
+	<list_entry value="firing"/>
+	<list_entry value="mine-laying"/>
+	<list_entry value="small_arms"/>
+ </chunk>
+ <chunk id="CATPIP">
+	<list_entry value="outfall"/>
+	<list_entry value="intake"/>
+	<list_entry value="sewer"/>
+	<list_entry value="bubbler"/>
+	<list_entry value="supply"/>
+ </chunk>
+ <chunk id="CATSPM">
+	<list_entry value="unknown_purpose"/>
+	<list_entry value="firing_danger_area"/>
+	<list_entry value="target"/>
+	<list_entry value="marker_ship"/>
+	<list_entry value="degaussing_range"/>
+	<list_entry value="barge"/>
+	<list_entry value="cable"/>
+	<list_entry value="spoil_ground"/>
+	<list_entry value="outfall"/>
+	<list_entry value="odas"/>
+	<list_entry value="recording"/>
+	<list_entry value="seaplane_anchorage"/>
+	<list_entry value="recreation_zone"/>
+	<list_entry value="private"/>
+	<list_entry value="mooring"/>
+	<list_entry value="lanby"/>
+	<list_entry value="leading"/>
+	<list_entry value="measured_distance"/>
+	<list_entry value="notice"/>
+	<list_entry value="tss"/>
+	<list_entry value="no_anchoring"/>
+	<list_entry value="no_berthinh"/>
+	<list_entry value="no_overtaking"/>
+	<list_entry value="no_two-way_traffic"/>
+	<list_entry value="reduced_wake"/>
+	<list_entry value="stop"/>
+	<list_entry value="warning"/>
+	<list_entry value="sound_ship_siren"/>
+	<list_entry value="restricted_vertical_Clearance"/>
+	<list_entry value="maximum_vessel_draught"/>
+	<list_entry value="restricted_horizontal_clearance"/>
+	<list_entry value="strong_current"/>
+	<list_entry value="berthing"/>
+	<list_entry value="overhead_power_cable"/>
+	<list_entry value="channel_edge_gradient"/>
+	<list_entry value="telephone"/>
+	<list_entry value="ferry_crossing"/>
+	<list_entry value="pipeline"/>
+	<list_entry value="anchorage"/>
+	<list_entry value="clearing"/>
+	<list_entry value="control"/>
+	<list_entry value="diving"/>
+	<list_entry value="refuge_beacon"/>
+	<list_entry value="foul_ground"/>
+	<list_entry value="yachting"/>
+	<list_entry value="heliport"/>
+	<list_entry value="gps"/>
+	<list_entry value="seaplane_landing"/>
+	<list_entry value="no_entry"/>
+	<list_entry value="work_in_progress"/>
+	<list_entry value="wellhead"/>
+	<list_entry value="channel_separation"/>
+	<list_entry value="marine_farm"/>
+	<list_entry value="artificial_reef"/>
+ </chunk>
+ <chunk id="CATTSS">
+	<list_entry value="imo_adopted"/>
+	<list_entry value="not_imo_adopted"/>
+ </chunk>
+ <chunk id="COLOUR">
+	<list_entry value="white"/>
+	<list_entry value="black"/>
+	<list_entry value="red"/>
+	<list_entry value="green"/>
+	<list_entry value="blue"/>
+	<list_entry value="yellow"/>
+	<list_entry value="grey"/>
+	<list_entry value="brown"/>
+	<list_entry value="amber"/>
+	<list_entry value="violet"/>
+	<list_entry value="orange"/>
+	<list_entry value="magenta"/>
+	<list_entry value="pink"/>
+ </chunk>
+ <chunk id="COLOUR+CAR">
+	<list_entry value="black;yellow"/>
+	<list_entry value="black;yellow;black"/>
+	<list_entry value="yellow;black"/>
+	<list_entry value="yellow;black;yellow"/>
+ </chunk>
+ <chunk id="COLOUR+LAT">
+	<list_entry value="green"/>
+	<list_entry value="red"/>
+	<list_entry value="red;green;red"/>
+	<list_entry value="green;red;green"/>
+	<list_entry value="red;white;red;white"/>
+	<list_entry value="green;white;green;white"/>
+	<list_entry value="red;green;red;green"/>
+	<list_entry value="white;red"/>
+	<list_entry value="white;green"/>
+	<list_entry value="red;white"/>
+	<list_entry value="green;white"/>
+	<list_entry value="red;white;red"/>
+	<list_entry value="green;white;green"/>
+	<list_entry value="yellow"/>
+ </chunk>
+ <chunk id="COLPAT">
+	<list_entry value="horizontal"/>
+	<list_entry value="vertical"/>
+	<list_entry value="diagonal"/>
+	<list_entry value="squared"/>
+	<list_entry value="stripes"/>
+	<list_entry value="border"/>
+	<list_entry value="cross"/>
+	<list_entry value="saltire"/>
+ </chunk>
+ <chunk id="CONDTN">
+	<list_entry value="under_construction"/>
+	<list_entry value="ruined"/>
+	<list_entry value="under_reclamation"/>
+	<list_entry value="wingless"/>
+	<list_entry value="planned_construction"/>
+ </chunk>
+ <chunk id="CONRAD">
+	<list_entry value="conspicuous"/>
+	<list_entry value="not_conspicuous"/>
+	<list_entry value="reflector"/>
+ </chunk>
+ <chunk id="CONVIS">
+	<list_entry value="conspicuous"/>
+	<list_entry value="not_conspicuous"/>
+ </chunk>
+ <chunk id="CLSDNG">
+	<list_entry value="one_blue"/>
+	<list_entry value="two_blue"/>
+	<list_entry value="three_blue"/>
+	<list_entry value="no_blue"/>
+	<list_entry value="one_red"/>
+ </chunk>
+ <chunk id="EXELIT">
+    <list_entry value="24h"/>
+	<list_entry value="day"/>
+	<list_entry value="fog"/>
+	<list_entry value="night"/>
+	<list_entry value="warning"/>
+	<list_entry value="storm"/>
+ </chunk>
+ <chunk id="FUNCTN">
+    <list_entry value="harbour_master"/>
+	<list_entry value="radar"/>
+	<list_entry value="customs"/>
+	<list_entry value="health"/>
+	<list_entry value="hospital"/>
+	<list_entry value="post_office"/>
+	<list_entry value="hotel"/>
+	<list_entry value="railway_station"/>
+	<list_entry value="police_station"/>
+	<list_entry value="water-police_station"/>
+	<list_entry value="pilot_office"/>
+	<list_entry value="pilot_lookout"/>
+	<list_entry value="bank"/>
+	<list_entry value="district_control"/>
+	<list_entry value="transit_shed"/>
+	<list_entry value="factory"/>
+	<list_entry value="power_station"/>
+	<list_entry value="administrative"/>
+	<list_entry value="educational"/>
+	<list_entry value="church"/>
+	<list_entry value="chapel"/>
+	<list_entry value="temple"/>
+	<list_entry value="pagoda"/>
+	<list_entry value="shinto_shrine"/>
+	<list_entry value="buddhist_temple"/>
+	<list_entry value="mosque"/>
+	<list_entry value="marabout"/>
+	<list_entry value="lookout"/>
+	<list_entry value="communication"/>
+	<list_entry value="television"/>
+	<list_entry value="radio"/>
+	<list_entry value="radar"/>
+	<list_entry value="light_support"/>
+	<list_entry value="microwave"/>
+	<list_entry value="cooling"/>
+	<list_entry value="observation"/>
+	<list_entry value="time_ball"/>
+	<list_entry value="clock"/>
+	<list_entry value="control"/>
+	<list_entry value="airship_mooring"/>
+	<list_entry value="stadium"/>
+	<list_entry value="bus_station"/>
+ </chunk>
+ <chunk id="HUNITS">
+	<list_entry value="meters"/>
+	<list_entry value="feet"/>
+	<list_entry value="kilometers"/>
+	<list_entry value="hectometers"/>
+	<list_entry value="statute_miles"/>
+	<list_entry value="nautical_miles"/>
+ </chunk>
+ <chunk id="LITCHR">
+  <list_entry value="F"/>
+  <list_entry value="Fl"/>
+  <list_entry value="LFl"/>
+  <list_entry value="Iso"/>
+  <list_entry value="Oc"/>
+  <list_entry value="Q"/>
+  <list_entry value="VQ"/>
+  <list_entry value="UQ"/>
+  <list_entry value="IQ"/>
+  <list_entry value="IVQ"/>
+  <list_entry value="IUQ"/>
+  <list_entry value="Q+LFl"/>
+  <list_entry value="VQ+LFl"/>
+  <list_entry value="UQ+LFl"/>
+  <list_entry value="Mo"/>
+  <list_entry value="FFl"/>
+  <list_entry value="FlLFl"/>
+  <list_entry value="OcFl"/>
+  <list_entry value="FLFl"/>
+  <list_entry value="Al"/>
+  <list_entry value="Al.Oc"/>
+  <list_entry value="Al.LFl"/>
+  <list_entry value="Al.Fl"/>
+  <list_entry value="Al.Gr"/>
+  <list_entry value="Al.FFl"/>
+ </chunk>
+ <chunk id="LITVIS">
+    <list_entry value="high"/>
+	<list_entry value="low"/>
+	<list_entry value="faint"/>
+	<list_entry value="intensified"/>
+	<list_entry value="unintensified"/>
+	<list_entry value="restricted"/>
+	<list_entry value="obscured"/>
+	<list_entry value="part_obscured"/>
+ </chunk>
+ <chunk id="MARSYS">
+	<list_entry value="iala-a"/>
+	<list_entry value="iala-b"/>
+	<list_entry value="cevni"/>
+	<list_entry value="riwr"/>
+	<list_entry value="bniwr2"/>
+	<list_entry value="bniwr"/>
+	<list_entry value="ppwbc"/>
+	<list_entry value="none"/>
+	<list_entry value="other"/>
+ </chunk>
+ <chunk id="NATCON">
+	<list_entry value="masonry"/>
+	<list_entry value="concreted"/>
+	<list_entry value="loose_boulders"/>
+	<list_entry value="hard-surfaced"/>
+	<list_entry value="unsurfaced"/>
+	<list_entry value="wooden"/>
+	<list_entry value="metal"/>
+	<list_entry value="grp"/>
+	<list_entry value="painted"/>
+	<list_entry value="framework"/>
+ </chunk>
+ <chunk id="NATSUR">
+	<list_entry value="mud"/>
+	<list_entry value="clay"/>
+	<list_entry value="silt"/>
+	<list_entry value="sand"/>
+	<list_entry value="stone"/>
+	<list_entry value="gravel"/>
+	<list_entry value="pebbles"/>
+	<list_entry value="cobbles"/>
+	<list_entry value="rock"/>
+	<list_entry value="lava"/>
+	<list_entry value="coral"/>
+	<list_entry value="shells"/>
+	<list_entry value="boulder"/>
+ </chunk>
+ <chunk id="NATQUA">
+	<list_entry value="fine"/>
+	<list_entry value="medium"/>
+	<list_entry value="coarse"/>
+	<list_entry value="broken"/>
+	<list_entry value="sticky"/>
+	<list_entry value="soft"/>
+	<list_entry value="stiff"/>
+	<list_entry value="volcanic"/>
+	<list_entry value="calcareous"/>
+	<list_entry value="hard"/>
+ </chunk>
+ <chunk id="PRODCT">
+	<list_entry value="oil"/>
+	<list_entry value="gas"/>
+	<list_entry value="water"/>
+	<list_entry value="stone"/>
+	<list_entry value="coal"/>
+	<list_entry value="ore"/>
+	<list_entry value="chemicals"/>
+	<list_entry value="drinking_water"/>
+	<list_entry value="milk"/>
+	<list_entry value="bauxite"/>
+	<list_entry value="coke"/>
+	<list_entry value="iron_ingots"/>
+	<list_entry value="salt"/>
+	<list_entry value="sand"/>
+	<list_entry value="timber"/>
+	<list_entry value="sawdust"/>
+	<list_entry value="scrap"/>
+	<list_entry value="lng"/>
+	<list_entry value="lpg"/>
+	<list_entry value="wine"/>
+	<list_entry value="cement"/>
+	<list_entry value="grain"/>
+ </chunk>
+ <chunk id="RESTRN">
+	<list_entry value="no_anchoring"/>
+	<list_entry value="restricted_anchoring"/>
+	<list_entry value="no_fishing"/>
+	<list_entry value="restricted_fishing"/>
+	<list_entry value="no_trawling"/>
+	<list_entry value="restricted_trawling"/>
+	<list_entry value="no_entry"/>
+	<list_entry value="restricted_entry"/>
+	<list_entry value="no_dredging"/>
+	<list_entry value="restricted_dredging"/>
+	<list_entry value="no_diving"/>
+	<list_entry value="restricted_diving"/>
+	<list_entry value="no_wake"/>
+	<list_entry value="to_be_avoided"/>
+	<list_entry value="no_construction"/>
+	<list_entry value="no_discharging"/>
+	<list_entry value="restricted_discharging"/>
+	<list_entry value="no_exploration_development"/>
+	<list_entry value="restricted_exploration_development"/>
+	<list_entry value="no_drilling"/>
+	<list_entry value="restricted_drilling"/>
+	<list_entry value="no_historic_artifacts_removal"/>
+	<list_entry value="no_lightering"/>
+	<list_entry value="no_dragging"/>
+	<list_entry value="no_stopping"/>
+	<list_entry value="no_langing"/>
+	<list_entry value="restricted_speed"/>
+	<list_entry value="no_overtaking"/>
+	<list_entry value="no_convoy_overtaking"/>
+	<list_entry value="no_passing_overtaking"/>
+	<list_entry value="no_berthing"/>
+	<list_entry value="restricted_berthing"/>
+	<list_entry value="no_making_fast"/>
+	<list_entry value="restricted_making_fast"/>
+	<list_entry value="no_turning"/>
+	<list_entry value="restricted_fairway_depth"/>
+ </chunk>
+ <chunk id="STATUS">
+	<list_entry value="permanent"/>
+	<list_entry value="occasional"/>
+	<list_entry value="recommended"/>
+	<list_entry value="not_in_use"/>
+	<list_entry value="intermittent"/>
+	<list_entry value="reserved"/>
+	<list_entry value="temporary"/>
+	<list_entry value="private"/>
+	<list_entry value="mandatory"/>
+	<list_entry value="extinguished"/>
+	<list_entry value="illuminated"/>
+	<list_entry value="historic"/>
+	<list_entry value="public"/>
+	<list_entry value="synchronized"/>
+	<list_entry value="watched"/>
+	<list_entry value="unwatched"/>
+	<list_entry value="existence_doubtful"/>
+	<list_entry value="on_request"/>
+	<list_entry value="drop_away"/>
+	<list_entry value="rising"/>
+	<list_entry value="increasing"/>
+	<list_entry value="decreasing"/>
+	<list_entry value="strong"/>
+	<list_entry value="good"/>
+	<list_entry value="moderate"/>
+	<list_entry value="poor"/>
+ </chunk>
+ <chunk id="TOPSHP">
+	<list_entry value="cone, point up"/>
+	<list_entry value="cone, point down"/>
+	<list_entry value="sphere"/>
+	<list_entry value="2 spheres"/>
+	<list_entry value="cylinder"/>
+	<list_entry value="board"/>
+	<list_entry value="x-shape"/>
+	<list_entry value="cross"/>
+	<list_entry value="cube, point up"/>
+	<list_entry value="2 cones point together"/>
+	<list_entry value="2 cones base together"/>
+	<list_entry value="2 cones up"/>
+	<list_entry value="2 cones down"/>
+	<list_entry value="rhombus"/>
+	<list_entry value="besom, point up"/>
+	<list_entry value="besom, point down"/>
+	<list_entry value="flag"/>
+	<list_entry value="sphere over rhombus"/>
+	<list_entry value="square"/>
+	<list_entry value="rectangle, horizontal"/>
+	<list_entry value="rectangle, vertical"/>
+	<list_entry value="trapezium, up"/>
+	<list_entry value="trapezium, down"/>
+	<list_entry value="triangle, point up"/>
+	<list_entry value="triangle, point down"/>
+	<list_entry value="circle"/>
+	<list_entry value="2 upright crosses"/>
+	<list_entry value="t-shape"/>
+	<list_entry value="triangle, point up over circle"/>
+	<list_entry value="upright cross over circle"/>
+	<list_entry value="rhombus over circle"/>
+	<list_entry value="circle over triangle, point up"/>
+	<list_entry value="other"/>
+ </chunk>
+ <chunk id="TRAFIC">
+	<list_entry value="inbound"/>
+	<list_entry value="outbound"/>
+	<list_entry value="one-way"/>
+	<list_entry value="two-way"/>
+ </chunk>
+ <chunk id="TRSHGD">
+	<list_entry value="containers"/>
+	<list_entry value="bulk"/>
+	<list_entry value="oil"/>
+	<list_entry value="fuel"/>
+	<list_entry value="chemicals"/>
+	<list_entry value="liquid"/>
+	<list_entry value="explosive"/>
+	<list_entry value="fish"/>
+	<list_entry value="cars"/>
+	<list_entry value="general"/>
+ </chunk>
+ <chunk id="VERDAT">
+	<list_entry value="mlws"/>
+	<list_entry value="mllws"/>
+	<list_entry value="msl"/>
+	<list_entry value="llw"/>
+	<list_entry value="mlw"/>
+	<list_entry value="llws"/>
+	<list_entry value="amlws"/>
+	<list_entry value="islw"/>
+	<list_entry value="lws"/>
+	<list_entry value="alat"/>
+	<list_entry value="nllw"/>
+	<list_entry value="mllw"/>
+	<list_entry value="lw"/>
+	<list_entry value="amlw"/>
+	<list_entry value="amllw"/>
+	<list_entry value="mhw"/>
+	<list_entry value="mhws"/>
+	<list_entry value="hw"/>
+	<list_entry value="amsl"/>
+	<list_entry value="hws"/>
+	<list_entry value="mhhw"/>
+	<list_entry value="eslw"/>
+	<list_entry value="lat"/>
+	<list_entry value="local"/>
+	<list_entry value="igld1985"/>
+	<list_entry value="mwl"/>
+	<list_entry value="llwlt"/>
+	<list_entry value="hhwlt"/>
+	<list_entry value="nhhw"/>
+	<list_entry value="hat"/>
+	<list_entry value="llwrl"/>
+	<list_entry value="lhwrl"/>
+	<list_entry value="lmwrl"/>
+	<list_entry value="ehw_dglw"/>
+	<list_entry value="hshw_dhsw"/>
+	<list_entry value="rlwl_donau"/>
+	<list_entry value="hshw_donau"/>
+	<list_entry value="dwlwl_olr"/>
+	<list_entry value="rpwl"/>
+	<list_entry value="mbl"/>
+	<list_entry value="ohio_rd"/>
+ </chunk>
+ <chunk id="WATLEV">
+	<list_entry value="part-submerged"/>
+	<list_entry value="dry"/>
+	<list_entry vlaue="submerged"/>
+	<list_entry value="covers"/>
+	<list_entry value="awash"/>
+	<list_entry value="floods"/>
+	<list_entry value="floating"/>
+	<list_entry value="above_mwl"/>
+	<list_entry value="below_mwl"/>
+ </chunk>
+ <!-- Definitions -->
+ <group name="S100" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/IHO_c.svg">
+  <item name="ACHARE" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N10.svg" type="node,closedway">
+   <label text="ACHARE: Anchorage Area"/>
+   <key key="seamark:type" value="anchorage"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:anchorage:category" text="Category">
+    <reference ref="CATACH"/>
+   </combo>
+   <combo key="seamark:anchorage:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+   <combo key="seamark:anchorage:danger_class" text="Danger Class">
+    <reference ref="CLSDNG"/>
+   </combo>
+  </item>
+  <item name="ACHBRT" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N11.1.svg" type="node,closedway">
+   <label text="ACHBRT: Anchor Berth"/>
+   <key key="seamakr:type" value="anchor_berth"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:anchor_berth:category" text="Category">
+    <reference ref="CATACH"/>
+   </combo>
+   <text key="seamark:anchor_berth:radius" text="Radius"/>
+   <combo key="seamark:anchor_berth:danger_class" text="Danger Class">
+    <reference ref="CLSDNG"/>
+   </combo>
+  </item>
+  <item name="BCNCAR" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/H_black_yellow_black.svg" type="node">
+   <label text="BCNCAR: Beacon, cardinal"/>
+   <key key="seamark:type" value="beacon_cardinal"/>
+   <key key="seamark:beacon_cardinal:colour_pattern" value="horizontal"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:beacon_cardinal:category" text="Category" required="true">
+    <reference ref="CATCAM"/>
+   </combo>
+   <combo key="seamark:beacon_cardinal:colour" text="Colour" required="true">
+    <reference ref="COLOUR+CAR"/>
+   </combo>
+   <combo key="seamark:beacon_cardinal:shape" text="Shape">
+    <reference ref="BCNSHP"/>
+   </combo>
+   <combo key="seamark:beacon_cardinal:construction" text="Construction">
+    <reference ref="NATCON"/>
+   </combo>
+   <combo key="seamark:beacon_cardinal:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+   <text key="seamark:beacon_cardinal:elevation" text="Elevation"/>
+   <text key="seamark:beacon_cardinal:height" text="Height"/>  
+  </item>
+  <item name="BCNISD" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/H_black_red_black.svg" type="node">
+   <label text="BCNISD: Beacon, isolated danger"/>
+   <key key="seamark:type" value="beacon_isolated_danger"/>
+   <key key="seamark:beacon_isolated_danger:colour_pattern" value="vertical"/>
+   <key key="seamark:beacon_isolated_danger:colour" value="red;white"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:beacon_isolated_danger:shape" text="Shape">
+    <reference ref="BCNSHP"/>
+   </combo>
+   <combo key="seamark:beacon_isolated_danger:construction" text="Construction">
+    <reference ref="NATCON"/>
+   </combo>
+   <combo key="seamark:beacon_isolated_danger:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+   <text key="seamark:beacon_isolated_danger:elevation" text="Elevation"/>
+   <text key="seamark:beacon_isolated_danger:height" text="Height"/>  
+  </item>
+  <item name="BCNLAT" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/green.svg" type="node">
+   <label text="BCNLAT: Beacon, lateral"/>
+   <key key="seamark:type" value="beacon_lateral"/>
+   <combo key="seamark:beacon_lateral:system" text="System" use_last_as_default="true">
+	<reference ref="MARSYS"/>
+   </combo>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:beacon_lateral:category" text="Category" required="true">
+    <reference ref="CATLAM"/>
+   </combo>
+   <combo key="seamark:beacon_lateral:colour" text="Colour" required="true">
+    <reference ref="COLOUR+LAT"/>
+   </combo>
+   <combo key="seamark:beacon:lateral:colour_pattern" text="Colour Pattern">
+    <reference ref="COLPAT"/>
+   </combo>
+   <combo key="seamark:beacon_lateral:shape" text="Shape">
+    <reference ref="BCNSHP"/>
+   </combo>
+   <combo key="seamark:beacon_lateral:construction" text="Construction">
+    <reference ref="NATCON"/>
+   </combo>
+   <combo key="seamark:beacon_lateral:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+   <text key="seamark:beacon_lateral:elevation" text="Elevation"/>
+   <text key="seamark:beacon_lateral:height" text="Height"/>  
+  </item>
+  <item name="BCNSAW" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/V_red_white.svg" type="node">
+   <label text="BCNSAW: Beacon, safe water"/>
+   <key key="seamark:type" value="beacon_safe_water"/>
+   <key key="seamark:beacon_safe_water:colour_pattern" value="vertical"/>
+   <text key="seamark:name" text="Name"/>
+   <key key="seamark:beacon_safe_water:colour" value="white;red"/>
+   <combo key="seamark:beacon_safe_water:shape" text="Shape">
+    <reference ref="BCNSHP"/>
+   </combo>
+   <combo key="seamark:beacon_safe_water:construction" text="Construction">
+    <reference ref="NATCON"/>
+   </combo>
+   <combo key="seamark:beacon_safe_water:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+   <text key="seamark:beacon_safe_water:elevation" text="Elevation"/>
+   <text key="seamark:beacon_safe_water:height" text="Height"/>  
+  </item>
+  <item name="BCNSPP" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/yellow.svg" type="node">
+   <label text="BCNSPP: Beacon, special purpose/general"/>
+   <key key="seamark:type" value="beacon_special_purpose"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:beacon_special_purpose:category" text="Category" default="unknown_purpose" required="true">
+    <reference ref="CATSPM"/>
+   </combo>
+   <combo key="seamark:beacon_special_purpose:colour" text="Colour" required="true">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:beacon_special_purpose:shape" text="Shape">
+    <reference ref="BCNSHP"/>
+   </combo>
+   <combo key="seamark:beacon_special_purpose:construction" text="Construction">
+    <reference ref="NATCON"/>
+   </combo>
+   <combo key="seamark:beacon_special_purpose:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+   <text key="seamark:beacon_special_purpose:elecation" text="Elecation"/>
+   <text key="seamark:beacon_special_purpose:height" text="Height"/>  
+  </item>
+  <item name="BERTHS" icon="presets/empty.png" type="node,way,closedway">
+   <label text="BERTHS: Berhs"/>
+   <key key="seamark:type" value="berth"/>
+   <text key="seamark:name" text="Name"/>
+   <text key="seamark:berth:minimum_depth" text="Minimum depth of berth"/>
+   <combo key="seamark:berth:danger_class" text="Danger Class">
+    <reference ref="CLSDNG"/>
+   </combo>
+   <combo key="seamark:berth:goods" text="Transhipping Goods">
+    <reference ref="TRSHGD"/>
+   </combo>
+  </item>
+  <item name="BRIDGE" icon="presets/empty.png" type="node,way,closedway">
+   <label text="BRIDGE: Bridge"/>
+   <key key="seamark:type" value="bridge"/>
+   <combo key="seamark:bridge:category" text="Category" required="true">
+    <reference ref="CATBRG"/>
+	</combo>
+   <combo key="seamark:bridge:colour" text="Colour">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:bridge:colour_pattern" text="Colour Pattern">
+    <reference ref="COLPAT"/>
+   </combo>
+   <combo key="seamark:bridge:condition" text="Condition">
+    <reference ref="CONDTN"/>
+   </combo>
+   <text key="seamark:bridge:clearance_height" text="Clearance Height"/>
+   <text key="seamark:bridge:clearance_height_closed" text="Clearance Height (Closed)"/>
+   <text key="seamark:bridge:clearance_height_open" text="Clearance Height (Open)"/>
+   <text key="seamark:bridge:clearance_width" text="Clearance Width"/>
+   <combo key="seamark:bridge:construction" text="Construction">
+    <reference ref="NATCON"/>
+   </combo>
+   <combo key="seamark:bridge:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+   <combo key="seamark:bridge:conspicuity" text="Visibility">
+    <reference ref="CONVIS"/>
+   </combo>
+  </item>
+  <item name="BUISGL" icon="presets/empty.png" type="node,closedway">
+   <label text="BUISGL: Building, single"/>
+   <key key="seamark:type" value="building"/>
+   <combo key="seamark:building:colour" text="Colour">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:building:colour_pattern" text="Colour Pattern">
+    <reference ref="COLPAT"/>
+   </combo>
+   <combo key="seamark:building:construction" text="Construction">
+    <reference ref="NATCON"/>
+   </combo>
+   <text key="seamark:building:elevation" text="Elevation"/>
+   <text key="seamark:building:height" text="Height"/>
+   <combo key="seamark:building:function" text="Function">
+    <reference ref="FUNCTN"/>
+   </combo>
+   <combo key="seamark:building:shape" text="Shape">
+    <reference ref="BUISHP"/>
+   </combo>
+  </item>
+  <item name="BUNSTA" icon="presets/empty.png" type="node,closedway">
+   <label text="BUNSTA: Bunker Station"/>
+   <key key="seamark:type" value="bunker_station"/>
+   <text key="seamark:name" value="Name"/>
+   <combo key="seamark:bunker_station:category" text="Category" required="true">
+    <reference ref="CATBUN"/>
+   </combo>
+  </item>
+  <item name="BOYCAR" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_black_yellow_black.svg" type="node">
+   <label text="BOYCAR: Buoy, cardinal"/>
+   <key key="seamark:type" value="buoy_cardinal"/>
+   <key key="seamark:buoy_cardinal:colour_pattern" value="horizontal"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:buoy_cardinal:category" text="Category" required="true">
+    <reference ref="CATCAM"/>
+   </combo>
+   <combo key="seamark:buoy_cardinal:colour" text="Colour" required="true">
+	<reference ref="COLOUR+CAR"/>
+   </combo>
+   <combo key="seamark:buoy_cardinal:shape" text="Shape">
+    <reference ref="BOYSHP"/>
+   </combo>
+   <combo key="seamark:buoy_cardinal:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+  </item>
+  <item name="BOYINB" icon="presets/empty.png" type="node">
+   <label text="BOYINB: Buoy, installation"/>
+   <key key="seamark:type" value="buoy_installation"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:buoy_installation:category" text="Category">
+	<reference ref="CATINB"/>
+   </combo>
+   <combo key="seamark:buoy_installation:colour" text="Colour">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:buoy_installation:colour_pattern" text="Colour Pattern">
+    <reference ref="COLPAT"/>
+   </combo>
+   <combo key="seamark:buoy_installation:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+  </item>
+  <item name="BOYISD" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_black_red_black.svg" type="node">
+   <label text="BOYISD: Buoy, isolated danger"/>
+   <key key="seamark:type" value="buoy_isolated_danger"/>
+   <key key="seamark:buoy_isolated_danger:colour_pattern" value="vertical"/>
+   <key key="seamark:buoy_isolated_danger:colour" value="red;white"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:buoy_isolated_danger:shape" text="Shape">
+    <reference ref="BOYSHP"/>
+   </combo>
+   <combo key="seamark:buoy_isolated_danger:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+  </item>
+  <item name="BOYLAT" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/green.svg" type="node">
+   <label text="BOYLAT: Buoy, lateral"/>
+   <key key="seamark:type" value="buoy_lateral"/>
+   <combo key="seamark:buoy_lateral:system" text="System" use_last_as_default="true">
+	<reference ref="MARSYS"/>
+   </combo>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:buoy_lateral:category" text="Category" required="true">
+    <reference ref="CATLAM"/>
+   </combo>
+   <combo key="seamark:buoy_lateral:colour" text="Colour" required="true">
+    <reference ref="COLOUR+LAT"/>
+   </combo>
+   <combo key="seamark:buoy:lateral:colour_pattern" text="Colour Pattern">
+    <reference ref="COLPAT"/>
+   </combo>
+   <combo key="seamark:buoy_lateral:shape" text="Shape">
+    <reference ref="BOYSHP"/>
+   </combo>
+   <combo key="seamark:buoy_lateral:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+  </item>
+  <item name="BOYSAW" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/V_red_white.svg" type="node">
+   <label text="BOYSAW: Buoy, safe water"/>
+   <key key="seamark:type" value="buoy_safe_water"/>
+   <key key="seamark:buoy_safe_water:colour_pattern" value="vertical"/>
+   <text key="seamark:name" text="Name"/>
+   <key key="seamark:buoy_safe_water:colour" value="white;red"/>
+   <combo key="seamark:buoy_safe_water:shape" text="Shape">
+    <reference ref="BOYSHP"/>
+   </combo>
+   <combo key="seamark:buoy_safe_water:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+  </item>
+  <item name="BOYSPP" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/yellow.svg" type="node">
+   <label text="BOYSPP: Buoy, special purpose/general"/>
+   <key key="seamark:type" value="buoy_special_purpose"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:buoy_special_purpose:category" text="Category" default="unknown_purpose" required="true">
+    <reference ref="CATSPM"/>
+   </combo>
+   <combo key="seamark:buoy_special_purpose:colour" text="Colour" required="true">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:buoy_special_purpose:shape" text="Shape">
+    <reference ref="BOYSHP"/>
+   </combo>
+   <combo key="seamark:buoy_special_purpose:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+  </item>
+  <item name="CAUSWY" icon="presets/empty.png" type="way,closedway">
+   <label text="CAUSWY: Causeway"/>
+   <key key="seamark:type" value="causeway"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:causeway:water_level" text="Water Level">
+    <reference ref="WATLEV"/>
+   </combo>
+  </item>
+  <item name="CBLARE" icon="presets/empty.png" type="closedway">
+   <label text="CBLARE: Cable area"/>
+   <key key="seamark:type" value="cable_area"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:cable_area:category" text="Category">
+    <reference ref="CATCBL"/>
+   </combo>
+   <combo key="seamark:cable_area:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="CBLOHD" icon="presets/empty.png" type="way">
+   <label text="CBLOHD: Cable, overhead"/>
+   <key key="seamark:type" value="cable_overhead"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:cable_overhead:category" text="Category">
+    <reference ref="CATCBL"/>
+   </combo>
+   <text key="seamark:cable_overhead:clearance_height" text="Clearance Height"/>
+   <text key="seamark:cable_overhead:clearance_height_safe" text="Safe Clearance Heigth"/>
+  </item>
+  <item name="CBLSUB" icon="presets/empty.png" type="way">
+   <label text="CBLSUB: Cable, submarine"/>
+   <key key="seamark:type" value="cable_submarine"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:cable_submarine:category" text="Category">
+    <reference ref="CATCBL"/>
+   </combo>
+   <text key="seamark:cable_submarine:depth_buried" text="Buried Depth"/>
+  </item>
+  <item name="CHKPNT" icon="presets/empty.png" type="node,closedway">
+   <label text="CHKPNT: Checkpoint"/>
+   <key key="seamark:type" value="checkpoint"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:checkpoint:category" text="Category">
+    <reference ref="CATCHP"/>
+   </combo>
+  </item>
+  <item name="CGUSTA" icon="presets/empty.png" type="node,closedway">
+   <label text="CGUSTA: Coastguard station"/>
+   <key key="seamark:type" value="coastguard_station"/>
+   <text key="seamark:name" text="Name"/>
+  </item>
+  <item name="COMARE" icon="presets/empty.png" type="closedway">
+   <label text="COMARE: Communication area"/>
+   <key key="seamark:type" value="communication_area"/>
+   <text key="seamark:name" text="Name"/>
+  </item>
+  <item name="CONVYR" icon="presets/empty.png" type="way,closedway">
+   <label text="CONVYR: Conveyor"/>
+   <key key="seamark:type" value="conveyor"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:coneyor:category" text="Category">
+    <reference id="CATCON"/>
+   </combo>
+   <combo key="seamark:conveyor:product" text="Product">
+    <reference ref="PRODCT"/>
+   </combo>
+  </item>
+  <item name="CRANES" icon="presets/empty.png" type="node,closedway">
+   <label text="CRANES: Crane"/>
+   <key key="seamark:type" value="crane"/>
+   <combo key="seamark:crane:category" text="Category">
+    <reference ref="CATCRN"/>
+   </combo>
+  </item>
+  <item name="CTRPNT" icon="presets/empty.png" type="node">
+   <label text="CTRPNT: Control Points"/>
+   <key key="seamark:type" value="control_point"/>
+   <combo key="seamark:control_point:category" text="Category">
+    <reference ref="CATCTR"/>
+   </combo>
+  </item>
+  <item name="DAMCON" icon="presets/empty.png" type="node,way,closedway">
+   <label text="DAMCON: Dam"/>
+   <key key="seamark:type" value="dam"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:dam:category" text="Category">
+    <reference ref="CATDAM"/>
+   </combo>
+  </item>
+  <item name="DAYMAR" icon="presets/empty.png" type="node">
+   <label text="DAYMAR: Daymark"/>
+   <check key="seamark:type" on_value="daymark" off_value="" default="off" text="Standalone daymark"/>
+   <combo key="seamark:daymark:shape" text="Shape" match="key">
+    <reference ref="TOPSHP"/>
+   </combo>
+   <combo key="seamark:daymark:colour" text="Colour">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:daymark:colour_pattern" text="Colour Pattern">
+    <reference ref="COLPAT"/>
+   </combo>
+  </item>
+  <item name="DEPARE" icon="presets/empty.png" type="closedway">
+   <label text="DEPARE: Depth Area"/>
+   <key key="seamark:type" value="depth_area"/>
+   <text key="seamark:depth_area:minimum_depth" text="Minimum depth"/>
+   <text key="seamark:depth_area:maxumum_depth" text="Maximum depth"/>
+   <combo key="seamark:depth_area:vertical_datum" text="Vertical Datum">
+    <reference ref="VERDAT"/>
+   </combo>
+  </item>
+  <item name="DEPCNT" icon="presets/empty.png" type="way,closedway">
+   <label text="DEPCNT: Depth Contour"/>
+   <key key="seamark:type" value="depth_contour"/>
+   <text key="seamark:depth_contour:depth" text="Depth"/>
+   <combo key="seamark:depth_contour:vertical_datum" text="Vertical Datum">
+    <reference ref="VERDAT"/>
+   </combo>
+  </item>
+  <item name="DISMAR" icon="presets/empty.png" type="node">
+   <label text="DISMAR: Distance mark"/>
+   <key key="seamark:type" value="distance_mark"/>
+   <combo key="seamark:distance_mark:category" text="Category">
+    <reference ref="CATDIS"/>
+   </combo>
+   <text key="seamark:distance_mark:distance" text="Distance"/>
+   <combo key="seamark:distance_mark:units" text="Units" use_last_as_default="true">
+    <reference ref="HUNITS"/>
+   </combo>
+  </item>
+  <item name="DOCARE" icon="presets/empty.png" type="closedway">
+   <label text="DOCARE: Dock area"/>
+   <key key="seamark:type" value="dock"/>
+   <text="seamark:name" text="Name"/>
+   <combo key="seamark:dock:category" text="Category">
+    <reference ref="CATDOC"/>
+   </combo>
+  </item>
+  <item name="DRGARE" icon="presets/empty.png" type="closedway">
+   <label text="DRGARE: Dredged area"/>
+   <key key="seamark:type" value="dredged_area"/>
+  </item>
+  <item name="DRYDOC" icon="presets/empty.png" type="closedway">
+   <label text="DRYDOC: Dry dock"/>
+   <key key="seamark:type" value="dry_dock"/>
+   <text key="seamark:name" text="Name"/>
+  </item>
+  <item name="DYKCON" icon="presets/empty.png" type="way,closedway">
+   <label text="DYKCON: Dyke"/>
+   <key key="seamark:type" value="dyke"/>
+   <text key="seamark:name" text="Name"/>
+  </item>
+  <item name="EXCNST" icon="presets/empty.png" type="node,way,closedway">
+   <label text="EXCNST: Exceptional navigation structure"/>
+   <key key="seamark:type" value="exceptional_structure"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:exceptional_structure:category" text="Category">
+    <reference ref="CATEXS"/>
+   </combo>
+  </item>
+  <item name="EXEZNE" icon="presets/empty.png" type="closedway">
+   <label text="EXEZNE: Exclusive Economic Zone"/>
+   <key key="seamark:type" value="exclusive_economic_zone"/>
+  </item>
+  <item name="FAIRWY" icon="presets/empty.png" type="closedway">
+   <label text="FAIRWY: Fairway"/>
+   <key key="seamark:type" value="fairway"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:fairway:restriction" text="Restriction">
+    <reference key="RESTRN"/>
+   </combo>
+  </item>
+  <item name="FERYRT" icon="presets/empty.png" type="way">
+   <label text="FERYRT: Ferry route"/>
+   <key key="seamark:type" value="ferry_route"/>
+   <combo key="seamark:ferry_route:category" text="Category">
+    <reference ref="CATFRY"/>
+   </combo>
+  </item>
+  <item name="FLODOC" icon="presets/empty.png" type="closedway">
+   <label text="FLODOC: Floating dock"/>
+   <key key="seamark:type" value="floating_dock"/>
+  </item>
+  <item name="FNCLNE" icon="presets/empty.png" type="way">
+   <label text="FNCLNE: Fence/Wall"/>
+   <key key="seamark:type" value="wall"/>
+   <combo key="seamark:wall:category" text="Category">
+    <reference ref="CATFNC"/>
+   </combo>
+  </item>
+  <item name="FOGSIG" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/R/R1.svg" type="node">
+   <label text="FOGSIG: Fog signal"/>
+   <text key="seamark:name" text="Name"/>
+   <check key="seamark:type" on_value="fog_signal" off_value="" default="off" text="Standalone fog signal"/>
+   <combo key="seamark:fog_signal:category" text="Category" required="true" match="key">
+    <reference ref="CATFOG"/>
+	</combo>
+   <combo key="seamark:fog_signal:generation" text="Signal Generation">
+    <list_entry value="automatic"/>
+	<list_entry value="wave"/>
+	<list_entry value="hand"/>
+	<list_entry value="wind"/>
+   </combo>
+   <text key="seamark:fog_signal:group" text="Group"/>
+   <text key="seamark:fog_signal:period" text="Period"/>
+   <text key="seamark:fog_signal:range" text="Range"/>
+   <text key="seamark:fog_signal:frequency" text="Sound Frequency"/>
+   <text key="seamark:fog_signal:sequence" text="Sequence"/>
+  </item>
+  <item name="FORSTC" icon="presets/empty.png" type="node,closedway">
+   <label text="FORSTC: Fortified Structure"/>
+   <key key="seamark:type" value="fortified_structure"/>
+   <combo key="seamark:fortified_structure:category" text="Category">
+    <reference ref="CATFOR"/>
+	</combo>
+  </item>
+  <item name="FSHFAC" icon="presets/empty.png" type="node,way,closedway">
+   <label text="FSHFAC: Fishing faculty"/>
+   <key key="seamark:type" value="fishing_faculty"/>
+   <combo key="seamark:fishing_faculty:category" text="Category">
+    <reference ref="CATFIF"/>
+	</combo>
+  </item>
+  <item name="GATCON" icon="presets/empty.png" type="node,way,closedway">
+   <label text="GATCON: Gate"/>
+   <key key="seamark:type" value="gate"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:gate:category" text="Category" default="general">
+    <reference ref="CATGAT"/>
+	</combo>
+  </item>
+  <item name="GRIDRN" icon="presets/empty.png" type="node,closedway">
+   <label text="GRIDRN: Gridiron"/>
+   <key key="seamark:type" value="gridiron"/>
+   <combo key="seamark:gridiron:water_level" text="Water Level">
+    <reference ref="WATLEV"/>
+   </combo>
+  </item>
+  <item name="HRBARE" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg" type="node,closedway">
+   <label text="HRBARE: Harbour Area (administrative)"/>
+   <key key="seamark:type" value="harbour_area"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:harbour_area:category" text="Category">
+    <reference ref="CATHBR"/>
+   </combo>
+  </item>
+  <item name="HRBBSN" icon="presets/empty.png" type="closedway">
+   <label text="HRBBSN: Harbour basin"/>
+   <key key="seamark:type" value="harbour_basin"/>
+   <text key="seamark:name" text="Name"/>
+  </item>
+  <item name="HRBFAC" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg" type="node,closedway">
+   <label text="HRBFAC: Harbour facility"/>
+   <key key="seamark:type" value="harbour"/>
+   <text key="seamark:name" text="Name"/>
+   <multiselect key="seamark:harbour:category" text="Category" delimiter=";">
+    <reference ref="CATHAF"/>
+   </multiselect>
+  </item>
+  <item name="HULKES" icon="presets/empty.png" type="node,closedway">
+   <label text="HULKES: Hulks"/>
+   <key key="seamark:type" value="hulk"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:hulk:category" text="Category">
+    <reference ref="CATHLK"/>
+	</combo>
+  </item>
+  <item name="ISTZNE" icon="presets/empty.png" type="node,way,closedway">
+   <label text="ISTZNE: Inshore Traffic Zone"/>
+   <key key="seamark:type" value="inshore_traffic_zone"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:inshore_traffic_zone:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="LIGHTS" icon="presets/empty.png" type="node,closedway">
+   <label text="LIGHTS: Light"/>
+   <combo key="seamark:type" text="Type" match="none" required="true" default="light_minor">
+    <list_entry value="light_minor"/>
+	<list_entry value="light_major"/>
+	<list_entry value="landmark"/>
+	<list_entry value="light_vessel"/>
+	<list_entry value="light_float"/>
+	<list_entry value="buoy_lateral"/>
+	<list_entry value="beacon_lateral"/>
+	<list_entry value="buoy_cardinal"/>
+	<list_entry value="beacon_cardinal"/>
+	<list_entry value="buoy_safe_water"/>
+	<list_entry value="beacon_safe_water"/>
+	<list_entry value="buoy_isolated_danger"/>
+	<list_entry value="beacon_isolated_danger"/>
+	<list_entry value="buoy_special_purpose"/>
+	<list_entry value="beacon_special_purpose"/>
+	<list_entry value="buoy_installation"/>
+	<list_entry value="building"/>
+   </combo>
+   <text key="seamark:name" text="Name"/>
+   <label text="Non-sectored lights:"/>
+   <combo key="seamark:light:colour" text="Colour" match="key">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:light:character" text="Character">
+    <reference ref="LITCHR"/>
+   </combo>
+   <text key="seamark:light:group" text="Group"/>
+   <text key="seamark:light:period" text="Period"/>
+   <text key="seamark:light:height" text="Height"/>
+   <text key="seamark:light:range" text="Range"/>
+   <text key="seamark:light:sequence" text="Sequence"/>
+   <text key="seamark:light:multiple" text="# of lights"/>
+   <text key="seamark:light:oreintation" text="Orientation (for diretional lights)"/>
+   <combo key="seamark:light:category" text="Category">
+    <reference ref="CATLIT"/>
+   </combo>
+   <combo key="seamark:light:visibility" text="Visibility">
+    <reference ref="LITVIS"/>
+   </combo>
+   <combo key="seamark:light:exhibition" text="Exhibition">
+    <reference ref="EXELIT"/>
+   </combo>
+   <combo key="seamark:light:status" text="Status">
+    <reference ref="STATUS"/>
+   </combo>
+   <label text="Sectored lights, 1st Sector:"/>
+   <combo key="seamark:light:1:colour" text="Colour" match="key">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:light:1:character" text="Character">
+    <reference ref="LITCHR"/>
+   </combo>
+   <text key="seamark:light:1:group" text="Group"/>
+   <text key="seamark:light:1:period" text="Period"/>
+   <text key="seamark:light:1:height" text="Height"/>
+   <text key="seamark:light:1:range" text="Range"/>
+   <combo key="seamark:light:1:category" text="Category">
+    <reference ref="CATLIT"/>
+   </combo>
+   <combo key="seamark:light:1:visibility" text="Visibility">
+    <reference ref="LITVIS"/>
+   </combo>
+   <combo key="seamark:light:1:exhibition" text="Exhibition">
+    <reference ref="EXELIT"/>
+   </combo>
+   <label text="Sectored lights, 2nd Sector:"/>
+   <combo key="seamark:light:2:colour" text="Colour" match="key">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:light:2:character" text="Character">
+    <reference ref="LITCHR"/>
+   </combo>
+   <text key="seamark:light:2:group" text="Group"/>
+   <text key="seamark:light:2:period" text="Period"/>
+   <text key="seamark:light:2:height" text="Height"/>
+   <text key="seamark:light:2:range" text="Range"/>
+   <combo key="seamark:light:2:category" text="Category">
+    <reference ref="CATLIT"/>
+   </combo>
+   <combo key="seamark:light:2:visibility" text="Visibility">
+    <reference ref="LITVIS"/>
+   </combo>
+   <combo key="seamark:light:2:exhibition" text="Exhibition">
+    <reference ref="EXELIT"/>
+   </combo>
+   <label text="Sectored lights, 3rd Sector:"/>
+   <combo key="seamark:light:3:colour" text="Colour" match="key">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:light:3:character" text="Character">
+    <reference ref="LITCHR"/>
+   </combo>
+   <text key="seamark:light:3:group" text="Group"/>
+   <text key="seamark:light:3:period" text="Period"/>
+   <text key="seamark:light:3:height" text="Height"/>
+   <text key="seamark:light:3:range" text="Range"/>
+   <combo key="seamark:light:3:category" text="Category">
+    <reference ref="CATLIT"/>
+   </combo>
+   <combo key="seamark:light:3:visibility" text="Visibility">
+    <reference ref="LITVIS"/>
+   </combo>
+   <combo key="seamark:light:3:exhibition" text="Exhibition">
+    <reference ref="EXELIT"/>
+   </combo>
+  </item>
+  <item name="LNDMRK" icon="presets/empty.png" type="node,way,closedway">
+   <lebel text="LNDMRK: Landmark"/>
+   <key key="seamark:type" value="landmark"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:landmark:category" text="Category">
+    <reference ref="CATLMK"/>
+	</combo>
+   <combo key="seamark:landmark:function" text="Function">
+    <reference ref="FUNCTN"/>
+   </combo>
+   <combo key="seamark:landmark:colour" text="Colour">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:landmark:colour_pattern" text="Colour Pattern">
+    <reference ref="COLPAT"/>
+   </combo>
+   <combo key="seamark:landmark:construction" text="Construction">
+    <reference ref="NATCON"/>
+   </combo>
+   <text key="seamark:landmark:elevation" text="Elevation"/>
+   <text key="seamark:landmark:height" text="Height"/>
+   <combo key="seamark:landmark:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+   <combo key="seamark:landmark:conspicuity" text="Visibility">
+    <reference ref="CONVIS"/>
+   </combo> 
+  </item>
+  <item name="LKBSPT" icon="presets/empty.png" type="closedway">
+   <label text="LKBSPT: Lock Basin Part"/>
+   <key key="seamark:type" value="lock_basin_part"/>
+   <text key="seamark:name" text="Name"/>
+  </item>
+  <item name="LOGPON" icon="presets/empty.png" type="node,closedway">
+   <label text="LOGPON: Log pond"/>
+   <key key="seamark:type" value="log_pond"/>
+   <text key="seamark:name" text="Name"/>
+  </item>
+  <item name="LOKBSN" icon="presets/empty.png" type="closedway">
+   <label text="LOKBSN: Lock basin"/>
+   <key key="seamark:type" value="lock_basin"/>
+   <text key="seamark:name" text="Name"/>
+   <text key="seamark:lock_basin:clearance_length" text="Clearance Length"/>
+   <text key="seamark:lock_basin:clearnace_width" text="Clearance Width"/>
+   <text key="seamark:lock_basin:clearance_height" text="Clearance Height"/>
+   <text key="seamark:lock_basin:depth_min" text="Minimum depth"/>
+   <text key="seamark:lock_basin:depth_max" text="Maximum depth"/>
+   <text key="seamark:lock_basin:length" text="Length"/>
+   <text key="seamark:lock_basin:width" text="Width"/>
+  </item>
+  <item name="MARCUL" icon="presets/empty.png" type="node,way,closedway">
+   <label text="MARCUL: Marine farm/culture"/>
+   <key key="seamark:type" value="marine_farm"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:marine_farm:category" text="Category">
+    <reference ref="CATMFA"/>
+   </combo>
+   <combo key="seamark:marine_farm:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+   <combo key="seamark:marine_farm:water_level" text="Water Level">
+    <reference ref="WATLEV"/>
+   </combo>
+  </item>
+  <item name="MIPARE" icon="presets/empty.png" type="node,closedway">
+   <label text="MIPARE: Military Practice Area"/>
+   <key key="seamark:type" value="military_area"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:military_area:category" text="Category">
+    <reference ref="CATMPA"/>
+	</combo>
+   <combo key="seamark:military_area:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="MORFAC" icon="presets/empty.png" type="node,way,closedway">
+   <label text="MORFAC: Mooring/Warping facility"/>
+   <key key="seamark:type" value="mooring"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:mooring:category" text="Category">
+    <reference ref="CARMOR"/>
+	</combo>
+   <combo key="seamark:mooring:colour" text="Colour">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:mooring:colour_pattern" text="Colour Pattern">
+    <reference ref="COLPAT"/>
+   </combo>
+   <combo key="seamark:mooring:contruction" text="Construction">
+    <reference ref="NATCON"/>
+   </combo>
+   <combo key="seamark:mooring:shape" text="Shape">
+    <reference ref="BOYSHP"/>
+   </combo>
+   <combo key="seamark:mooring:water_level" text="Water Level">
+    <reference ref="WATLEV"/>
+   </combo>
+   <text key="seamark:mooring:height" text="Height"/>
+   <combo key="seamark:mooring:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+   <combo key="seamark:mooring:visibility" text="Visibility">
+    <reference ref="CONVIS"/>
+   </combo>
+  </item>
+  <item name="MPAARE" icon="presets/empty.png" type="node,closedway">
+   <label text="MPAARE: Marine Protected Area"/>
+   <key key="seamark:type" value="protected_area"/>
+  </item>
+  <item name="NAVLNE" icon="presets/empty.png" type="way">
+   <label text="NAVLINE: Navigation Line"/>
+   <key key="seamark:type" value="navigation_line"/>
+   <combo key="seamark:navigation_line:category" text="Category">
+    <list_entry value="clearing"/>
+	<list_entry value="transit"/>
+	<list_entry value="leading"/>
+   </combo>
+   <text key="seamark:navigation_line:orientation" text="Orientation"/>
+  </item>
+  <item name="NOTMRK" icon="presets/empty.png" type="node">
+   <label text="NOTMRK: Notice mark"/>
+   <key key="seamark:type" value="notice"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:notice:system" text="System">
+    <reference ref="MARSYS"/>
+   </combo>
+   <combo key="seamark:notice:function" text="Function">
+    <list_entry value="prohibition"/>
+	<list_entry value="regulation"/>
+	<list_entry value="restriction"/>
+	<list_entry value="recommendaiton"/>
+	<list_entry value="information"/>
+   </combo>
+   <combo key="seamark:notice:category" text="Category">
+    <list_entry value="no_anchoring"/>
+	<list_entry value="keep_to_port_margin"/>
+	<list_entry value="keep_to_starboard_margin"/>
+	<list_entry value="keep_to_mid-river"/>
+	<list_entry value="cross_river_to_port"/>
+	<list_entry value="cross_river_to_starboard"/>
+	<list_entry value="main_waterway_right_secondary_ahead_left"/>
+	<list_entry value="main_waterway_left_secondary_ahead_right"/>
+	<list_entry value="reduce_speed"/>
+	<list_entry value="limited_headroom"/>
+	<list_entry value="opening_to_right"/>
+	<list_entry value="opening_to_left"/>
+	<list_entry value="traffic_between_margins"/>
+	<list_entry value="no_entry"/>
+	<list_entry value="closed_area"/>
+	<list_entry value="no_overtaking"/>
+	<list_entry value="no_convoy_overtaking"/>
+	<list_entry value="no_berthing"/>
+	<list_entry value="no_berthing_lateral_limit"/>
+	<list_entry value="no_mooring"/>
+	<list_entry value="no_turning"/>
+	<list_entry vlaue="no_wash"/>
+	<list_entry value="no_passage_left"/>
+	<list_entry value="no_passage_left"/>
+	<list_entry value="no_motor_craft"/>
+	<list_entry value="no_sport_craft"/>
+	<list_entry value="no_waterskiing"/>
+	<list_entry value="no_sailing_craft"/>
+	<list_entry value="no_unpowered_craft"/>
+	<list_entry value="no_sailboards"/>
+	<list_entry value="no_hgh_speeds"/>
+	<list_entry value="no_launching_beaching"/>
+	<list_entry value="no_waterbikes"/>
+	<list_entry value="move_to_left"/>
+	<list_entry value="move_to_right"/>
+	<list_entry value="move_to_port"/>
+	<list_entry value="move_to_starboard"/>
+	<list_entry value="keep_to_port"/>
+	<list_entry value="keep_to_starboard"/>
+	<list_entry value="stop"/>
+	<list_entry value="cross_to_port"/>
+	<list_entry value="cross_to_starboard"/>
+	<list_entry value="speed_limit"/>
+	<list_entry value="sound_horn"/>
+	<list_entry value="keep_lookout"/>
+	<list_entry value="give_way_junction"/>
+	<list_entry value="give_way_crossing"/>
+	<list_entry value="make_radio_contact"/>
+	<list_entry value="limited_depth"/>
+	<list_entry value="limited_width"/>
+	<list_entry value="navigation_restrictions"/>
+	<list_entry value="channel_distance_left"/>
+	<list_entry value="channel_distance_right"/>
+	<list_entry value="channel_two_way"/>
+	<list_entry value="channel_one_way"/>
+	<list_entry value="opening_to_right"/>
+	<list_entry value="opening_to_left"/>
+	<list_entry value="proceed_to_left"/>
+	<list_entry value="proceed_to_right"/>
+	<list_entry value="entry_permitted"/>
+	<list_entry value="overhead_cable"/>
+	<list_entry value="weir"/>
+	<list_entry value="ferry_non_independent"/>
+	<list_entry value="ferry_independent"/>
+	<list_entry value="berthing_permitted"/>
+	<list_entry value="berthing_lateral_limit"/>
+	<list_entry value="berthing_lateral_limits"/>
+	<list_entry value="berthing_rafting_limit"/>
+	<list_entry value="berthing_unmarked_pushing"/>
+	<list_entry value="berthing_unmarked_pushing_1"/>
+	<list_entry value="berthing_unmarked_pushing_2"/>
+	<list_entry value="berthing_unmarked_pushing_3"/>
+	<list_entry value="berthing_unmarked_non_pushing"/>
+	<list_entry value="berthing_marked_pushing_1"/>
+	<list_entry value="berthing_marked_pushing_2"/>
+	<list_entry value="berthing_marked_pushing_3"/>
+	<list_entry value="berthing_unmarked"/>
+	<list_entry value="berthing_marked_1"/>
+	<list_entry value="berthing_marked_2"/>
+	<list_entry value="berthing_marked_3"/>
+	<list_entry value="anchoring_permitted"/>
+	<list_entry value="mooring_permitted"/>
+	<list_entry value="vehicle_loading_berth"/>
+	<list_entry value="turning_area"/>
+	<list_entry value="secondary_waterway_crossing"/>
+	<list_entry value="secondary_waterway_left"/>
+	<list_entry value="secondary_waterway_right"/>
+	<list_entry value="main_waterway_right_secondary_ahead"/>
+	<list_entry value="main_waterway_left_secondary_ahead"/>
+	<list_entry value="main_waterway_right_secondary_left"/>
+	<list_entry value="main_waterway_left_secondary_right"/>
+	<list_entry value="main_waterway_right_secondary_ahead_left"/>
+	<list_entry value="main_waterway_left_secondary_ahead_right"/>
+	<list_entry value="main_waterway_crossing"/>
+	<list_entry value="main_waterway_junction"/>
+	<list_entry value="main_waterway_ahead_right"/>
+	<list_entry value="main_waterway_ahead_left"/>
+	<list_entry value="main_waterway_ahead_right_secondary_left"/>
+	<list_entry value="main_waterway_ahead_left_secondary_right"/>
+	<list_entry value="prohibition_ends"/>
+	<list_entry value="drinking_water"/>
+	<list_entry value="telephone"/>
+	<list_entry value="motor_craft_permitted"/>
+	<list_entry value="sport_craft_permitted"/>
+	<list_entry value="waterskiing_permitted"/>
+	<list_entry value="sailing_craft_permitted"/>
+	<list_entry value="unpowered_craft_permitted"/>
+	<list_entry value="sailboards_permitted"/>
+	<list_entry value="high_speeds_permitted"/>
+	<list_entry value="launching_beaching_permitted"/>
+	<list_entry value="radio_information"/>
+	<list_entry value="waterbikes_permitted"/>
+   </combo>
+   <combo key="seamark:notice:addition" text="Addition">
+    <list_entry value="top_board"/>
+	<list_entry value="bottom_board"/>
+	<list_entry value="right_triangle"/>
+	<list_entry value="left_triangle"/>
+	<list_entry value="bottom_triangle"/>
+   </combo>
+   <combo key="seamark:notice:direction" text="Direction of impact">
+    <list_entry value="upstream"/>
+	<list_entry value="downstream"/>
+	<list_entry value="left_bank"/>
+	<list_entry value="right_bank"/>
+	<list_entry value="right_bank"/>
+	<list_entry value="to_harbour"/>
+   </combo>
+   <combo key="seamark:notice:bank">
+    <list_entry value="left"/>
+	<list_entry value="right"/>
+   </combo>
+  </item>
+  <item name="OBSTRN" icon="presets/empty.png" type="node,way,closedway">
+   <label text="OBSTRN: Obstruction"/>
+   <key key="seamark:type" value="obstruction"/>
+   <combo key="seamark:obstruction:category" text="Category">
+    <list_entry value="stump"/>
+	<list_entry value="wellhead"/>
+	<list_entry value="diffuser"/>
+	<list_entry value="crib"/>
+	<list_entry value="fish_haven"/>
+	<list_entry value="foul_area"/>
+	<list_entry value="foul_ground"/>
+	<list_entry value="ice_boom"/>
+	<list_entry value="ground_tackle"/>
+	<list_entry value="boom"/>
+   </combo>
+   <combo key="seamark:obstruction:water_level" text="Water Level">
+    <reference ref="WATLEV"/>
+   </combo>
+  </item>
+  <item name="OFSPLF" icon="presets/empty.png" type="node,closedway">
+   <label text="OFSPLF: OFfshore platform"/>
+   <key key="seamark:type" value="platform"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:platform:category" text="Category">
+    <list_entry value="oil"/>
+	<list_entry value="production"/>
+	<list_entry value="observation"/>
+	<list_entry value="alp"/>
+	<list_entry value="salm"/>
+	<list_entry value="mooring"/>
+	<list_entry value="artificial_island"/>
+	<list_entry value="fpso"/>
+	<list_entry value="accommodation"/>
+	<list_entry value="nccb"/>
+   </combo>
+   <combo key="seamark:platform:colour" text="Colour">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:platform:colour_pattern" text="Colour Pattern">
+    <reference ref="COLPAT"/>
+   </combo>
+   <combo key="seamark:platform:construction" text="Construction">
+    <reference ref="NATCON"/>
+   </combo>
+   <combo key="seamark:platform:condition" text="Condition">
+    <reference ref="CONDTN"/>
+   </combo>
+   <text key="seamark:platform:height" text="Height"/>
+   <combo key="seamark:platform:product" text="Product">
+    <reference ref="PRODCT"/>
+   </combo>
+   <combo key="seamark:platform:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+   <combo key="seamark:platform:visibility" text="Visibility">
+    <reference ref="CONVIS"/>
+   </combo>
+  </item>
+  <item name="OILBAR" icon="presets/empty.png" type="way">
+   <label text="OILBAR: Oil Barrier"/>
+   <key key="seamark:type" value="oil_barrier"/>
+   <combo key="seamark:oil_barrier:category" text="Category">
+    <list_entry value="retention"/>
+	<list_entry value="floating"/>
+   </combo>
+  </item>
+  <item name="OSPARE" icon="presets/empty.png" type="closedway">
+   <label text="OSPARE: Offshore production area"/>
+   <key key="seamark:type" value="production_area"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:production_area:category" text="Category">
+    <list_entry value="quarry"/>
+	<list_entry value="mine"/>
+	<list_entry value="stockpile"/>
+	<list_entry value="power_station"/>
+	<list_entry value="refinery"/>
+	<list_entry value="timber_yard"/>
+	<list_entry value="wind_farm"/>
+	<list_entry value="slag_heap"/>
+	<list_entry value="current_farm"/>
+	<list_entry value="oil"/>
+	<list_entry value="gas"/>
+	<list_entry value="wave_energy"/>
+   </combo>
+   <text key="seamark:production_area:height" text="Height"/>
+   <combo key="seamark:production_area:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+   <combo key="seamark:production_area:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+   <combo key="seamark:production_area:visibility" text="Visibility">
+    <reference ref="CONVIS"/>
+   </combo>
+  </item>
+  <item name="PILBOP" icon="presets/empty.png" type="node">
+   <label text="PILBOP: Pilot Boarding Place"/>
+   <key key="seamark:type" value="pilot_boarding"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:pilot_boarding:category" text="Category">
+    <list_entry value="cruising_vessel"/>
+	<list_entry value="helicopter"/>
+	<list_entry value="from_shore"/>
+   </combo>
+   <text key="seamark:pilot_boarding:channel" text="VHF Channel"/>
+  </item>
+  <item name="PILPNT" icon="presets/empty.png" type="node">
+   <label text="PILPNT: Pile"/>
+   <key key="seamark:type" value="pile"/>
+   <combo key="seamark:pile:category" text="Category">
+    <list_entry value="stake"/>
+	<list_entry value="post"/>
+	<list_entry value="tripodal"/>
+   </combo>
+   <combo key="seamark:pile:colour" text="Colour">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:pile:colour_pattern" text="Colour Pattern">
+    <reference ref="COLPAT"/>
+   </combo>
+   <combo key="seamark:pile:condition" text="Condition">
+    <reference ref="CONDTN"/>
+   </combo>
+   <text key="seamark:pile:height" text="Height"/>
+   <combo key="seamark:pile:visibility" text="Visibility">
+    <reference ref="CONVIS"/>
+   </combo>
+  </item>
+  <item name="PIPARE" icon="presets/empty.png" type="closedway">
+   <label text="PIPARE: Pipeline area"/>
+   <key key="seamark:type" value="pipeline_area"/>
+   <combo key="seamark:pipeline_area:category" text="Category">
+    <reference ref="CATPIP"/>
+   </combo>
+   <combo key="seamark:pipeline_area:condition" text="Condition">
+    <reference ref="CONDTN"/>
+   </combo>
+   <combo key="seamark:pipeline_area:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="PIPOHD" icon="presets/empty.png" type="way">
+   <label text="PIPOHD: Pipeline, overhead"/>
+   <key key="seamark:type" value="pipeline_overhead"/>
+   <combo key="seamark:pipeline_overhead:category" text="Category">
+    <reference ref="CATPIP"/>
+   </combo>
+  </item>
+  <item name="PIPSOL" icon="presets/empty.png" type="way">
+   <label text="PIPSOL: Pipeline submarine/on land"/>
+   <key key="seamark:type" value="pipeline_submarine"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:pipeline_submarine:category" text="Category">
+    <reference ref="CATPIP"/>
+   </combo>
+   <combo key="seamark:pipeline_submarine:condition" text="Condition">
+    <reference ref="CONDTN"/>
+   </combo>
+   <text key="seamark:pipeline_submarine:depth_buried" text="Depth Buried"/>
+   <combo key="seamark:pipeline_submarine:product" text="Product">
+    <reference ref="PRODCT"/>
+   </combo>
+  </item>
+  <item name="PONTON" icon="presets/empty.png" type="way,closedway">
+   <label text="PONTON: Pontoon"/>
+   <key key="seamark:type" value="pontoon"/>
+  </item>
+  <item name="PRTARE" icon="presets/empty.png" type="closedway">
+   <label text="PRTARE: Port area"/>
+   <key key="seamark:type" value="port_area"/>
+   <text key="seamark:name" text="Name"/>
+  </item>
+  <item name="PRCARE" icon="presets/empty.png" type="node,closedway">
+   <label text="PRCARE: Precautionary Area"/>
+   <key key="seamark:type" value="precautionary_area"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:precautionary_area:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="PYLONS" icon="presets/empty.png" type="node,closedway">
+   <label text="PYLONS: Pylon/bridge support"/>
+   <key key="seamark:type" value="pylon"/>
+   <combo key="seamark:pylon:category" text="Category">
+    <list_entry value="power"/>
+	<list_entry value="telecom"/>
+	<list_entry value="aerial"/>
+	<list_entry value="bridge"/>
+	<list_entry value="bridge_pier"/>
+   </combo>
+   <combo key="seamark:pylon:water_level" text="Water Level">
+    <reference ref="WATLEV"/>
+   </combo>
+  </item>
+  <item name="RADLNE" icon="presets/empty.png" type="way">
+   <label text="RADLNE: Radar line"/>
+   <key key="seamark:type" value="radar_line"/>
+   <text key="seamark:name" text="Name"/>
+  </item>
+  <item name="RADRFL" icon="presets/empty.png" type="node">
+   <label text="RADRFL: Radar reflector"/>
+   <key key="seamark:type" value="radar_reflector"/>
+   <text key="seamark:radar_reflector:height" text="Height"/>
+  </item>
+  <item name="RADRNG" icon="presets/empty.png" type="closedway">
+   <label text="RADRNG: Radar Range"/>
+   <key key="seamark:type" value="radar_range"/>
+   <text key="seamark:name" text="Name"/>
+  </item>
+  <item name="RADSTA" icon="presets/empty.png" type="node">
+   <label text="RADSTA: Radar station"/>
+   <key key="seamark:type" value="radar_station"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:radar_station:category" text="Category">
+    <list_entry value="surveillance"/>
+	<list_entry value="coast"/>
+   </combo>
+   <text key="seamark:radar_station:channel" text="VHF Channel"/>
+   <text key="seamark:radar_station:height" text="Height"/>
+   <text key="seamark:radar_station:frequency" text="Frequency"/>
+  </item>
+  <item name="RAPIDS" icon="presets/empty.png" type="node,way,closedway">
+   <label text="RAPIDS: Rapids"/>
+   <key key="seamark:type" value="rapids"/>
+  </item>
+  <item name="RCRTCL" icon="presets/empty.png" type="way">
+   <label text="RCRTCL: Recommended Route Centreline"/>
+   <key key="seamark:type" value="recommended_route_centreline"/>
+  </item>
+  <item name="RCTLPT" icon="presets/empty.png" type="way">
+   <label text="RCTLPT: Recommended Traffic Lane"/>
+   <key key="seamark:type" value="recommended_traffic_lane"/>
+   <text key="seamark:recommended_traffic_lane:orientation" text="Orientation"/>
+  </item>
+  <item name="RDOCAL" icon="presets/empty.png" type="node,way">
+   <label text="RDOCAL: Radio calling-in point"/>
+   <key key="seamark:type" value="calling-in_point"/>
+   <text key="seamark:calling-in_point:channel" text="VHF Channel"/>
+   <text key="seamark:calling-in_point:orientation" text="Orientation"/>
+   <combo key="seamark:calling-in_point:traffic_flow" text="Traffic Flow">
+    <reference ref="TRAFIC"/>
+   </combo>
+  </item>
+  <item name="RDOSTA" icon="presets/empty.png" type="node">
+   <label text="RDOSTA: Radio station"/>
+   <key key="seamark:type" value="radio_station"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:radio_station:category" text="Category">
+    <list_entry value="omnidirectional"/>
+	<list_entry value="directional"/>
+	<list_entry value="rotating_pattern"/>
+	<list_entry value="consol"/>
+	<list_entry value="rdf"/>
+	<list_entry value="qtg"/>
+	<list_entry value="aeronautical"/>
+	<list_entry value="decca"/>
+	<list_entry value="loran"/>
+	<list_entry value="dgps"/>
+	<list_entry value="toran"/>
+	<list_entry value="omega"/>
+	<list_entry value="syledis"/>
+	<list_entry value="chiaka"/>
+	<list_entry value="public_communication"/>
+	<list_entry value="commerical_broadcast"/>
+	<list_entry value="facsimile"/>
+	<list_entry value="time_signal"/>
+	<list_entry value="ais"/>
+	<list_entry value="s-ais"/>
+	<list_entry value="v-ais"/>
+	<list_entry value="v-ais_north_cardinal"/>
+	<list_entry value="v-ais_south_cardinal"/>
+	<list_entry value="v-ais_east_cardinal"/>
+	<list_entry value="v-ais_west_cardinal"/>
+	<list_entry value="v-ais_port_lateral"/>
+	<list_entry value="v-ais_starboard_lateral"/>
+	<list_entry value="v-ais_isolated_danger"/>
+	<list_entry value="v-ais_safe_water"/>
+	<list_entry value="v-ais_special_purpose"/>
+	<list_entry value="v-ais_wreck"/>
+   </combo>
+   <text key="seamark:radio_station:callsign" text="Callsign"/>
+   <text key="seamark:radio_station:channel" text="VHF Channel"/>
+   <text key="seamark:radio_station:frequency" text="Frequency"/>
+   <text key="seamark:radio_station:range" text="Range"/>
+   <text key="seamark:radio_station:orientation" text="Orientation"/>
+   <text key="seamark:radio_station:mmsi" text="MMSI"/>
+  </item>
+  <item name="RECTRC" icon="presets/empty.png" type="way">
+   <label text="RECTRC: Recommended track"/>
+   <key key="seamark:type" value="recommended_track"/>
+   <combo key="seamark:recommended_track:traffic_flow" text="Traffic Flow">
+    <reference ref="TRAFIC"/>
+   </combo>
+   <text key="seamark:recommended_track:orientation" text="Orientation"/>
+  </item>
+  <item name="REFDMP" icon="presets/empty.png" type="node,closedway">
+   <label text="REFDMP: Refuse dump"/>
+   <key key="seamark:type" value="refuse_dump"/>
+   <combo key="seamark:refuse_dump:category" text="Category">
+    <list_entry value="cargo_residue"/>
+	<list_entry value="waste_oil"/>
+	<list_entry value="grey_black_water"/>
+	<list_entry value="domestic_refuse"/>
+   </combo>
+  </item>
+  <item name="RESARE" icon="presets/empty.png" type="closedway">
+   <label text="RESARE: Restricted area"/>
+   <key key="seamark:type" value="restricted_area"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:restricted_area:category" text="Category">
+    <list_entry value="safety"/>
+	<list_entry value="nature_reserve"/>
+	<list_entry value="bird_sanctuary"/>
+	<list_entry value="game_reserve"/>
+	<list_entry value="seal_sanctuary"/>
+	<list_entry value="defaussing_range"/>
+	<list_entry value="military"/>
+	<list_entry value="historic_wreck"/>
+	<list_entry value="navigational_aid_safety"/>
+	<list_entry value="minefield"/>
+	<list_entry value="swimming"/>
+	<list_entry value="waiting"/>
+	<list_entry value="research"/>
+	<list_entry value="dredging"/>
+	<list_entry value="fish_sactuary"/>
+	<list_entry value="ecological_reserve"/>
+	<list_entry value="no_wake"/>
+	<list_enrty value="swinging"/>
+	<list_entry value="water_skiing"/>
+   </combo>
+   <combo key="seamark:restricted_area:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="RETRFL" icon="presets/empty.png" type="node">
+   <label text="RETRFL: Retro-reflector"/>
+   <key key="seamark:type" value="retro_reflector"/>
+  </item>
+  <item name="RSCSTA" icon="presets/empty.png" type="node,closedway">
+   <label text="RSCSTA: Rescue station"/>
+   <key key="seamark:type" value="rescue_station"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:rescue_station:category">
+    <list_entry value="lifeboat"/>
+	<list_entry value="rocket"/>
+	<list_entry value="refuge_shipwrecked"/>
+	<list_entry value="refuge_intertidal"/>
+	<list_entry value="lifeboat_no_mooring"/>
+	<list_entry value="radio"/>
+	<list_entry value="first_aid"/>
+	<list_entry value="seaplane"/>
+	<list_entry value="aircraft"/>
+	<list_entry value="tug"/>
+   </combo>
+  </item>
+  <item name="RTPBCN" icon="presets/empty.png" type="node">
+   <label text="RTPBCN: Radar Transponder Beacon"/>
+   <key key="seamark:type" value="radar_transponder"/>
+   <text key="seamark:name" value="Name"/>
+   <combo key="seamark:radar_transponder:category" text="Category">
+    <list_entry value="ramark"/>
+	<list_entry value="racon"/>
+	<list_entry value="leading"/>
+   </combo>
+   <text key="seamark:radar_transponder:range" text="Range"/>
+   <text key="seamark:radar_transponder:wavelength" text="Wavelength"/>
+   <text key="seamark:radar_transponder:group" text="Group"/>
+   <text key="seamark:radar_transponder:sequence" text="Sequence"/>
+   <text key="seamark:radar_transponder:period" text="Period"/>
+   <text key="seamark:radar_transponder:sector_trart" text="Start sector"/>
+   <text key="seamark:radar_transponder:sector_end" text="End sector"/>
+  </item>
+  <item name="SBDARE" icon="presets/empty.png" type="node,way,closedway">
+   <label text="SBDARE: Seabed area"/>
+   <key key="seamark:type" value="seabed_area"/>
+   <combo key="seamark:seabed_area:surface" text="Surface">
+    <reference ref="NATSUR"/>
+   </combo>
+   <combo key="seamark:seabed_area:surface_qualification" text="Surface Qualification">
+    <reference ref="NATQUA"/>
+   </combo>
+   <combo key="seamark:seabed_area:water_level" text="Water Level">
+    <reference ref="WATLEV"/>
+   </combo>
+  </item>
+  <item name="SEAARE" icon="presets/empty.png" type="node,closedway">
+   <label text="SEAARE: Sea area"/>
+   <key key="seamark:type" value="sea_area"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:sea_area:category" text="Category">
+    <list_entry value="gat"/>
+	<list_entry value="bank"/>
+	<list_entry value="deep"/>
+	<list_entry value="bay"/>
+	<list_entry value="trench"/>
+	<list_entry value="besin"/>
+	<list_entry value="flat"/>
+	<list_entry value="reef"/>
+	<list_entry value="ledge"/>
+	<list_entry value="canyon"/>
+	<list_entry value="narrows"/>
+	<list_entry value="shoal"/>
+	<list_entry value="knoll"/>
+	<list_entry value="ridge"/>
+	<list_entry value="seamount"/>
+	<list_entry value="pinnacle"/>
+	<list_entry value="abyssal_plain"/>
+	<list_entry value="plateau"/>
+	<list_entry value="spur"/>
+	<list_entry value="shelf"/>
+	<list_entry value="though"/>
+	<list_entry value="saddle"/>
+	<list_entry value="abyssal_hills"/>
+	<list_entry value="apron"/>
+	<list_entry value="archipelagic_apron"/>
+	<list_entry value="borderland"/>
+	<list_entry value="continental_rise"/>
+	<list_entry value="continental_margin"/>
+	<list_entry value="escarpment"/>
+	<list_entry value="fan"/>
+	<list_entry value="fracture_zone"/>
+	<list_entry value="gap"/>
+	<list_entry value="guyot"/>
+	<list_entry value="hill"/>
+	<list_entry value="levee"/>
+	<list_entry value="median_valley"/>
+	<list_entry value="moat"/>
+	<list_entry value="mountains"/>
+	<list_entry value="peak"/>
+	<list_entry value="province"/>
+	<list_entry value="rise"/>
+	<list_entry value="seamount_chain"/>
+	<list_entry value="shelf-edge"/>
+	<list_entry value="sill"/>
+	<list_entry value="slope"/>
+	<list_entry value="terrace"/>
+	<list_entry value="valley"/>
+	<list_entry value="canal"/>
+	<list_entry value="lake"/>
+	<list_entry value="river"/>
+	<list_entry value="reach"/>
+   </combo>
+  </item>
+  <item name="SISTAT" icon="presets/empty.png" type="node">
+   <label text="SISTAT: Signal station traffic"/>
+   <key key="seamark:type" value="signal_station_traffic"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:signal_station_traffic:category" text="Category">
+    <list_entry value="port_control"/>
+	<list_entry value="port_entry_departure"/>
+	<list_entry value="ipt"/>
+	<list_entry value="berthing"/>
+	<list_entry value="dock"/>
+	<list_entry value="lock"/>
+	<list_entry value="flood_barrage"/>
+	<list_entry value="bridge_passage"/>
+	<list_entry value="dradging"/>
+	<list_entry value="traffic_control"/>
+	<list_entry value="pilotage"/>
+	<list_entry value="special"/>
+	<list_entry value="oncoming_traffic"/>
+   </combo>
+   <text key="seamark:signal_station_traffic:channel" text="VHF Channel"/>
+  </item>
+  <item name="SISTAW" icon="presets/empty.png" type="node">
+   <label text="SISTAW: Signal station warning"/>
+   <key key="seamark:type" value="signal_station_warning"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:signal_station_warning:category" text="Category">
+    <list_entry value="danger"/>
+	<list_entry value="maritime_obstruction"/>
+	<list_entry value="cable"/>
+	<list_entry value="military"/>
+	<list_entry value="distress"/>
+	<list_entry value="weather"/>
+	<list_entry value="storm"/>
+	<list_entry value="ice"/>
+	<list_entry value="time"/>
+	<list_entry value="tide"/>
+	<list_entry value="tidal_stream"/>
+	<list_entry value="tide_gauge"/>
+	<list_entry value="tide_scale"/>
+	<list_entry value="diving"/>
+	<list_entry value="water_level_gauge"/>
+	<list_entry value="vertical_clearance"/>
+	<list_entry value="high_water"/>
+	<list_entry value="depth"/>
+	<list_entry value="current"/>
+   </combo>
+   <text key="seamark:signal_station_warning:channel" text="VHF Channel"/>
+  </item>
+  <item name="SLCONS" icon="presets/empty.png" type="node,way,closedway">
+   <label text="SLCONS: Shoreline construction"/>
+   <key key="seamark:type" value="shoreline_construction"/>
+   <combo key="seamark:shoreline_construction:category" text="Category">
+    <list_entry value="breakwater"/>
+	<list_entry value="groyne"/>
+	<list_entry value="mole"/>
+	<list_entry value="pier"/>
+	<list_entry value="promenade_pier"/>
+	<list_entry value="wharf"/>
+	<list_entry value="training_wall"/>
+	<list_entry value="rip_rap"/>
+	<list_entry value="retment"/>
+	<list_entry value="sea_wall"/>
+	<list_entry value="landing_steps"/>
+	<list_entry value="ramp"/>
+	<list_entry value="slipway"/>
+	<list_entry value="fender"/>
+	<list_entry value="solid_face_wharf"/>
+	<list_entry value="open_face_wharf"/>
+	<list_entry value="log_ramp"/>
+	<list_entry value="lock_wall"/>
+	<list_entry value="ice_breaker"/>
+   </combo>
+   <combo key="seamark:shoreline_construction:construction" text="Construction">
+    <reference ref="NATCON"/>
+   </combo>
+   <text key="seamark:shoreline_construction:height" text="Height"/>
+   <combo key="seamark:shoreline_construction:reflectivity" text="Reflectivity">
+    <reference ref="CONRAD"/>
+   </combo>
+   <combo key="seamark:shoreline_construction:visibility" text="Visibility">
+    <reference ref="CONVIS"/>
+   </combo>
+   <combo key="seamark:shoreline_construction:water_level" text="Water Level">
+    <reference ref="WATLEV"/>
+   </combo>
+  </item>
+  <item name="SMCFAC" icon="presets/empty.png" type="node,way,closedway">
+   <label text="SMCFAC: Small Craft Facility"/>
+   <key key="seamark:type" value="small_craft_facility"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:small_craft_facility:category" text="Category">
+    <list_entry value="visitor_berth"/>
+	<list_entry value="nautical_club"/>
+	<list_entry value="boat_hoist"/>
+	<list_entry value="sailmaker"/>
+	<list_entry value="boatyard"/>
+	<list_entry value="public_inn"/>
+	<list_entry value="restaurant"/>
+	<list_entry value="chandler"/>
+	<list_entry value="provisions"/>
+	<list_entry value="doctor"/>
+	<list_entry value="pharmacy"/>
+	<list_entry value="water_tap"/>
+	<list_entry value="fuel_station"/>
+	<list_entry value="electricity"/>
+	<list_entry value="bottle_gas"/>
+	<list_entry value="showers"/>
+	<list_entry value="laundrette"/>
+	<list_entry value="toilets"/>
+	<list_entry value="post_box"/>
+	<list_entry value="telephone"/>
+	<list_entry value="refuse_bin"/>
+	<list_entry value="car_park"/>
+	<list_entry value="boat_trailers_park"/>
+	<list_entry value="caravan_site"/>
+	<list_entry value="camping_site"/>
+	<list_entry value="pump-out"/>
+	<list_entry value="emergency_telephone"/>
+	<list_entry value="slipway"/>
+	<list_entry value="visitors+mooring"/>
+	<list_entry value="picnic_area"/>
+	<list_entry value="mechanics_workshop"/>
+	<list_entry value="security_service"/>
+   </combo>
+  </item>
+  <item name="SNDWAV" icon="presets/empty.png" type="node,closedway">
+   <label text="SNDWAV: Sand waves"/>
+   <key key="seamark:type" value="sand_waves"/>
+  </item>
+  <item name="SOUNDG" icon="presets/empty.png" type="node">
+   <label text="SOUNDG: Sounding"/>
+   <key key="seamark:type" value="sounding"/>
+   <text key="seamark:sounding:depth" text="Depth"/>
+   <combo key="seamark:sounding:vertical_datum" text="Datum">
+    <reference ref="VERDAT"/>
+   </combo>
+  </item>
+  <item name="SPLARE" icon="presets/empty.png" type="node,closedway">
+   <label text="SPLARE: Seaplane landing area"/>
+   <key key="seamark:type" value="seaplane_landing_area"/>
+   <text key="seamark:name" text="Name"/>
+   <combo key="seamark:seaplane_landing_area:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="SUBTLN" icon="presets/empty.png" type="closedway">
+   <label text="SUBTLN: Submarine transit lane"/>
+   <key key="seamark:type" value="submarine_transit_lane"/>
+   <combo key="seamark:submarine_transit_lane:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="TERMNL" icon="presets/empty.png" type="node,closedway">
+   <label text="TERMNL: Terminal"/>
+   <key key="seamark:type" value="terminal"/>
+   <text key="seamark:name" value="Name"/>
+  </item>
+  <item name="TOPMAR" icon="presets/empty.png" type="node">
+   <label text="TOPMAR: Topmark"/>
+   <combo key="seamark:topmark:shape" text="Shape" match="key">
+    <reference ref="TOPSHP"/>
+   </combo>
+   <combo key="seamark:topmark:colour" text="Colour">
+    <reference ref="COLOUR"/>
+   </combo>
+   <combo key="seamark:topmark:colour_pattern" text="Colour Pattern">
+    <reference ref="COLPAT"/>
+   </combo>
+  </item>
+  <item name="TRNBSN" icon="presets/empty.png" type="node,closedway">
+   <label text="TRNBSN: Turning Basin"/>
+   <key key="seamark:type" value="turning_basin"/>
+   <text key="seamark:name" text="Name"/>
+  </item>
+  <item name="TS_FEB" icon="presets/empty.png" type="node,way">
+   <label text="TS_FEB: Tidal stream - flood/ebb"/>
+   <key key="seamark:type" value="tidal_stream"/>
+   <combo key="seamark:tidal_stream:category" text="Category">
+    <list_entry value="flood"/>
+	<list_entry value="ebb"/>
+	<list_entry value="other"/>
+   </combo>
+   <text key="seamark:tidal_stream:velocity" text="Velocity"/>
+   <text key="seamark:tidal_stream:oriantation" text="Orientation"/>
+  </item>
+  <item name="TSSBDN" icon="presets/empty.png" type="way">
+   <label text="TSSBND: Traffic Separation Scheme, boundary"/>
+   <key key="seamark:type" value="separation_boundary"/>
+   <combo key="seamark:separation_boundary:category" text="Category">
+    <reference ref="CATTSS"/>
+   </combo>
+  </item>
+  <item name="TSSCRS" icon="presets/empty.png" type="closedway">
+   <label text="TSSCRS: Traffic Separation Scheme, crossing"/>
+   <key key="seamark:type" value="separation_crossing"/>
+   <combo key="seamark:separation_crossing:category" text="Category">
+    <reference ref="CATTSS"/>
+   </combo>
+   <combo key="seamark:separation_crossing:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="TSSLNE" icon="presets/empty.png" type="way">
+   <label text="TSSLNE: Trafic Separation line"/>
+   <key key="seamark:type" value="separation_line"/>
+   <combo key="seamark:separation_line:category" text="Category">
+    <reference ref="CATTSS"/>
+   </combo>
+   <text key="seamark:separation_line:orientation" text="Orientation"/>
+   <combo key="seamark:separation_line:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="TSSLPT" icon="presets/empty.png" type="way">
+   <label text="TSSLPT: Trafic Separation Scheme, lane part"/>
+   <key key="seamark:type" value="separation_lane"/>
+   <combo key="seamark:separation_lane:category" text="Category">
+    <reference ref="CATTSS"/>
+   </combo>
+   <combo key="seamark:separation_lane:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="TSSRON" icon="presets/empty.png" type="closedway">
+   <label text="TSSRON: Trafic Separation Scheme, roundabout"/>
+   <key key="seamark:type" value="separation_roundabout"/>
+   <combo key="seamark:separation_roundabout:category" text="Category">
+    <reference ref="CATTSS"/>
+   </combo>
+   <combo key="seamark:separation_roundabout:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="TSSZNE" icon="presets/empty.png" type="closedway">
+   <label text="TSSZNE: Trafic Separation Zone"/>
+   <key key="seamark:type" value="separation_zone"/>
+   <combo key="seamark:separation_zone:category" text="Category">
+    <reference ref="CATTSS"/>
+   </combo>
+   <combo key="seamark:separation_zone:restriction" text="Restriction">
+    <reference ref="RESTRN"/>
+   </combo>
+  </item>
+  <item name="TUNNEL" icon="presets/empty.png" type="way,closedway">
+   <label text="TUNNEL: Tunnel"/>
+   <key key="seamark:type" value="tunnel"/>
+   <text key="seamark:name" text="Name"/>
+  </item>
+  <item name="TWRTPT" icon="presets/empty.png" type="way">
+   <label text="TWRTPT: Two-way route part"/>
+   <key key="seamark:type" value="twp-way_route"/>
+  </item>
+  <item name="UWTROC" icon="presets/empty.png" type="node">
+   <label text="UWTROC: Underwater/awash rock"/>
+   <key key="seamark:type" value="rock"/>
+   <combo key="seamark:rock:water_level" text="Water Level">
+    <reference ref="WATLEV"/>
+   </combo>
+   <combo key="seamark:rock:surface" text="Surface">
+    <reference ref="NATSUR"/>
+   </combo>
+   <combo key="seamark:rock:surface_qualification" text="Surface Qualification">
+    <reference ref="NATQUA"/>
+   </combo>
+  </item>
+  <item name="VEGATN" icon="presets/empty.png" type="node,way,closedway">
+   <label text="VEGATN: Vegetation"/>
+   <key key="seamark:type" value="vegetation"/>
+   <combo key="seamark:vegetation:category" text="Category">
+    <list_entry value="grass"/>
+	<list_entry value="bush"/>
+	<list_entry value="deciduous_wood"/>
+	<list_entry value="coniferous_wood"/>
+	<list_entry value="mangroves"/>
+	<list_entry value="mixed_crops"/>
+	<list_entry value="reed"/>
+	<list_entry value="moss"/>
+	<list_entry value="tree"/>
+	<list_entry value="evergreen_tree"/>
+	<list_entry value="coniferous_tree"/>
+	<list_entry value="palm_tree"/>
+	<list_entry value="nipa_palm_tree"/>
+	<list_entry value="casuarina_tree"/>
+	<list_entry value="eucalypt_tree"/>
+	<list_entry value="deviduous_tree"/>
+	<list_entry value="mangrove_tree"/>
+	<list_entry value="filao_tree"/>
+   </combo>
+  </item>
+  <item name="VEHTRF" icon="presets/empty.png" type="node,closedway">
+   <label text="VEHTRF: Vehicle Transfer"/>
+   <key key="seamark:type" value="vehicle_transfer"/>
+   <combo key="seamark:vehicle_transfer:category" text="Category">
+    <list_entry value="official"/>
+	<list_entry value="private"/>
+	<list_entry value="car_cranes"/>
+	<list_entry value="car_planks"/>
+	<list_entry value="permission_required"/>
+	<list_entry value="locked_gate"/>
+   </combo>
+  </item>
+  <item name="WATFAL" icon="presets/empty.png" type="node,way">
+   <label text="WATFAL: Waterfall"/>
+   <key key="seamark:type" value="waterfall"/>
+  </item>
+  <item name="WATTUR" icon="presets/empty.png" type="node,way,closedway">
+   <label text="WATTUR: Water turbulence"/>
+   <key key="seamark:type"value="water_turbulence"/>
+   <combo key="seamark:water_turbulence:category" text="Category">
+    <list_entry value="breakers"/>
+	<list_entry value="eddies"/>
+	<list_entry value="overfalls"/>
+	<list_entry value="tide_rips"/>
+	<list_entry value="bombora"/>
+   </combo>
+  </item>
+  <item name="WEDKLP" icon="presets/empty.png" type="node,closedway">
+   <label text="WEDKLP: Weed/Kelp"/>
+   <key key="seamark:type" value="weed"/>
+   <combo key="seamark:weed:category" text="Category">
+    <list_entry value="kelp"/>
+	<list_entry value="sea_weed"/>
+	<list_entry value="sea_grass"/>
+	<list_entry value="sargasso"/>
+   </combo>
+  </item>
+  <item name="WRECKS" icon="presets/empty.png" type="node,closedway">
+   <label text="WRECKS: Wreck"/>
+   <key key="seamark:type" value="wreck"/>
+   <combo key="seamark:wreck:category" text="Category">
+    <list_entry value="non-dangerous"/>
+	<list_entry value="dangerous"/>
+	<list_entry value="distributed_remains"/>
+	<list_entry value="mast_showing"/>
+	<list_entry value="hull_showing"/>
+   </combo>
+   <text key="seamark:wreck:height" text="Height"/>
+   <combo key="seamark:wreck:reflectivity" text="Reflectivity">
+	<reference ref="CONRAD"/>
+   </combo>
+   <combo key="seamark:wreck:visibility" text="Visibility">
+    <reference ref="CONVIS"/>
+   </combo>
+   <combo key="seamark:wreck:water_level" text="Water Level">
+    <reference ref="WATLEV"/>
+   </combo>
+  </item>
+  <item name="WTWGAG" icon="presets/empty.png" type="node">
+   <label text="WTWGAG: Waterway Gauge"/>
+   <key key="seamark:type" value="waterway_gauge"/>
+   <combo key="seamark:waterway_gauge:category" text="Category">
+    <list_entry value="staff"/>
+	<list_entry value="recording"/>
+	<list_entry value="recording_remote_access"/>
+	<list_entry value="recording_external_indicator"/>
+	<list_entry value="recording_remote_access_indicator"/>
+   </combo>
+  </item>
+ </group>
+</annotations>

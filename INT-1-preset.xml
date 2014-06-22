@@ -9,10 +9,10 @@
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=survey_point"/>
     <text key="name" text="Name"/>
 	<combo key="seamark:control_point:category" text="Category">
-	 <list_entry value="triangulation"/>
-	 <list_entry value="observation"/>
-	 <list_entry value="fixed"/>
-	 <list_entry value="benchmark"/>
+	 <list_entry value="triangulation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B20.svg" icon_size="16"/>
+	 <list_entry value="observation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B21.svg" icon_size="16"/>
+	 <list_entry value="fixed" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B22.svg" icon_size="16"/>
+	 <list_entry value="benchmark" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B23.svg" icon_size="16"/>
 	 <list_entry value="horizontal_main"/>
 	 <list_entry value="horizontal_secundary"/>
 	</combo>
@@ -1110,14 +1110,18 @@
     <label text="D20: Vertical Clearance"/>
     <text key="maxheight:marine" text="Max free Sailing Height under object" match="key"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Key:maxheight:marine"/>
-	<text key="seamark:bridge:clearance_height" text="Bridge Clearance" match="key"/>
-	<text key="seamark:bridge:clearance_height_open" text="Bridge Clearance Open" match="key"/>
-	<text key="seamark:bridge:clearance_height_closed" text="Bridge Clearance Closed" match="key"/>
-	<text key="seamark:cable_overhead:vertical:clearance_safe" text="Safe Clearance of Cable" match="key"/>
+	<text key="seamark:bridge:vertical_clearance_height" text="Bridge Clearance" match="key"/>
+	<text key="seamark:bridge:vertical_clearance_height_open" text="Bridge Clearance Open" match="key"/>
+	<text key="seamark:bridge:vertical_clearance_height_closed" text="Bridge Clearance Closed" match="key"/>
+	<text key="seamark:cable_overhead:vertical_clearance_height" text="Cable Clearance (not power cable)" match="key"/>
+	<text key="seamark:cable_overhead:vertical_clearance_height_safe" text="Safe Clearance of Cable" match="key"/>
+	<text key="seamark:pipeline_overhead:vertical_clearance_height" text="Pipeline Clearance" match="key"/>
    </item>
    <item name="Horizontal Clearance (D21)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D21.svg" type="node,way,closedway,relation">
     <label text="D21: Horizontal Clearance"/>
-	<text key="seamark:bridge:clearance_width" text="Horizontal Clearance" match="key"/>
+	<text key="seamark:bridge:clearance_width" text="Horizontal Clearance (bridge)" match="key"/>
+	<text key="seamark:cable_overhead:clearance_width" text="Horizontal Clearance (Cable)" match="key"/>
+	<text key="seamark:pipeline_overhead:clearance_width" text="Horizontal Clearance (Pipeline)" match="key"/>
    </item>
    <item name="Bridge (D22-D24) (On Bridge)" icon="presets/empty.png" type="way,relation">
     <label text="D22, D23.x, D24: Bridge, to be tagged on the bridge itself"/>
@@ -1152,13 +1156,13 @@
 	 <list_entry value="-5"/>
 	</combo>
 	<text key="maxheight:marine" text="Clearance under bridge"/>
-	<text key="seamark:bridge:clearance_height" text="Clearance"/>
-	<text key="seamark:bridge:clearance_height_open" text="Clearance Open"/>
-	<text key="seamark:bridge:clearance_height_closed" text="Clearance Closed"/>
+	<text key="seamark:bridge:vertical_clearance_height" text="Clearance"/>
+	<text key="seamark:bridge:vertical_clearance_height_open" text="Clearance Open"/>
+	<text key="seamark:bridge:vertical_clearance_height_closed" text="Clearance Closed"/>
 	<text key="seamark:bridge:clearance_width" text="Horizontal Clearance"/>
 	<text key="seamark:bridge:clearance_length" text="Longitudal clearance"/>
    </item>
-   <item name="Bridge (D22-D24) (Under Bridge)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D26.svg" type="node">
+   <item name="Bridge (D22-D24) (Under Bridge)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D26.svg" type="node,way,closedway">
     <label text="D22, D23.x, D24: Bridge"/>
 	<key key="seamark:type" value="bridge"/>
 	<combo key="seamark:bridge:category" text="Bridge Type" match="key">
@@ -1202,6 +1206,9 @@
 	 <list_entry value="rope-tow"/>
 	 <list_entry value="mixed_lift"/>
 	</combo>
+	<combo key="seamark:conveyor:product" text="Cargo">
+	 <list_entry value="" display_value="unknown"/>
+	</combo>
 	<text key="name" text="Name"/>
 	<text key="ref" text="Reference"/>
 	<optional>
@@ -1210,13 +1217,38 @@
 	 <text key="aerialway:duration" text="Duration of ride"/>
 	</optional>
    </item>
+   <item name="Overhead transporter - conveyor belt (D25)" icon="presets/empty.png" type="way,closedway">
+    <label text="D25: Overhead transporter - conveyor belt"/>
+	<key key="seamark:type" value="conveyor"/>
+	<key key="seamark:conveyor:category" value="belt"/>
+	<key key="man_made" value="conveyor"/>
+	<combo key="seamark:conveyor:product" text="Cargo">
+	 <list_entry value="" display_value="unknown"/>
+	 <list_entry value="stone"/>
+	 <list_entry value="coal"/>
+	 <list_entry value="ore"/>
+	 <list_entry value="bauxite"/>
+	 <list_entry value="coke"/>
+	 <list_entry value="iron_ingots"/>
+	 <list_entry value="salt"/>
+	 <list_entry value="sand"/>
+	 <list_entry value="timber"/>
+	 <list_entry value="sawdust"/>
+	 <list_entry value="scrap"/>
+	 <list_entry value="cement"/>
+	 <list_entry value="grain"/>
+	</combo>
+   </item>
    <item name="Power Transmission Line (D26)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D26.svg" type="way">
     <label text="D26: Power Transmission Line"/>
     <key key="power" value="line"/>
 	<key key="seamark:type" value="cable_overhead"/>
-	<key key="seamark:cable_overhead:category" value="power"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:power=line"/>
     <text key="name" text="Name"/>
+	<combo key="seamark:cable_overhead:category" text="Category" required="true">
+	 <list_entry value="power"/>
+	 <list_entry value="transmission"/>
+	</combo>
     <text key="ref" text="Reference"/>
 	<combo key="operator" text="Operator" readonly="false">
 	</combo>
@@ -1224,8 +1256,8 @@
 	<text key="cables" text="Cables"/>
 	<text key="wires" text="Wires"/>
 	<text key="maxheight:marine" text="Clearance under Cable"/>
-	<text key="seamark:cable_overhead:vertical:clearance" text="Vertical Clearance of Cable"/>
-	<text key="seamark:cable_overhead:vertical:clearance_safe" text="Safe Clearance of Cable"/>
+	<text key="seamark:cable_overhead:vertical:clearance_height" text="Vertical Clearance of Cable"/>
+	<text key="seamark:cable_overhead:vertical:clearance_height_safe" text="Safe Clearance of Cable"/>
 	<label text="Mark waterway under with appropriate Vertical Clearance (D20)"/>
    </item>
    <item name="Power Pylon (D26)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D26.svg" type="node">
@@ -1233,9 +1265,14 @@
 	<key key="power" value="tower"/>
 	<key key="seamark:type" value="pylon"/>
 	<text key="ref" text="Pylon reference" />
-	<combo key="seamark:pylon:category">
+	<combo key="seamark:pylon:category" required="true">
 	 <list_entry value="power"/>
 	 <list_entry value="telecom"/>
+	</combo>
+	<combo key="seamark:pylon:water_level">
+	 <list_entry value="" display_value="default"/>
+	 <list_entry value="part-submerged"/>
+	 <list_entry value="dry"/>
 	</combo>
 	<combo key="structure" text="Structure" readonly="false">
 	 <list_entry value="lattice"/>
@@ -1251,15 +1288,19 @@
 	<text key="colour" text="Colour"/>
    </item>
    <item name="Telephone Line (D27)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D26.svg" type="way">
-    <label text="D27: Thelephone Line"/>
+    <label text="D27: Telephone Line"/>
 	<key key="seamark:type" value="cable_overhead"/>
-	<key key="seamark:cable_overhead:category" value="telephone"/>
+	<combo key="seamark:cable_overhead:category" text="Category" required="true">
+	 <list_entry value="telephone"/>
+	 <list_entry value="telegraph"/>
+	 <list_entry value="optical"/>
+	</combo>
 	<text key="ref" text="Reference"/>
 	<combo key="operator" text="Operator" readonly="false">
 	</combo>
 	<text key="maxheight:marine" text="Clearance under Cable"/>
-	<text key="seamark:cable_overhead:vertical:clearance" text="Vertical Clearance of Cable"/>
-	<text key="seamark:cable_overhead:vertical:clearance_safe" text="Safe Clearance of Cable"/>
+	<text key="seamark:cable_overhead:vertical:clearance_height" text="Vertical Clearance of Cable"/>
+	<text key="seamark:cable_overhead:vertical:clearance_height_safe" text="Safe Clearance of Cable"/>
 	<label text="Mark waterway under with appropriate Vertical Clearance (D20)"/>
    </item>
    <item name="Pipeline (Overhead) (D28)" icon="presets/empty.png" type="way">
@@ -1268,6 +1309,25 @@
 	<key key="seamark:type" value="pipeline_overhead"/>
 	<key key="location" value="overhead"/>
 	<text key="name" text="Name"/>
+	<combo key="seamark:pipeline_overhead:category" text="Category">
+	 <list_entry value="" display_value="unknown"/>
+	 <list_entry value="outfall"/>
+	 <list_entry value="intake"/>
+	 <list_entry value="sewer"/>
+	 <list_entry value="supply"/>
+	</combo>
+	<combo key="seamark:pipeline_overhead:product" text="Product">
+	 <list_entry value="" display_value="unknwon"/>
+	 <list_entry value="oil"/>
+	 <list_entry value="gas"/>
+	 <list_entry value="water"/>
+	 <list_entry value="chemicals"/>
+	 <list_entry value="drinking_water"/>
+	 <list_entry value="milk"/>
+	 <list_entry value="lng"/>
+	 <list_entry value="lpg"/>
+	 <list_entry value="wine"/>
+	</combo>
 	<text key="ref" text="Reference"/>
 	<combo key="type" text="Type">
 	 <list_entry value="gas"/>
@@ -1284,8 +1344,8 @@
 	</combo>
 	<label text="For underwater pipelines, see L40-L44"/>
 	<text key="maxheight:marine" text="Clearance under bridge"/>
-	<text key="seamark:pipeline_overhead:vertical:clearance" text="Vertical Clearance of Cable"/>
-	<text key="seamark:pipeline_overhead:vertical:clearance_safe" text="Safe Clearance of Cable"/>
+	<text key="seamark:pipeline_overhead:vertical:clearance_height" text="Vertical Clearance of Cable"/>
+	<text key="seamark:pipeline_overhead:vertical:clearance_height_safe" text="Safe Clearance of Cable"/>
 	<label text="Mark waterway under with appropriate Vertical Clearance (D20)"/>
    </item>
    <item name="Pipeline (On Land) (D29)" icon="presets/empty.png" type="way">
@@ -1331,7 +1391,7 @@
    <item name="Landmarks in General" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E23_colour.svg" type="node,closedway">
     <label text="Landmarks in General, use appropriate categories to specify"/>
 	<key key="seamark:type" value="landmark"/>
-	<text key="seamark:landmark:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
 	<text key="seamark:landmark:height" text="Height of Landmark"/>
 	<combo key="seamark:landmark:category" text="Category" match="key">
 	 <list_entry value="tower"/>
@@ -2458,7 +2518,7 @@
     <item name="Harbour Basin (F27-F28)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg" type="closedway">
      <label text="F27-F28: Harbour Basin"/>
 	 <key key="seamark:type" value="basin"/>
-	 <text key="seamark:basin:name" text="Name"/>
+	 <text key="seamark:name" text="Name"/>
 	 <check key="tidal" text="Tidal" default="off"/>
     </item>
     <item name="Pontoon (F16)" icon="presets/empty.png" type="node,way,closedway">
@@ -2836,11 +2896,11 @@
    <item name="Rock (K2-K15)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K11.svg" type="node">
     <label text="K2-K15: Rock"/>
     <key key="seamark:type" value="rock"/>
-	<link href="http://wiki.openstreetmap.org/wiki/Tag:natural=rock"/>
+	<link href="http://wiki.openstreetmap.org/wiki/Tag:seamark:type=rock"/>
     <text key="ele" text="Elevation above high water"/>
     <text key="depth" text="Depth under low water"/>
-    <combo key="seamark:rock:water_level" text="Type Rock (water_level)">
-	 <list_entry value="" display_value="submerged" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K13.svg" icon_size="16"/>
+    <combo key="seamark:rock:water_level" text="Type Rock (water_level)" use_last_as_default="true">
+	 <list_entry value="submerged" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K13.svg" icon_size="16"/>
 	 <list_entry value="covers" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K11.svg" icon_size="16"/>
 	 <list_entry value="awash" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K12.svg" icon_size="16"/>
 	</combo>
@@ -2896,13 +2956,39 @@
    </item>
    <item name="Foul Ground (K31)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K31.svg" type="node,closedway">
     <label text="K31: Foul Ground"/>
-	<key key="seamark:type" value="restricted_area"/>
-	<key key="seamark:restricted_area:category" value="foul_ground"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<key key="seamark:type" value="obstruction"/>
+	<key key="seamark:obstruction:category" value="foul_ground"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Obstruction (K40-K42)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K40.svg" type="node">
     <label text="K40-K42: Obstruction"/>
 	<key key="seamark:type" value="obstruction"/>
+	<text key="seamark:name" text="Name"/>
+	<combo key="seamark:obstruction:category" text="Category" default="">
+	 <list_entry value="" display_value="default"/>
+	 <list_entry value="stump"/>
+	 <list_entry value="wellhead"/>
+	 <list_entry value="diffuser"/>
+	 <list_entry value="crib"/>
+	 <list_entry value="fish_haven"/>
+	 <list_entry value="foul_area"/>
+	 <list_entry value="foul_ground"/>
+	 <list_entry value="ice_boom"/>
+	 <list_entry value="ground_tackle"/>
+	 <list_entry value="boom"/>
+	</combo>
+	<combo key="seamark:obstruction:water_level" text="Water Level" default="">
+	 <list_entry value="" display_value="default"/>
+	 <list_entry value="part-submerged"/>
+	 <list_entry value="dry"/>
+	 <list_entry value="submerged"/>
+	 <list_entry value="covers"/>
+	 <list_entry value="awash"/>
+	 <list_entry value="floods"/>
+	 <list_entry value="floating"/>
+	 <list_entry value="above_mwl"/>
+	 <list_entry value="below_mwl"/>
+	</combo>
    </item>
    <item name="Stump, Pillar (K43.*)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K43.1.svg" type="node">
     <label text="K43.*: Stumps of Posts, Pillars"/>
@@ -3089,7 +3175,7 @@
 	<label text="L31.x: Submarine Cable"/>
 	<key key="man_made" value="submarine_cable"/>
 	<key key="seamark:type" value="cable_submarine"/>
-	<text key="seamark:cable_submarine:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
 	<combo key="operator" text="Operator" readonly="false" delete="">
 	</combo>
 	<combo key="seamark:cable_submarine:category" text="Type Cable">
@@ -3104,7 +3190,7 @@
 	<label text="L32: Submarine Cable Area"/>
 	<key key="man_made" value="submarine_cable"/>
 	<key key="seamark:type" value="cable_area"/>
-	<text key="seamark:cable_submarine:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
 	<combo key="operator" text="Operator" readonly="false" delete="">
 	</combo>
 	<combo key="seamark:cable_area:category" text="Type Cable">
@@ -3118,7 +3204,7 @@
     <label text="L40-L44: Pipelines (Underwater)"/>
 	<key key="man_made" value="pipeline" match="none"/>
 	<key key="seamark:type" value="pipeline_submarine"/>
-	<text key="seamark:pipeline_submarine:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=pipeline"/>
 	<key key="location" value="underwater" match="none"/>
 	<combo key="seamark:pipeline_submarine:category" text="Type">
@@ -3188,7 +3274,7 @@
    <item name="Limit of Restricted Area (M14)" icon="presets/empty.png" type="closedway">
     <label text="M14: Limit of Restricted Area"/>
 	<key key="seamark:type" value="restricted_area"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
 	<combo key="seamark:restricted_area:category" text="Category">
 	 <list_entry value="military"/>
 	 <list_entry value="nature_reserve"/>
@@ -3302,11 +3388,11 @@
 	<combo key="seamark:non-restricted_area:category" text="Category">
 	</combo>
    </item>
-   <item name="Caution Area (N1)" icon="presets/empty.png" type="closedway">
+   <item name="Precaution Area (N1)" icon="presets/empty.png" type="closedway">
     <label text="N1: Caution areas"/>
-	<key key="seamark:type" value="caution_area"/>
+	<key key="seamark:type" value="precautionary_area"/>
 	<text key="seamark:name" text="Name"/>
-	<combo key="seamark:caution_area:category" text="Category">
+	<combo key="seamark:precautionary_area:restriction" text="Restriction">
 	</combo>
    </item>
    <item name="Restriction Area (N2.1)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N2.1.svg" type="closedway">
@@ -3354,7 +3440,7 @@
     <label text="N2.2: Entry Prohibited Area"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="no_entry"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Anchorage (N10-N12)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N12.svg" type="node,closedway">
 	<label text="N10-N12: Anchorage"/>
@@ -3424,13 +3510,13 @@
     <label text="N20: Anchorage prohibited"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="no_anchoring"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Fishing prohibited (N21)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N21.svg" type="closedway">
     <label text="N21: Anchorage prohibited"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="no_fishing"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Bird/Seal/Marine Sanctuary, Nature/Marine Reserve, National Park, PSSA (N22)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N22_seal_green.svg" type="closedway">
     <label text="N22: Bird/Seal/Marine Sanctuary, Nature/Marine Reserve, National Park, PSSA"/>
@@ -3457,25 +3543,25 @@
     <label text="N23: Explosives Dumping Ground"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="explosives_dumping"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Dumping Ground for Harmful Substances (N24)" icon="presets/empty.png" type="closedway">
     <label text="N24: Dumping Ground for Harmful Substances"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="harmful_substance_dumping"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Degaussing Range (N25)" icon="presets/empty.png" type="closedway">
     <label text="N25: Degaussing Range"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="degausing_range"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Historic Wreck (N26)" icon="presets/empty.png" type="closedway">
     <label text="N26: Historic Wreck"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="historic_wreck"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Maximum Speed (N27)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N27.svg" type="closedway">
     <label text="N27: Maximum Speed"/>
@@ -3489,35 +3575,35 @@
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:category" value="military"/>
 	<key key="seamark:restricted_area:restriction" value="firing_danger"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Other Naval Practice Area (N31)" icon="presets/empty.png" type="closedway">
     <label text="N31: Naval Practice Area"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:category" value="military"/>
 	<key key="seamark:restricted_area:restriction" value="naval_practice_area"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Limit of Mine Laying or Countermeasures/Clearance Practice (N32)" icon="presets/empty.png" type="closedway">
     <label text="N32: Limit of Mine Laying or Countermeasures/Clearance Practice"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:category" value="military"/>
 	<key key="seamark:restricted_area:restriction" value="mine_clearance_practice"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Submarine Practice Area (N33)" icon="presets/empty.png" type="closedway">
     <label text="N33: Submarine Practice Area"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:category" value="military"/>
 	<key key="seamark:restricted_area:restriction" value="submarine_practice_area"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Mine field (N34)" icon="presets/empty.png" type="closedway">
     <label text="N34: Mine Field"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:category" value="military"/>
 	<key key="seamark:restricted_area:restriction" value="mine_field"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="International Border on Land (N40)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N40.svg" type="way,relation">
     <label text="N40: International Border on Land"/>
@@ -3573,7 +3659,7 @@
     <label text="N62: Spoil Ground"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:category" value="foul_ground"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Dredged area (N63)" icon="presets/empty.png" type="closedway">
     <label text="N63: Dredging Area"/>
@@ -3589,7 +3675,7 @@
     <label text="Nb: No Diving"/>
 	<key key="seamark:type" value="restricted_area"/>
 	<key key="seamark:restricted_area:restriction" value="no_diving"/>
-	<text key="seamark:restricted_area:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
   </group>
   <group name="P: Lights" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/P/P1.major.svg">
@@ -6067,7 +6153,7 @@
 	<key key="seamark:type" value="small_craft_facility"/>
 	<key key="seamark:small_craft_facility" value="nautical_club"/>
 	<label text="If the Nautical Club offers several services open for public or non-member visitors, see U32"/>
-	<text key="seamark:small_craft_facility:name" text="Facility Name"/>
+	<text key="seamark:name" text="Facility Name"/>
 	<text key="contact:phone" text="Phone"/>
 	<text key="contact:fax" text="Fax"/>
 	<text key="contact:email" text="E-Mail"/>
@@ -6270,7 +6356,7 @@
 	<key key="seamark:type" value="small_craft_facility"/>
 	<key key="seamark:small_craft_facility:category" value="electricity"/>
 	<key key="harbour:electricity" value="yes"/>
-	<text key="seamark:small_craft_facility:name" text="Name"/>
+	<text key="seamark:name" text="Name"/>
    </item>
    <item name="Bottled Gas (U20)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U20.svg" type="node,closedway">
     <label text="U20: Bottled Gas"/>
@@ -6421,7 +6507,7 @@
    <item name="Marine Facilities (U32)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U32.svg" type="node">
     <label text="U32: Marine Facilities"/>
 	<key key="seamark:type" value="small_craft_facility"/>
-	<text key="seamark:small_craft_facility:name" text="Name" required="true" match="key"/>
+	<text key="seamark:name" text="Name" required="true" match="key"/>
 	<multiselect key="seamark:small_craft_facility:category" text="Category" delimiter=";" required="true" match="key">
 	 <list_entry value="visitor_berth" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U2.svg" icon_size="16"/>
 	 <list_entry value="nautical_club" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U4_br.svg" icon_size="16"/>

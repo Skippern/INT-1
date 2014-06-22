@@ -26,6 +26,19 @@ canvas {
 	fill-opacity:		1; /* should underlaying layers shine through? */
 }
 
+/* Defaults */
+node["seamark:name"] {
+	text:		"seamark:name";
+	text-color:	black;
+}
+area["seamark:name"] {
+	text:		"seamark:name";
+	text-color:	black;
+}
+way["seamark:name"] {
+	text:		"seamark:name";
+	text-color:	black;
+}
 /* Base color */
 area[landuse],
 area[natural],
