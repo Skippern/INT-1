@@ -1173,7 +1173,7 @@ node["seamark:type"=light_major]::lighthouse {
 node["seamark:type"=mooring]["seamark:mooring:category"=buoy]::mooring {
 	text:			"seamark:name";
 	text-color:		black;
-	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q40.svg";
+	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q40/generic.svg";
 	icon-width:			16;
 }
 
