@@ -13,11 +13,11 @@
    id="svg2"
    sodipodi:version="0.32"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="H_white_orange.svg"
+   sodipodi:docname="grey.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:modified="true">
   <title
-     id="title2985">Q20: Conical white and orange buoy</title>
+     id="title2984">Q20: Conical orange buoy</title>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>Q20: Conical white and orange buoy</dc:title>
+        <dc:title>Q20: Conical orange buoy</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
       </cc:Work>
@@ -60,9 +60,9 @@
      pagecolor="#ffffff"
      id="base"
      showgrid="false"
-     inkscape:zoom="8.0393044"
-     inkscape:cx="-23.755449"
-     inkscape:cy="34.20694"
+     inkscape:zoom="8.9455529"
+     inkscape:cx="22.247295"
+     inkscape:cy="34.206938"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:current-layer="svg2"
@@ -83,11 +83,6 @@
      id="path2382"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cssssssssscc" />
-  <path
-     style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 31.78643,26.626462 L 70.99596,36.766862 L 66.53419,11.618672 L 60.17954,3.9119715 L 49.22791,7.0216915 L 31.78643,26.626462 z "
-     id="path2984"
-     inkscape:connector-curvature="0" />
   <path
      d="M 58.25,0.0076315289 C 54.30373,0.073041529 50.71799,2.2282915 46.96875,5.1951315 C 42.96956,8.3597615 38.74036,12.690502 34.3125,17.788882 C 25.53834,27.891732 16.03302,40.955752 7.15625,53.101382 L 0,53.101382 L 0,58.757632 L 29.6875,58.757632 C 30.97482,64.290582 35.92077,68.413872 41.84375,68.413882 C 47.7687,68.413882 52.7147,64.293362 54,58.757632 L 83.84375,58.757632 L 83.84375,58.695132 L 83.84375,53.101382 L 76.125,53.101382 C 74.84896,41.774352 73.93984,29.728542 72.125,20.007632 C 71.17035,14.894232 70.00242,10.432672 68.125,6.8513815 C 66.24758,3.2700915 63.15687,0.23796153 59.03125,0.0076315289 C 58.76468,-0.0071084711 58.51308,0.0032715289 58.25,0.0076315289 z M 58.625,6.9763815 C 59.70958,7.0369315 60.62002,7.6478215 61.90625,10.101382 C 63.19248,12.554942 64.35794,16.510692 65.25,21.288882 C 66.90735,30.166242 67.80992,41.820722 69.0625,53.101382 L 54,53.101382 C 52.7147,47.565652 47.7687,43.445132 41.84375,43.445132 C 35.92077,43.445142 30.97482,47.568432 29.6875,53.101382 L 15.84375,53.101382 C 23.82167,42.199962 32.08406,31.029522 39.59375,22.382632 C 43.86249,17.467472 47.89552,13.367792 51.3125,10.663882 C 54.72948,7.9599715 57.52398,6.9154915 58.625,6.9763815 z M 41.84375,48.413882 C 45.98375,48.413882 49.34375,51.773882 49.34375,55.913882 C 49.34375,60.053882 45.98375,63.413882 41.84375,63.413882 C 37.70375,63.413882 34.34375,60.053882 34.34375,55.913882 C 34.34375,51.773882 37.70375,48.413882 41.84375,48.413882 z "
      id="path90440"

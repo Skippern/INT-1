@@ -3808,25 +3808,25 @@
    </item>
   </group>
   <group name="Q: Buoys, Beacons" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_yellow_black_yellow.svg">
-   <item name="Topmarks (Q9)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" type="node">
+   <item name="Topmarks (Q9)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone/generic.svg" type="node">
     <label text="Q9: Topmarks"/>
 	<combo key="seamark:topmark:shape" text="Topmark Shape" required="true" match="key">
-	 <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	 <list_entry value="cone, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	 <list_entry value="sphere" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
-	 <list_entry value="x-shape" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/X.svg" icon_size="16"/>
-	 <list_entry value="flag" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/flag.svg" icon_size="16"/>
-	 <list_entry value="2 cones up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/north.svg" icon_size="16"/>
-	 <list_entry value="2 cones down" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/south.svg" icon_size="16"/>
-	 <list_entry value="2 cones point together"  icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/west.svg" icon_size="16"/>
-	 <list_entry value="2 cones base together" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/east.svg" icon_size="16"/>
-	 <list_entry value="2 spheres" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/isol.svg" icon_size="16"/>
-	 <list_entry value="upright-cross" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cross.svg" icon_size="16"/>
+	 <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	 <list_entry value="cone, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
+	 <list_entry value="sphere" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
+	 <list_entry value="x-shape" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/x-shape/generic.svg" icon_size="16"/>
+	 <list_entry value="flag" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/flag/generic.svg" icon_size="16"/>
+	 <list_entry value="2 cones up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_up/generic.svg" icon_size="16"/>
+	 <list_entry value="2 cones down" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_down/generic.svg" icon_size="16"/>
+	 <list_entry value="2 cones point together"  icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_point_together/generic.svg" icon_size="16"/>
+	 <list_entry value="2 cones base together" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_base_together/generic.svg" icon_size="16"/>
+	 <list_entry value="2 spheres" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_spheres/generic.svg" icon_size="16"/>
+	 <list_entry value="upright-cross" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cross/generic.svg" icon_size="16"/>
 	 <list_entry value="board" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/CEVNI/A1.svg" icon_size="16"/>
 	 <list_entry value="rhombus"/>
-	 <list_entry value="triangle, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/triangle.svg" icon_size="16"/>
+	 <list_entry value="triangle, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/triangle_point_up/generic.svg" icon_size="16"/>
 	 <list_entry value="triangle, point down"/>
-	 <list_entry value="square" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square.svg" icon_size="16"/>
+	 <list_entry value="square" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square/generic.svg" icon_size="16"/>
 	 <list_entry value="circle"/>
 	</combo>
 	<combo key="seamark:topmark:colour" text="Topmark Colour" required="true" match="key">
@@ -3893,22 +3893,22 @@
 	 <list_entry value="diagonal"/>
 	</combo>
 	<combo key="seamark:topmark:shape" text="Topmark Shape" required="true" match="key">
-	 <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	 <list_entry value="cone, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	 <list_entry value="sphere" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
-	 <list_entry value="x-shape" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/X.svg" icon_size="16"/>
-	 <list_entry value="flag" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/flag.svg" icon_size="16"/>
-	 <list_entry value="2 cones up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/north.svg" icon_size="16"/>
-	 <list_entry value="2 cones down" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/south.svg" icon_size="16"/>
-	 <list_entry value="2 cones point together"  icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/west.svg" icon_size="16"/>
-	 <list_entry value="2 cones base together" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/east.svg" icon_size="16"/>
-	 <list_entry value="2 spheres" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/isol.svg" icon_size="16"/>
-	 <list_entry value="upright-cross" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cross.svg" icon_size="16"/>
+	 <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	 <list_entry value="cone, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
+	 <list_entry value="sphere" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
+	 <list_entry value="x-shape" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/x-shape/generic.svg" icon_size="16"/>
+	 <list_entry value="flag" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/flag/generic.svg" icon_size="16"/>
+	 <list_entry value="2 cones up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_up/generic.svg" icon_size="16"/>
+	 <list_entry value="2 cones down" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_down/generic.svg" icon_size="16"/>
+	 <list_entry value="2 cones point together"  icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_point_together/generic.svg" icon_size="16"/>
+	 <list_entry value="2 cones base together" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_base_together/generic.svg" icon_size="16"/>
+	 <list_entry value="2 spheres" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_spheres/generic.svg" icon_size="16"/>
+	 <list_entry value="upright-cross" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cross/generic.svg" icon_size="16"/>
 	 <list_entry value="board" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/CEVNI/A1.svg" icon_size="16"/>
 	 <list_entry value="rhombus"/>
-	 <list_entry value="triangle, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/triangle.svg" icon_size="16"/>
+	 <list_entry value="triangle, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/triangle_point_up/generic.svg" icon_size="16"/>
 	 <list_entry value="triangle, point down"/>
-	 <list_entry value="square" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square.svg" icon_size="16"/>
+	 <list_entry value="square" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square/generic.svg" icon_size="16"/>
 	 <list_entry value="circle"/>
 	</combo>
 	<combo key="seamark:topmark:colour" text="Topmark Colour">
@@ -3955,22 +3955,22 @@
 	 <list_entry value="iala-b"/>
 	</combo>
 	<combo key="seamark:topmark:shape" text="Topmark Shape" required="true" match="key">
-	 <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	 <list_entry value="cone, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	 <list_entry value="sphere" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
-	 <list_entry value="x-shape" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/X.svg" icon_size="16"/>
-	 <list_entry value="flag" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/flag.svg" icon_size="16"/>
-	 <list_entry value="2 cones up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/north.svg" icon_size="16"/>
-	 <list_entry value="2 cones down" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/south.svg" icon_size="16"/>
-	 <list_entry value="2 cones point together"  icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/west.svg" icon_size="16"/>
-	 <list_entry value="2 cones base together" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/east.svg" icon_size="16"/>
-	 <list_entry value="2 spheres" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/isol.svg" icon_size="16"/>
-	 <list_entry value="upright-cross" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cross.svg" icon_size="16"/>
+	 <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	 <list_entry value="cone, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
+	 <list_entry value="sphere" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
+	 <list_entry value="x-shape" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/x-shape/generic.svg" icon_size="16"/>
+	 <list_entry value="flag" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/flag/generic.svg" icon_size="16"/>
+	 <list_entry value="2 cones up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_up/generic.svg" icon_size="16"/>
+	 <list_entry value="2 cones down" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_down/generic.svg" icon_size="16"/>
+	 <list_entry value="2 cones point together"  icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_point_together.svg" icon_size="16"/>
+	 <list_entry value="2 cones base together" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_base_together.svg" icon_size="16"/>
+	 <list_entry value="2 spheres" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_spheres/generic.svg" icon_size="16"/>
+	 <list_entry value="upright-cross" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cross/generic.svg" icon_size="16"/>
 	 <list_entry value="board" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/CEVNI/A1.svg" icon_size="16"/>
 	 <list_entry value="rhombus"/>
-	 <list_entry value="triangle, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/triangle.svg" icon_size="16"/>
+	 <list_entry value="triangle, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/triangle_point_up/generic.svg" icon_size="16"/>
 	 <list_entry value="triangle, point down"/>
-	 <list_entry value="square" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square.svg" icon_size="16"/>
+	 <list_entry value="square" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square/generic.svg" icon_size="16"/>
 	 <list_entry value="circle"/>
 	</combo>
 	<combo key="seamark:topmark:colour" text="Topmark Colour" required="true" match="key">
@@ -4027,7 +4027,7 @@
 	<text key="seamark:light:range" text="Light Range"/>
 	<text key="seamark:light:sequence" text="Light Sequence"/>
    </item>
-   <item name="Mooring buoys (Q40-44)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/mooring.svg" type="node">
+   <item name="Mooring buoys (Q40-44)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/mooring/generic.svg" type="node">
     <label text="Q40-44: Mooring buoys"/>
 	<key key="seamark:type" value="mooring"/>
 	<key key="seamark:mooring:category" value="buoy"/>
@@ -4659,12 +4659,12 @@
 	  <list_entry value="super-buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q26/general.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:colour" text="Topmark Colour">
-	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_red.svg" icon_size="16"/>
-	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder_green.svg" icon_size="16"/>
+	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/red.svg" icon_size="16"/>
+	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/green.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:shape" text="Topmark Shape">
-	  <list_entry value="cylinder" short_description="Port side, Preferred Starboard" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	  <list_entry value="cone, point up" short_description="Starboard side, Preferred Port" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
+	  <list_entry value="cylinder" short_description="Port side, Preferred Starboard" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	  <list_entry value="cone, point up" short_description="Starboard side, Preferred Port" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:light:character" text="Light Character">
 	  <list_entry value="Fl" short_description="Flash"/>
@@ -4713,12 +4713,12 @@
 	  <list_entry value="lettice" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q111.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:colour" text="Topmark Colour">
-	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_red.svg" icon_size="16"/>
-	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder_green.svg" icon_size="16"/>
+	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/red.svg" icon_size="16"/>
+	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/green.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:shape" text="Topmark Shape">
-	  <list_entry value="cylinder" short_description="Port side, Preferred Starboard" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	  <list_entry value="cone, point up" short_description="Starboard side, Preferred Port" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
+	  <list_entry value="cylinder" short_description="Port side, Preferred Starboard" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	  <list_entry value="cone, point up" short_description="Starboard side, Preferred Port" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:light:character" text="Light Character">
 	  <list_entry value="Fl" short_description="Flash"/>
@@ -4780,18 +4780,18 @@
 	  <list_entry value="super-buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q26/general.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:colour" text="Topmark Colour">
-	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_red.svg" icon_size="16"/>
-	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_green.svg" icon_size="16"/>
-	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_green.svg" icon_size="16"/>
-	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_white.svg" icon_size="16"/>
-	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_green_white.svg" icon_size="16"/>
-	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_yellow.svg" icon_size="16"/>
-	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_yellow_black.svg" icon_size="16"/>
+	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/red.svg" icon_size="16"/>
+	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/green.svg" icon_size="16"/>
+	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_green.svg" icon_size="16"/>
+	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_white.svg" icon_size="16"/>
+	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_green_white.svg" icon_size="16"/>
+	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/yellow.svg" icon_size="16"/>
+	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_yellow_black.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:shape" text="Topmark Shape">
-	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
+	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone/generic.svg" icon_size="16"/>
+	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:light:character" text="Light Character">
 	  <list_entry value="Fl" short_description="Flash"/>
@@ -4851,25 +4851,25 @@
 	  <list_entry value="lettice" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q111.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:colour" text="Topmark Colour">
-	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_red.svg" icon_size="16"/>
-	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder_green.svg" icon_size="16"/>
-	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_green.svg" icon_size="16"/>
-	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square_H_white_red_white.svg" icon_size="16"/>
-	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/diamond_H_green_white.svg" icon_size="16"/>
-	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/X_yellow.svg" icon_size="16"/>
-	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square_V_yellow_black_yellow.svg" icon_size="16"/>
+	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/red.svg" icon_size="16"/>
+	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/green.svg" icon_size="16"/>
+	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_green.svg" icon_size="16"/>
+	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square/H_white_red_white.svg" icon_size="16"/>
+	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/diamond/H_green_white.svg" icon_size="16"/>
+	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/x-shape/yellow.svg" icon_size="16"/>
+	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square/V_yellow_black_yellow.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:shape" text="Topmark Shape">
-	  <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	  <list_entry value="cone, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	  <list_entry value="square" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square.svg" icon_size="16"/>
-	  <list_entry value="rhombus" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/diamond.svg" icon_size="16"/>
-	  <list_entry value="triangle, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/triangle.svg" icon_size="16"/>
-	  <list_entry value="triangele, point down" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/triangle_point_down.svg" icon_size="16"/>
-	  <list_entry value="sphere" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
-	  <list_entry value="cross" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cross.svg" icon_size="16"/>
-	  <list_entry value="x-shape" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/X.svg" icon_size="16"/>
-	  <list_entry value="circle" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/circle.svg" icon_size="16"/>
+	  <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	  <list_entry value="cone, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
+	  <list_entry value="square" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square/generic.svg" icon_size="16"/>
+	  <list_entry value="rhombus" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/diamond/generic.svg" icon_size="16"/>
+	  <list_entry value="triangle, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/triangle_point_up/generic.svg" icon_size="16"/>
+	  <list_entry value="triangele, point down" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/triangle_point_down/generic.svg" icon_size="16"/>
+	  <list_entry value="sphere" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
+	  <list_entry value="cross" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cross/generic.svg" icon_size="16"/>
+	  <list_entry value="x-shape" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/x-shape/generic.svg" icon_size="16"/>
+	  <list_entry value="circle" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/circle/generic.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:light:character" text="Light Character">
 	  <list_entry value="Fl" short_description="Flash"/>
@@ -4930,18 +4930,18 @@
 	  <list_entry value="conical" short_description="Only Starboard Side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q20/general.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:colour" text="Topmark Colour">
-	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_red.svg" icon_size="16"/>
-	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_green.svg" icon_size="16"/>
-	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_green.svg" icon_size="16"/>
-	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_white.svg" icon_size="16"/>
-	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_green_white.svg" icon_size="16"/>
-	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_yellow.svg" icon_size="16"/>
-	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_yellow_black.svg" icon_size="16"/>
+	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/red.svg" icon_size="16"/>
+	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/green.svg" icon_size="16"/>
+	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_green.svg" icon_size="16"/>
+	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_white.svg" icon_size="16"/>
+	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_green_white.svg" icon_size="16"/>
+	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/yellow.svg" icon_size="16"/>
+	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_yellow_black.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:shape" text="Topmark Shape">
-	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
+	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
+	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:light:character" text="Light Character">
 	  <list_entry value="Fl" short_description="Flash"/>
@@ -4995,18 +4995,18 @@
 	 </combo>
 	 <check key="seamark:beacony_lateral:shape" text="Tower Beacon" value_on="tower" value_off="" default="off"/>
 	 <combo key="seamark:topmark:colour" text="Topmark Colour">
-	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_red.svg" icon_size="16"/>
-	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_green.svg" icon_size="16"/>
-	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_green.svg" icon_size="16"/>
-	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_white.svg" icon_size="16"/>
-	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_green_white.svg" icon_size="16"/>
-	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_yellow.svg" icon_size="16"/>
-	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_yellow_black.svg" icon_size="16"/>
+	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/red.svg" icon_size="16"/>
+	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/green.svg" icon_size="16"/>
+	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_green.svg" icon_size="16"/>
+	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_white.svg" icon_size="16"/>
+	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_green_white.svg" icon_size="16"/>
+	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/yellow.svg" icon_size="16"/>
+	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_yellow_black.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:shape" text="Topmark Shape">
-	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
+	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
+	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:notice:category" text="Notice Category">
 	  <list_entry value="no_passing_or_overtaking" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/RIWR/1.3.svg" icon_size="16"/>
@@ -5115,18 +5115,18 @@
 	  <list_entry value="conical" short_description="Only Starboard Side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q20/general.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:colour" text="Topmark Colour">
-	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_red.svg" icon_size="16"/>
-	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_green.svg" icon_size="16"/>
-	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_green.svg" icon_size="16"/>
-	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_white.svg" icon_size="16"/>
-	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_green_white.svg" icon_size="16"/>
-	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_yellow.svg" icon_size="16"/>
-	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_yellow_black.svg" icon_size="16"/>
+	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/red.svg" icon_size="16"/>
+	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/green.svg" icon_size="16"/>
+	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_green.svg" icon_size="16"/>
+	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_white.svg" icon_size="16"/>
+	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_green_white.svg" icon_size="16"/>
+	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/yellow.svg" icon_size="16"/>
+	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_yellow_black.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:shape" text="Topmark Shape">
-	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
+	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
+	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:light:character" text="Light Character">
 	  <list_entry value="Fl" short_description="Flash"/>
@@ -5180,18 +5180,18 @@
 	 </combo>
 	 <check key="seamark:beacony_lateral:shape" text="Tower Beacon" value_on="tower" value_off="" default="off"/>
 	 <combo key="seamark:topmark:colour" text="Topmark Colour">
-	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_red.svg" icon_size="16"/>
-	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_green.svg" icon_size="16"/>
-	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_green.svg" icon_size="16"/>
-	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_white.svg" icon_size="16"/>
-	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_green_white.svg" icon_size="16"/>
-	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_yellow.svg" icon_size="16"/>
-	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_yelow_black.svg" icon_size="16"/>
+	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/red.svg" icon_size="16"/>
+	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/green.svg" icon_size="16"/>
+	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_green.svg" icon_size="16"/>
+	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_white.svg" icon_size="16"/>
+	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_green_white.svg" icon_size="16"/>
+	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/yellow.svg" icon_size="16"/>
+	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_yelow_black.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:shape" text="Topmark Shape">
-	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
+	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
+	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:light:character" text="Light Character">
 	  <list_entry value="Fl" short_description="Flash"/>
@@ -5252,18 +5252,18 @@
 	  <list_entry value="conical" short_description="Only Starboard Side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q20/general.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:colour" text="Topmark Colour">
-	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_red.svg" icon_size="16"/>
-	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_green.svg" icon_size="16"/>
-	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_green.svg" icon_size="16"/>
-	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_white.svg" icon_size="16"/>
-	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_green_white.svg" icon_size="16"/>
-	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_yellow.svg" icon_size="16"/>
-	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_yelow_black.svg" icon_size="16"/>
+	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/red.svg" icon_size="16"/>
+	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/green.svg" icon_size="16"/>
+	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_green.svg" icon_size="16"/>
+	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_white.svg" icon_size="16"/>
+	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_green_white.svg" icon_size="16"/>
+	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/yellow.svg" icon_size="16"/>
+	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_yelow_black.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:shape" text="Topmark Shape">
-	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
+	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
+	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:light:character" text="Light Character">
 	  <list_entry value="Fl" short_description="Flash"/>
@@ -5317,18 +5317,18 @@
 	 </combo>
 	 <check key="seamark:beacony_lateral:shape" text="Tower Beacon" value_on="tower" value_off="" default="off"/>
 	 <combo key="seamark:topmark:colour" text="Topmark Colour">
-	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_red.svg" icon_size="16"/>
-	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_green.svg" icon_size="16"/>
-	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_green.svg" icon_size="16"/>
-	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_red_white.svg" icon_size="16"/>
-	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_green_white.svg" icon_size="16"/>
-	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_yellow.svg" icon_size="16"/>
-	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_H_yelow_black.svg" icon_size="16"/>
+	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/red.svg" icon_size="16"/>
+	  <list_entry value="green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/green.svg" icon_size="16"/>
+	  <list_entry value="red;green" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_green.svg" icon_size="16"/>
+	  <list_entry value="red;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_red_white.svg" icon_size="16"/>
+	  <list_entry value="green;white" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_green_white.svg" icon_size="16"/>
+	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/yellow.svg" icon_size="16"/>
+	  <list_entry value="yellow;black" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/H_yelow_black.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:shape" text="Topmark Shape">
-	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
+	  <list_entry value="cylinder" short_description="Port side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	  <list_entry value="cone, point up" short_description="Starboard side" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
+	  <list_entry value="sphere" short_description="Bifurcation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:light:character" text="Light Character">
 	  <list_entry value="Fl" short_description="Flash"/>
@@ -5347,7 +5347,7 @@
 	</item>
 	</group>
    <group name="Cardinal Marks (Q130.3)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_yellow_black_yellow.svg">
-    <item name="North Buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/north_black.svg" type="node">
+    <item name="North Buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_up/black.svg" type="node">
 	 <label text="Q130.3: North Cardinal Buoy"/>
 	 <key key="seamark:type" value="buoy_cardinal"/>
 	 <key key="seamark:buoy_cardinal:category" value="north"/>
@@ -5391,7 +5391,7 @@
 	 </combo>
 	 <text key="seamark:light:range" text="Light Range"/>
 	</item>
-    <item name="East Buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/east_black.svg" type="node">
+    <item name="East Buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_base_together/black.svg" type="node">
 	 <label text="Q130.3: East Cardinal Buoy"/>
 	 <key key="seamark:type" value="buoy_cardinal"/>
 	 <key key="seamark:buoy_cardinal:category" value="east"/>
@@ -5439,7 +5439,7 @@
 	 <text key="seamark:light:period" text="Light Period"/>
 	 <text key="seamark:light:range" text="Light Range"/>
 	</item>
-    <item name="South Buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/south_black.svg" type="node">
+    <item name="South Buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_down/black.svg" type="node">
 	 <label text="Q130.3: South Cardinal Buoy"/>
 	 <key key="seamark:type" value="buoy_cardinal"/>
 	 <key key="seamark:buoy_cardinal:category" value="south"/>
@@ -5487,7 +5487,7 @@
 	 <text key="seamark:light:period" text="Light Period"/>
 	 <text key="seamark:light:range" text="Light Range"/>
 	</item>
-    <item name="West Buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/west_black.svg" type="node">
+    <item name="West Buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_cones_point_together/black.svg" type="node">
 	 <label text="Q130.3: West Cardinal Buoy"/>
 	 <key key="seamark:type" value="buoy_cardinal"/>
 	 <key key="seamark:buoy_cardinal:category" value="west"/>
@@ -5536,7 +5536,7 @@
 	 <text key="seamark:light:range" text="Light Range"/>
 	</item>
     </group>
-   <group name="Isolated Dangers Marks (Q130.4)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/isol_black.svg">
+   <group name="Isolated Dangers Marks (Q130.4)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/2_spheres/black.svg">
     <item name="Buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_black_red_black.svg" type="node">
 	 <label text="Q130.4: Isolated Danger Buoy"/>
 	 <key key="seamark:type" value="buoy_isolated_danger"/>
@@ -5580,7 +5580,7 @@
 	 <text key="seamark:light:range" text="Light Range"/>
 	</item>
    </group>
-   <group name="Safe Water Marks (Q130.5)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere_red.svg">
+   <group name="Safe Water Marks (Q130.5)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/red.svg">
     <item name="Buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/V_red_white.svg" type="node">
 	 <label text="Q130.5: Safe Water Buoy"/>
 	 <key key="seamark:type" value="buoy_safe_water"/>
@@ -5697,15 +5697,15 @@
 	  <list_entry value="artificial_reef"/>
 	 </combo>
 	 <combo key="seamark:topmark:colour" text="Topmark">
-	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder_yellow.svg" icon_size="16"/>
-	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder_red.svg" icon_size="16"/>
+	  <list_entry value="yellow" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/yellow.svg" icon_size="16"/>
+	  <list_entry value="red" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/red.svg" icon_size="16"/>
 	 </combo>
 	 <combo key="seamark:topmark:shape" text="Topmark Shape">
-	  <list_entry value="x-shape" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/X.svg" icon_size="16"/>
-	  <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	  <list_entry value="cone, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	  <list_entry value="sphere" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
-	  <list_entry value="flag" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/flag.svg" icon_size="16"/>
+	  <list_entry value="x-shape" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/x-shape/generic.svg" icon_size="16"/>
+	  <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	  <list_entry value="cone, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
+	  <list_entry value="sphere" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
+	  <list_entry value="flag" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/flag/generic.svg" icon_size="16"/>
 	 </combo>
 	 <check key="seamark:light:colour" text="Light" value_on="yellow" value_off="" default="off"/>
 	 <combo key="seamark:light:character" text="Character">
@@ -5795,11 +5795,11 @@
 	  <list_entry value="red"/>
 	 </combo>
 	 <combo key="seamark:topmark:shape" text="Topmark Shape">
-	  <list_entry value="x-shape" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/X.svg" icon_size="16"/>
-	  <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder.svg" icon_size="16"/>
-	  <list_entry value="cone, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone.svg" icon_size="16"/>
-	  <list_entry value="sphere" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere.svg" icon_size="16"/>
-	  <list_entry value="flag" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/flag.svg" icon_size="16"/>
+	  <list_entry value="x-shape" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/x-shape/generic.svg" icon_size="16"/>
+	  <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
+	  <list_entry value="cone, point up" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" icon_size="16"/>
+	  <list_entry value="sphere" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/sphere/generic.svg" icon_size="16"/>
+	  <list_entry value="flag" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/flag/generic.svg" icon_size="16"/>
 	 </combo>
 	 <check key="seamark:light:colour" text="Light" value_on="yellow" value_off="" default="off"/>
 	 <combo key="seamark:light:character" text="Character">
