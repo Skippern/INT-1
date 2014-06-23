@@ -3808,7 +3808,7 @@
    </item>
   </group>
   <group name="Q: Buoys, Beacons" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_yellow_black_yellow.svg">
-   <item name="Topmarks (Q9)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone/generic.svg" type="node">
+   <item name="Topmarks (Q9)" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cone_point_up/generic.svg" type="node">
     <label text="Q9: Topmarks"/>
 	<combo key="seamark:topmark:shape" text="Topmark Shape" required="true" match="key">
 	 <list_entry value="cylinder" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/cylinder/generic.svg" icon_size="16"/>
