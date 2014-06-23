@@ -1321,7 +1321,8 @@
  </chunk>
  <!-- Definitions -->
  <group name="S100" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/IHO_c.svg">
-  <item name="ACHARE" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N10.svg" type="node,closedway">
+<group name="A">
+ <item name="ACHARE" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N10.svg" type="node,closedway">
    <label text="ACHARE: Anchorage Area"/>
    <key key="seamark:type" value="anchorage"/>
    <reference ref="NAME"/>
@@ -1337,6 +1338,8 @@
    <text key="seamark:anchor_berth:radius" text="Radius"/>
    <combo key="seamark:anchor_berth:danger_class" text="Danger Class"><reference ref="CLSDNG"/></combo>
   </item>
+</group>
+<group name="B">
   <item name="BCNCAR" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/H_black_yellow_black.svg" type="node">
    <label text="BCNCAR: Beacon, cardinal"/>
    <key key="seamark:type" value="beacon_cardinal"/>
@@ -1497,6 +1500,8 @@
    <combo key="seamark:buoy_special_purpose:shape" text="Shape"><reference ref="BOYSHP"/></combo>
    <combo key="seamark:buoy_special_purpose:reflectivity" text="Reflectivity"><reference ref="CONRAD"/></combo>
   </item>
+</group>
+<group name="C">
   <item name="CAUSWY" icon="presets/empty.png" type="way,closedway">
    <label text="CAUSWY: Causeway"/>
    <key key="seamark:type" value="causeway"/>
@@ -1558,6 +1563,8 @@
    <key key="seamark:type" value="control_point"/>
    <combo key="seamark:control_point:category" text="Category"><reference ref="CATCTR"/></combo>
   </item>
+</group>
+<group name="D">
   <item name="DAMCON" icon="presets/empty.png" type="node,way,closedway">
    <label text="DAMCON: Dam"/>
    <key key="seamark:type" value="dam"/>
@@ -1611,6 +1618,8 @@
    <key key="seamark:type" value="dyke"/>
    <reference ref="NAME"/>
   </item>
+</group>
+<group name="E">
   <item name="EXCNST" icon="presets/empty.png" type="node,way,closedway">
    <label text="EXCNST: Exceptional navigation structure"/>
    <key key="seamark:type" value="exceptional_structure"/>
@@ -1621,6 +1630,8 @@
    <label text="EXEZNE: Exclusive Economic Zone"/>
    <key key="seamark:type" value="exclusive_economic_zone"/>
   </item>
+</group>
+<group name="F">
   <item name="FAIRWY" icon="presets/empty.png" type="closedway">
    <label text="FAIRWY: Fairway"/>
    <key key="seamark:type" value="fairway"/>
@@ -1663,6 +1674,8 @@
    <key key="seamark:type" value="fishing_faculty"/>
    <combo key="seamark:fishing_faculty:category" text="Category"><reference ref="CATFIF"/></combo>
   </item>
+</group>
+<group name="G">
   <item name="GATCON" icon="presets/empty.png" type="node,way,closedway">
    <label text="GATCON: Gate"/>
    <key key="seamark:type" value="gate"/>
@@ -1674,6 +1687,8 @@
    <key key="seamark:type" value="gridiron"/>
    <combo key="seamark:gridiron:water_level" text="Water Level"><reference ref="WATLEV"/></combo>
   </item>
+</group>
+<group name="H">
   <item name="HRBARE" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg" type="node,closedway">
    <label text="HRBARE: Harbour Area (administrative)"/>
    <key key="seamark:type" value="harbour_area"/>
@@ -1697,12 +1712,16 @@
    <reference ref="NAME"/>
    <combo key="seamark:hulk:category" text="Category"><reference ref="CATHLK"/></combo>
   </item>
+</group>
+<group name="I">
   <item name="ISTZNE" icon="presets/empty.png" type="node,way,closedway">
    <label text="ISTZNE: Inshore Traffic Zone"/>
    <key key="seamark:type" value="inshore_traffic_zone"/>
    <reference ref="NAME"/>
    <combo key="seamark:inshore_traffic_zone:restriction" text="Restriction"><reference ref="RESTRN"/></combo>
   </item>
+</group>
+<group name="L">
   <item name="LIGHTS" icon="presets/empty.png" type="node,closedway">
    <label text="LIGHTS: Light"/>
    <combo key="seamark:type" text="Type" match="none" required="true" default="light_minor">
@@ -1805,6 +1824,8 @@
    <text key="seamark:lock_basin:length" text="Length"/>
    <text key="seamark:lock_basin:width" text="Width"/>
   </item>
+</group>
+<group name="M">
   <item name="MARCUL" icon="presets/empty.png" type="node,way,closedway">
    <label text="MARCUL: Marine farm/culture"/>
    <key key="seamark:type" value="marine_farm"/>
@@ -1838,6 +1859,8 @@
    <label text="MPAARE: Marine Protected Area"/>
    <key key="seamark:type" value="protected_area"/>
   </item>
+</group>
+<group name="N">
   <item name="NAVLNE" icon="presets/empty.png" type="way">
    <label text="NAVLINE: Navigation Line"/>
    <key key="seamark:type" value="navigation_line"/>
@@ -1859,6 +1882,8 @@
    <text key="seamark:notice:distance_end" text="Distance to end of impact"/>
    <combo key="seamark:notice:bank"><reference ref="BNKWTW"/></combo>
   </item>
+</group>
+<group name="O">
   <item name="OBSTRN" icon="presets/empty.png" type="node,way,closedway">
    <label text="OBSTRN: Obstruction"/>
    <key key="seamark:type" value="obstruction"/>
@@ -1894,6 +1919,8 @@
    <combo key="seamark:production_area:restriction" text="Restriction"><reference ref="RESTRN"/></combo>
    <combo key="seamark:production_area:conspicuity" text="Visible Conspicuity"><reference ref="CONVIS"/></combo>
   </item>
+</group>
+<group name="P">
   <item name="PILBOP" icon="presets/empty.png" type="node">
    <label text="PILBOP: Pilot Boarding Place"/>
    <key key="seamark:type" value="pilot_boarding"/>
@@ -1953,6 +1980,8 @@
    <combo key="seamark:pylon:category" text="Category"><reference ref="CATPYL"/></combo>
    <combo key="seamark:pylon:water_level" text="Water Level"><reference ref="WATLEV"/></combo>
   </item>
+</group>
+<group name="R">
   <item name="RADLNE" icon="presets/empty.png" type="way">
    <label text="RADLNE: Radar line"/>
    <key key="seamark:type" value="radar_line"/>
@@ -2051,6 +2080,8 @@
    <text key="seamark:radar_transponder:sector_trart" text="Start sector"/>
    <text key="seamark:radar_transponder:sector_end" text="End sector"/>
   </item>
+</group>
+<group name="S">
   <item name="SBDARE" icon="presets/empty.png" type="node,way,closedway">
    <label text="SBDARE: Seabed area"/>
    <key key="seamark:type" value="seabed_area"/>
@@ -2115,6 +2146,8 @@
    <key key="seamark:type" value="submarine_transit_lane"/>
    <combo key="seamark:submarine_transit_lane:restriction" text="Restriction"><reference ref="RESTRN"/></combo>
   </item>
+</group>
+<group name="T">
   <item name="TERMNL" icon="presets/empty.png" type="node,closedway">
    <label text="TERMNL: Terminal"/>
    <key key="seamark:type" value="terminal"/>
@@ -2190,6 +2223,8 @@
    <label text="TWRTPT: Two-way route part"/>
    <key key="seamark:type" value="twp-way_route"/>
   </item>
+</group>
+<group name="U">
   <item name="UWTROC" icon="presets/empty.png" type="node">
    <label text="UWTROC: Underwater/awash rock"/>
    <key key="seamark:type" value="rock"/>
@@ -2197,6 +2232,8 @@
    <combo key="seamark:rock:surface" text="Surface"><reference ref="NATSUR"/></combo>
    <combo key="seamark:rock:surface_qualification" text="Surface Qualification"><reference ref="NATQUA"/></combo>
   </item>
+</group>
+<group name="V">
   <item name="VEGATN" icon="presets/empty.png" type="node,way,closedway">
    <label text="VEGATN: Vegetation"/>
    <key key="seamark:type" value="vegetation"/>
@@ -2207,6 +2244,8 @@
    <key key="seamark:type" value="vehicle_transfer"/>
    <combo key="seamark:vehicle_transfer:category" text="Category"><reference ref="CATVTR"/></combo>
   </item>
+</group>
+<group name="W">
   <item name="WATFAL" icon="presets/empty.png" type="node,way">
    <label text="WATFAL: Waterfall"/>
    <key key="seamark:type" value="waterfall"/>
@@ -2245,5 +2284,6 @@
    <key key="seamark:type" value="waterway_gauge"/>
    <combo key="seamark:waterway_gauge:category" text="Category"><reference ref="CATGAG"/></combo>
   </item>
- </group>
+</group>
+  </group>
 </annotations>
