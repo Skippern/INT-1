@@ -2136,7 +2136,7 @@
    <label text="SILTNK: Silo/tank"/>
    <key key="seamark:type" value="tank"/>
    <reference ref="NAME"/>
-   <combo key="seamark:tank:category" text="Category"><reference ref="SILTNK"/></combo>
+   <combo key="seamark:tank:category" text="Category"><reference ref="CATSIL"/></combo>
   </item>
   <item name="TS_FEB" icon="presets/empty.png" type="node,way">
    <label text="TS_FEB: Tidal stream - flood/ebb"/>
