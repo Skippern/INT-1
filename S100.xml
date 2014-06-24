@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <annotations author="Aun 'Skippern' Johnsen" version="0.1" descroption="S100 defintions for OpenSeaMap" shortdescription="S100">
- <!-- Item Chinks -->
+ <!-- Item Chunks -->
  <chunk id="NAME">
 	<text key="seamark:name" text="Name"/>
  </chunk>
@@ -1443,6 +1443,11 @@
    <reference ref="NAME"/>
    <combo key="seamark:bunker_station:category" text="Category" required="true"><reference ref="CATBUN"/></combo>
   </item>
+  <item name="BUNVES" icon="presets/empty.png" type="node,closedway">
+   <label text="BUNVES: Bunker vessel availability"/>
+   <reference ref="NAME"/>
+   <combo key="seamark:availability" text="Bunker vessel availability" match="key"><reference ref="BUNVES"/></combo>
+  </item>
   <item name="BOYCAR" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_black_yellow_black.svg" type="node">
    <label text="BOYCAR: Buoy, cardinal"/>
    <key key="seamark:type" value="buoy_cardinal"/>
@@ -1607,6 +1612,7 @@
   <item name="DRGARE" icon="presets/empty.png" type="closedway">
    <label text="DRGARE: Dredged area"/>
    <key key="seamark:type" value="dredged_area"/>
+   <reference ref="NAME"/>
   </item>
   <item name="DRYDOC" icon="presets/empty.png" type="closedway">
    <label text="DRYDOC: Dry dock"/>
@@ -1629,6 +1635,7 @@
   <item name="EXEZNE" icon="presets/empty.png" type="closedway">
    <label text="EXEZNE: Exclusive Economic Zone"/>
    <key key="seamark:type" value="exclusive_economic_zone"/>
+   <reference ref="NAME"/>
   </item>
 </group>
 <group name="F">
@@ -1646,6 +1653,7 @@
   <item name="FLODOC" icon="presets/empty.png" type="closedway">
    <label text="FLODOC: Floating dock"/>
    <key key="seamark:type" value="floating_dock"/>
+   <reference ref="NAME"/>
   </item>
   <item name="FNCLNE" icon="presets/empty.png" type="way">
    <label text="FNCLNE: Fence/Wall"/>
@@ -1670,9 +1678,9 @@
    <combo key="seamark:fortified_structure:category" text="Category"><reference ref="CATFOR"/></combo>
   </item>
   <item name="FSHFAC" icon="presets/empty.png" type="node,way,closedway">
-   <label text="FSHFAC: Fishing faculty"/>
-   <key key="seamark:type" value="fishing_faculty"/>
-   <combo key="seamark:fishing_faculty:category" text="Category"><reference ref="CATFIF"/></combo>
+   <label text="FSHFAC: Fishing facility"/>
+   <key key="seamark:type" value="fishing_facility"/>
+   <combo key="seamark:fishing_facility:category" text="Category"><reference ref="CATFIF"/></combo>
   </item>
 </group>
 <group name="G">
@@ -1681,6 +1689,8 @@
    <key key="seamark:type" value="gate"/>
    <reference ref="NAME"/>
    <combo key="seamark:gate:category" text="Category" default="general"><reference ref="CATGAT"/></combo>
+   <text key="seamark:gate:clearance_width" text="Clearance Width"/>
+   <text key="seamark:gate:clearance_height" text="Clearance Height"/>
   </item>
   <item name="GRIDRN" icon="presets/empty.png" type="node,closedway">
    <label text="GRIDRN: Gridiron"/>
@@ -1858,6 +1868,7 @@
   <item name="MPAARE" icon="presets/empty.png" type="node,closedway">
    <label text="MPAARE: Marine Protected Area"/>
    <key key="seamark:type" value="protected_area"/>
+   <reference ref="NAME"/>
   </item>
 </group>
 <group name="N">
@@ -1962,6 +1973,7 @@
   <item name="PONTON" icon="presets/empty.png" type="way,closedway">
    <label text="PONTON: Pontoon"/>
    <key key="seamark:type" value="pontoon"/>
+   <reference ref="NAME"/>
   </item>
   <item name="PRTARE" icon="presets/empty.png" type="closedway">
    <label text="PRTARE: Port area"/>
@@ -1989,8 +2001,9 @@
   </item>
   <item name="RADRFL" icon="presets/empty.png" type="node">
    <label text="RADRFL: Radar reflector"/>
-   <key key="seamark:type" value="radar_reflector"/>
+   <check key="seamark:type" text="Standalone" on_value="radar_reflector" off_value="" match="none"/>
    <text key="seamark:radar_reflector:height" text="Height"/>
+   <check key="seamark:radar_reflector" text="Radar Reflector" match="key"/>
   </item>
   <item name="RADRNG" icon="presets/empty.png" type="closedway">
    <label text="RADRNG: Radar Range"/>
@@ -2009,10 +2022,12 @@
   <item name="RAPIDS" icon="presets/empty.png" type="node,way,closedway">
    <label text="RAPIDS: Rapids"/>
    <key key="seamark:type" value="rapids"/>
+   <reference ref="NAME"/>
   </item>
   <item name="RCRTCL" icon="presets/empty.png" type="way">
    <label text="RCRTCL: Recommended Route Centreline"/>
    <key key="seamark:type" value="recommended_route_centreline"/>
+   <reference ref="NAME"/>
   </item>
   <item name="RCTLPT" icon="presets/empty.png" type="way">
    <label text="RCTLPT: Recommended Traffic Lane"/>
@@ -2059,7 +2074,8 @@
   </item>
   <item name="RETRFL" icon="presets/empty.png" type="node">
    <label text="RETRFL: Retro-reflector"/>
-   <key key="seamark:type" value="retro_reflector"/>
+   <check key="seamark:type" text="Standalone" on_value="retro_reflector" off_value="" match="none"/>
+   <check key="seamark:retro_reflector" text="Retro-reflector" match="key"/>
   </item>
   <item name="RSCSTA" icon="presets/empty.png" type="node,closedway">
    <label text="RSCSTA: Rescue station"/>
@@ -2069,9 +2085,9 @@
   </item>
   <item name="RTPBCN" icon="presets/empty.png" type="node">
    <label text="RTPBCN: Radar Transponder Beacon"/>
-   <key key="seamark:type" value="radar_transponder"/>
-   <text key="seamark:name" value="Name"/>
-   <combo key="seamark:radar_transponder:category" text="Category"><reference ref="CATRTB"/></combo>
+   <check key="seamark:type" text="Standalone" on_value="radar_transponder" off_value=""/>
+   <reference ref="NAME"/>
+   <combo key="seamark:radar_transponder:category" text="Category" match="key"><reference ref="CATRTB"/></combo>
    <text key="seamark:radar_transponder:range" text="Range"/>
    <text key="seamark:radar_transponder:wavelength" text="Wavelength"/>
    <text key="seamark:radar_transponder:group" text="Group"/>
@@ -2128,6 +2144,7 @@
   <item name="SNDWAV" icon="presets/empty.png" type="node,closedway">
    <label text="SNDWAV: Sand waves"/>
    <key key="seamark:type" value="sand_waves"/>
+   <text key="note" text="Note"/>
   </item>
   <item name="SOUNDG" icon="presets/empty.png" type="node">
    <label text="SOUNDG: Sounding"/>
@@ -2151,7 +2168,7 @@
   <item name="TERMNL" icon="presets/empty.png" type="node,closedway">
    <label text="TERMNL: Terminal"/>
    <key key="seamark:type" value="terminal"/>
-   <text key="seamark:name" value="Name"/>
+   <reference ref="NAME"/>
    <combo key="seamark:terminal:goods" text="Transhipping Goods"><reference ref="TRSHGD"/></combo>
   </item>
   <item name="TOPMAR" icon="presets/empty.png" type="node">
@@ -2211,6 +2228,7 @@
   <item name="TSSZNE" icon="presets/empty.png" type="closedway">
    <label text="TSSZNE: Trafic Separation Zone"/>
    <key key="seamark:type" value="separation_zone"/>
+   <reference ref="NAME"/>
    <combo key="seamark:separation_zone:category" text="Category"><reference ref="CATTSS"/></combo>
    <combo key="seamark:separation_zone:restriction" text="Restriction"><reference ref="RESTRN"/></combo>
   </item>
@@ -2222,6 +2240,7 @@
   <item name="TWRTPT" icon="presets/empty.png" type="way">
    <label text="TWRTPT: Two-way route part"/>
    <key key="seamark:type" value="twp-way_route"/>
+   <reference ref="NAME"/>
   </item>
 </group>
 <group name="U">
@@ -2249,6 +2268,7 @@
   <item name="WATFAL" icon="presets/empty.png" type="node,way">
    <label text="WATFAL: Waterfall"/>
    <key key="seamark:type" value="waterfall"/>
+   <reference ref="NAME"/>
   </item>
   <item name="WATTUR" icon="presets/empty.png" type="node,way,closedway">
    <label text="WATTUR: Water turbulence"/>
@@ -2263,6 +2283,7 @@
   <item name="WRECKS" icon="presets/empty.png" type="node,closedway">
    <label text="WRECKS: Wreck"/>
    <key key="seamark:type" value="wreck"/>
+   <reference ref="NAME"/>
    <combo key="seamark:wreck:category" text="Category"><reference ref="CATWRK"/></combo>
    <text key="seamark:wreck:height" text="Height"/>
    <combo key="seamark:wreck:reflectivity" text="Reflectivity"><reference ref="CONRAD"/></combo>
@@ -2271,12 +2292,12 @@
   </item>
   <item name="WTWARE" icon="presets/empty.png" type="node,way,closedway">
    <label text="WTWARE: Lacking documentation"/>
-   <key key="seamark:type" value="wtware"/>
-   <combo key="seamark:wtware:category" text="Category"><reference ref="CATCCL"/></combo>
+   <check key="seamark:type" text="Standalone" on_value="wtware" off_value="" match="none"/>
+   <combo key="seamark:wtware:category" text="Category" match="key"><reference ref="CATCCL"/></combo>
   </item>
   <item name="WTWAXS" icon="presets/empty.png" type="node,way,closedway">
    <label text="WTWAXS: Lacking documentation"/>
-   <key key="seamark:type" value="wtwaxs"/>
+   <check key="seamark:type" text="Standalone" on_value="wtwaxs" off_value="" match="none"/>
    <combo key="seamark:wtwaxs:category" text="Category"><reference ref="CATCCL"/></combo>
   </item>
   <item name="WTWGAG" icon="presets/empty.png" type="node">
