@@ -12,7 +12,7 @@ meta {
 	title:				"INT 1 Rendering (IHO standarized symbols) PD";
 	icon:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/IHO_c.svg";
 	author:				"Aun (Skippern) Johnsen";
-	version:			"0.1";
+	version:			"0.[[revision]].[[date]]";
 	description:		"JOSM rendering of nautical symbols according to IHO standard INT-1";
 	min-josm-version:	7166;
 }
@@ -27,6 +27,17 @@ canvas {
 }
 
 /* Defaults */
+node[fixme]::core_fixme,
+node[FIXME]::core_fixme,
+node["seamark:fixme"]::core_fixme {
+	object-z-index:	20;
+	icon-image:		"misc/fixme-annotation.png";
+}
+node[note]::core_note,
+node["seamark:note"]::core_note {
+	object-z-index:	10;
+	icon-image:		"misc/note-annotation.png";
+}
 node["seamark:name"] {
 	text:		"seamark:name";
 	text-color:	black;
@@ -38,6 +49,29 @@ area["seamark:name"] {
 way["seamark:name"] {
 	text:		"seamark:name";
 	text-color:	black;
+}
+/* For debugging or help */
+node:new { /* Identify new nodes (added this session) */
+	points:		true;
+}
+way:new { /* Identify new ways (added this session) */
+	lines:		true;
+}
+node["seamark:type"] { /* Identify seamarks still not supported by this stylesheet */
+	object-z-index:		-1;
+	icon-image:			"http://dev.openseamap.org/josm/icons/OpenSeaMapLogo_16.png";
+	icon-opacity:		0.4;
+}
+node["seamark:fixme"]::FIXME { /* Identifies seamarks marked with a FIXME tag */
+	text:			"seamark:fixme";
+	font-size:		16;
+	text-color:		yellow;
+}
+
+way[hires=yes]::hires { /* To show border of hires images */
+	opacity:			0.05;
+	color:				yellow;
+	width:				3;
 }
 /* Base color */
 area[landuse],
@@ -158,29 +192,6 @@ area[military] {
 	fill-opacity:  		0.2;
 }
 
-/* For debugging or help */
-node:new { /* Identify new nodes (added this session) */
-	points:		true;
-}
-way:new { /* Identify new ways (added this session) */
-	lines:		true;
-}
-node["seamark:type"] { /* Identify seamarks still not supported by this stylesheet */
-	object-z-index:		-1;
-	icon-image:			"http://dev.openseamap.org/josm/icons/OpenSeaMapLogo_16.png";
-	icon-opacity:		0.4;
-}
-node["seamark:fixme"]::FIXME { /* Identifies seamarks marked with a FIXME tag */
-	text:			"seamark:fixme";
-	font-size:		16;
-	text-color:		yellow;
-}
-
-way[hires=yes]::hires { /* To show border of hires images */
-	opacity:			0.05;
-	color:				yellow;
-	width:				3;
-}
 /* B */
 node[man_made=survey_point]::survey {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B22.svg";
