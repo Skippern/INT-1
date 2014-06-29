@@ -620,15 +620,15 @@ node[amenity=place_of_worship][religion=christian]["seamark:landmark:function"=c
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.1.svg";
 	icon-width:			16;
 }
-node[amenity=place_of_worship][religion=christian]["seamark:landmark:category"=tower]::church {
+node[amenity=place_of_worship][religion=christian]["seamark:landmark:function"=church]["seamark:landmark:category"=tower]::church {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.2.svg";
 	icon-width:			16;
 }
-node[amenity=place_of_worship][religion=christian]["seamark:landmark:category"=spire]::church {
+node[amenity=place_of_worship][religion=christian]["seamark:landmark:function"=church]["seamark:landmark:category"=spire]::church {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.3.svg";
 	icon-width:			16;
 }
-node[amenity=place_of_worship][religion=christian]["seamark:landmark:category"=dome]::church {
+node[amenity=place_of_worship][religion=christian]["seamark:landmark:function"=church]["seamark:landmark:category"=dome]::church {
 	icon-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.4.svg";
 	icon-width:			16;
 }
