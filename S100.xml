@@ -354,118 +354,114 @@
 	<list_entry value="leading"/>
  </chunk>
  <chunk id="CATNMK">
-    <list_entry value="no_anchoring"/>
-	<list_entry value="keep_to_port_margin"/>
-	<list_entry value="keep_to_starboard_margin"/>
-	<list_entry value="keep_to_mid-river"/>
-	<list_entry value="cross_river_to_port"/>
-	<list_entry value="cross_river_to_starboard"/>
-	<list_entry value="main_waterway_right_secondary_ahead_left"/>
-	<list_entry value="main_waterway_left_secondary_ahead_right"/>
-	<list_entry value="reduce_speed"/>
-	<list_entry value="limited_headroom"/>
-	<list_entry value="opening_to_right"/>
-	<list_entry value="opening_to_left"/>
-	<list_entry value="traffic_between_margins"/>
-	<list_entry value="no_entry"/>
-	<list_entry value="closed_area"/>
-	<list_entry value="no_overtaking"/>
-	<list_entry value="no_convoy_overtaking"/>
-	<list_entry value="no_berthing"/>
-	<list_entry value="no_berthing_lateral_limit"/>
-	<list_entry value="no_mooring"/>
-	<list_entry value="no_turning"/>
-	<list_entry value="no_wash"/>
-	<list_entry value="no_passage_left"/>
-	<list_entry value="no_passage_left"/>
-	<list_entry value="no_motor_craft"/>
-	<list_entry value="no_sport_craft"/>
-	<list_entry value="no_waterskiing"/>
-	<list_entry value="no_sailing_craft"/>
-	<list_entry value="no_unpowered_craft"/>
-	<list_entry value="no_sailboards"/>
-	<list_entry value="no_hgh_speeds"/>
-	<list_entry value="no_launching_beaching"/>
-	<list_entry value="no_waterbikes"/>
-	<list_entry value="move_to_left"/>
-	<list_entry value="move_to_right"/>
-	<list_entry value="move_to_port"/>
-	<list_entry value="move_to_starboard"/>
-	<list_entry value="keep_to_port"/>
-	<list_entry value="keep_to_starboard"/>
-	<list_entry value="stop"/>
-	<list_entry value="cross_to_port"/>
-	<list_entry value="cross_to_starboard"/>
-	<list_entry value="speed_limit"/>
-	<list_entry value="sound_horn"/>
-	<list_entry value="keep_lookout"/>
-	<list_entry value="give_way_junction"/>
-	<list_entry value="give_way_crossing"/>
-	<list_entry value="make_radio_contact"/>
-	<list_entry value="limited_depth"/>
-	<list_entry value="limited_width"/>
-	<list_entry value="navigation_restrictions"/>
-	<list_entry value="channel_distance_left"/>
-	<list_entry value="channel_distance_right"/>
-	<list_entry value="channel_two_way"/>
-	<list_entry value="channel_one_way"/>
-	<list_entry value="opening_to_right"/>
-	<list_entry value="opening_to_left"/>
-	<list_entry value="proceed_to_left"/>
-	<list_entry value="proceed_to_right"/>
-	<list_entry value="entry_permitted"/>
-	<list_entry value="overhead_cable"/>
-	<list_entry value="weir"/>
-	<list_entry value="ferry_non_independent"/>
-	<list_entry value="ferry_independent"/>
-	<list_entry value="berthing_permitted"/>
+	<list_entry value="anchoring_permitted"/>
 	<list_entry value="berthing_lateral_limit"/>
 	<list_entry value="berthing_lateral_limits"/>
-	<list_entry value="berthing_rafting_limit"/>
-	<list_entry value="berthing_unmarked_pushing"/>
-	<list_entry value="berthing_unmarked_pushing_1"/>
-	<list_entry value="berthing_unmarked_pushing_2"/>
-	<list_entry value="berthing_unmarked_pushing_3"/>
-	<list_entry value="berthing_unmarked_non_pushing"/>
-	<list_entry value="berthing_marked_pushing_1"/>
-	<list_entry value="berthing_marked_pushing_2"/>
-	<list_entry value="berthing_marked_pushing_3"/>
-	<list_entry value="berthing_unmarked"/>
 	<list_entry value="berthing_marked_1"/>
 	<list_entry value="berthing_marked_2"/>
 	<list_entry value="berthing_marked_3"/>
-	<list_entry value="anchoring_permitted"/>
+	<list_entry value="berthing_marked_pushing_1"/>
+	<list_entry value="berthing_marked_pushing_2"/>
+	<list_entry value="berthing_marked_pushing_3"/>
+	<list_entry value="berthing_permitted"/>
+	<list_entry value="berthing_rafting_limit"/>
+	<list_entry value="berthing_unmarked_non_pushing"/>
+	<list_entry value="berthing_unmarked_pushing_1"/>
+	<list_entry value="berthing_unmarked_pushing_2"/>
+	<list_entry value="berthing_unmarked_pushing_3"/>
+	<list_entry value="berthing_unmarked_pushing"/>
+	<list_entry value="berthing_unmarked"/>
+	<list_entry value="channel_distance_left"/>
+	<list_entry value="channel_distance_right"/>
+	<list_entry value="channel_one_way"/>
+	<list_entry value="channel_two_way"/>
+	<list_entry value="closed_area"/>
+	<list_entry value="cross_river_to_port"/>
+	<list_entry value="cross_river_to_starboard"/>
+	<list_entry value="cross_to_port"/>
+	<list_entry value="cross_to_starboard"/>
+	<list_entry value="drinking_water"/>
+	<list_entry value="entry_permitted"/>
+	<list_entry value="ferry_independent"/>
+	<list_entry value="ferry_non_independent"/>
+	<list_entry value="give_way_crossing"/>
+	<list_entry value="give_way_junction"/>
+	<list_entry value="high_speeds_permitted"/>
+	<list_entry value="keep_lookout"/>
+	<list_entry value="keep_to_mid-river"/>
+	<list_entry value="keep_to_port_margin"/>
+	<list_entry value="keep_to_port"/>
+	<list_entry value="keep_to_starboard_margin"/>
+	<list_entry value="keep_to_starboard"/>
+	<list_entry value="launching_beaching_permitted"/>
+	<list_entry value="limited_depth"/>
+	<list_entry value="limited_headroom"/>
+	<list_entry value="limited_width"/>
+	<list_entry value="main_waterway_ahead_left_secondary_right"/>
+	<list_entry value="main_waterway_ahead_left"/>
+	<list_entry value="main_waterway_ahead_right_secondary_left"/>
+	<list_entry value="main_waterway_ahead_right"/>
+	<list_entry value="main_waterway_crossing"/>
+	<list_entry value="main_waterway_junction"/>
+	<list_entry value="main_waterway_left_secondary_ahead_right"/>
+	<list_entry value="main_waterway_left_secondary_ahead"/>
+	<list_entry value="main_waterway_left_secondary_right"/>
+	<list_entry value="main_waterway_right_secondary_ahead_left"/>
+	<list_entry value="main_waterway_right_secondary_ahead"/>
+	<list_entry value="main_waterway_right_secondary_left"/>
+	<list_entry value="make_radio_contact"/>
 	<list_entry value="mooring_permitted"/>
-	<list_entry value="vehicle_loading_berth"/>
-	<list_entry value="turning_area"/>
+	<list_entry value="motor_craft_permitted"/>
+	<list_entry value="move_to_left"/>
+	<list_entry value="move_to_port"/>
+	<list_entry value="move_to_right"/>
+	<list_entry value="move_to_starboard"/>
+	<list_entry value="navigation_restrictions"/>
+	<list_entry value="no_anchoring"/>
+	<list_entry value="no_berthing_lateral_limit"/>
+	<list_entry value="no_berthing"/>
+	<list_entry value="no_convoy_overtaking"/>
+	<list_entry value="no_entry"/>
+	<list_entry value="no_high_speeds"/>
+	<list_entry value="no_launching_beaching"/>
+	<list_entry value="no_mooring"/>
+	<list_entry value="no_motor_craft"/>
+	<list_entry value="no_overtaking"/>
+	<list_entry value="no_passage_left"/>
+	<list_entry value="no_passage_left"/>
+	<list_entry value="no_sailboards"/>
+	<list_entry value="no_sailing_craft"/>
+	<list_entry value="no_sport_craft"/>
+	<list_entry value="no_turning"/>
+	<list_entry value="no_unpowered_craft"/>
+	<list_entry value="no_wash"/>
+	<list_entry value="no_waterbikes"/>
+	<list_entry value="no_waterskiing"/>
+	<list_entry value="opening_to_left"/>
+	<list_entry value="opening_to_right"/>
+	<list_entry value="overhead_cable"/>
+	<list_entry value="proceed_to_left"/>
+	<list_entry value="proceed_to_right"/>
+	<list_entry value="prohibition_ends"/>
+	<list_entry value="radio_information"/>
+	<list_entry value="reduce_speed"/>
+	<list_entry value="sailboards_permitted"/>
+	<list_entry value="sailing_craft_permitted"/>
 	<list_entry value="secondary_waterway_crossing"/>
 	<list_entry value="secondary_waterway_left"/>
 	<list_entry value="secondary_waterway_right"/>
-	<list_entry value="main_waterway_right_secondary_ahead"/>
-	<list_entry value="main_waterway_left_secondary_ahead"/>
-	<list_entry value="main_waterway_right_secondary_left"/>
-	<list_entry value="main_waterway_left_secondary_right"/>
-	<list_entry value="main_waterway_right_secondary_ahead_left"/>
-	<list_entry value="main_waterway_left_secondary_ahead_right"/>
-	<list_entry value="main_waterway_crossing"/>
-	<list_entry value="main_waterway_junction"/>
-	<list_entry value="main_waterway_ahead_right"/>
-	<list_entry value="main_waterway_ahead_left"/>
-	<list_entry value="main_waterway_ahead_right_secondary_left"/>
-	<list_entry value="main_waterway_ahead_left_secondary_right"/>
-	<list_entry value="prohibition_ends"/>
-	<list_entry value="drinking_water"/>
-	<list_entry value="telephone"/>
-	<list_entry value="motor_craft_permitted"/>
+	<list_entry value="sound_horn"/>
+	<list_entry value="speed_limit"/>
 	<list_entry value="sport_craft_permitted"/>
-	<list_entry value="waterskiing_permitted"/>
-	<list_entry value="sailing_craft_permitted"/>
+	<list_entry value="stop"/>
+	<list_entry value="telephone"/>
+	<list_entry value="traffic_between_margins"/>
+	<list_entry value="turning_area"/>
 	<list_entry value="unpowered_craft_permitted"/>
-	<list_entry value="sailboards_permitted"/>
-	<list_entry value="high_speeds_permitted"/>
-	<list_entry value="launching_beaching_permitted"/>
-	<list_entry value="radio_information"/>
+	<list_entry value="vehicle_loading_berth"/>
 	<list_entry value="waterbikes_permitted"/>
+	<list_entry value="waterskiing_permitted"/>
+	<list_entry value="weir"/>
  </chunk>
  <chunk id="CATOBS">
     <list_entry value="stump"/>
@@ -1372,7 +1368,7 @@
    <reference ref="NAME"/>
    <combo key="seamark:beacon_lateral:category" text="Category" required="true"><reference ref="CATLAM"/></combo>
    <combo key="seamark:beacon_lateral:colour" text="Colour" required="true"><reference ref="COLOUR+LAT"/></combo>
-   <combo key="seamark:beacon:lateral:colour_pattern" text="Colour Pattern"><reference ref="COLPAT"/></combo>
+   <combo key="seamark:beacon_lateral:colour_pattern" text="Colour Pattern"><reference ref="COLPAT"/></combo>
    <combo key="seamark:beacon_lateral:shape" text="Shape"><reference ref="BCNSHP"/></combo>
    <combo key="seamark:beacon_lateral:construction" text="Construction"><reference ref="NATCON"/></combo>
    <combo key="seamark:beacon_lateral:reflectivity" text="Reflectivity"><reference ref="CONRAD"/></combo>
@@ -1397,6 +1393,7 @@
    <reference ref="NAME"/>
    <combo key="seamark:beacon_special_purpose:category" text="Category" default="unknown_purpose" required="true"><reference ref="CATSPM"/></combo>
    <combo key="seamark:beacon_special_purpose:colour" text="Colour" required="true"><reference ref="COLOUR+SSP"/></combo>
+   <combo key="seamark:beacon_special_purpose:colour_pattern" text="Colour Pattern"><reference ref="COLPAT"/></combo>
    <combo key="seamark:beacon_special_purpose:shape" text="Shape"><reference ref="BCNSHP"/></combo>
    <combo key="seamark:beacon_special_purpose:construction" text="Construction"><reference ref="NATCON"/></combo>
    <combo key="seamark:beacon_special_purpose:reflectivity" text="Reflectivity"><reference ref="CONRAD"/></combo>
@@ -1485,7 +1482,7 @@
    <reference ref="NAME"/>
    <combo key="seamark:buoy_lateral:category" text="Category" required="true"><reference ref="CATLAM"/></combo>
    <combo key="seamark:buoy_lateral:colour" text="Colour" required="true"><reference ref="COLOUR+LAT"/></combo>
-   <combo key="seamark:buoy:lateral:colour_pattern" text="Colour Pattern"><reference ref="COLPAT"/></combo>
+   <combo key="seamark:buoy_lateral:colour_pattern" text="Colour Pattern"><reference ref="COLPAT"/></combo>
    <combo key="seamark:buoy_lateral:shape" text="Shape"><reference ref="BOYSHP"/></combo>
    <combo key="seamark:buoy_lateral:reflectivity" text="Reflectivity"><reference ref="CONRAD"/></combo>
   </item>
@@ -1504,6 +1501,7 @@
    <reference ref="NAME"/>
    <combo key="seamark:buoy_special_purpose:category" text="Category" default="unknown_purpose" required="true"><reference ref="CATSPM"/></combo>
    <combo key="seamark:buoy_special_purpose:colour" text="Colour" required="true"><reference ref="COLOUR+SSP"/></combo>
+   <combo key="seamark:buoy_special_purpose:colour_pattern" text="Colour Pattern"><reference ref="COLPAT"/></combo>
    <combo key="seamark:buoy_special_purpose:shape" text="Shape"><reference ref="BOYSHP"/></combo>
    <combo key="seamark:buoy_special_purpose:reflectivity" text="Reflectivity"><reference ref="CONRAD"/></combo>
   </item>

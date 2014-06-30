@@ -28,6 +28,23 @@ canvas {
 
 /* Defaults */
 
+/* B */
+node["seamark:type"=distance_mark]::distance {
+	symbol-shape:	circle;
+	symbol-size:	10;
+	symbol-stroke-color: cond(tag("seamark:distance_mark:category") == "not_installed", magenta, black);
+	text:			"seamark:distance_mark:distance";
+	text-color:		cond(tag("seamark:distance_mark:category") == "not_installed", magenta, black);
+}
+
+/* M */
+way["seamark:type"=recommended_track]::recommended_track {
+	color:			black;
+	fill-color:		black;
+	width:			3;
+	opacity:		1.0;
+}
+
 /* Q */
 node["seamark:type"=buoy_lateral]::buoy,
 node["seamark:type"=beacon_lateral]::buoy,
@@ -46,6 +63,17 @@ node["seamark:type"=beacon_special_purpose]::buoy {
 	text:			"seamark:name";
 	text-color:		black;
 }
+
+node["seamark:type"=notice]::notice {
+	set				notice;
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/generic.svg";
+	icon-height:	16;
+}
+node["seamark:notice:system"=bniwr].notice,
+node["seamark:notice:system"=bniwr2].notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/BNIWR/", tag("seamark:notice:bank"), "/", tag("seamark:notice:category"), ".svg"));
+}
+
 
 /*
  * concat(value, value, ...)
