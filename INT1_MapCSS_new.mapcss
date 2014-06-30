@@ -55,7 +55,7 @@ node["seamark:type"=buoy_safe_water]::buoy,
 node["seamark:type"=beacon_safe_water]::buoy,
 node["seamark:type"=buoy_special_purpose]::buoy,
 node["seamark:type"=beacon_special_purpose]::buoy {
-	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/", coalesce(tag(concat("seamark:",tag("seamark:type"),":shape")), "pillar"), "/", cond(tag(concat("seamark:",tag("seamark:type"),":colour_pattern")) == "vertical", "V_", ""), cond(tag(concat("seamark:",tag("seamark:type"),":colour_pattern")) == "horizontal", "H_", ""), coalesce(tag(concat("seamark:",tag("seamark:type"),":colour")), "generic"), ".svg" ));
+	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/", coalesce(tag(concat("seamark:",tag("seamark:type"),":shape")), "pillar"), "/", cond(tag(concat("seamark:",tag("seamark:type"),":colour_pattern")) == "vertical", "V/", ""), cond(tag(concat("seamark:",tag("seamark:type"),":colour_pattern")) == "horizontal", "H/", ""), coalesce(tag(concat("seamark:",tag("seamark:type"),":colour")), "generic"), ".svg" ));
 	icon-width:		16;
 	icon-opacity:	1;
 }
