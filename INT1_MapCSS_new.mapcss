@@ -37,12 +37,45 @@ node["seamark:type"=distance_mark]::distance {
 	text-color:		cond(tag("seamark:distance_mark:category") == "not_installed", magenta, black);
 }
 
+/* D */
+way["seamark:type"=cable_overhead]::cable {
+	width:			2;
+	dashes:			12,5;
+	color:			darkmagenta;
+	fill-color:		darkmagenta;
+	fill-opacity:	0.0;
+}
+node["seamark:type"=pylon]::pylon {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D26.svg";
+	icon-width:		12;
+}
+
+/* F */
+
+node["seamark:type"=mooring]::mooring {
+	symbol-shape:	circle;
+	color:			black;
+	symbol-size:	8;
+	symbol-fill-color: black;
+	text:			"seamark:name";
+	text-color:		black;
+}
+
 /* M */
 way["seamark:type"=recommended_track]::recommended_track {
 	color:			black;
 	fill-color:		black;
 	width:			3;
 	opacity:		1.0;
+}
+node["seamark:type"=calling-in_point]::RDOCAL {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M40.", cond(tag("seamark:calling-in_point:traffic_flow") == "one-way", "1", "2") , ".svg"));
+	icon-height:	24;
+	text:			"seamark:name";
+	text-color:		darkmagenta;
+	font-size:		18;
+	text-anchor-vertical:	above;
+	text-anchor-horizontal:	center;
 }
 
 /* Q */
@@ -69,9 +102,25 @@ node["seamark:type"=notice]::notice {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/generic.svg";
 	icon-height:	16;
 }
-node["seamark:notice:system"=bniwr].notice,
-node["seamark:notice:system"=bniwr2].notice {
+node["seamark:notice:1:category"].notice::notice {
+	set				notice1;
+	icon-offset:	8;
+}
+node["seamark:notice:2:category"].notice::notice {
+	set				notice2;
+	icon-offset:	-8;
+}
+node["seamark:notice:system"=bniwr].notice::notice,
+node["seamark:notice:system"=bniwr2].notice::notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/BNIWR/", tag("seamark:notice:bank"), "/", tag("seamark:notice:category"), ".svg"));
+}
+node["seamark:notice:1:system"=bniwr].notice1::notice,
+node["seamark:notice:1:system"=bniwr2].notice1::notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/BNIWR/", tag("seamark:notice:1:bank"), "/", tag("seamark:notice:1:category"), ".svg"));
+}
+node["seamark:notice:2:system"=bniwr].notice2::notice,
+node["seamark:notice:2:system"=bniwr2].notice2::notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/BNIWR/", tag("seamark:notice:2:bank"), "/", tag("seamark:notice:2:category"), ".svg"));
 }
 
 
