@@ -1555,7 +1555,7 @@
    <label text="CONVYR: Conveyor"/>
    <key key="seamark:type" value="conveyor"/>
    <reference ref="NAME"/>
-   <combo key="seamark:coneyor:category" text="Category"><reference ref="CATCON"/></combo>
+   <combo key="seamark:conveyor:category" text="Category"><reference ref="CATCON"/></combo>
    <combo key="seamark:conveyor:product" text="Product"><reference ref="PRODCT"/></combo>
   </item>
   <item name="CRANES" icon="presets/empty.png" type="node,closedway">
