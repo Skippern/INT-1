@@ -89,8 +89,16 @@ way[waterway]::water {
 	width:			1;
 	color:			black;
 	casing-width:	+1;
-	casing-color:	darkblue;
+	casing-color:	skyblue;
 	casing-opacity:	0.9;
+}
+way[waterway=stream].river::water {
+	width:			+1;
+	casing-width:	+1;
+}
+way[waterway=canal].river::water {
+	width:			+3;
+	casing-width:	+3;
 }
 way[waterway=river].river::water {
 	width:			+5;
@@ -111,10 +119,10 @@ area[waterway=riverbank]::water {
 	opacity:		1.0;
 }
 *[boat?].river {
-	width:			+4;
+	width:			+10;
 	color:			darkblue;
-	casing-width:	+4;
-	casing-color:	aliceblue;
+	casing-width:	+10;
+	casing-color:	skyblue;
 }
 /* D: Cultural Features */
 *[landuse]::landuse, relation[landuse] > way::landuse {
@@ -246,6 +254,11 @@ area[waterway=dam] {
 	color:					gray;
 }
 node[aeroway=aerodrome]::airport {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D17_small.svg";
+	icon-width:		32;
+}
+node[aeroway=aerodrome][iata]::airport,
+node[aeroway=aerodrome][icao]::airport {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D17_small.svg";
 	icon-width:		32;
 }
@@ -388,6 +401,27 @@ node["seamark:type"=obstruction]::obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K40.svg";
 	icon-width:		28;
 }
+node["seamark:type"=rock]::obstruction {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K13_.svg";
+	icon-width:		28;
+}
+node["seamark:type"=rock]["seamark:rock:water_level"=dry]::obstruction {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K10.svg";
+	icon-width:		28;
+}
+node["seamark:type"=rock]["seamark:rock:water_level"=submerged]::obstruction {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K13.svg";
+	icon-width:		28;
+}
+node["seamark:type"=rock]["seamark:rock:water_level"=awash]::obstruction {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K12.svg";
+	icon-width:		28;
+}
+node["seamark:type"=rock]["seamark:rock:water_level"=covers]::obstruction {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K11.svg";
+	icon-width:		28;
+}
+
 node["seamark:type"=marine_farm]::marine_farm {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K48.1_no_red.svg";
 	icon-width:		28;
