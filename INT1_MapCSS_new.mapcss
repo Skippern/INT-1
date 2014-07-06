@@ -118,7 +118,7 @@ area[waterway=riverbank]::water {
 	color:			lightblue;
 	opacity:		1.0;
 }
-*[boat?].river {
+*[boat?].river::water {
 	width:			+10;
 	color:			darkblue;
 	casing-width:	+10;
@@ -131,6 +131,9 @@ area[waterway=riverbank]::water {
 }
 area[landuse=industrial]::landuse, relation[landuse=industrial] > way::landuse {
 	fill-color:				salmon;
+}
+area[landuse=military]::landuse, relation[landuse=militaru] > way::landuse {
+	fill-color:				violet;
 }
 area[landuse=residential]::landuse, relation[landuse=residential] > way::landuse {
 	fill-color:				darkgoldenrod;
@@ -455,6 +458,11 @@ node["seamark:wreck:category"=funnel_showing]::obstruction {
 }
 
 /* L: Offshore Installations */
+way["seamark:type"=caable_submarine]::cable {
+	repeat-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L31.svg";
+	repeat-image-width:		32;
+/*	repeat-image-spacing:	2; */
+}
 way["seamark:type"=pipeline_submarine]::pipeline {
 	repeat-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L40.svg";
 	repeat-image-width:		32;
@@ -488,18 +496,22 @@ way["seamark:type"=ferry_route]::ferry_route {
 /* N: Areas, Limites */
 way[boundary],
 area[boundary],
-relation[boundary] > way {
+relation[boundary] > way::border {
 	set				border;
 }
 *[boundary=administrative][!maritime].border::border,
-*[boundary=administrative][maritime?!].border::border {
+*[boundary=administrative][maritime?!].border::border,
+relation[boundary=administrative] > way[!maritime].border::border,
+relation[boundary=administrative] > way[maritime?!].border::border {
 	repeat-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N40.svg";
-	repeat-image-width:		eval(500 / tag(admin_level));
+	repeat-image-width:		eval(500 / any(tag(admin_level), "2"));
 	repeat-image-spacing:	3;
 	opacity:				0.05;
 }
 *[boundary=maritime][border_type=territorial].border::border,
-*[boundary=administrative][maritime?].border::border {
+*[boundary=administrative][maritime?].border::border,
+relation[boundary=administrative] > way[maritime?].border::border,
+relation[boundary=administrative] > way[border_type=territorial].border::border {
 	repeat-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N41.svg";
 	repeat-image-width:		eval(500 / any(tag(admin_level), "2" ));
 	repeat-image-spacing:	3;
