@@ -182,6 +182,7 @@
 	<link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=river"/>
     <text key="name" text="Name"/>
 	<text key="width" text="Width"/>
+	<check key="boat" text="Accessible with boats"/>
 	<optional>
      <check key="intermittent" text="Intermittent" default="off"/>
 	 <check key="seasonal" text="Seasonal" default="off"/>
