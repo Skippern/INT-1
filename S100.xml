@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<annotations author="Aun 'Skippern' Johnsen" version="0.1" descroption="S100 defintions for OpenSeaMap" shortdescription="S100">
+<annotations author="Aun 'Skippern' Johnsen" version="0.1" description="S100 defintions for OpenSeaMap" shortdescription="S100">
  <!-- Item Chunks -->
  <chunk id="NAME">
 	<text key="seamark:name" text="Name"/>
