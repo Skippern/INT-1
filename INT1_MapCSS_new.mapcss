@@ -366,7 +366,6 @@ node["seamark:landmark:category"=windmotor].landmark::landmark {
 }
 
 /* F: Ports */
-
 node["seamark:type"=mooring]::mooring {
 	symbol-shape:	circle;
 	color:			black;
@@ -564,11 +563,11 @@ node["seamark:type"=notice]::notice {
 }
 node["seamark:notice:1:category"].notice::notice {
 	set				notice1;
-	icon-offset:	8;
+	icon-offset-x:	8;
 }
 node["seamark:notice:2:category"].notice::notice {
 	set				notice2;
-	icon-offset:	-8;
+	icon-offset-x:	-8;
 }
 node["seamark:notice:system"=bniwr]["seamark:notice:category"].notice::notice,
 node["seamark:notice:system"=bniwr2]["seamark:notice:category"].notice::notice {
@@ -593,7 +592,15 @@ node["seamark:notice:2:system"=ppwbc]["seamark:notice:2:category"].notice2::noti
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/", tag("seamark:notice:2:bank"), "/", tag("seamark:notice:2:category"), ".svg"));
 }
 
+node["seamark:notice:system"=cevni]["seamark:notice:category"].notice::notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/CEVNI/", tag("seamark:notice:category"), ".svg"));
+}
+
 /* R: Fog Signals */
+node["seamark:fog_signal:category"]::fog_signal {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/R/R1.svg";
+	icon-height:	12;
+}
 /* S: Electronic Position-Fixing Systems */
 /* T: Services */
 /* U: Small Craft (Leisure) Facilities */
