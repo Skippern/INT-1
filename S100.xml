@@ -130,11 +130,11 @@
 	<list_entry value="a-frame"/>
  </chunk>
  <chunk id="CATCTR">
-    <list_entry value="triangulation"/>
-	<list_entry value="observation"/>
-	<list_entry value="fixed"/>
-	<list_entry value="benchmark"/>
-	<list_entry value="boundary"/>
+    <list_entry value="triangulation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B20.svg" icon_size="16"/>
+	<list_entry value="observation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B21.svg" icon_size="16"/>
+	<list_entry value="fixed" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B22.svg" icon_size="16"/>
+	<list_entry value="benchmark" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B23.svg" icon_size="16"/>
+	<list_entry value="boundary" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/B/B24_ca.svg" icon_size="16"/>
 	<list_entry value="horizontal_main"/>
 	<list_entry value="horizontal_secondary"/>
  </chunk>
@@ -265,10 +265,10 @@
 	<list_entry value="channel_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_green_white_green_white.svg" icon_size="16"/>
 	<list_entry value="waterway_separation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_red_green_red_green.svg" icon_size="16"/>
 	<list_entry value="channel_separation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_red_green_red_green.svg" icon_size="16"/>
-	<list_entry value="channel_right_bank"/>
-	<list_entry value="channel_left_bank"/>
-	<list_entry value="crossover_right"/>
-	<list_entry value="crossover_left"/>
+	<list_entry value="channel_right_bank" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square/H_white_red_white.svg" icon_size="16"/>
+	<list_entry value="channel_left_bank" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/rhombus/H_green_white.svg" icon_size="16"/>
+	<list_entry value="crossover_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/rhombus/V_yellow_black_yellow.svg" icon_size="16"/>
+	<list_entry value="crossover_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/rhombus/V_yelow_black_yellow.svg" icon_size="16"/>
 	<list_entry value="danger_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_red_white_red_white.svg" icon_size="16"/>
 	<list_entry value="danger_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_green_white_green_white.svg" icon_size="16"/>
 	<list_entry value="turnoff_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_white_red.svg" icon_size="16"/>
