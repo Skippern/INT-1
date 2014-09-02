@@ -64,7 +64,7 @@ way["seamark:type"] {
 	width:			thinnest;
 }
 /* B: Positions, Distances, Directions, Compass */
-node["seamark:type"=distance_mark]::distance {
+node["seamark:type"=distance_mark]::int1_distance {
 	symbol-shape:	circle;
 	symbol-size:	10;
 	symbol-stroke-color: cond(tag("seamark:distance_mark:category") == "not_installed", darkmagenta, black );
@@ -73,18 +73,18 @@ node["seamark:type"=distance_mark]::distance {
 }
 
 /* C: Natural Features */
-*[natural]::natural,
-relation[natural] > way::natural {
+*[natural]::int1_natural,
+relation[natural] > way::int1_natural {
 	set				natural;
 	width:			default;
 	color:			gray;
 }
-*[waterway]::water,
-relation[waterway] > way::water {
+*[waterway]::int1_water,
+relation[waterway] > way::int1_water {
 	width:			1;
 	color:			aliceblue;
 }
-way[waterway]::water {
+way[waterway]::int1_water {
 	set				river;
 	width:			1;
 	color:			black;
@@ -92,58 +92,58 @@ way[waterway]::water {
 	casing-color:	skyblue;
 	casing-opacity:	0.9;
 }
-way[waterway=stream].river::water {
+way[waterway=stream].river::int1_water {
 	width:			+1;
 	casing-width:	+1;
 }
-way[waterway=canal].river::water {
+way[waterway=canal].river::int1_water {
 	width:			+3;
 	casing-width:	+3;
 }
-way[waterway=river].river::water {
+way[waterway=river].river::int1_water {
 	width:			+5;
 	casing-width:	+5;
 }
-area[natural=water]::water,
-area[water]::water,
-area[landuse=reservoir]::water,
-relation[landuse=reservoir] > way::water,
-relation[natural=water] > way::water,
-relation[waterway=riverbank] > way::water,
-relation[water] > way::water,
-area[waterway=riverbank]::water {
+area[natural=water]::int1_water,
+area[water]::int1_water,
+area[landuse=reservoir]::int1_water,
+relation[landuse=reservoir] > way::int1_water,
+relation[natural=water] > way::int1_water,
+relation[waterway=riverbank] > way::int1_water,
+relation[water] > way::int1_water,
+area[waterway=riverbank]::int1_water {
 	fill-color:		aliceblue;
 	fill-opacity:	0.25;
 	width:			3;
 	color:			lightblue;
 	opacity:		1.0;
 }
-*[boat?].river::water {
+*[boat?].river::int1_water {
 	width:			+10;
 	color:			darkblue;
 	casing-width:	+10;
 	casing-color:	skyblue;
 }
 /* D: Cultural Features */
-*[landuse]::landuse, relation[landuse] > way::landuse {
+*[landuse]::int1_landuse, relation[landuse] > way::int1_landuse {
 	width:			2;
 	color:			gray;
 }
-area[landuse=industrial]::landuse, relation[landuse=industrial] > way::landuse {
+area[landuse=industrial]::int1_landuse, relation[landuse=industrial] > way::int1_landuse {
 	fill-color:				salmon;
 }
-area[landuse=military]::landuse, relation[landuse=militaru] > way::landuse {
+area[landuse=military]::int1_landuse, relation[landuse=militaru] > way::int1_landuse {
 	fill-color:				violet;
 }
-area[landuse=residential]::landuse, relation[landuse=residential] > way::landuse {
+area[landuse=residential]::int1_landuse, relation[landuse=residential] > way::int1_landuse {
 	fill-color:				darkgoldenrod;
 	color:					darkgoldenrod;
 }
-area[building]::landuse, relation[building] > way::landuse {
+area[building]::int1_landuse, relation[building] > way::int1_landuse {
 	fill-color:				darkgoldenrod;
 	color:					darkgoldenrod;
 }
-node["seamark:type"=building]::landuse {
+node["seamark:type"=building]::int1_landuse {
 	symbol-shape:			square;
 	symbol-size:			10;
 	color:					black;
@@ -151,7 +151,7 @@ node["seamark:type"=building]::landuse {
 	opacity:				1.0;
 	fill-opacity:			1.0;
 }
-area["seamark:type"=building]::landuse, relation["seamark:type"=building] > way::landuse {
+area["seamark:type"=building]::int1_landuse, relation["seamark:type"=building] > way::int1_landuse {
 	color:					black;
 	fill-color:				black;
 	width:					4;
@@ -164,29 +164,29 @@ node[place] {
 	font-size:				10;
 }
 
-way[power]::cable, relation[power] > way::cable {
+way[power]::int1_cable, relation[power] > way::int1_cable {
 	width:			2;
 	dashes:			12,5;
 	color:			black;
 	opacity:		0.8;
 }
-way["seamark:type"=cable_overhead]::cable {
+way["seamark:type"=cable_overhead]::int1_cable {
 	width:			2;
 	dashes:			12,5;
 	color:			darkmagenta;
 	fill-color:		darkmagenta;
 	fill-opacity:	0.0;
 }
-node["seamark:type"=pylon]::pylon {
+node["seamark:type"=pylon]::int1_pylon {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D26.svg";
 	icon-width:		12;
 }
-node["seamark:bridge:clearance_height"]::sailing_height,
-node["seamark:bridge:clearance_height_closed"]::sailing_height,
-node["seamark:bridge:clearance_height_open"]::sailing_height,
-node["seamark:cable_overhead:clearance_height"]::sailing_height,
-node["seamark:cable_overhead:clearance_height_safe"]::sailing_height,
-node["seamark:pipeline_overhead:clearance_height"]::sailing_height {
+node["seamark:bridge:clearance_height"]::int1_sailing_height,
+node["seamark:bridge:clearance_height_closed"]::int1_sailing_height,
+node["seamark:bridge:clearance_height_open"]::int1_sailing_height,
+node["seamark:cable_overhead:clearance_height"]::int1_sailing_height,
+node["seamark:cable_overhead:clearance_height_safe"]::int1_sailing_height,
+node["seamark:pipeline_overhead:clearance_height"]::int1_sailing_height {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D20.svg";
 	icon-width:		24;
 	text-color:		cond(tag("seamark:cable_overhead:clearance_height_safe") > 0, darkmagenta, black );
@@ -194,7 +194,7 @@ node["seamark:pipeline_overhead:clearance_height"]::sailing_height {
 	text-anchor-horizontal:	center;
 	text-anchor-vertical:	center;
 }
-way[railway]::railway {
+way[railway]::int1_railway {
 	set				railway;
 	color:			white;
 	width:			4;
@@ -203,7 +203,7 @@ way[railway]::railway {
 	casing-width:	+2;
 	casing-color:	black;
 }
-way[highway]::highway {
+way[highway]::int1_highway {
 	set				highway;
 	color:			navajowhite;
 	width:			1;
@@ -211,38 +211,39 @@ way[highway]::highway {
 	casing-color:	black;
 	text-position:	line;
 	text-color:		black;
+    minor-z-index:  -100;
 }
-way[highway=road].highway::highway {
+way[highway=road].highway::int1_highway {
 	casing-color:	red;
 }
-way[highway=tertiary_link].highway::highway {
+way[highway=tertiary_link].highway::int1_highway {
 	width:			2;
 }
-way[highway=tertiary].highway::highway {
+way[highway=tertiary].highway::int1_highway {
 	width:			3;
 }
-way[highway=secondary_link].highway::highway {
+way[highway=secondary_link].highway::int1_highway {
 	width:			4;
 }
-way[highway=secondary].highway::highway {
+way[highway=secondary].highway::int1_highway {
 	width:			5;
 }
-way[highway=primary_link].highway::highway {
+way[highway=primary_link].highway::int1_highway {
 	width:			6;
 }
-way[highway=primary].highway::highway {
+way[highway=primary].highway::int1_highway {
 	width:			7;
 }
-way[highway=trunk_link].highway::highway {
+way[highway=trunk_link].highway::int1_highway {
 	width:			8;
 }
-way[highway=trunk].highway::highway {
+way[highway=trunk].highway::int1_highway {
 	width:			9;
 }
-way[highway=motorway_link].highway::highway {
+way[highway=motorway_link].highway::int1_highway {
 	width:			10;
 }
-way[highway=motorway].highway::highway {
+way[highway=motorway].highway::int1_highway {
 	width:			11;
 }
 area[waterway=dam] {
@@ -252,27 +253,27 @@ area[waterway=dam] {
 	color:			black;
 	casing-opacity:	0.0;
 }
-*[aeroway]::airport {
+*[aeroway]::int1_airport {
 	width:					1;
 	color:					gray;
 }
-node[aeroway=aerodrome]::airport {
+node[aeroway=aerodrome]::int1_airport {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D17_small.svg";
 	icon-width:		32;
 }
-node[aeroway=aerodrome][iata]::airport,
-node[aeroway=aerodrome][icao]::airport {
+node[aeroway=aerodrome][iata]::int1_airport,
+node[aeroway=aerodrome][icao]::int1_airport {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D17_small.svg";
 	icon-width:		32;
 }
-area[aeroway=aerodrome]::airport {
+area[aeroway=aerodrome]::int1_airport {
 	width:					1;
 	dashes:					12,12;
 	opacity:				1.0;
 	color:					black;
 	fill-opacity:			0.0;
 }
-way[bridge]::bridge {
+way[bridge]::int1_bridge {
 	width:					+8;
 	opacity:				0.1;
 	casing-width:			+2;
@@ -281,7 +282,7 @@ way[bridge]::bridge {
 }
 
 /* E: Landmarks */
-node["seamark:type"=landmark]::landmark {
+node["seamark:type"=landmark]::int1_landmark {
 	text:			auto;
 	text-color:		black;
 	symbol-shape:	square;
@@ -290,83 +291,83 @@ node["seamark:type"=landmark]::landmark {
 	color:			black;
 	set				landmark;
 }
-node["seamark:landmark:function"=church].landmark::landmark {
+node["seamark:landmark:function"=church].landmark::int1_landmark {
 	set				church;
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.1.svg";
 	icon-width:		32;
 }
-node["seamark:landmark:function"=chapel].landmark::landmark {
+node["seamark:landmark:function"=chapel].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E11.svg";
 }
-node["seamark:landmark:category"=tower].church::landmark {
+node["seamark:landmark:category"=tower].church::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.2.svg";
 }
-node["seamark:landmark:category"=spire].church::landmark {
+node["seamark:landmark:category"=spire].church::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.3.svg";
 }
-node["seamark:landmark:category"=dome].church::landmark {
+node["seamark:landmark:category"=dome].church::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E10.4.svg";
 }
-node["seamark:landmark:function"=temple].landmark::landmark {
+node["seamark:landmark:function"=temple].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E13.svg";
 }
-node["seamark:landmark:function"=pagoda].landmark::landmark {
+node["seamark:landmark:function"=pagoda].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E14.svg";
 }
-node["seamark:landmark:function"=shinto_shrine].landmark::landmark {
+node["seamark:landmark:function"=shinto_shrine].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E15.svg";
 }
-node["seamark:landmark:function"=buddhist_temple].landmark::landmark {
+node["seamark:landmark:function"=buddhist_temple].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E16.svg";
 }
-node["seamark:landmark:function"=mosque].landmark::landmark {
+node["seamark:landmark:function"=mosque].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E17.svg";
 }
-node["seamark:landmark:category"=minaret].landmark::landmark {
+node["seamark:landmark:category"=minaret].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E17.svg";
 }
-node["seamark:landmark:function"=marabout].landmark::landmark {
+node["seamark:landmark:function"=marabout].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E18.svg";
 }
-node["seamark:landmark:category"=tower][!"seamark:landmark:function"].landmark::landmark {
+node["seamark:landmark:category"=tower][!"seamark:landmark:function"].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E20.svg";
 }
-node["seamark:landmark:category"=tower]["seamark:landmark:function"=communication].landmark::landmark,
-node["seamark:landmark:category"=tower]["seamark:landmark:function"=radio].landmark::landmark,
-node["seamark:landmark:category"=tower]["seamark:landmark:function"=radar].landmark::landmark,
-node["seamark:landmark:category"=tower]["seamark:landmark:function"=microwave].landmark::landmark,
-node["seamark:landmark:category"=tower]["seamark:landmark:function"=television].landmark::landmark {
+node["seamark:landmark:category"=tower]["seamark:landmark:function"=communication].landmark::int1_landmark,
+node["seamark:landmark:category"=tower]["seamark:landmark:function"=radio].landmark::int1_landmark,
+node["seamark:landmark:category"=tower]["seamark:landmark:function"=radar].landmark::int1_landmark,
+node["seamark:landmark:category"=tower]["seamark:landmark:function"=microwave].landmark::int1_landmark,
+node["seamark:landmark:category"=tower]["seamark:landmark:function"=television].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E30.svg";
 }
-node["seamark:landmark:category"=mast][!"seamark:landmark:function"].landmark::landmark {
+node["seamark:landmark:category"=mast][!"seamark:landmark:function"].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E28.svg";
 }
-node["seamark:landmark:category"=mast]["seamark:landmark:function"=communication].landmark::landmark,
-node["seamark:landmark:category"=mast]["seamark:landmark:function"=radio].landmark::landmark,
-node["seamark:landmark:category"=mast]["seamark:landmark:function"=radar].landmark::landmark,
-node["seamark:landmark:category"=mast]["seamark:landmark:function"=microwave].landmark::landmark,
-node["seamark:landmark:category"=mast]["seamark:landmark:function"=television].landmark::landmark {
+node["seamark:landmark:category"=mast]["seamark:landmark:function"=communication].landmark::int1_landmark,
+node["seamark:landmark:category"=mast]["seamark:landmark:function"=radio].landmark::int1_landmark,
+node["seamark:landmark:category"=mast]["seamark:landmark:function"=radar].landmark::int1_landmark,
+node["seamark:landmark:category"=mast]["seamark:landmark:function"=microwave].landmark::int1_landmark,
+node["seamark:landmark:category"=mast]["seamark:landmark:function"=television].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E28_.svg";
 }
 
-node["seamark:landmark:category"=water_tower].landmark::landmark {
+node["seamark:landmark:category"=water_tower].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E21.svg";
 }
-node["seamark:landmark:category"=chimney].landmark::landmark {
+node["seamark:landmark:category"=chimney].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E22.svg";
 }
-node["seamark:landmark:category"=flare_stack].landmark::landmark {
+node["seamark:landmark:category"=flare_stack].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E23.svg";
 }
-node["seamark:landmark:category"=windmill].landmark::landmark {
+node["seamark:landmark:category"=windmill].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E25.svg";
 }
-node["seamark:landmark:category"=windmotor].landmark::landmark {
+node["seamark:landmark:category"=windmotor].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E26.1.svg";
 }
 
 /* F: Ports */
-node["seamark:type"=mooring]::mooring {
+node["seamark:type"=mooring]::int1_mooring {
 	symbol-shape:	circle;
 	color:			black;
 	symbol-size:	8;
@@ -374,17 +375,17 @@ node["seamark:type"=mooring]::mooring {
 	text:			"seamark:name";
 	text-color:		black;
 }
-node["seamark:type"=harbour]::harbour {
+node["seamark:type"=harbour]::int1_harbour {
 	set				harbour;
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F.svg";
 	icon-width:		32;
 	text:			"seamark:name";
 	text-color:		black;
 }
-node["seamark:harbour:category"=fishing].harbour::harbour {
+node["seamark:harbour:category"=fishing].harbour::int1_harbour {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F10.svg";
 }
-way[man_made=pier]::pier {
+way[man_made=pier]::int1_pier {
 	width:			10;
 	color:			black;
 	casing-width:	2;
@@ -399,83 +400,83 @@ way[man_made=pier]::pier {
 /* I: Depths */
 /* J: Nature of seabed */
 /* K: Rocks, Wrecks, Obstructions */
-node["seamark:type"=obstruction]::obstruction {
+node["seamark:type"=obstruction]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K40.svg";
 	icon-width:		28;
 }
-node["seamark:type"=rock]::obstruction {
+node["seamark:type"=rock]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K13_.svg";
 	icon-width:		28;
 }
-node["seamark:type"=rock]["seamark:rock:water_level"=dry]::obstruction {
+node["seamark:type"=rock]["seamark:rock:water_level"=dry]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K10.svg";
 	icon-width:		28;
 }
-node["seamark:type"=rock]["seamark:rock:water_level"=submerged]::obstruction {
+node["seamark:type"=rock]["seamark:rock:water_level"=submerged]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K13.svg";
 	icon-width:		28;
 }
-node["seamark:type"=rock]["seamark:rock:water_level"=awash]::obstruction {
+node["seamark:type"=rock]["seamark:rock:water_level"=awash]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K12.svg";
 	icon-width:		28;
 }
-node["seamark:type"=rock]["seamark:rock:water_level"=covers]::obstruction {
+node["seamark:type"=rock]["seamark:rock:water_level"=covers]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K11.svg";
 	icon-width:		28;
 }
 
-node["seamark:type"=marine_farm]::marine_farm {
+node["seamark:type"=marine_farm]::int1_marine_farm {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K48.1_no_red.svg";
 	icon-width:		28;
 }
-node["seamark:type"=wreck]::obstruction {
+node["seamark:type"=wreck]::int1_obstruction {
 	set				wreck;
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K29.svg";
 	icon-width:		28;
 	text-color:		black;
 	font-size:		12;
 }
-node["seamark:wreck:category"=non-dangerous]::obstruction {
+node["seamark:wreck:category"=non-dangerous]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K29.svg";
 }
-node["seamark:wreck:category"=dangerous]::obstruction {
+node["seamark:wreck:category"=dangerous]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K28.svg";
 }
-node["seamark:wreck:category"=distributed_remains]::obstruction {
+node["seamark:wreck:category"=distributed_remains]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K29.svg";
 }
-node["seamark:wreck:category"=mast_showing]::obstruction {
+node["seamark:wreck:category"=mast_showing]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K28.svg";
 	text:			eval("masts");
 }
-node["seamark:wreck:category"=hull_showing]::obstruction {
+node["seamark:wreck:category"=hull_showing]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K24.svg";
 }
-node["seamark:wreck:category"=funnel_showing]::obstruction {
+node["seamark:wreck:category"=funnel_showing]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K28.svg";
 	text:			eval("funnel");
 }
 
 /* L: Offshore Installations */
-way["seamark:type"=caable_submarine]::cable {
+way["seamark:type"=caable_submarine]::int1_cable {
 	repeat-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L31.svg";
 	repeat-image-width:		32;
 /*	repeat-image-spacing:	2; */
 }
-way["seamark:type"=pipeline_submarine]::pipeline {
+way["seamark:type"=pipeline_submarine]::int1_pipeline {
 	repeat-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L40.svg";
 	repeat-image-width:		32;
 	repeat-image-spacing:	2;
 }
 
 /* M: Tracks, Routes */
-way["seamark:type"=recommended_track]::recommended_track {
+way["seamark:type"=recommended_track]::int1_recommended_track {
 	color:			black;
 	fill-color:		black;
 	width:			3;
 	opacity:		1.0;
 }
-node["seamark:type"=calling-in_point]::RDOCAL {
+node["seamark:type"=calling-in_point]::int1_RDOCAL {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M40.", cond(tag("seamark:calling-in_point:traffic_flow") == "one-way", "1", "2") , ".svg"));
 	icon-height:	24;
 	text:			"seamark:name";
@@ -484,7 +485,7 @@ node["seamark:type"=calling-in_point]::RDOCAL {
 	text-anchor-vertical:	above;
 	text-anchor-horizontal:	center;
 }
-way["seamark:type"=ferry_route]::ferry_route {
+way["seamark:type"=ferry_route]::int1_ferry_route {
 	color:			darkmagenta;
 	fill-color:		darkmagenta;
 	width:			2;
@@ -495,22 +496,22 @@ way["seamark:type"=ferry_route]::ferry_route {
 /* N: Areas, Limites */
 way[boundary],
 area[boundary],
-relation[boundary] > way::border {
+relation[boundary] > way::int1_border {
 	set				border;
 }
-*[boundary=administrative][!maritime].border::border,
-*[boundary=administrative][maritime?!].border::border,
-relation[boundary=administrative] > way[!maritime].border::border,
-relation[boundary=administrative] > way[maritime?!].border::border {
+*[boundary=administrative][!maritime].border::int1_border,
+*[boundary=administrative][maritime?!].border::int1_border,
+relation[boundary=administrative] > way[!maritime].border::int1_border,
+relation[boundary=administrative] > way[maritime?!].border::int1_border {
 	repeat-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N40.svg";
 	repeat-image-width:		eval(500 / any(tag(admin_level), "2"));
 	repeat-image-spacing:	3;
 	opacity:				0.05;
 }
-*[boundary=maritime][border_type=territorial].border::border,
-*[boundary=administrative][maritime?].border::border,
-relation[boundary=administrative] > way[maritime?].border::border,
-relation[boundary=administrative] > way[border_type=territorial].border::border {
+*[boundary=maritime][border_type=territorial].border::int1_border,
+*[boundary=administrative][maritime?].border::int1_border,
+relation[boundary=administrative] > way[maritime?].border::int1_border,
+relation[boundary=administrative] > way[border_type=territorial].border::int1_border {
 	repeat-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N41.svg";
 	repeat-image-width:		eval(500 / any(tag(admin_level), "2" ));
 	repeat-image-spacing:	3;
@@ -518,36 +519,36 @@ relation[boundary=administrative] > way[border_type=territorial].border::border 
 }
 /* O: Hydrographic Terms */
 /* P: Lights */
-node[man_made=lighthouse]::lighthouse {
+node[man_made=lighthouse]::int1_lighthouse {
 	icon-image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/P/P1.major.disused.svg";
 }
-node["seamark:type"=light_major]::lighthouse {
+node["seamark:type"=light_major]::int1_lighthouse {
 	icon-image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/P/P1.major.svg";
 }
-node["seamark:type"=light_minor]::lighthouse {
+node["seamark:type"=light_minor]::int1_lighthouse {
 	icon-image:				"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/P/P1.minor.svg";
 }
 
-node["seamark:light:colour"]::light {
+node["seamark:light:colour"]::int1_light {
 	icon-image:				eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/P/P10.1_",tag("seamark:light:colour"),".svg"));
 }
 
 /* Q: Buoys, Beacons */
-node["seamark:type"=daymark]::daymark {
+node["seamark:type"=daymark]::int1_daymark {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/", tag("seamark:daymark:shape"), "/", coalesce(tag("seamark:daymark:colour"), "generic"), ".svg"));
 	icon-width:		16;
 }
 
-node["seamark:type"=buoy_lateral]::buoy,
-node["seamark:type"=beacon_lateral]::buoy,
-node["seamark:type"=buoy_cardinal]::buoy,
-node["seamark:type"=beacon_cardinal]::buoy,
-node["seamark:type"=buoy_isolated_danger]::buoy,
-node["seamark:type"=beacon_isolated_danger]::buoy,
-node["seamark:type"=buoy_safe_water]::buoy,
-node["seamark:type"=beacon_safe_water]::buoy,
-node["seamark:type"=buoy_special_purpose]::buoy,
-node["seamark:type"=beacon_special_purpose]::buoy {
+node["seamark:type"=buoy_lateral]::int1_buoy,
+node["seamark:type"=beacon_lateral]::int1_buoy,
+node["seamark:type"=buoy_cardinal]::int1_buoy,
+node["seamark:type"=beacon_cardinal]::int1_buoy,
+node["seamark:type"=buoy_isolated_danger]::int1_buoy,
+node["seamark:type"=beacon_isolated_danger]::int1_buoy,
+node["seamark:type"=buoy_safe_water]::int1_buoy,
+node["seamark:type"=beacon_safe_water]::int1_buoy,
+node["seamark:type"=buoy_special_purpose]::int1_buoy,
+node["seamark:type"=beacon_special_purpose]::int1_buoy {
 /*	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/", coalesce(tag(concat("seamark:",tag("seamark:type"),":shape")), "buoyant"), "/", cond(tag(concat("seamark:",tag("seamark:type"),":colour_pattern")) == "vertical", "V/", ""), cond(tag(concat("seamark:",tag("seamark:type"),":colour_pattern")) == "horizontal", "H/", ""), replace(";","_",coalesce(tag(concat("seamark:",tag("seamark:type"),":colour")), "generic")), ".svg" )); */
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/", coalesce(tag(concat("seamark:",tag("seamark:type"),":shape")), "buoyant"), "/", cond(has_tag_key(concat("seamark:",tag("seamark:type"),":colour_pattern")),concat(tag(concat("seamark:",tag("seamark:type"),":colour_pattern")),"/"), ""), replace(";","_",coalesce(tag(concat("seamark:",tag("seamark:type"),":colour")), "generic")), ".svg" ));
 	icon-height:	16;
@@ -557,77 +558,77 @@ node["seamark:type"=beacon_special_purpose]::buoy {
 	text-color:		black;
 }
 
-node["seamark:type"=notice]::notice {
+node["seamark:type"=notice]::int1_notice {
 	set				notice;
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/generic.svg";
 	icon-height:	16;
 }
-node["seamark:notice:1:category"].notice::notice {
+node["seamark:notice:1:category"].notice::int1_notice {
 	set				notice1;
 	icon-offset-x:	8;
 }
-node["seamark:notice:2:category"].notice::notice {
+node["seamark:notice:2:category"].notice::int1_notice {
 	set				notice2;
 	icon-offset-x:	-8;
 }
-node["seamark:notice:system"=bniwr]["seamark:notice:category"].notice::notice,
-node["seamark:notice:system"=bniwr2]["seamark:notice:category"].notice::notice {
+node["seamark:notice:system"=bniwr]["seamark:notice:category"].notice::int1_notice,
+node["seamark:notice:system"=bniwr2]["seamark:notice:category"].notice::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/BNIWR/", tag("seamark:notice:bank"), "/", tag("seamark:notice:category"), ".svg"));
 }
-node["seamark:notice:1:system"=bniwr]["seamark:notice:1:category"].notice1::notice,
-node["seamark:notice:1:system"=bniwr2]["seamark:notice:1:category"].notice1::notice {
+node["seamark:notice:1:system"=bniwr]["seamark:notice:1:category"].notice1::int1_notice,
+node["seamark:notice:1:system"=bniwr2]["seamark:notice:1:category"].notice1::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/BNIWR/", tag("seamark:notice:1:bank"), "/", tag("seamark:notice:1:category"), ".svg"));
 }
-node["seamark:notice:2:system"=bniwr]["seamark:notice:2:category"].notice2::notice,
-node["seamark:notice:2:system"=bniwr2]["seamark:notice:2:category"].notice2::notice {
+node["seamark:notice:2:system"=bniwr]["seamark:notice:2:category"].notice2::int1_notice,
+node["seamark:notice:2:system"=bniwr2]["seamark:notice:2:category"].notice2::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/BNIWR/", tag("seamark:notice:2:bank"), "/", tag("seamark:notice:2:category"), ".svg"));
 }
 
-node["seamark:notice:system"=ppwbc]["seamark:notice:category"].notice::notice {
+node["seamark:notice:system"=ppwbc]["seamark:notice:category"].notice::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/", tag("seamark:notice:bank"), "/", tag("seamark:notice:category"), ".svg"));
 }
-node["seamark:notice:1:system"=ppwbc]["seamark:notice:1:category"].notice1::notice {
+node["seamark:notice:1:system"=ppwbc]["seamark:notice:1:category"].notice1::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/", tag("seamark:notice:1:bank"), "/", tag("seamark:notice:1:category"), ".svg"));
 }
-node["seamark:notice:2:system"=ppwbc]["seamark:notice:2:category"].notice2::notice {
+node["seamark:notice:2:system"=ppwbc]["seamark:notice:2:category"].notice2::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/PPWBC/", tag("seamark:notice:2:bank"), "/", tag("seamark:notice:2:category"), ".svg"));
 }
 
-node["seamark:notice:system"=cevni]["seamark:notice:category"].notice::notice {
+node["seamark:notice:system"=cevni]["seamark:notice:category"].notice::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/CEVNI/", tag("seamark:notice:category"), ".svg"));
 }
 
 /* R: Fog Signals */
-node["seamark:fog_signal:category"]::fog_signal {
+node["seamark:fog_signal:category"]::int1_fog_signal {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/R/R1.svg";
 	icon-height:	12;
 }
 /* S: Electronic Position-Fixing Systems */
 /* T: Services */
 /* U: Small Craft (Leisure) Facilities */
-node["seamark:harbour:category"=marina].harbour::harbour {
+node["seamark:harbour:category"=marina].harbour::int1_harbour {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U1.1.svg";
 }
-node["seamark:harbour:category"=marina_no_facilities].harbour::harbour {
+node["seamark:harbour:category"=marina_no_facilities].harbour::int1_harbour {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U1.2.svg";
 }
 
-node["seamark:type"=small_craft_facility]::small_craft {
+node["seamark:type"=small_craft_facility]::int1_small_craft {
 	set				small_craft;
 	text:			"seamark:name";
 	text-color:		black;
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U32.svg";
 	icon-height:	8;
 }
-node["seamark:small_craft_facility:category"=nautical_club].small_craft::small_craft {
+node["seamark:small_craft_facility:category"=nautical_club].small_craft::int1_small_craft {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U4_br.svg";
 	icon-height:	16;
 }
-node["seamark:small_craft_facility:category"=restaurant].small_craft::small_craft {
+node["seamark:small_craft_facility:category"=restaurant].small_craft::int1_small_craft {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U11.svg";
 	icon-height:	16;
 }
-node["seamark:small_craft_facility:category"=slipway].small_craft::small_craft {
+node["seamark:small_craft_facility:category"=slipway].small_craft::int1_small_craft {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/U/U5.svg";
 	icon-width:		32;
 }
