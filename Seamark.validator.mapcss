@@ -90,9 +90,9 @@ node["seamark:type"=buoy_lateral]["seamark:buoy_lateral:system"=cevni]["seamark:
 node["seamark:type"=buoy_lateral]["seamark:buoy_lateral:system"=cevni]["seamark:buoy_lateral:colour"="green;white;green"]["seamark:buoy_lateral:category"!=junction_left],
 node["seamark:type"=buoy_lateral]["seamark:buoy_lateral:system"=cevni]["seamark:buoy_lateral:colour"="red;white"]["seamark:buoy_lateral:category"!=harbour_right],
 node["seamark:type"=buoy_lateral]["seamark:buoy_lateral:system"=cevni]["seamark:buoy_lateral:colour"="green;white"]["seamark:buoy_lateral:category"!=harbour_left],
-node["seamark:type"=buoy_lateral]["seamark:buoy_lateral:system"=cevni]["seamark:buoy_lateral:colour"=yellow]["seamark:topmark:colour"=red]["seamark:buoy_lateral:category"!=harbour_right],
-node["seamark:type"=buoy_lateral]["seamark:buoy_lateral:system"=cevni]["seamark:buoy_lateral:colour"=yellow]["seamark:topmark:colour"=green]["seamark:buoy_lateral:category"!=harbour_left],
-node["seamark:type"=buoy_lateral]["seamark:buoy_lateral:system"=cevni]["seamark:buoy_lateral:colour"=yellow][!"seamark:topmark:colour"]["seamark:buoy_lateral:category"!=bridge_pier],
+node["seamark:type"=buoy_lateral]["seamark:buoy_lateral:system"=cevni]["seamark:buoy_lateral:colour"=yellow]["seamark:buoy_lateral:category"!=harbour_right]["seamark:topmark:colour"=red],
+node["seamark:type"=buoy_lateral]["seamark:buoy_lateral:system"=cevni]["seamark:buoy_lateral:colour"=yellow]["seamark:buoy_lateral:category"!=harbour_left]["seamark:topmark:colour"=green],
+node["seamark:type"=buoy_lateral]["seamark:buoy_lateral:system"=cevni]["seamark:buoy_lateral:colour"=yellow]["seamark:buoy_lateral:category"!=bridge_pier][!"seamark:topmark:colour"],
 /* CEVNI beacons */
 node["seamark:type"=beacon_lateral]["seamark:beacon_lateral:system"=cevni]["seamark:beacon_lateral:colour"=green]["seamark:beacon_lateral:category"!~/starboard|waterway_left|channel_left/],
 node["seamark:type"=beacon_lateral]["seamark:beacon_lateral:system"=cevni]["seamark:beacon_lateral:colour"=red]["seamark:beacon_lateral:category"!~/port|waterway_right|channel_right/],
@@ -107,9 +107,9 @@ node["seamark:type"=beacon_lateral]["seamark:beacon_lateral:system"=cevni]["seam
 node["seamark:type"=beacon_lateral]["seamark:beacon_lateral:system"=cevni]["seamark:beacon_lateral:colour"="green;white;green"]["seamark:beacon_lateral:category"!=junction_left],
 node["seamark:type"=beacon_lateral]["seamark:beacon_lateral:system"=cevni]["seamark:beacon_lateral:colour"="red;white"]["seamark:beacon_lateral:category"!=harbour_right],
 node["seamark:type"=beacon_lateral]["seamark:beacon_lateral:system"=cevni]["seamark:beacon_lateral:colour"="green;white"]["seamark:beacon_lateral:category"!=harbour_left],
-node["seamark:type"=beacon_lateral]["seamark:beacon_lateral:system"=cevni]["seamark:beacon_lateral:colour"=yellow]["seamark:topmark:colour"=red]["seamark:beacon_lateral:category"!=harbour_right],
-node["seamark:type"=beacon_lateral]["seamark:beacon_lateral:system"=cevni]["seamark:beacon_lateral:colour"=yellow]["seamark:topmark:colour"=green]["seamark:beacon_lateral:category"!=harbour_left],
-node["seamark:type"=beacon_lateral]["seamark:beacon_lateral:system"=cevni]["seamark:beacon_lateral:colour"=yellow][!"seamark:topmark:colour"]["seamark:beacon_lateral:category"!=bridge_pier] {
+node["seamark:type"=beacon_lateral]["seamark:beacon_lateral:system"=cevni]["seamark:beacon_lateral:colour"=yellow]["seamark:beacon_lateral:category"!=harbour_right]["seamark:topmark:colour"=red],
+node["seamark:type"=beacon_lateral]["seamark:beacon_lateral:system"=cevni]["seamark:beacon_lateral:colour"=yellow]["seamark:beacon_lateral:category"!=harbour_left]["seamark:topmark:colour"=green],
+node["seamark:type"=beacon_lateral]["seamark:beacon_lateral:system"=cevni]["seamark:beacon_lateral:colour"=yellow]["seamark:beacon_lateral:category"!=bridge_pier][!"seamark:topmark:colour"] {
     throwWarning:   tr("Probably wrong category on {0}, {1} colour mean {2} in {3}", "{0.value}", "{2.value}", "{3.value}", "{1.value}");
 }
 
