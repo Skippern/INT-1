@@ -30,7 +30,7 @@
 	<list_entry value="conical" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q20/generic.svg" icon_size="16"/>
 	<list_entry value="can" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q21/generic.svg" icon_size="16"/>
 	<list_entry value="spherical" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q22/generic.svg" icon_size="16"/>
-	<list_entry value="pillar" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/generic.svg" icon_size="16"/>
+	<list_entry value="pillar" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/generic.svg" icon_size="16"/>
 	<list_entry value="spar" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q24/generic.svg" icon_size="16"/>
 	<list_entry value="barrel" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q25/generic.svg" icon_size="16"/>
 	<list_entry value="super-buoy" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q26/generic.svg" icon_size="16"/>
@@ -88,10 +88,10 @@
 	<list_entry value="ballast"/>
  </chunk>
  <chunk id="CATCAM">
-	<list_entry value="north" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_black_yellow.svg" icon_size="16"/>
-	<list_entry value="east" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_black_yellow_black.svg" icon_size="16"/>
-	<list_entry value="south" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_yellow_black.svg" icon_size="16"/>
-	<list_entry value="west" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_yellow_black_yellow.svg" icon_size="16"/>
+	<list_entry value="north" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/black_yellow.svg" icon_size="16"/>
+	<list_entry value="east" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/black_yellow_black.svg" icon_size="16"/>
+	<list_entry value="south" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/yellow_black.svg" icon_size="16"/>
+	<list_entry value="west" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/yellow_black_yellow.svg" icon_size="16"/>
  </chunk>
  <chunk id="CATCBL">
 	<list_entry value="power"/>
@@ -255,29 +255,29 @@
 	<list_entry value="sbm"/>
  </chunk>
  <chunk id="CATLAM">
-	<list_entry value="port" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/red.svg" icon_size="16"/>
-	<list_entry value="starboard" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/green.svg" icon_size="16"/>
-	<list_entry value="preferred_channel_starboard" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_red_green_red.svg" icon_size="16"/>
-	<list_entry value="preferred_channel_port" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_green_red_green.svg" icon_size="16"/>
-	<list_entry value="waterway_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/red.svg" icon_size="16"/>
-	<list_entry value="waterway_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/green.svg" icon_size="16"/>
-	<list_entry value="channel_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_red_white_red_white.svg" icon_size="16"/>
-	<list_entry value="channel_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_green_white_green_white.svg" icon_size="16"/>
-	<list_entry value="waterway_separation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_red_green_red_green.svg" icon_size="16"/>
-	<list_entry value="channel_separation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_red_green_red_green.svg" icon_size="16"/>
-	<list_entry value="channel_right_bank" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square/H_white_red_white.svg" icon_size="16"/>
-	<list_entry value="channel_left_bank" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/rhombus/H_green_white.svg" icon_size="16"/>
-	<list_entry value="crossover_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/rhombus/V_yellow_black_yellow.svg" icon_size="16"/>
-	<list_entry value="crossover_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/rhombus/V_yelow_black_yellow.svg" icon_size="16"/>
-	<list_entry value="danger_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_red_white_red_white.svg" icon_size="16"/>
-	<list_entry value="danger_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_green_white_green_white.svg" icon_size="16"/>
-	<list_entry value="turnoff_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_white_red.svg" icon_size="16"/>
-	<list_entry value="turnoff_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_white_green.svg" icon_size="16"/>
-	<list_entry value="junction_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_red_white_red.svg" icon_size="16"/>
-	<list_entry value="junction_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_green_white_green.svg" icon_size="16"/>
-	<list_entry value="harbour_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_red_white.svg" icon_size="16"/>
-	<list_entry value="harbour_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_green_white.svg" icon_size="16"/>
-	<list_entry value="bridge_pier" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/yellow.svg" icon_size="16"/>
+	<list_entry value="port" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/red.svg" icon_size="16"/>
+	<list_entry value="starboard" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/green.svg" icon_size="16"/>
+	<list_entry value="preferred_channel_starboard" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/red_green_red.svg" icon_size="16"/>
+	<list_entry value="preferred_channel_port" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/green_red_green.svg" icon_size="16"/>
+	<list_entry value="waterway_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/red.svg" icon_size="16"/>
+	<list_entry value="waterway_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/green.svg" icon_size="16"/>
+	<list_entry value="channel_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/red_white_red_white.svg" icon_size="16"/>
+	<list_entry value="channel_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/green_white_green_white.svg" icon_size="16"/>
+	<list_entry value="waterway_separation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/red_green_red_green.svg" icon_size="16"/>
+	<list_entry value="channel_separation" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/red_green_red_green.svg" icon_size="16"/>
+	<list_entry value="channel_right_bank" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/square/horizontal/white_red_white.svg" icon_size="16"/>
+	<list_entry value="channel_left_bank" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/rhombus/horizontal/green_white.svg" icon_size="16"/>
+	<list_entry value="crossover_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/rhombus/vertical/yellow_black_yellow.svg" icon_size="16"/>
+	<list_entry value="crossover_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q9/rhombus/vertical/yelow_black_yellow.svg" icon_size="16"/>
+	<list_entry value="danger_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/red_white_red_white.svg" icon_size="16"/>
+	<list_entry value="danger_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/green_white_green_white.svg" icon_size="16"/>
+	<list_entry value="turnoff_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/white_red.svg" icon_size="16"/>
+	<list_entry value="turnoff_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/white_green.svg" icon_size="16"/>
+	<list_entry value="junction_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/red_white_red.svg" icon_size="16"/>
+	<list_entry value="junction_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/green_white_green.svg" icon_size="16"/>
+	<list_entry value="harbour_right" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/red_white.svg" icon_size="16"/>
+	<list_entry value="harbour_left" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/green_white.svg" icon_size="16"/>
+	<list_entry value="bridge_pier" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/yellow.svg" icon_size="16"/>
  </chunk>
  <chunk id="CATLIT">
     <list_entry value="directional"/>
@@ -1336,7 +1336,7 @@
   </item>
 </group>
 <group name="B" icon="presets/empty.png">
-  <item name="BCNCAR" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/H_black_yellow_black.svg" type="node">
+  <item name="BCNCAR" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/horizontal/black_yellow_black.svg" type="node">
    <label text="BCNCAR: Beacon, cardinal"/>
    <key key="seamark:type" value="beacon_cardinal"/>
    <key key="seamark:beacon_cardinal:colour_pattern" value="horizontal"/>
@@ -1349,7 +1349,7 @@
    <text key="seamark:beacon_cardinal:elevation" text="Elevation"/>
    <text key="seamark:beacon_cardinal:height" text="Height"/>  
   </item>
-  <item name="BCNISD" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/H_black_red_black.svg" type="node">
+  <item name="BCNISD" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/horizontal/black_red_black.svg" type="node">
    <label text="BCNISD: Beacon, isolated danger"/>
    <key key="seamark:type" value="beacon_isolated_danger"/>
    <key key="seamark:beacon_isolated_danger:colour_pattern" value="vertical"/>
@@ -1375,7 +1375,7 @@
    <text key="seamark:beacon_lateral:elevation" text="Elevation"/>
    <text key="seamark:beacon_lateral:height" text="Height"/>  
   </item>
-  <item name="BCNSAW" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/V_red_white.svg" type="node">
+  <item name="BCNSAW" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q81/vertical/red_white.svg" type="node">
    <label text="BCNSAW: Beacon, safe water"/>
    <key key="seamark:type" value="beacon_safe_water"/>
    <key key="seamark:beacon_safe_water:colour_pattern" value="vertical"/>
@@ -1447,7 +1447,7 @@
    <reference ref="NAME"/>
    <combo key="seamark:availability" text="Bunker vessel availability" match="key"><reference ref="BUNVES"/></combo>
   </item>
-  <item name="BOYCAR" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_black_yellow_black.svg" type="node">
+  <item name="BOYCAR" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/black_yellow_black.svg" type="node">
    <label text="BOYCAR: Buoy, cardinal"/>
    <key key="seamark:type" value="buoy_cardinal"/>
    <key key="seamark:buoy_cardinal:colour_pattern" value="horizontal"/>
@@ -1466,7 +1466,7 @@
    <combo key="seamark:buoy_installation:colour_pattern" text="Colour Pattern"><reference ref="COLPAT"/></combo>
    <combo key="seamark:buoy_installation:reflectivity" text="Reflectivity"><reference ref="CONRAD"/></combo>
   </item>
-  <item name="BOYISD" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/H_black_red_black.svg" type="node">
+  <item name="BOYISD" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/horizontal/black_red_black.svg" type="node">
    <label text="BOYISD: Buoy, isolated danger"/>
    <key key="seamark:type" value="buoy_isolated_danger"/>
    <key key="seamark:buoy_isolated_danger:colour_pattern" value="vertical"/>
@@ -1475,7 +1475,7 @@
    <combo key="seamark:buoy_isolated_danger:shape" text="Shape"><reference ref="BOYSHP"/></combo>
    <combo key="seamark:buoy_isolated_danger:reflectivity" text="Reflectivity"><reference ref="CONRAD"/></combo>
   </item>
-  <item name="BOYLAT" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/green.svg" type="node">
+  <item name="BOYLAT" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/green.svg" type="node">
    <label text="BOYLAT: Buoy, lateral"/>
    <key key="seamark:type" value="buoy_lateral"/>
    <combo key="seamark:buoy_lateral:system" text="System" use_last_as_default="true"><reference ref="MARSYS"/></combo>
@@ -1486,7 +1486,7 @@
    <combo key="seamark:buoy_lateral:shape" text="Shape"><reference ref="BOYSHP"/></combo>
    <combo key="seamark:buoy_lateral:reflectivity" text="Reflectivity"><reference ref="CONRAD"/></combo>
   </item>
-  <item name="BOYSAW" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/V_red_white.svg" type="node">
+  <item name="BOYSAW" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/vertical/red_white.svg" type="node">
    <label text="BOYSAW: Buoy, safe water"/>
    <key key="seamark:type" value="buoy_safe_water"/>
    <key key="seamark:buoy_safe_water:colour_pattern" value="vertical"/>
@@ -1495,7 +1495,7 @@
    <combo key="seamark:buoy_safe_water:shape" text="Shape"><reference ref="BOYSHP"/></combo>
    <combo key="seamark:buoy_safe_water:reflectivity" text="Reflectivity"><reference ref="CONRAD"/></combo>
   </item>
-  <item name="BOYSPP" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q23/yellow.svg" type="node">
+  <item name="BOYSPP" icon="https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/pillar/yellow.svg" type="node">
    <label text="BOYSPP: Buoy, special purpose/general"/>
    <key key="seamark:type" value="buoy_special_purpose"/>
    <reference ref="NAME"/>
