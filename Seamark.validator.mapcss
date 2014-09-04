@@ -125,5 +125,11 @@ node["seamark:type"=beacon_cardinal]["seamark:beacon:cardinal:colour"="yellow;bl
     throwWarning:   tr("Probably wrong category on {0}, the colour combination {1} usually mean {2}", "{0.value}", "{1.value}", "{2.value}");
 }
 
+node["seamark:type"=wreck][!"seamark:wreck:category"] {
+    throwWarning:   tr("{0} have no {1}", "{0.value}", "{1.key}");
+}
+node["seamark:wreck:category"]["seamark:type"!=wreck] {
+    throwWarning:   tr("{0} set without {1}={2}", "{0.key}", "{1.key}", "{1.value}");
+}
 
 
