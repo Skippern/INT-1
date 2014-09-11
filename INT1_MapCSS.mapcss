@@ -373,6 +373,9 @@ node["seamark:landmark:category"=windmill].landmark::int1_landmark {
 node["seamark:landmark:category"=windmotor].landmark::int1_landmark {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E26.1.svg";
 }
+node["seamark:landmark:category"=flagstaff].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/E/E27.svg";
+}
 
 /* F: Ports */
 node["seamark:type"=mooring]::int1_mooring {
@@ -393,6 +396,7 @@ node["seamark:type"=harbour]::int1_harbour {
 node["seamark:harbour:category"=fishing].harbour::int1_harbour {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/F/F10.svg";
 }
+area[man_made=pier]:closed::int1_pier,
 way[man_made=pier]::int1_pier {
 	width:			10;
 	color:			black;
@@ -410,27 +414,24 @@ way[man_made=pier]::int1_pier {
 /* K: Rocks, Wrecks, Obstructions */
 node["seamark:type"=obstruction]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K40.svg";
-	icon-width:		28;
+	icon-width:		16;
 }
 node["seamark:type"=rock]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K13_.svg";
-	icon-width:		28;
+	icon-width:		12;
+    set             .rock;
 }
-node["seamark:type"=rock]["seamark:rock:water_level"=dry]::int1_obstruction {
+node["seamark:type"=rock]["seamark:rock:water_level"=dry].rock::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K10.svg";
-	icon-width:		28;
 }
-node["seamark:type"=rock]["seamark:rock:water_level"=submerged]::int1_obstruction {
+node["seamark:type"=rock]["seamark:rock:water_level"=submerged].rock::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K13.svg";
-	icon-width:		28;
 }
-node["seamark:type"=rock]["seamark:rock:water_level"=awash]::int1_obstruction {
+node["seamark:type"=rock]["seamark:rock:water_level"=awash].rock::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K12.svg";
-	icon-width:		28;
 }
-node["seamark:type"=rock]["seamark:rock:water_level"=covers]::int1_obstruction {
+node["seamark:type"=rock]["seamark:rock:water_level"=covers].rock::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K11.svg";
-	icon-width:		28;
 }
 
 node["seamark:type"=marine_farm]::int1_marine_farm {
@@ -439,7 +440,7 @@ node["seamark:type"=marine_farm]::int1_marine_farm {
 }
 node["seamark:type"=wreck]::int1_obstruction {
 	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/K/K29.svg";
-	icon-width:		28;
+	icon-width:		16;
 	text-color:		black;
 	font-size:		12;
 	set				.wreck;
@@ -466,10 +467,10 @@ node["seamark:wreck:category"=funnel_showing].wreck::int1_obstruction {
 }
 
 /* L: Offshore Installations */
-way["seamark:type"=caable_submarine]::int1_cable {
+way["seamark:type"=cable_submarine]::int1_cable {
 	repeat-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L31.svg";
-	repeat-image-width:		32;
-/*	repeat-image-spacing:	2; */
+	repeat-image-width:		16;
+	repeat-image-spacing:	0;
 }
 way["seamark:type"=pipeline_submarine]::int1_pipeline {
 	repeat-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/L/L40.svg";
@@ -484,6 +485,12 @@ way["seamark:type"=recommended_track]::int1_recommended_track {
 	width:			3;
 	opacity:		1.0;
 }
+way["seamark:type"=navigation_line]::int1_navigation_line {
+    color:          black;
+    width:          3;
+    dashes:         8,6;
+    opacity:        1.0;
+}
 node["seamark:type"=calling-in_point]::int1_RDOCAL {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/M/M40.", cond(tag("seamark:calling-in_point:traffic_flow") == "one-way", "1", "2") , ".svg"));
 	icon-height:	24;
@@ -493,15 +500,59 @@ node["seamark:type"=calling-in_point]::int1_RDOCAL {
 	text-anchor-vertical:	above;
 	text-anchor-horizontal:	center;
 }
+way[route=ferry]::int1_ferry_route,
+relation[route=ferry] > way::int1_ferry_route,
 way["seamark:type"=ferry_route]::int1_ferry_route {
 	color:			darkmagenta;
-	fill-color:		darkmagenta;
 	width:			2;
 	opacity:		1.0;
 	dashes:			5,8;
 }
 
 /* N: Areas, Limites */
+way["seamark:type"=restricted_area]::restricted_area_base {
+    repeat-image:           "https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N2.1.svg";
+    repeat-image-width:     18;
+    repeat-image-spacing:   8;
+}
+relation[boundary=protected_area] > way::protected_area_base,
+way[boundary=protected_area]::protected_area_base,
+way["seamark:type"=natural_reserve]::protected_area_base {
+    repeat-image:           "https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N22.svg";
+    repeat-image-width:     18;
+    repeat-image-spacing:   8;
+}
+way["seamark:restricted_area:restriction"=no_entry]::restricted_area {
+    repeat-image:           "https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N2.2.svg";
+    repeat-image-width:     20;
+    repeat-image-spacing:   80;
+}
+way["seamark:type"=anchorage]::anchorage_base {
+    repeat-image:           "https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N2.1.svg";
+    repeat-image-width:     18;
+    repeat-image-spacing:   8;
+}
+way["seamark:type"=anchorage]::anchorage_area {
+    repeat-image:           "https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N12.svg";
+    repeat-image-width:     28;
+    repeat-image-spacing:   80;
+}
+way["seamark:restricted_area:restriction"~=no_anchoring]::anchorage_area {
+    repeat-image:           "https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N20.svg";
+    repeat-image-width:     28;
+    repeat-image-spacing:   80;
+}
+way["seamark:restricted_area:restriction"~=no_fishing]::no_fishing {
+    repeat-image:           "https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N21.svg";
+    repeat-image-width:     28;
+    repeat-image-spacing:   80;
+    repeat-image-phase:    20;
+}
+node["seamark:type"=anchorage]::anchorage {
+    icon-image:             "https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N12.svg";
+    icon-height:            32;
+}
+
 way[boundary],
 area[boundary],
 relation[boundary] > way::int1_border {
@@ -512,7 +563,7 @@ relation[boundary] > way::int1_border {
 relation[boundary=administrative] > way[!maritime].border::int1_border,
 relation[boundary=administrative] > way[maritime?!].border::int1_border {
 	repeat-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N40.svg";
-	repeat-image-width:		eval(500 / any(tag(admin_level), "2"));
+	repeat-image-width:		eval(300 / any(tag(admin_level), "2"));
 	repeat-image-spacing:	3;
 	opacity:				0.05;
 }
@@ -521,7 +572,7 @@ relation[boundary=administrative] > way[maritime?!].border::int1_border {
 relation[boundary=administrative] > way[maritime?].border::int1_border,
 relation[boundary=administrative] > way[border_type=territorial].border::int1_border {
 	repeat-image:			"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/N/N41.svg";
-	repeat-image-width:		eval(500 / any(tag(admin_level), "2" ));
+	repeat-image-width:		eval(300 / any(tag(admin_level), "2" ));
 	repeat-image-spacing:	3;
 	opacity:				0.05;
 }
@@ -557,10 +608,8 @@ node["seamark:type"=buoy_safe_water]::int1_buoy,
 node["seamark:type"=beacon_safe_water]::int1_buoy,
 node["seamark:type"=buoy_special_purpose]::int1_buoy,
 node["seamark:type"=beacon_special_purpose]::int1_buoy {
-/*	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/", coalesce(tag(concat("seamark:",tag("seamark:type"),":shape")), "buoyant"), "/", cond(tag(concat("seamark:",tag("seamark:type"),":colour_pattern")) == "vertical", "V/", ""), cond(tag(concat("seamark:",tag("seamark:type"),":colour_pattern")) == "horizontal", "H/", ""), replace(";","_",coalesce(tag(concat("seamark:",tag("seamark:type"),":colour")), "generic")), ".svg" )); */
-	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/", coalesce(tag(concat("seamark:",tag("seamark:type"),":shape")), "buoyant"), "/", cond(has_tag_key(concat("seamark:",tag("seamark:type"),":colour_pattern")),concat(tag(concat("seamark:",tag("seamark:type"),":colour_pattern")),"/"), ""), replace(";","_",coalesce(tag(concat("seamark:",tag("seamark:type"),":colour")), "generic")), ".svg" ));
+	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/", coalesce(tag(concat("seamark:",tag("seamark:type"),":shape")), "buoyant"), "/", cond(has_tag_key(concat("seamark:",tag("seamark:type"),":colour_pattern")),concat(tag(concat("seamark:",tag("seamark:type"),":colour_pattern")),"/"), ""), coalesce(replace(tag(concat("seamark:",tag("seamark:type"),":colour")),";","_"), "generic"), ".svg" ));
 	icon-height:	16;
-/*	icon-width:		16; */
 	icon-opacity:	1;
 	text:			"seamark:name";
 	text-color:		black;
@@ -605,6 +654,22 @@ node["seamark:notice:2:system"=ppwbc]["seamark:notice:2:category"].notice2::int1
 node["seamark:notice:system"=cevni]["seamark:notice:category"].notice::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/CEVNI/", tag("seamark:notice:category"), ".svg"));
 }
+node["seamark:notice:system"=cevni]["seamark:notice:1:category"].notice::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/CEVNI/", tag("seamark:notice:1:category"), ".svg"));
+}
+node["seamark:notice:system"=cevni]["seamark:notice:2:category"].notice::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/CEVNI/", tag("seamark:notice:2:category"), ".svg"));
+}
+
+node["seamark:notice:system"=riwr]["seamark:notice:category"].notice::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/RIWR/", tag("seamark:notice:category"), ".svg"));
+}
+node["seamark:notice:system"=riwr]["seamark:notice:1:category"].notice::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/RIWR/", tag("seamark:notice:1:category"), ".svg"));
+}
+node["seamark:notice:system"=riwr]["seamark:notice:2:category"].notice::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/Q/Q126/RIWR/", tag("seamark:notice:2:category"), ".svg"));
+}
 
 /* R: Fog Signals */
 node["seamark:fog_signal:category"]::int1_fog_signal {
@@ -613,6 +678,10 @@ node["seamark:fog_signal:category"]::int1_fog_signal {
 }
 /* S: Electronic Position-Fixing Systems */
 /* T: Services */
+node["seamark:type"=pilot_boarding]::int1_pilot {
+    icon-image:     "https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/T/T1.1.svg";
+    icon-height:    12;
+}
 node["seamark:type"=signal_station_traffic]::int1_signal_station,
 node["seamark:type"=signal_station_warning]::int1_signal_station {
     icon-image:     "https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/T/T20.svg";

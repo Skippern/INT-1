@@ -8,7 +8,7 @@
  */
 meta {
     title: "Seamark Validation Rules";
-    version: "0.[[revision]]_[[date]]";
+    version: "0.1";
     description: "Rules to give warning when tagging of seamarks are not in accordance with standards in the data model";
     author: "Aun (Skippern) Johnsen";
     link: "http://wiki.openstreetmap.org/wiki/OpenSeaMap/Seamark_Objects";
@@ -132,4 +132,6 @@ node["seamark:wreck:category"]["seamark:type"!=wreck] {
     throwWarning:   tr("{0} set without {1}={2}", "{0.key}", "{1.key}", "{1.value}");
 }
 
-
+node["seamark:type"=rock][!"seamark:rock:water_level"] {
+    throwWarning:   tr("{0} without {1}", "{0.value}", "{1.key}");
+}
