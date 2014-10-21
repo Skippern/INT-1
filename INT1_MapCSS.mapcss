@@ -78,12 +78,6 @@ node["seamark:type"=distance_mark]::int1_distance {
 }
 
 /* C: Natural Features */
-*[natural]::int1_natural,
-relation[natural] > way::int1_natural {
-	set				natural;
-	width:			default;
-	color:			gray;
-}
 *[waterway]::int1_water,
 relation[waterway] > way::int1_water {
 	width:			1;
@@ -130,24 +124,6 @@ area[waterway=riverbank]::int1_water {
 	casing-color:	skyblue;
 }
 /* D: Cultural Features */
-*[landuse]::int1_landuse, relation[landuse] > way::int1_landuse {
-	width:			2;
-	color:			gray;
-}
-area[landuse=industrial]::int1_landuse, relation[landuse=industrial] > way::int1_landuse {
-	fill-color:				salmon;
-}
-area[landuse=military]::int1_landuse, relation[landuse=military] > way::int1_landuse {
-	fill-color:				violet;
-}
-area[landuse=residential]::int1_landuse, relation[landuse=residential] > way::int1_landuse {
-	fill-color:				darkgoldenrod;
-	color:					darkgoldenrod;
-}
-area[building]::int1_landuse, relation[building] > way::int1_landuse {
-	fill-color:				darkgoldenrod;
-	color:					darkgoldenrod;
-}
 node["seamark:type"=building]::int1_landuse {
 	symbol-shape:			square;
 	symbol-size:			10;
@@ -162,18 +138,6 @@ area["seamark:type"=building]::int1_landuse, relation["seamark:type"=building] >
 	width:					4;
 	fill-opacity:			0.75;
 	opacity:				1.0;
-}
-node[place] {
-	text-color:				black;
-	text:					auto;
-	font-size:				10;
-}
-
-way[power]::int1_cable, relation[power] > way::int1_cable {
-	width:			2;
-	dashes:			12,5;
-	color:			black;
-	opacity:		0.8;
 }
 way["seamark:type"=cable_overhead]::int1_cable {
 	width:			2;
@@ -199,58 +163,6 @@ node["seamark:pipeline_overhead:clearance_height"]::int1_sailing_height {
 	text-anchor-horizontal:	center;
 	text-anchor-vertical:	center;
 }
-way[railway]::int1_railway {
-	color:			white;
-	width:			4;
-	dashes-background-color: black;
-	dashes:			8, 8;
-	casing-width:	+2;
-	casing-color:	black;
-	set				.railway;
-}
-way[highway]::int1_highway {
-	color:			navajowhite;
-	width:			1;
-	casing-width:	+3;
-	casing-color:	black;
-	text-position:	line;
-	text-color:		black;
-    minor-z-index:  -100;
-	set				.highway;
-}
-way[highway=road].highway::int1_highway {
-	casing-color:	red;
-}
-way[highway=tertiary_link].highway::int1_highway {
-	width:			2;
-}
-way[highway=tertiary].highway::int1_highway {
-	width:			3;
-}
-way[highway=secondary_link].highway::int1_highway {
-	width:			4;
-}
-way[highway=secondary].highway::int1_highway {
-	width:			5;
-}
-way[highway=primary_link].highway::int1_highway {
-	width:			6;
-}
-way[highway=primary].highway::int1_highway {
-	width:			7;
-}
-way[highway=trunk_link].highway::int1_highway {
-	width:			8;
-}
-way[highway=trunk].highway::int1_highway {
-	width:			9;
-}
-way[highway=motorway_link].highway::int1_highway {
-	width:			10;
-}
-way[highway=motorway].highway::int1_highway {
-	width:			11;
-}
 area[waterway=dam] {
 	fill-color:		gray;
 	fill-opacity:	0.4;
@@ -258,34 +170,6 @@ area[waterway=dam] {
 	color:			black;
 	casing-opacity:	0.0;
 }
-*[aeroway]::int1_airport {
-	width:					1;
-	color:					gray;
-}
-node[aeroway=aerodrome]::int1_airport {
-	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D17_small.svg";
-	icon-width:		32;
-}
-node[aeroway=aerodrome][iata]::int1_airport,
-node[aeroway=aerodrome][icao]::int1_airport {
-	icon-image:		"https://raw.githubusercontent.com/Skippern/INT-1/master/SVG/D/D17_small.svg";
-	icon-width:		32;
-}
-area[aeroway=aerodrome]::int1_airport {
-	width:					1;
-	dashes:					12,12;
-	opacity:				1.0;
-	color:					black;
-	fill-opacity:			0.0;
-}
-way[bridge]::int1_bridge {
-	width:					+8;
-	opacity:				0.1;
-	casing-width:			+2;
-	casing-color:			black;
-	casing-opacity:			1.0;
-}
-
 /* E: Landmarks */
 node["seamark:type"=landmark]::int1_landmark {
 	text:			auto;
