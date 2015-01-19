@@ -3,6 +3,8 @@ INT-1
 
 INT-1 symbols SVG, JOSM preset, mapcss for JOSM
 
+Most of this have been moved to [OpenSeaMap/josm](https://github.com/OpenSeaMap/josm), and therefore removed from this repo. The remaining bits might with time end up there, or in other more appropriate repos.
+
 Purpose
 =====
 
