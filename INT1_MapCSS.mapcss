@@ -19,7 +19,7 @@ meta {
 
 /* For JOSM, creating a light background color */
 canvas {
-	fill-color:			aliceblue; 
+    /*	fill-color:			aliceblue; */
 	antialiasing:		'full';
 	default-points: 	false; /* hides points */
 	default-lines: 		false; /* hides lines */
