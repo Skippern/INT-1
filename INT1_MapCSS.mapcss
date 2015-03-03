@@ -378,6 +378,7 @@ way["seamark:type"=navigation_line]::int1_navigation_line {
 node["seamark:type"=calling-in_point]::int1_RDOCAL {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/M/M40.", cond(tag("seamark:calling-in_point:traffic_flow") == "one-way", "1", "2") , ".svg"));
 	icon-height:	24;
+    icon-orientation: eval(tag("seamark:calling-in_point:orientation"));
 	text:			"seamark:name";
 	text-color:		darkmagenta;
 	font-size:		18;
@@ -504,58 +505,59 @@ node["seamark:type"=beacon_special_purpose]::int1_buoy {
 }
 
 node["seamark:type"=notice]::int1_notice {
-	set				notice;
 	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/generic.svg";
 	icon-height:	16;
+    icon-offset-x:  0;
+    set				notice;
 }
 node["seamark:notice:1:category"].notice::int1_notice {
-	set				notice1;
 	icon-offset-x:	8;
+    set				notice1;
 }
 node["seamark:notice:2:category"].notice::int1_notice {
-	set				notice2;
 	icon-offset-x:	-8;
+    set				notice2;
 }
-node["seamark:notice:system"=bniwr]["seamark:notice:category"].notice::int1_notice,
-node["seamark:notice:system"=bniwr2]["seamark:notice:category"].notice::int1_notice {
+*["seamark:notice:system"=bniwr]["seamark:notice:category"].notice::int1_notice,
+*["seamark:notice:system"=bniwr2]["seamark:notice:category"].notice::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/BNIWR/", tag("seamark:notice:bank"), "/", tag("seamark:notice:category"), ".svg"));
 }
-node["seamark:notice:1:system"=bniwr]["seamark:notice:1:category"].notice1::int1_notice,
-node["seamark:notice:1:system"=bniwr2]["seamark:notice:1:category"].notice1::int1_notice {
+*["seamark:notice:1:system"=bniwr]["seamark:notice:1:category"].notice1::int1_notice,
+*["seamark:notice:1:system"=bniwr2]["seamark:notice:1:category"].notice1::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/BNIWR/", tag("seamark:notice:1:bank"), "/", tag("seamark:notice:1:category"), ".svg"));
 }
-node["seamark:notice:2:system"=bniwr]["seamark:notice:2:category"].notice2::int1_notice,
-node["seamark:notice:2:system"=bniwr2]["seamark:notice:2:category"].notice2::int1_notice {
+*["seamark:notice:2:system"=bniwr]["seamark:notice:2:category"].notice2::int1_notice,
+*["seamark:notice:2:system"=bniwr2]["seamark:notice:2:category"].notice2::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/BNIWR/", tag("seamark:notice:2:bank"), "/", tag("seamark:notice:2:category"), ".svg"));
 }
 
-node["seamark:notice:system"=ppwbc]["seamark:notice:category"].notice::int1_notice {
+*["seamark:notice:system"=ppwbc]["seamark:notice:category"].notice::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/PPWBC/", tag("seamark:notice:bank"), "/", tag("seamark:notice:category"), ".svg"));
 }
-node["seamark:notice:1:system"=ppwbc]["seamark:notice:1:category"].notice1::int1_notice {
+*["seamark:notice:1:system"=ppwbc]["seamark:notice:1:category"].notice1::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/PPWBC/", tag("seamark:notice:1:bank"), "/", tag("seamark:notice:1:category"), ".svg"));
 }
-node["seamark:notice:2:system"=ppwbc]["seamark:notice:2:category"].notice2::int1_notice {
+*["seamark:notice:2:system"=ppwbc]["seamark:notice:2:category"].notice2::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/PPWBC/", tag("seamark:notice:2:bank"), "/", tag("seamark:notice:2:category"), ".svg"));
 }
 
-node["seamark:notice:system"=cevni]["seamark:notice:category"].notice::int1_notice {
+*["seamark:notice:system"=cevni]["seamark:notice:category"].notice::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/CEVNI/", tag("seamark:notice:category"), ".svg"));
 }
-node["seamark:notice:system"=cevni]["seamark:notice:1:category"].notice::int1_notice {
+*["seamark:notice:1:system"=cevni]["seamark:notice:1:category"].notice1::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/CEVNI/", tag("seamark:notice:1:category"), ".svg"));
 }
-node["seamark:notice:system"=cevni]["seamark:notice:2:category"].notice::int1_notice {
-	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/CEVNI/", tag("seamark:notice:2:category"), ".svg"));
+*["seamark:notice:2:system"=cevni]["seamark:notice:2:category"].notice2::int1_notice {
+    icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/CEVNI/", tag("seamark:notice:2:category"), ".svg"));
 }
 
-node["seamark:notice:system"=riwr]["seamark:notice:category"].notice::int1_notice {
+*["seamark:notice:system"=riwr]["seamark:notice:category"].notice::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/RIWR/", tag("seamark:notice:category"), ".svg"));
 }
-node["seamark:notice:system"=riwr]["seamark:notice:1:category"].notice::int1_notice {
+*["seamark:notice:1:system"=riwr]["seamark:notice:1:category"].notice1::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/RIWR/", tag("seamark:notice:1:category"), ".svg"));
 }
-node["seamark:notice:system"=riwr]["seamark:notice:2:category"].notice::int1_notice {
+*["seamark:notice:2:system"=riwr]["seamark:notice:2:category"].notice2::int1_notice {
 	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/RIWR/", tag("seamark:notice:2:category"), ".svg"));
 }
 
@@ -563,6 +565,8 @@ node["seamark:notice:system"=riwr]["seamark:notice:2:category"].notice::int1_not
 node["seamark:fog_signal:category"]::int1_fog_signal {
 	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/R/R1.svg";
 	icon-height:	12;
+    icon-offset-x:  -10;
+    icon-offset-y:  6;
 }
 /* S: Electronic Position-Fixing Systems */
 /* T: Services */
