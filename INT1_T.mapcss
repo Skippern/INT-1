@@ -1,0 +1,21 @@
+/* MapCSS scheme for rendering INT-1 style maps based on OpenStreetMap data
+ *
+ * The best way to check marine map data quality is to compare with existing map with
+ * similar rendering. Also for maritime personel wanting to verify if what is in the
+ * database corresponds with reality, seeing it rendered in a standardized and familiar
+ * way is the best option.
+ *
+ */
+
+/* T: Services */
+node["seamark:type"=pilot_boarding]::int1_pilot {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/T/T1.1.svg";
+	icon-height:		12;
+}
+node["seamark:type"=signal_station_traffic]::int1_signal_station,
+node["seamark:type"=signal_station_warning]::int1_signal_station {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/T/T20.svg";
+        icon-height:		12;
+}
+
+/* END */

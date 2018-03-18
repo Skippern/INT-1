@@ -1,0 +1,94 @@
+/* MapCSS scheme for rendering INT-1 style maps based on OpenStreetMap data
+ *
+ * The best way to check marine map data quality is to compare with existing map with
+ * similar rendering. Also for maritime personel wanting to verify if what is in the
+ * database corresponds with reality, seeing it rendered in a standardized and familiar
+ * way is the best option.
+ *
+ */
+
+/* Meta data */
+meta {
+	title:				"INT 1 Rendering (IHO standarized symbols) PD";
+	icon:				"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/IHO_c.svg";
+	author:				"Aun (Skippern) Johnsen";
+	version:			"0.2";
+	description:		"JOSM rendering of nautical symbols according to IHO standard INT-1";
+	min-josm-version:	8087;
+}
+
+/* For JOSM, creating a light background color */
+canvas {
+    /*	fill-color:			aliceblue; */
+	antialiasing:		'full';
+	default-points:         false; /* hides points */
+	default-lines:          false; /* hides lines */
+	fill-opacity:		1; /* should underlaying layers shine through? */
+}
+
+/* Defaults */
+way {
+	width:				default;
+	color:				gray;
+	opacity:			0.3;
+}
+node {
+	symbol-shape:	circle;
+	symbol-size:	2;
+	color:			yellow;
+}
+node:unconnected {
+	symbol-shape:	circle;
+	symbol-size:	4;
+}
+node:connection {
+	symbol-shape:	circle;
+	symbol-size:	3;
+	color:			red;
+}
+node:tagged {
+	color:			green;
+}
+relation[type=multipolygon] >[role=inner] way {
+	width:			2;
+	color:			gray;
+	opacity:		1.0;
+}
+relation[type=multipolygon] >[role=outer] way {
+    width:          2;
+    color:          black;
+    opacity:        1.0;
+}
+node["seamark:type"] {
+	symbol-shape:	circle;
+	symbol-size:	2;
+	color:			blue;
+}
+way["seamark:type"] {
+	color:			blue;
+	width:			thinnest;
+}
+
+@import url("INT1_A.mapcss");
+@import url("INT1_B.mapcss");
+@import url("INT1_C.mapcss");
+@import url("INT1_D.mapcss");
+@import url("INT1_E.mapcss");
+@import url("INT1_F.mapcss");
+@import url("INT1_G.mapcss");
+@import url("INT1_H.mapcss");
+@import url("INT1_I.mapcss");
+@import url("INT1_J.mapcss");
+@import url("INT1_K.mapcss");
+@import url("INT1_L.mapcss");
+@import url("INT1_M.mapcss");
+@import url("INT1_N.mapcss");
+@import url("INT1_O.mapcss");
+@import url("INT1_P.mapcss");
+@import url("INT1_Q.mapcss");
+@import url("INT1_R.mapcss");
+@import url("INT1_S.mapcss");
+@import url("INT1_T.mapcss");
+@import url("INT1_U.mapcss");
+
+/* END */

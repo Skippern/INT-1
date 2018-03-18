@@ -1,0 +1,102 @@
+/* MapCSS scheme for rendering INT-1 style maps based on OpenStreetMap data
+ *
+ * The best way to check marine map data quality is to compare with existing map with
+ * similar rendering. Also for maritime personel wanting to verify if what is in the
+ * database corresponds with reality, seeing it rendered in a standardized and familiar
+ * way is the best option.
+ *
+ */
+
+/* E: Landmarks */
+node["seamark:type"=landmark]::int1_landmark {
+	text:			auto;
+	text-color:		black;
+	symbol-shape:	square;
+	symbol-size:	4;
+	icon-width:		24;
+	color:			black;
+	set				landmark;
+}
+node["seamark:landmark:function"=church].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.1.svg";
+	icon-width:		32;
+	set				.church;
+}
+node["seamark:landmark:function"=chapel].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E11.svg";
+}
+node["seamark:landmark:category"=tower].church::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.2.svg";
+}
+node["seamark:landmark:category"=spire].church::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.3.svg";
+}
+node["seamark:landmark:category"=dome].church::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E10.4.svg";
+}
+node["seamark:landmark:function"=temple].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E13.svg";
+}
+node["seamark:landmark:function"=pagoda].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E14.svg";
+}
+node["seamark:landmark:function"=shinto_shrine].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E15.svg";
+}
+node["seamark:landmark:function"=buddhist_temple].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E16.svg";
+}
+node["seamark:landmark:function"=mosque].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E17.svg";
+}
+node["seamark:landmark:category"=minaret].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E17.svg";
+}
+node["seamark:landmark:function"=marabout].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E18.svg";
+}
+relation[landuse=cemetery] > way::int1_landmark, area[landuse=cemetery]::int1_landmark {
+    fill-image:     "https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E19.svg";
+}
+node["seamark:landmark:category"=tower][!"seamark:landmark:function"].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E20.svg";
+}
+node["seamark:landmark:category"=tower]["seamark:landmark:function"=communication].landmark::int1_landmark,
+node["seamark:landmark:category"=tower]["seamark:landmark:function"=radio].landmark::int1_landmark,
+node["seamark:landmark:category"=tower]["seamark:landmark:function"=radar].landmark::int1_landmark,
+node["seamark:landmark:category"=tower]["seamark:landmark:function"=microwave].landmark::int1_landmark,
+node["seamark:landmark:category"=tower]["seamark:landmark:function"=television].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E30.svg";
+}
+node["seamark:landmark:category"=mast][!"seamark:landmark:function"].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E28.svg";
+}
+node["seamark:landmark:category"=mast]["seamark:landmark:function"=communication].landmark::int1_landmark,
+node["seamark:landmark:category"=mast]["seamark:landmark:function"=radio].landmark::int1_landmark,
+node["seamark:landmark:category"=mast]["seamark:landmark:function"=radar].landmark::int1_landmark,
+node["seamark:landmark:category"=mast]["seamark:landmark:function"=microwave].landmark::int1_landmark,
+node["seamark:landmark:category"=mast]["seamark:landmark:function"=television].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E28_.svg";
+}
+
+node["seamark:landmark:category"=water_tower].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E21.svg";
+}
+node["seamark:landmark:category"=chimney].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E22.svg";
+}
+node["seamark:landmark:category"=flare_stack].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E23.svg";
+}
+node["seamark:landmark:category"=windmill].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E25.svg";
+}
+node["seamark:landmark:category"=windmotor].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E26.1.svg";
+}
+node["seamark:landmark:category"=flagstaff].landmark::int1_landmark {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/E/E27.svg";
+}
+
+/* END */
+

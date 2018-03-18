@@ -1,0 +1,78 @@
+/* MapCSS scheme for rendering INT-1 style maps based on OpenStreetMap data
+ *
+ * The best way to check marine map data quality is to compare with existing map with
+ * similar rendering. Also for maritime personel wanting to verify if what is in the
+ * database corresponds with reality, seeing it rendered in a standardized and familiar
+ * way is the best option.
+ *
+ */
+
+/* N: Areas, Limites */
+way["seamark:type"=restricted_area]::restricted_area_base {
+       repeat-image:           "https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/N/N2.1.svg";
+       repeat-image-width:     18;
+       repeat-image-spacing:   8;
+}
+relation[boundary=protected_area] > way::protected_area_base,
+way[boundary=protected_area]::protected_area_base,
+way["seamark:type"=natural_reserve]::protected_area_base {
+       repeat-image:           "https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/N/N22.svg";
+       repeat-image-width:     18;
+       repeat-image-spacing:   8;
+}
+way["seamark:restricted_area:restriction"=no_entry]::restricted_area {
+       repeat-image:           "https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/N/N2.2.svg";
+       repeat-image-width:     20;
+       repeat-image-spacing:   80;
+}
+way["seamark:type"=anchorage]::anchorage_base {
+       repeat-image:           "https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/N/N2.1.svg";
+       repeat-image-width:     18;
+       repeat-image-spacing:   8;
+}
+way["seamark:type"=anchorage]::anchorage_area {
+       repeat-image:           "https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/N/N12.svg";
+       repeat-image-width:     28;
+       repeat-image-spacing:   80;
+}
+way["seamark:restricted_area:restriction"~=no_anchoring]::anchorage_area {
+       repeat-image:           "https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/N/N20.svg";
+       repeat-image-width:     28;
+       repeat-image-spacing:   80;
+}
+way["seamark:restricted_area:restriction"~=no_fishing]::no_fishing {
+       repeat-image:           "https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/N/N21.svg";
+       repeat-image-width:     28;
+       repeat-image-spacing:   80;
+       repeat-image-phase:     20;
+}
+node["seamark:type"=anchorage]::anchorage {
+       icon-image:             "https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/N/N12.svg";
+       icon-height:            32;
+}
+
+way[boundary],
+area[boundary],
+relation[boundary] > way::int1_border {
+       set		       border;
+}
+*[boundary=administrative][!maritime].border::int1_border,
+*[boundary=administrative][maritime?!].border::int1_border,
+relation[boundary=administrative] > way[!maritime].border::int1_border,
+relation[boundary=administrative] > way[maritime?!].border::int1_border {
+	repeat-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/N/N40.svg";
+	repeat-image-width:	eval(300 / any(tag(admin_level), "2"));
+	repeat-image-spacing:	3;
+	opacity:		0.05;
+}
+*[boundary=maritime][border_type=territorial].border::int1_border,
+*[boundary=administrative][maritime?].border::int1_border,
+relation[boundary=administrative] > way[maritime?].border::int1_border,
+relation[boundary=administrative] > way[border_type=territorial].border::int1_border {
+	repeat-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/N/N41.svg";
+	repeat-image-width:	eval(300 / any(tag(admin_level), "2" ));
+	repeat-image-spacing:	3;
+	opacity:		0.05;
+}
+
+/* END */

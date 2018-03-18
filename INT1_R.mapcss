@@ -1,0 +1,18 @@
+/* MapCSS scheme for rendering INT-1 style maps based on OpenStreetMap data
+ *
+ * The best way to check marine map data quality is to compare with existing map with
+ * similar rendering. Also for maritime personel wanting to verify if what is in the
+ * database corresponds with reality, seeing it rendered in a standardized and familiar
+ * way is the best option.
+ *
+ */
+
+/* R: Fog Signals */
+node["seamark:fog_signal:category"]::int1_fog_signal {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/R/R1.svg";
+	icon-height:	        12;
+	icon-offset-x:          -10;
+	icon-offset-y:          6;
+}
+
+/* END */

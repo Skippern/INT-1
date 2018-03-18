@@ -1,0 +1,65 @@
+/* MapCSS scheme for rendering INT-1 style maps based on OpenStreetMap data
+ *
+ * The best way to check marine map data quality is to compare with existing map with
+ * similar rendering. Also for maritime personel wanting to verify if what is in the
+ * database corresponds with reality, seeing it rendered in a standardized and familiar
+ * way is the best option.
+ *
+ */
+
+/* K: Rocks, Wrecks, Obstructions */
+node["seamark:type"=obstruction]::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K40.svg";
+	icon-width:		16;
+}
+node["seamark:type"=rock]::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K13_.svg";
+	icon-width:		12;
+        set                     .rock;
+}
+node["seamark:type"=rock]["seamark:rock:water_level"=dry].rock::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K10.svg";
+}
+node["seamark:type"=rock]["seamark:rock:water_level"=submerged].rock::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K13.svg";
+}
+node["seamark:type"=rock]["seamark:rock:water_level"=awash].rock::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K12.svg";
+}
+node["seamark:type"=rock]["seamark:rock:water_level"=covers].rock::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K11.svg";
+}
+
+node["seamark:type"=marine_farm]::int1_marine_farm {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K48.1_no_red.svg";
+	icon-width:		28;
+}
+node["seamark:type"=wreck]::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K29.svg";
+	icon-width:		16;
+	text-color:		black;
+	font-size:		12;
+	set				.wreck;
+}
+node["seamark:wreck:category"=non-dangerous].wreck::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K29.svg";
+}
+node["seamark:wreck:category"=dangerous].wreck::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K28.svg";
+}
+node["seamark:wreck:category"=distributed_remains].wreck::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K29.svg";
+}
+node["seamark:wreck:category"=mast_showing].wreck::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K28.svg";
+	text:			eval("masts");
+}
+node["seamark:wreck:category"=hull_showing].wreck::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K24.svg";
+}
+node["seamark:wreck:category"=funnel_showing].wreck::int1_obstruction {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/K/K28.svg";
+	text:			eval("funnel");
+}
+
+/* END */

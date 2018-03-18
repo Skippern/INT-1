@@ -1,0 +1,56 @@
+/* MapCSS scheme for rendering INT-1 style maps based on OpenStreetMap data
+ *
+ * The best way to check marine map data quality is to compare with existing map with
+ * similar rendering. Also for maritime personel wanting to verify if what is in the
+ * database corresponds with reality, seeing it rendered in a standardized and familiar
+ * way is the best option.
+ *
+ */
+
+/* C: Natural Features */
+*[waterway]::int1_water,
+relation[waterway] > way::int1_water {
+	width:			1;
+	color:			aliceblue;
+}
+way[waterway]::int1_water {
+	set				river;
+	width:			1;
+	color:			black;
+	casing-width:	+1;
+	casing-color:	skyblue;
+	casing-opacity:	0.9;
+}
+way[waterway=stream].river::int1_water {
+	width:			+1;
+	casing-width:	+1;
+}
+way[waterway=canal].river::int1_water {
+	width:			+3;
+	casing-width:	+3;
+}
+way[waterway=river].river::int1_water {
+	width:			+5;
+	casing-width:	+5;
+}
+area[natural=water]::int1_water,
+area[water]::int1_water,
+area[landuse=reservoir]::int1_water,
+relation[landuse=reservoir] > way::int1_water,
+relation[natural=water] > way::int1_water,
+relation[waterway=riverbank] > way::int1_water,
+relation[water] > way::int1_water,
+area[waterway=riverbank]::int1_water {
+	fill-color:		aliceblue;
+	fill-opacity:	0.25;
+	width:			3;
+	color:			lightblue;
+	opacity:		1.0;
+}
+*[boat?].river::int1_water {
+	width:			+10;
+	color:			darkblue;
+	casing-width:	+10;
+	casing-color:	skyblue;
+}
+/* END */

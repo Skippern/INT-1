@@ -1,0 +1,57 @@
+/* MapCSS scheme for rendering INT-1 style maps based on OpenStreetMap data
+ *
+ * The best way to check marine map data quality is to compare with existing map with
+ * similar rendering. Also for maritime personel wanting to verify if what is in the
+ * database corresponds with reality, seeing it rendered in a standardized and familiar
+ * way is the best option.
+ *
+ */
+
+/* D: Cultural Features */
+node["seamark:type"=building]::int1_landuse {
+	symbol-shape:			square;
+	symbol-size:			10;
+	color:					black;
+	fill-color:				black;
+	opacity:				1.0;
+	fill-opacity:			1.0;
+}
+area["seamark:type"=building]::int1_landuse, relation["seamark:type"=building] > way::int1_landuse {
+	color:					black;
+	fill-color:				black;
+	width:					4;
+	fill-opacity:			0.75;
+	opacity:				1.0;
+}
+way["seamark:type"=cable_overhead]::int1_cable {
+	width:			2;
+	dashes:			12,5;
+	color:			darkmagenta;
+	fill-color:		darkmagenta;
+	fill-opacity:	0.0;
+}
+node["seamark:type"=pylon]::int1_pylon {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D26.svg";
+	icon-width:		12;
+}
+node["seamark:bridge:clearance_height"]::int1_sailing_height,
+node["seamark:bridge:clearance_height_closed"]::int1_sailing_height,
+node["seamark:bridge:clearance_height_open"]::int1_sailing_height,
+node["seamark:cable_overhead:clearance_height"]::int1_sailing_height,
+node["seamark:cable_overhead:clearance_height_safe"]::int1_sailing_height,
+node["seamark:pipeline_overhead:clearance_height"]::int1_sailing_height {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/D/D20.svg";
+	icon-width:		24;
+	text-color:		cond(tag(concat("seamark:", tag("seamark:type"), ":clearance_height_safe")) > 0, darkmagenta, black );
+	text:			any(tag(concat("seamark:", tag("seamark:type"), ":clearance_height")),tag(concat("seamark:", tag("seamark:type"), ":clearance_height_safe")),tag(concat("seamark:", tag("seamark:type"), ":clearance_height_closed")),tag(concat("seamark:", tag("seamark:type"), ":clearance_height_open")));
+	text-anchor-horizontal:	center;
+	text-anchor-vertical:	center;
+}
+area[waterway=dam] {
+	fill-color:		gray;
+	fill-opacity:	0.4;
+	width:			3;
+	color:			black;
+	casing-opacity:	0.0;
+}
+/* END */

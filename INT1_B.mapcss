@@ -1,0 +1,19 @@
+/* MapCSS scheme for rendering INT-1 style maps based on OpenStreetMap data
+ *
+ * The best way to check marine map data quality is to compare with existing map with
+ * similar rendering. Also for maritime personel wanting to verify if what is in the
+ * database corresponds with reality, seeing it rendered in a standardized and familiar
+ * way is the best option.
+ *
+ */
+
+/* B: Positions, Distances, Directions, Compass */
+node["seamark:type"=distance_mark]::int1_distance {
+	symbol-shape:	circle;
+	symbol-size:	10;
+	symbol-stroke-color: cond(tag("seamark:distance_mark:category") == "not_installed", darkmagenta, black );
+	text:			"seamark:distance_mark:distance";
+	text-color:		cond(tag("seamark:distance_mark:category") == "not_installed", darkmagenta, black );
+}
+
+/* END */

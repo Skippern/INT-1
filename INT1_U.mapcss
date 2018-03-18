@@ -1,0 +1,38 @@
+/* MapCSS scheme for rendering INT-1 style maps based on OpenStreetMap data
+ *
+ * The best way to check marine map data quality is to compare with existing map with
+ * similar rendering. Also for maritime personel wanting to verify if what is in the
+ * database corresponds with reality, seeing it rendered in a standardized and familiar
+ * way is the best option.
+ *
+ */
+
+/* U: Small Craft (Leisure) Facilities */
+node["seamark:harbour:category"=marina].harbour::int1_harbour {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/U/U1.1.svg";
+}
+node["seamark:harbour:category"=marina_no_facilities].harbour::int1_harbour {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/U/U1.2.svg";
+}
+
+node["seamark:type"=small_craft_facility]::int1_small_craft {
+	set			small_craft;
+	text:			"seamark:name";
+	text-color:		black;
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/U/U32.svg";
+	icon-height:		8;
+}
+node["seamark:small_craft_facility:category"=nautical_club].small_craft::int1_small_craft {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/U/U4_br.svg";
+	icon-height:		16;
+}
+node["seamark:small_craft_facility:category"=restaurant].small_craft::int1_small_craft {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/U/U11.svg";
+	icon-height:		16;
+}
+node["seamark:small_craft_facility:category"=slipway].small_craft::int1_small_craft {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/U/U5.svg";
+	icon-width:		32;
+}
+
+/* END */

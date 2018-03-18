@@ -1,0 +1,92 @@
+/* MapCSS scheme for rendering INT-1 style maps based on OpenStreetMap data
+ *
+ * The best way to check marine map data quality is to compare with existing map with
+ * similar rendering. Also for maritime personel wanting to verify if what is in the
+ * database corresponds with reality, seeing it rendered in a standardized and familiar
+ * way is the best option.
+ *
+ */
+
+/* Q: Buoys, Beacons */
+node["seamark:type"=daymark]::int1_daymark {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q9/", tag("seamark:daymark:shape"), "/", coalesce(tag("seamark:daymark:colour"), "generic"), ".svg"));
+	icon-width:		16;
+}
+
+node["seamark:type"=buoy_lateral]::int1_buoy,
+node["seamark:type"=beacon_lateral]::int1_buoy,
+node["seamark:type"=buoy_cardinal]::int1_buoy,
+node["seamark:type"=beacon_cardinal]::int1_buoy,
+node["seamark:type"=buoy_isolated_danger]::int1_buoy,
+node["seamark:type"=beacon_isolated_danger]::int1_buoy,
+node["seamark:type"=buoy_safe_water]::int1_buoy,
+node["seamark:type"=beacon_safe_water]::int1_buoy,
+node["seamark:type"=buoy_special_purpose]::int1_buoy,
+node["seamark:type"=beacon_special_purpose]::int1_buoy {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/", coalesce(tag(concat("seamark:",tag("seamark:type"),":shape")), "buoyant"), "/", cond(has_tag_key(concat("seamark:",tag("seamark:type"),":colour_pattern")),concat(tag(concat("seamark:",tag("seamark:type"),":colour_pattern")),"/"), ""), coalesce(replace(tag(concat("seamark:",tag("seamark:type"),":colour")),";","_"), "generic"), ".svg" ));
+	icon-height:	        16;
+	icon-opacity:	        1;
+	icon-offset-x:          1;
+	icon-offset-y:		-6;
+	text:			"seamark:name";
+	text-color:		black;
+}
+
+node["seamark:type"=notice]::int1_notice {
+	icon-image:		"https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/generic.svg";
+	icon-height:	        16;
+        icon-offset-x:          0;
+        set			notice;
+}
+node["seamark:notice:1:category"].notice::int1_notice {
+	icon-offset-x:	        8;
+	set			notice1;
+}
+node["seamark:notice:2:category"].notice::int1_notice {
+	icon-offset-x:		-8;
+        set			notice2;
+}
+*["seamark:notice:system"=bniwr]["seamark:notice:category"].notice::int1_notice,
+*["seamark:notice:system"=bniwr2]["seamark:notice:category"].notice::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/BNIWR/", tag("seamark:notice:bank"), "/", tag("seamark:notice:category"), ".svg"));
+}
+*["seamark:notice:1:system"=bniwr]["seamark:notice:1:category"].notice1::int1_notice,
+*["seamark:notice:1:system"=bniwr2]["seamark:notice:1:category"].notice1::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/BNIWR/", tag("seamark:notice:1:bank"), "/", tag("seamark:notice:1:category"), ".svg"));
+}
+*["seamark:notice:2:system"=bniwr]["seamark:notice:2:category"].notice2::int1_notice,
+*["seamark:notice:2:system"=bniwr2]["seamark:notice:2:category"].notice2::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/BNIWR/", tag("seamark:notice:2:bank"), "/", tag("seamark:notice:2:category"), ".svg"));
+}
+
+*["seamark:notice:system"=ppwbc]["seamark:notice:category"].notice::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/PPWBC/", tag("seamark:notice:bank"), "/", tag("seamark:notice:category"), ".svg"));
+}
+*["seamark:notice:1:system"=ppwbc]["seamark:notice:1:category"].notice1::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/PPWBC/", tag("seamark:notice:1:bank"), "/", tag("seamark:notice:1:category"), ".svg"));
+}
+*["seamark:notice:2:system"=ppwbc]["seamark:notice:2:category"].notice2::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/PPWBC/", tag("seamark:notice:2:bank"), "/", tag("seamark:notice:2:category"), ".svg"));
+}
+
+*["seamark:notice:system"=cevni]["seamark:notice:category"].notice::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/CEVNI/", tag("seamark:notice:category"), ".svg"));
+}
+*["seamark:notice:1:system"=cevni]["seamark:notice:1:category"].notice1::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/CEVNI/", tag("seamark:notice:1:category"), ".svg"));
+}
+*["seamark:notice:2:system"=cevni]["seamark:notice:2:category"].notice2::int1_notice {
+    icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/CEVNI/", tag("seamark:notice:2:category"), ".svg"));
+}
+
+*["seamark:notice:system"=riwr]["seamark:notice:category"].notice::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/RIWR/", tag("seamark:notice:category"), ".svg"));
+}
+*["seamark:notice:1:system"=riwr]["seamark:notice:1:category"].notice1::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/RIWR/", tag("seamark:notice:1:category"), ".svg"));
+}
+*["seamark:notice:2:system"=riwr]["seamark:notice:2:category"].notice2::int1_notice {
+	icon-image:		eval(concat("https://raw.githubusercontent.com/OpenSeaMap/josm/master/icons/svg/Q/Q126/RIWR/", tag("seamark:notice:2:category"), ".svg"));
+}
+
+/* END */
